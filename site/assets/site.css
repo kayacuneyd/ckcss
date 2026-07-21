@@ -194,6 +194,16 @@
   .ckcss-dialog-demo { background: var(--ck-color-surface); border: 1px solid var(--ck-color-border); border-radius: var(--ck-radius-lg); box-shadow: var(--ck-shadow-lg); color: var(--ck-color-text); max-inline-size: min(32rem, calc(100vw - 2rem)); padding: var(--ck-space-6); }
   .ckcss-dialog-demo::backdrop { background: rgb(15 23 42 / .45); }
   .ckcss-theme-swatch { border: 1px solid var(--ck-color-border); border-radius: var(--ck-radius-lg); padding: var(--ck-space-5); }
+  .ckcss-source-controls { align-items: center; background: var(--ck-color-surface-raised); border-block-end: 1px solid color-mix(in srgb, var(--ckcss-paper) 22%, transparent); display: flex; flex-wrap: wrap; gap: var(--ck-space-2); justify-content: space-between; padding: var(--ck-space-3); }
+  .ckcss-source-controls .ck-button { min-block-size: 2.25rem; padding: var(--ck-space-2) var(--ck-space-3); }
+  .ckcss-source-controls .ckcss-source-status { color: color-mix(in srgb, var(--ckcss-paper) 72%, transparent); font-family: var(--ckcss-font-mono); font-size: .72rem; }
+  html.ckcss-source-ready .ckcss-example-code { display: none; }
+  html.ckcss-source-ready .ckcss-example[data-ck-source-open="true"] .ckcss-example-code { display: grid; }
+  .ckcss-source-controls + .ckcss-code-block { border-radius: 0; }
+  .ckcss-theme-demo { border: 1px solid var(--ck-color-border); border-radius: var(--ck-radius-lg); display: grid; gap: var(--ck-space-5); padding: var(--ck-space-5); }
+  .ckcss-theme-demo[data-ck-theme="dark"] { background: var(--ck-color-surface); }
+  .ckcss-agent-card { border-block-start: 2px solid var(--ckcss-accent); display: grid; gap: var(--ck-space-3); padding-block: var(--ck-space-5); text-decoration: none; }
+  .ckcss-agent-card:hover h3 { color: var(--ckcss-accent); text-decoration: underline; }
   @media (min-width: 48rem) { .ckcss-variant-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
   @media (max-width: 42rem) {
