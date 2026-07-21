@@ -17,7 +17,18 @@ Built by [Cüneyt Kaya](https://kayacuneyt.com).
 ```
 
 That is the complete consumer installation path. CKCSS documentation and release
-artifacts must remain usable on ordinary shared hosting.
+artifacts must remain usable on ordinary shared hosting. Download tagged releases
+from [GitHub Releases](https://github.com/kayacuneyd/ckcss/releases), browse the
+[installation guide](https://ckcss.digitaltamam.com/download.html), or pin a
+specific tag on jsDelivr:
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kayacuneyd/ckcss@v0.1.0-beta.1/dist/ckcss.min.css">
+```
+
+Never use an unpinned `latest` URL in production. For a smaller distribution,
+choose one self-contained entry point from `dist/modules/`; modules are
+alternatives to the complete bundle, not additive files.
 
 ## Development
 

@@ -82,6 +82,31 @@
 }</code></pre>
         </div>
       </section>
+      <section class="ckcss-playground ckcss-section--ink" data-ck-theme="dark">
+        <div class="ck-container ck-stack ck-stack--relaxed">
+          <div class="ckcss-playground-heading"><div class="ck-stack"><p class="ckcss-eyebrow">04 · THEME OVERRIDE</p><h2>Yalnız semantic rolleri değiştirin.</h2></div><p>Core renk üretmez. CKCSS’ten sonra yüklenen proje CSS’inizde semantic <code>--ck-color-*</code> rollerini override edin; bileşenler yeni markaya otomatik uyum sağlar.</p></div>
+          <pre class="ckcss-code-block"><code><span class="ckcss-code-tag">/* project-theme.css — CKCSS'ten sonra */</span>
+:root {
+  --ck-color-surface: #fffdf8;
+  --ck-color-text: #18243a;
+  --ck-color-primary: #7357c8;
+  --ck-color-primary-hover: #5e45ae;
+  --ck-color-on-primary: #ffffff;
+  --ck-color-focus: #7357c8;
+  --ck-color-success: #19734d;
+  --ck-color-warning: #8a5700;
+  --ck-color-danger: #b42318;
+}
+
+<span class="ckcss-code-tag">[data-ck-theme="dark"]</span> {
+  --ck-color-surface: #152238;
+  --ck-color-text: #f6f2ea;
+  --ck-color-primary: #78d2cf;
+  --ck-color-on-primary: #10202d;
+}</code></pre>
+          <p class="ckcss-code-note">Metin/yüzey, aksiyon/on-primary, focus/yüzey ve success/warning/danger metinlerinin kontrastını kendi marka renklerinizle kontrol edin. CSS custom property desteklenmeyen eski tarayıcılar için Core’un varsayılan değerleri fallback’tir. Kullanıcı tercihini değiştirmek isterseniz, yalnız bu tercihi yazan opsiyonel Enhance tema modülünü kullanın.</p>
+        </div>
+      </section>
       <section class="ckcss-playground">
         <div class="ck-container ck-stack ck-stack--relaxed">
           <div class="ckcss-playground-heading"><div class="ck-stack"><p class="ckcss-eyebrow">04 · LOCALIZATION</p><h2>Yerelleştirme ve RTL</h2></div><p>CKCSS yön-duyarlı tüm kurallarda logical properties kullanır; <code>dir="rtl"</code> sayfaları ek CSS gerektirmez. Üretilen içerik tokenlar üzerinden yerelleştirilebilir.</p></div>

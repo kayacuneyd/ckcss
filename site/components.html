@@ -30,7 +30,7 @@
         </div>
       </section>
 
-      <nav class="ckcss-doc-index" aria-label="Bileşen kategorileri"><div class="ck-container ck-cluster"><a href="#butonlar">Butonlar</a><a href="#kartlar">Kartlar ve durumlar</a><a href="#formlar">Formlar</a><a href="#tablolar">Tablolar</a><a href="#yardimcilar">Yardımcılar</a><a href="#kurulum">Kurulum</a></div></nav>
+      <nav class="ckcss-doc-index" aria-label="Bileşen kategorileri"><div class="ck-container ck-cluster"><a href="#butonlar">Butonlar</a><a href="#kartlar">Kartlar ve durumlar</a><a href="#formlar">Formlar</a><a href="#native">Native UI</a><a href="#tablolar">Tablolar</a><a href="#yardimcilar">Yardımcılar</a><a href="#kurulum">Kurulum</a></div></nav>
 
       <section id="butonlar" class="ckcss-playground">
         <div class="ck-container ck-stack ck-stack--relaxed">
@@ -68,6 +68,23 @@
     Geçerli bir e-posta adresi girin.
   <span class="ckcss-code-tag">&lt;/p&gt;</span>
 <span class="ckcss-code-tag">&lt;/div&gt;</span></code></pre><p class="ckcss-code-note">Hata mesajını yalnızca kırmızı kenarla ikame etmeyin.</p></div></article>
+        </div>
+      </section>
+
+      <section id="native" class="ckcss-playground ckcss-section--ink" data-ck-theme="dark">
+        <div class="ck-container ck-stack ck-stack--relaxed">
+          <div class="ckcss-playground-heading"><div class="ck-stack"><p class="ckcss-eyebrow">04 · NATIVE UI</p><h2>Choice, switch, navigation ve dialog.</h2></div><p>Core yalnız semantic native elementleri biçimlendirir. Açılır menü için <code>details</code>, ileri davranış içinse opsiyonel Enhance seçilir.</p></div>
+          <article class="ckcss-example"><div class="ckcss-example-preview"><p class="ckcss-example-label">.ck-choice · .ck-switch</p><h3>Gerçek form kontrolleri</h3><div class="ckcss-preview-surface ck-stack"><div class="ck-choice"><input class="ck-choice__control" id="catalog-updates" type="checkbox" aria-describedby="catalog-updates-help"><label class="ck-choice__label" for="catalog-updates">Ürün güncellemeleri</label><p class="ck-choice__help" id="catalog-updates-help">Ayda en fazla bir e-posta.</p></div><label class="ck-switch"><input class="ck-switch__control" type="checkbox"><span class="ck-switch__track" aria-hidden="true"></span><span class="ck-switch__label">Kompakt yoğunluk</span></label></div></div><div class="ckcss-example-code"><pre class="ckcss-code-block"><code>&lt;label class="ck-switch"&gt;
+  &lt;input class="ck-switch__control" type="checkbox"&gt;
+  &lt;span class="ck-switch__track" aria-hidden="true"&gt;&lt;/span&gt;
+  &lt;span class="ck-switch__label"&gt;Kompakt yoğunluk&lt;/span&gt;
+&lt;/label&gt;</code></pre><p class="ckcss-code-note">Checkbox/radio state’i native input’tadır; label, help ve error metnini görünür tutun.</p></div></article>
+          <article class="ckcss-example"><div class="ckcss-example-preview"><p class="ckcss-example-label">.ck-nav · .ck-dialog</p><h3>Davranışı uygulama seçer</h3><div class="ckcss-preview-surface ck-stack"><nav class="ck-nav" aria-label="Hesap menüsü"><ul><li><a href="#native" aria-current="page">Hesap</a></li><li><a href="#formlar">Bildirimler</a></li><li><a href="#tablolar">Faturalama</a></li></ul></nav><dialog class="ck-dialog" open><div class="ck-dialog__header"><h3>Native dialog</h3></div><div class="ck-dialog__body"><p>Bu önizleme açık. Gerçek kullanımda <code>showModal()</code> uygulama tarafından çağrılır.</p></div><form class="ck-dialog__footer" method="dialog"><button class="ck-button ck-button--secondary" type="submit">Kapat</button></form></dialog></div></div><div class="ckcss-example-code"><pre class="ckcss-code-block"><code>&lt;dialog class="ck-dialog"&gt;
+  &lt;div class="ck-dialog__body"&gt;...&lt;/div&gt;
+  &lt;form class="ck-dialog__footer" method="dialog"&gt;
+    &lt;button class="ck-button"&gt;Kapat&lt;/button&gt;
+  &lt;/form&gt;
+&lt;/dialog&gt;</code></pre><p class="ckcss-code-note">Dialog görünümü Core’dadır; açma-kapatma, odak ve uygulama state’i Core’a girmez.</p></div></article>
         </div>
       </section>
 

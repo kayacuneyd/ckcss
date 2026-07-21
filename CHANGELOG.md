@@ -7,6 +7,19 @@ semantic versioning where releases are applicable.
 
 ## [Unreleased]
 
+## [0.1.0-beta.1] - 2026-07-21
+
+### Added
+
+- `ck-choice`, `ck-switch`, `ck-nav`, and native `ck-dialog` presentation APIs.
+- Versioned GitHub Release, self-host, jsDelivr, and modular CSS installation guide.
+- Semantic light, dark, and custom-brand token override documentation.
+
+### Changed
+
+- Modular entry point headers now carry the exact release version and build output
+  remains clean after contract verification.
+
 ### Added
 
 - Initial project contract.

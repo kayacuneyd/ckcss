@@ -2,7 +2,7 @@ import { chromium, firefox, webkit } from 'playwright';
 import { mkdir } from 'node:fs/promises';
 
 const baseUrl = process.env.CKCSS_SMOKE_BASE_URL || 'http://127.0.0.1:8092';
-const routes = ['/', '/guide.html', '/docs.html', '/components.html', '/tokens.html', '/patterns.html'];
+const routes = ['/', '/download.html', '/guide.html', '/docs.html', '/components.html', '/tokens.html', '/patterns.html'];
 const viewports = [
   { width: 390, height: 844 },
   { width: 768, height: 1024 },

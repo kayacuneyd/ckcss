@@ -11,12 +11,13 @@ emit() {
   shift
   output="$dist_dir/ckcss-$name.css"
   : > "$output"
-  printf '%s\n' "/*! CKCSS v0.1.0-beta | $name entry */" >> "$output"
+  printf '%s\n' "/*! CKCSS v0.1.0-beta.1 | $name entry */" >> "$output"
   printf '%s\n' '@layer ck-reset, ck-tokens, ck-base, ck-layout, ck-components, ck-utilities;' >> "$output"
   for source in "$@"; do
     cat "$project_dir/src/$source" >> "$output"
     printf '\n' >> "$output"
   done
+  sed -i '${/^$/d;}' "$output"
   python3 "$project_dir/scripts/minify-css.py" "$output" "$dist_dir/ckcss-$name.min.css"
 }
 

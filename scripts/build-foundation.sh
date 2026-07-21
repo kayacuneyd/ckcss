@@ -6,7 +6,7 @@ project_dir=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
 mkdir -p "$project_dir/dist"
 
 {
-  printf '%s\n' '/*! CKCSS v0.1.0-beta | Foundation, layout, essential components and helpers */'
+  printf '%s\n' '/*! CKCSS v0.1.0-beta.1 | Foundation, layout, essential components and helpers */'
   printf '%s\n' '@layer ck-reset, ck-tokens, ck-base, ck-layout, ck-components, ck-utilities;'
   printf '\n'
   cat "$project_dir/src/reset.css"

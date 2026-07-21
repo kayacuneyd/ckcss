@@ -60,6 +60,21 @@
         </form>
       </section>
 
+      <section class="demo-section ck-grid ck-grid--2" aria-labelledby="choices-title">
+        <div class="ck-stack"><h2 id="choices-title">Choices and switches</h2><p>Native inputs retain their normal keyboard and form behavior.</p></div>
+        <form class="ck-stack">
+          <div class="ck-choice"><input class="ck-choice__control" id="updates" type="checkbox" aria-describedby="updates-help"><label class="ck-choice__label" for="updates">Product updates</label><p class="ck-choice__help" id="updates-help">One concise email per month.</p></div>
+          <div class="ck-choice"><input class="ck-choice__control" id="plan" name="plan" type="radio" aria-invalid="true" aria-describedby="plan-error"><label class="ck-choice__label" for="plan">Annual plan</label><p class="ck-choice__error" id="plan-error">Choose one billing option.</p></div>
+          <label class="ck-switch"><input class="ck-switch__control" type="checkbox"><span class="ck-switch__track" aria-hidden="true"></span><span class="ck-switch__label">Use compact density</span></label>
+          <label class="ck-switch"><input class="ck-switch__control" type="checkbox" disabled><span class="ck-switch__track" aria-hidden="true"></span><span class="ck-switch__label">Unavailable preference</span></label>
+        </form>
+      </section>
+
+      <section class="demo-section ck-grid ck-grid--2" aria-labelledby="native-title">
+        <div class="ck-stack"><h2 id="native-title">Navigation and dialog</h2><p>Presentation is static; native HTML or application code owns behavior.</p><nav class="ck-nav ck-nav--stacked" aria-label="Example navigation"><ul><li><a href="#forms" aria-current="page">Account</a></li><li><a href="#table">Billing</a></li><li><a href="#native-title">Preferences</a></li></ul></nav></div>
+        <dialog class="ck-dialog" open><div class="ck-dialog__header"><h2>Native dialog</h2></div><div class="ck-dialog__body"><p>This preview is intentionally open. In an application, a native form can close it without a framework.</p></div><form class="ck-dialog__footer" method="dialog"><button class="ck-button ck-button--secondary" type="submit">Close</button><button class="ck-button" value="confirm" type="submit">Confirm</button></form></dialog>
+      </section>
+
       <section id="table" class="demo-section ck-stack" aria-labelledby="table-title">
         <h2 id="table-title">Responsive table</h2>
         <div class="ck-table-wrap"><table class="ck-table"><caption>Recent releases</caption><thead><tr><th scope="col">Version</th><th scope="col">Status</th><th scope="col">Notes</th></tr></thead><tbody><tr><td>0.1.0-beta</td><td>Current</td><td>Foundation, layout and essential components.</td></tr><tr><td>0.1.0-alpha</td><td>Superseded</td><td>Foundation and layout primitives.</td></tr></tbody></table></div>

@@ -1,4 +1,4 @@
-# Essential Components — v0.1.0-beta
+# Essential Components — v0.1.0-beta.1
 
 CKCSS components are semantic HTML enhanced by one static stylesheet. Copy the
 examples below after linking `dist/ckcss.min.css`; no JavaScript is required.
@@ -52,6 +52,38 @@ Wrap wide data tables in `.ck-table-wrap`; `.ck-table` keeps semantic table
 markup and scrolls horizontally only when necessary. Customize colours, spacing,
 radius, and shadows by overriding documented `--ck-` tokens after the CKCSS
 link. The complete interactive demo is `examples/components.html`.
+
+## Choices, switches, navigation, and dialogs
+
+`ck-choice` styles native checkboxes and radio buttons. Keep the input first,
+then bind a visible label with `for`; put descriptive or error text in the
+second grid column and reference it through `aria-describedby`. `ck-switch` is
+also a native checkbox, not a button with a simulated state. Its track is only
+presentation, while the input remains the accessible control.
+
+```html
+<div class="ck-choice">
+  <input class="ck-choice__control" id="updates" type="checkbox" aria-describedby="updates-help">
+  <label class="ck-choice__label" for="updates">Product updates</label>
+  <p class="ck-choice__help" id="updates-help">One concise email per month.</p>
+</div>
+
+<label class="ck-switch">
+  <input class="ck-switch__control" type="checkbox">
+  <span class="ck-switch__track" aria-hidden="true"></span>
+  <span class="ck-switch__label">Use compact density</span>
+</label>
+```
+
+Use `nav.ck-nav > ul` for a semantic group of links. The `ck-nav--stacked`
+modifier is useful for a sidebar. A mobile disclosure may be native
+`<details>`; opening, closing, focus restoration, and other enhanced behavior
+remain outside Core in the optional `navigation.js` module.
+
+`dialog.ck-dialog` only styles the native element. Applications may use a
+native form with `method="dialog"` for a no-framework close action, or opt into
+their own JavaScript to call `showModal()` and `close()`. Core never owns modal
+state, trapping, network work, or application decisions.
 
 ## Helpers and states
 
