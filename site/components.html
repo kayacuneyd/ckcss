@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CKCSS bileşenlerini canlı önizleme ve kopyalanabilir HTML kodlarıyla inceleyin.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://ckcss.digitaltamam.com/components.html">
+    <title>CKCSS Bileşenleri — Canlı örnekler ve HTML kodları</title>
+    <link rel="stylesheet" href="/assets/ckcss.min.css">
+    <link rel="stylesheet" href="/assets/site.css">
+  </head>
+  <body>
+    <a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+    <header class="ckcss-header">
+      <div class="ck-container ck-cluster ckcss-nav">
+        <a class="ckcss-brand" href="/" aria-label="CKCSS ana sayfa">CK<span>CSS</span></a>
+        <nav aria-label="Ana menü"><ul class="ck-cluster ckcss-nav-links" role="list"><li><a href="/docs.html">Dokümanlar</a></li><li><a href="/components.html" aria-current="page">Bileşenler</a></li><li><a href="/patterns.html">Pattern’ler</a></li><li><a href="/tokens.html">Tokenlar</a></li><li><a href="/enhance.html">Enhance</a></li></ul></nav>
+      </div>
+    </header>
+
+    <nav class="ckcss-breadcrumb" aria-label="Breadcrumb"><div class="ck-container"><ol><li><a href="/">Ana sayfa</a></li><li><a href="/docs.html">Dokümanlar</a></li><li aria-current="page">Bileşenler</li></ol></div></nav>
+    <main id="main-content">
+      <section class="ckcss-doc-intro">
+        <div class="ck-container ck-stack ck-stack--relaxed">
+          <p class="ckcss-eyebrow">CANLI COMPONENT CATALOG</p>
+          <h1>Önce görün. Sonra kodu alın.</h1>
+          <p>Her örnek gerçek CKCSS sınıflarıyla render edilir. Kod bloklarını seçip doğrudan projenize kopyalayın; framework, JavaScript veya build adımı istemez.</p>
+          <dl class="ckcss-api-strip"><div><dt>Preview</dt><dd>Gerçek Core API ile render edilir.</dd></div><div><dt>Source</dt><dd>HTML doğrudan görünür ve taşınabilirdir.</dd></div><div><dt>States</dt><dd>Native, <code>aria-*</code> ve <code>data-ck-*</code>.</dd></div><div><dt>A11y</dt><dd>Her örnekte semantic kullanım notu.</dd></div></dl>
+        </div>
+      </section>
+
+      <nav class="ckcss-doc-index" aria-label="Bileşen kategorileri"><div class="ck-container ck-cluster"><a href="#butonlar">Butonlar</a><a href="#kartlar">Kartlar ve durumlar</a><a href="#formlar">Formlar</a><a href="#tablolar">Tablolar</a><a href="#yardimcilar">Yardımcılar</a><a href="#kurulum">Kurulum</a></div></nav>
+
+      <section id="butonlar" class="ckcss-playground">
+        <div class="ck-container ck-stack ck-stack--relaxed">
+          <div class="ckcss-playground-heading"><div class="ck-stack"><p class="ckcss-eyebrow">01 · ACTIONS</p><h2>Butonlar</h2></div><p>Sayfa içi işlemler için gerçek <code>button</code>, yönlendirme için <code>a</code> kullanın. Varyantlar yalnızca görsel hiyerarşiyi değiştirir.</p></div>
+          <article class="ckcss-example"><div class="ckcss-example-preview"><p class="ckcss-example-label">.ck-button</p><h3>Birincil işlem</h3><div class="ckcss-preview-surface ck-cluster"><button class="ck-button" type="button">Değişiklikleri kaydet</button><button class="ck-button ck-button--secondary" type="button">Vazgeç</button><button class="ck-button ck-button--quiet" type="button">Taslağı gör</button></div></div><div class="ckcss-example-code"><pre class="ckcss-code-block"><code><span class="ckcss-code-tag">&lt;button</span> class="ck-button" type="button"<span class="ckcss-code-tag">&gt;</span>
+  Değişiklikleri kaydet
+<span class="ckcss-code-tag">&lt;/button&gt;</span>
+
+<span class="ckcss-code-tag">&lt;button</span> class="ck-button ck-button--secondary"<span class="ckcss-code-tag">&gt;</span>
+  Vazgeç
+<span class="ckcss-code-tag">&lt;/button&gt;</span></code></pre><p class="ckcss-code-note">Klavye odağı CKCSS tarafından görünür kılınır.</p></div></article>
+        </div>
+      </section>
+
+      <section id="kartlar" class="ckcss-playground ckcss-section--ink" data-ck-theme="dark">
+        <div class="ck-container ck-stack ck-stack--relaxed">
+          <div class="ckcss-playground-heading"><div class="ck-stack"><p class="ckcss-eyebrow">02 · CONTENT</p><h2>Kartlar ve durumlar</h2></div><p>Bir kart bağımsız içerik grubudur. Badge ve alert durumları metinle birlikte taşır; yalnız renge dayanmaz.</p></div>
+          <article class="ckcss-example"><div class="ckcss-example-preview"><p class="ckcss-example-label">.ck-card · .ck-alert</p><h3>Yayın durumu</h3><div class="ck-stack"><article class="ck-card"><div class="ck-card__body ck-stack"><span class="ck-badge ck-badge--success">Yayında</span><h3>Portfolyo sitesi</h3><p>Son güncelleme bugün yayınlandı.</p></div></article><div class="ck-alert ck-alert--warning"><p class="ckcss-example-label">Durum mesajı</p><p class="ck-alert__title">Gözden geçirme gerekiyor</p><p>İletişim e-posta adresinizi doğrulayın.</p></div></div></div><div class="ckcss-example-code"><pre class="ckcss-code-block"><code><span class="ckcss-code-tag">&lt;article</span> class="ck-card"<span class="ckcss-code-tag">&gt;</span>
+  <span class="ckcss-code-tag">&lt;div</span> class="ck-card__body"<span class="ckcss-code-tag">&gt;</span>
+    <span class="ckcss-code-tag">&lt;span</span> class="ck-badge ck-badge--success"<span class="ckcss-code-tag">&gt;</span>Yayında<span class="ckcss-code-tag">&lt;/span&gt;</span>
+    <span class="ckcss-code-tag">&lt;h3&gt;</span>Portfolyo sitesi<span class="ckcss-code-tag">&lt;/h3&gt;</span>
+  <span class="ckcss-code-tag">&lt;/div&gt;</span>
+<span class="ckcss-code-tag">&lt;/article&gt;</span></code></pre><p class="ckcss-code-note">Alert için görünür başlık ve açıklama kullanın.</p></div></article>
+        </div>
+      </section>
+
+      <section id="formlar" class="ckcss-playground">
+        <div class="ck-container ck-stack ck-stack--relaxed">
+          <div class="ckcss-playground-heading"><div class="ck-stack"><p class="ckcss-eyebrow">03 · FORMS</p><h2>Form alanları</h2></div><p>Her alan bir label ile eşleşir. Hata durumunda <code>aria-invalid</code>, açıklayıcı metin ve görünür hata satırı birlikte kullanılır.</p></div>
+          <article class="ckcss-example"><div class="ckcss-example-preview"><p class="ckcss-example-label">.ck-field · .ck-input</p><h3>E-posta alanı</h3><div class="ckcss-preview-surface"><div class="ck-field"><label class="ck-field__label" for="catalog-email">E-posta adresi</label><input class="ck-input" id="catalog-email" aria-invalid="true" aria-describedby="catalog-email-error" value="ornek@"><p class="ck-field__error" id="catalog-email-error">Geçerli bir e-posta adresi girin.</p></div></div></div><div class="ckcss-example-code"><pre class="ckcss-code-block"><code><span class="ckcss-code-tag">&lt;div</span> class="ck-field"<span class="ckcss-code-tag">&gt;</span>
+  <span class="ckcss-code-tag">&lt;label</span> class="ck-field__label" for="email"<span class="ckcss-code-tag">&gt;</span>E-posta<span class="ckcss-code-tag">&lt;/label&gt;</span>
+  <span class="ckcss-code-tag">&lt;input</span> class="ck-input" id="email"
+    aria-invalid="true" aria-describedby="email-error"<span class="ckcss-code-tag">&gt;</span>
+  <span class="ckcss-code-tag">&lt;p</span> class="ck-field__error" id="email-error"<span class="ckcss-code-tag">&gt;</span>
+    Geçerli bir e-posta adresi girin.
+  <span class="ckcss-code-tag">&lt;/p&gt;</span>
+<span class="ckcss-code-tag">&lt;/div&gt;</span></code></pre><p class="ckcss-code-note">Hata mesajını yalnızca kırmızı kenarla ikame etmeyin.</p></div></article>
+        </div>
+      </section>
+
+      <section id="tablolar" class="ckcss-playground ckcss-section--ink" data-ck-theme="dark">
+        <div class="ck-container ck-stack ck-stack--relaxed">
+          <div class="ckcss-playground-heading"><div class="ck-stack"><p class="ckcss-eyebrow">04 · DATA</p><h2>Tablolar</h2></div><p>Geniş verileri <code>.ck-table-wrap</code> içinde tutun. Dar ekranlarda yalnız tablo alanı yatay kayar; sayfa taşmaz.</p></div>
+          <article class="ckcss-example"><div class="ckcss-example-preview"><p class="ckcss-example-label">.ck-table-wrap · .ck-table</p><h3>Versiyonlar</h3><div class="ck-table-wrap"><table class="ck-table"><caption>CKCSS yayın kanalları</caption><thead><tr><th scope="col">Sürüm</th><th scope="col">Kanal</th><th scope="col">İçerik</th></tr></thead><tbody><tr><td>0.1.0-beta</td><td>Güncel</td><td>Foundation, layout ve bileşenler</td></tr><tr><td>0.1.0-alpha</td><td>Önceki</td><td>Foundation ve layout</td></tr></tbody></table></div></div><div class="ckcss-example-code"><pre class="ckcss-code-block"><code><span class="ckcss-code-tag">&lt;div</span> class="ck-table-wrap"<span class="ckcss-code-tag">&gt;</span>
+  <span class="ckcss-code-tag">&lt;table</span> class="ck-table"<span class="ckcss-code-tag">&gt;</span>
+    <span class="ckcss-code-tag">&lt;thead&gt;</span>…<span class="ckcss-code-tag">&lt;/thead&gt;</span>
+    <span class="ckcss-code-tag">&lt;tbody&gt;</span>…<span class="ckcss-code-tag">&lt;/tbody&gt;</span>
+  <span class="ckcss-code-tag">&lt;/table&gt;</span>
+<span class="ckcss-code-tag">&lt;/div&gt;</span></code></pre><p class="ckcss-code-note">Table başlıklarını <code>scope="col"</code> ile tanımlayın.</p></div></article>
+        </div>
+      </section>
+
+      <section id="yardimcilar" class="ckcss-playground">
+        <div class="ck-container ck-stack ck-stack--relaxed">
+          <div class="ckcss-playground-heading"><div class="ck-stack"><p class="ckcss-eyebrow">05 · HELPERS</p><h2>Küçük ama anlamlı yardımcılar.</h2></div><p>CKCSS, Tailwind benzeri sınırsız bir utility matrisi sunmaz. Erişilebilirlik, okunabilirlik ve taşma gibi tekrar eden ihtiyaçlar için token tabanlı küçük bir yardımcı katman sağlar.</p></div>
+          <article class="ckcss-example"><div class="ckcss-example-preview"><p class="ckcss-example-label">.ck-visually-hidden · .ck-skip-link</p><h3>Erişilebilir başlangıç</h3><div class="ckcss-preview-surface ck-stack"><a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a><p class="ck-text-muted">Skip link, klavye odağı aldığında görünür olur.</p><span class="ck-visually-hidden">Yalnızca yardımcı teknolojiler için ek bağlam.</span></div></div><div class="ckcss-example-code"><pre class="ckcss-code-block"><code><span class="ckcss-code-tag">&lt;a</span> class="ck-skip-link" href="#main-content"<span class="ckcss-code-tag">&gt;</span>
+  Ana içeriğe geç
+<span class="ckcss-code-tag">&lt;/a&gt;</span>
+
+<span class="ckcss-code-tag">&lt;span</span> class="ck-visually-hidden"<span class="ckcss-code-tag">&gt;</span>
+  Yalnızca yardımcı teknolojiler için ek bağlam.
+<span class="ckcss-code-tag">&lt;/span&gt;</span></code></pre><p class="ckcss-code-note">Görsel olarak gizlenen içerik screen reader erişimini korur.</p></div></article>
+          <article class="ckcss-example"><div class="ckcss-example-preview"><p class="ckcss-example-label">aria-pressed · data-ck-state</p><h3>Native state sözleşmesi</h3><div class="ckcss-preview-surface ck-stack"><div class="ck-cluster"><button class="ck-button" type="button" aria-pressed="true">Seçili</button><button class="ck-button ck-button--secondary" type="button" aria-busy="true">Yükleniyor</button></div><article class="ck-card" data-ck-state="selected"><div class="ck-card__body"><strong>Seçili kart</strong></div></article><div class="ck-field" data-ck-state="invalid"><label class="ck-field__label" for="helper-email">E-posta</label><input class="ck-input" id="helper-email" aria-invalid="true" value="ornek@"></div></div></div><div class="ckcss-example-code"><pre class="ckcss-code-block"><code><span class="ckcss-code-tag">&lt;button</span> class="ck-button" aria-pressed="true"<span class="ckcss-code-tag">&gt;</span>
+  Seçili
+<span class="ckcss-code-tag">&lt;/button&gt;</span>
+
+<span class="ckcss-code-tag">&lt;div</span> class="ck-field" data-ck-state="invalid"<span class="ckcss-code-tag">&gt;</span>
+  ...
+<span class="ckcss-code-tag">&lt;/div&gt;</span></code></pre><p class="ckcss-code-note">State, JavaScript sınıfı yerine native attribute ile taşınır.</p></div></article>
+          <article class="ckcss-example"><div class="ckcss-example-preview"><p class="ckcss-example-label">.ck-query-container · .ck-query-grid</p><h3>Container’a uyumlanan grid</h3><div class="ck-query-container ckcss-preview-surface"><div class="ck-query-grid"><article class="ck-card"><div class="ck-card__body">İlk alan</div></article><article class="ck-card"><div class="ck-card__body">İkinci alan</div></article><article class="ck-card"><div class="ck-card__body">Üçüncü alan</div></article></div></div></div><div class="ckcss-example-code"><pre class="ckcss-code-block"><code><span class="ckcss-code-tag">&lt;div</span> class="ck-query-container"<span class="ckcss-code-tag">&gt;</span>
+  <span class="ckcss-code-tag">&lt;div</span> class="ck-query-grid"<span class="ckcss-code-tag">&gt;</span>
+    ...
+  <span class="ckcss-code-tag">&lt;/div&gt;</span>
+<span class="ckcss-code-tag">&lt;/div&gt;</span></code></pre><p class="ckcss-code-note">Container query desteklenmezse tek kolon fallback’i çalışır.</p></div></article>
+        </div>
+      </section>
+
+      <section id="kurulum" class="ckcss-install">
+        <div class="ck-container ck-sidebar"><div class="ck-stack"><p class="ckcss-eyebrow">KURULUM</p><h2>Tek bağlantı. Bitti.</h2><p>Minified dosyayı sitenizin assets klasörüne koyun ve head içine ekleyin.</p></div><div><pre class="ckcss-code-block"><code><span class="ckcss-code-tag">&lt;link</span> rel="stylesheet"
+  href="/assets/ckcss.min.css"<span class="ckcss-code-tag">&gt;</span></code></pre></div></div>
+      </section>
+
+      <section class="ckcss-token-note" aria-labelledby="token-title">
+        <div class="ck-container ck-stack">
+          <p class="ckcss-eyebrow">ÖLÇÜ SİSTEMİ</p>
+          <h2 id="token-title">Tutarlı ölçüler, daha sakin arayüzler.</h2>
+          <p>Spacing, radius ve component ölçüleri rem tabanlı token’larla yönetilir. 1px border ve 2–3px focus outline gibi piksel hassasiyeti isteyen detaylar istisnadır.</p>
+          <pre class="ckcss-code-block"><code><span class="ckcss-code-tag">--ck-space-4:</span> 1rem;
+<span class="ckcss-code-tag">--ck-radius-md:</span> .75rem;
+<span class="ckcss-code-tag">--ck-radius-pill:</span> 999px;</code></pre>
+        </div>
+      </section>
+    </main>
+
+    <footer class="ckcss-footer"><div class="ck-container ck-cluster ckcss-footer-inner"><p>CKCSS · Sade, modern ve taşınabilir.</p><a href="/">Ana sayfaya dön ↑</a></div></footer>
+  </body>
+</html>

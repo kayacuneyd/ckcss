@@ -1,0 +1,15 @@
+{
+  "name": "ckcss",
+  "private": true,
+  "version": "0.1.0-beta.0",
+  "description": "Release-only verification tools for CKCSS; consumers use static CSS only.",
+  "license": "MIT",
+  "scripts": {
+    "build": "./scripts/build-site.sh",
+    "test:contracts": "./tests/foundation-contract.sh && ./tests/layout-contract.sh && ./tests/components-contract.sh && ./tests/tokens-contract.sh && node tests/token-contrast.mjs && ./tests/patterns-contract.sh && ./tests/landing-contract.sh && ./tests/catalog-contract.sh && ./tests/i18n-contract.sh && ./tests/enhance-contract.sh",
+    "test:browser": "node tests/playwright-smoke.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.61.1"
+  }
+}

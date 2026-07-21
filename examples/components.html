@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CKCSS Essential Components</title>
+    <link rel="stylesheet" href="../dist/ckcss.css">
+    <style>
+      .demo-page { padding-block: var(--ck-space-7); }
+      .demo-section { padding-block-end: var(--ck-space-7); }
+      .demo-section > * + * { margin-block-start: var(--ck-space-5); }
+    </style>
+  </head>
+  <body>
+    <main class="demo-page ck-container ck-container--wide ck-stack ck-stack--relaxed">
+      <header class="ck-stack ck-stack--compact">
+        <p>CKCSS v0.1.0-beta</p>
+        <h1>Essential components</h1>
+        <p>Semantic, JavaScript-free controls built from the CKCSS token contract.</p>
+      </header>
+
+      <section class="demo-section ck-stack" aria-labelledby="buttons-title">
+        <h2 id="buttons-title">Buttons and badges</h2>
+        <div class="ck-cluster">
+          <a class="ck-button" href="#forms">Primary action</a>
+          <button class="ck-button ck-button--secondary" type="button">Secondary action</button>
+          <button class="ck-button ck-button--quiet" type="button">Quiet action</button>
+          <button class="ck-button ck-button--danger" type="button">Delete item</button>
+          <button class="ck-button" type="button" disabled>Unavailable</button>
+        </div>
+        <div class="ck-cluster">
+          <span class="ck-badge">Draft</span>
+          <span class="ck-badge ck-badge--success">Published</span>
+          <span class="ck-badge ck-badge--warning">Review needed</span>
+          <span class="ck-badge ck-badge--danger">Action needed</span>
+        </div>
+      </section>
+
+      <section class="demo-section ck-grid ck-grid--2" aria-label="Card and alerts">
+        <article class="ck-card">
+          <header class="ck-card__header"><h2>Card title</h2></header>
+          <div class="ck-card__body"><p>Cards group related content without requiring custom local CSS.</p></div>
+          <footer class="ck-card__footer"><a class="ck-button ck-button--secondary" href="#table">View details</a></footer>
+        </article>
+        <div class="ck-stack">
+          <div class="ck-alert"><p class="ck-alert__title">Information</p><p>Changes are saved when you publish.</p></div>
+          <div class="ck-alert ck-alert--success"><p class="ck-alert__title">Saved</p><p>Your profile is up to date.</p></div>
+          <div class="ck-alert ck-alert--warning"><p class="ck-alert__title">Review needed</p><p>Verify your contact email.</p></div>
+          <div class="ck-alert ck-alert--danger"><p class="ck-alert__title">Could not save</p><p>Correct the highlighted field and try again.</p></div>
+        </div>
+      </section>
+
+      <section id="forms" class="demo-section ck-grid ck-grid--2" aria-labelledby="forms-title">
+        <div class="ck-stack"><h2 id="forms-title">Form controls</h2><p>Errors combine a border with programmatic state and readable text.</p></div>
+        <form class="ck-stack" novalidate>
+          <div class="ck-field"><label class="ck-field__label" for="name">Name</label><input class="ck-input" id="name" name="name" autocomplete="name" placeholder="Ada Lovelace"><p class="ck-field__help">Use the name visible to your visitors.</p></div>
+          <div class="ck-field"><label class="ck-field__label" for="role">Role</label><select class="ck-select" id="role" name="role"><option>Choose a role</option><option>Designer</option><option>Developer</option></select></div>
+          <div class="ck-field"><label class="ck-field__label" for="message">Project summary</label><textarea class="ck-textarea" id="message" aria-describedby="message-error" aria-invalid="true">A concise description.</textarea><p class="ck-field__error" id="message-error">Enter at least 40 characters.</p></div>
+          <button class="ck-button" type="submit">Submit form</button>
+        </form>
+      </section>
+
+      <section id="table" class="demo-section ck-stack" aria-labelledby="table-title">
+        <h2 id="table-title">Responsive table</h2>
+        <div class="ck-table-wrap"><table class="ck-table"><caption>Recent releases</caption><thead><tr><th scope="col">Version</th><th scope="col">Status</th><th scope="col">Notes</th></tr></thead><tbody><tr><td>0.1.0-beta</td><td>Current</td><td>Foundation, layout and essential components.</td></tr><tr><td>0.1.0-alpha</td><td>Superseded</td><td>Foundation and layout primitives.</td></tr></tbody></table></div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+@layer ck-utilities {
+  /* Accessibility helpers */
+  .ck-visually-hidden:not(:focus):not(:active) {
+    block-size: 1px;
+    clip-path: inset(50%);
+    clip: rect(0 0 0 0);
+    inline-size: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+  }
+
+  .ck-skip-link {
+    background: var(--ck-color-text);
+    border-radius: var(--ck-radius-sm);
+    color: var(--ck-color-surface);
+    inset-block-start: var(--ck-space-3);
+    inset-inline-start: var(--ck-space-3);
+    padding: var(--ck-space-2) var(--ck-space-3);
+    position: absolute;
+    transform: translateY(-200%);
+    transition: transform var(--ck-duration-fast) var(--ck-ease-standard);
+    z-index: 10;
+  }
+
+  .ck-skip-link:focus-visible { transform: translateY(0); }
+
+  .ck-focus-ring:focus-visible {
+    outline: var(--ck-focus-ring-width) solid var(--ck-color-focus);
+    outline-offset: var(--ck-focus-ring-offset);
+  }
+
+  /* Small token-based helpers */
+  .ck-text-small { font-size: var(--ck-font-size-sm); }
+  .ck-text-lead { font-size: var(--ck-font-size-lg); line-height: var(--ck-line-relaxed); }
+  .ck-text-muted { color: var(--ck-color-text-muted); }
+  .ck-text-center { text-align: center; }
+  .ck-width-full { inline-size: 100%; }
+  .ck-max-readable { max-inline-size: 72ch; }
+  .ck-overflow-auto { overflow: auto; }
+  .ck-truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+  /* Explicit responsive helpers; component layout remains the preferred API. */
+  .ck-hide-mobile { display: none; }
+  .ck-only-mobile { display: revert; }
+  .ck-only-wide { display: none; }
+
+  @media (min-width: 40rem) {
+    .ck-hide-mobile { display: revert; }
+    .ck-only-mobile { display: none; }
+  }
+
+  @media (min-width: 64rem) {
+    .ck-hide-desktop { display: none; }
+    .ck-only-wide { display: revert; }
+  }
+
+  /* Progressive container-query primitives with viewport-safe fallbacks. */
+  .ck-query-container { container: ck-layout / inline-size; }
+  .ck-query-grid {
+    display: grid;
+    gap: var(--ck-grid-gap, var(--ck-space-5));
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  @supports (container-type: inline-size) {
+    @container ck-layout (min-width: 40rem) {
+      .ck-query-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @container ck-layout (min-width: 64rem) {
+      .ck-query-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+  }
+}

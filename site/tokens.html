@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CKCSS tasarım tokenları: renk, typography, spacing, radius, shadow ve motion sözleşmesi.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://ckcss.digitaltamam.com/tokens.html">
+    <title>CKCSS Tokenları — Tasarım sistemi referansı</title>
+    <link rel="stylesheet" href="/assets/ckcss.min.css">
+    <link rel="stylesheet" href="/assets/site.css">
+  </head>
+  <body>
+    <a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+    <header class="ckcss-header">
+      <div class="ck-container ck-cluster ckcss-nav">
+        <a class="ckcss-brand" href="/" aria-label="CKCSS ana sayfa">CK<span>CSS</span></a>
+        <nav aria-label="Ana menü"><ul class="ck-cluster ckcss-nav-links" role="list"><li><a href="/docs.html">Dokümanlar</a></li><li><a href="/components.html">Bileşenler</a></li><li><a href="/patterns.html">Pattern’ler</a></li><li><a href="/tokens.html" aria-current="page">Tokenlar</a></li><li><a href="/enhance.html">Enhance</a></li></ul></nav>
+      </div>
+    </header>
+
+    <nav class="ckcss-breadcrumb" aria-label="Breadcrumb"><div class="ck-container"><ol><li><a href="/">Ana sayfa</a></li><li><a href="/docs.html">Dokümanlar</a></li><li aria-current="page">Tokenlar</li></ol></div></nav>
+    <main id="main-content">
+      <section class="ckcss-doc-intro">
+        <div class="ck-container ck-stack ck-stack--relaxed">
+          <p class="ckcss-eyebrow">DESIGN TOKEN REFERENCE</p>
+          <h1>Bir ölçü sistemiyle daha sakin arayüzler.</h1>
+          <p>CKCSS tokenları component ve layout kararlarını ortak bir ölçeğe bağlar. Tüm değerler tek CSS linkinden sonra override edilebilir.</p>
+        </div>
+      </section>
+
+      <section class="ckcss-playground">
+        <div class="ck-container ck-stack ck-stack--relaxed">
+          <div class="ckcss-playground-heading"><div class="ck-stack"><p class="ckcss-eyebrow">01 · İZNİK PALETİ</p><h2>50’den 950’ye kaynak renkler.</h2></div><p>Kobalt, turkuaz, bole mercanı, yaprak yeşili, hardal, erguvan ve sır beyazı 11 basamaklı ham palettir. 50–200 hafif yüzeyler, 300–400 sınırlar, 500–700 aksiyonlar, 800–950 koyu yüzeyler içindir. Bileşenler yalnızca semantic roller kullanır.</p></div>
+          <pre class="ckcss-code-block"><code><span class="ckcss-code-tag">:root</span> {
+  <span class="ckcss-code-tag">/* Ham kaynak paleti */</span>
+  <span class="ckcss-code-tag">/* Her aile: 50, 100, …, 900, 950 */</span>
+  --ck-iznik-glaze-50: #fdfbf6;
+  --ck-iznik-glaze-950: #1d232d;
+  --ck-iznik-cobalt-50: #eaf1f8;
+  --ck-iznik-cobalt-500: #225a9b;
+  --ck-iznik-cobalt-950: #101f35;
+  --ck-iznik-turquoise-100: #d8eeee;
+  --ck-iznik-bole-700: #a53526;
+
+  <span class="ckcss-code-tag">/* Bileşen sözleşmesi */</span>
+  --ck-color-surface: var(--ck-iznik-glaze-100);
+  --ck-color-text: var(--ck-iznik-ink);
+  --ck-color-primary: var(--ck-iznik-cobalt-500);
+  --ck-color-danger: var(--ck-iznik-bole-700);
+  --ck-font-display: "Aleo", Georgia, serif;
+}</code></pre>
+          <pre class="ckcss-code-block"><code><span class="ckcss-code-tag">.project-notice</span> {
+  background: var(--ck-iznik-turquoise-50);
+  border: 1px solid var(--ck-iznik-turquoise-200);
+  color: var(--ck-iznik-turquoise-800);
+}</code></pre>
+          <p class="ckcss-code-note">Ham tokenlar yerel marka detayları içindir; <code>.ck-button</code> gibi framework bileşenlerinde yalnızca <code>--ck-color-*</code> kullanılır. Metin/yüzey eşleşmelerinde kontrastı kontrol edin.</p>
+        </div>
+      </section>
+
+      <section class="ckcss-playground ckcss-section--ink" data-ck-theme="dark">
+        <div class="ck-container ck-stack ck-stack--relaxed">
+          <div class="ckcss-playground-heading"><div class="ck-stack"><p class="ckcss-eyebrow">02 · TYPE &amp; SPACE</p><h2>Typography ve spacing</h2></div><p>Font size, line-height, tracking ve spacing birlikte çalışır; responsive değerler token ölçeğini korur. Tek isimli ölçek: <code>--ck-font-size-xs</code>, <code>--ck-font-size-sm</code>, <code>--ck-font-size-md</code>, <code>--ck-font-size-lg</code>, <code>--ck-font-size-xl</code>, <code>--ck-font-size-2xl</code> ve <code>--ck-font-size-display</code>.</p></div>
+          <pre class="ckcss-code-block"><code><span class="ckcss-code-tag">.project-copy</span> {
+  font-size: var(--ck-font-size-lg);
+  line-height: var(--ck-line-relaxed);
+  max-inline-size: 72ch;
+  margin-block-end: var(--ck-space-6);
+}</code></pre>
+        </div>
+      </section>
+
+      <section class="ckcss-playground">
+        <div class="ck-container ck-stack ck-stack--relaxed">
+          <div class="ckcss-playground-heading"><div class="ck-stack"><p class="ckcss-eyebrow">03 · GEOMETRY &amp; MOTION</p><h2>Radius, shadow ve motion</h2></div><p>Component seviyesinde sınırlı geometri ve motion kullanın; her öğeye rastgele değer vermeyin.</p></div>
+          <pre class="ckcss-code-block"><code><span class="ckcss-code-tag">.project-card</span> {
+  border-radius: var(--ck-radius-lg);
+  box-shadow: var(--ck-shadow-sm);
+  transition-duration: var(--ck-duration-standard);
+  transition-timing-function: var(--ck-ease-standard);
+}</code></pre>
+        </div>
+      </section>
+      <section class="ckcss-playground">
+        <div class="ck-container ck-stack ck-stack--relaxed">
+          <div class="ckcss-playground-heading"><div class="ck-stack"><p class="ckcss-eyebrow">04 · LOCALIZATION</p><h2>Yerelleştirme ve RTL</h2></div><p>CKCSS yön-duyarlı tüm kurallarda logical properties kullanır; <code>dir="rtl"</code> sayfaları ek CSS gerektirmez. Üretilen içerik tokenlar üzerinden yerelleştirilebilir.</p></div>
+          <pre class="ckcss-code-block"><code><span class="ckcss-code-tag">html[dir="rtl"][lang="ar"]</span> {
+  --ck-font-sans: "Noto Sans Arabic", system-ui, sans-serif;
+  --ck-breadcrumb-separator: "›";
+}</code></pre>
+          <p class="ckcss-code-note">Aleo yalnızca Latin yüzüdür; Latin dışı scriptler için font ikamesi proje CSS'inde yapılır. Enhance modülleri metin yazmaz — etiketler markup'tan gelir (ADR 0015).</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="ckcss-footer"><div class="ck-container ck-cluster ckcss-footer-inner"><p>CKCSS · Sade, modern ve taşınabilir.</p><a href="/components.html">Bileşenlere dön ↑</a></div></footer>
+  </body>
+</html>

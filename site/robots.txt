@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ckcss.digitaltamam.com/sitemap.xml

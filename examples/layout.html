@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CKCSS Layout Primitives</title>
+    <link rel="stylesheet" href="../dist/ckcss.css">
+    <style>
+      .demo-page { padding-block: var(--ck-space-6); }
+      .demo-box { background: var(--ck-color-surface-muted); border: 1px solid var(--ck-color-border); border-radius: var(--ck-radius-md); padding: var(--ck-space-4); }
+      .demo-code { color: var(--ck-color-text-muted); font-family: var(--ck-font-mono); font-size: var(--ck-font-size-sm); }
+    </style>
+  </head>
+  <body>
+    <main class="demo-page ck-container ck-container--wide ck-stack ck-stack--relaxed">
+      <header class="ck-stack ck-stack--compact">
+        <p class="demo-code">CKCSS Layout Primitives</p>
+        <h1>Responsive layout without floats</h1>
+        <p>Every section below uses CKCSS container, stack, cluster, grid, or sidebar primitives.</p>
+      </header>
+
+      <section class="ck-stack" aria-labelledby="grid-title">
+        <h2 id="grid-title">Auto-fit grid</h2>
+        <div class="ck-grid ck-grid--auto-fit">
+          <article class="demo-box">Column one</article>
+          <article class="demo-box">Column two</article>
+          <article class="demo-box">Column three</article>
+        </div>
+      </section>
+
+      <section class="ck-stack" aria-labelledby="cluster-title">
+        <h2 id="cluster-title">Cluster</h2>
+        <div class="ck-cluster ck-cluster--spread demo-box">
+          <strong>Brand</strong>
+          <nav class="ck-cluster" aria-label="Example navigation">
+            <a href="#layouts">Layouts</a>
+            <a href="#tokens">Tokens</a>
+            <a href="#components">Components</a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="ck-sidebar" aria-label="Sidebar layout">
+        <aside class="demo-box ck-stack ck-stack--compact">
+          <h2>Sidebar</h2>
+          <p>Stacks naturally on small screens.</p>
+        </aside>
+        <article class="demo-box ck-stack">
+          <h2>Main content</h2>
+          <p>At wider viewports the layout uses a grid-based sidebar and content relationship.</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

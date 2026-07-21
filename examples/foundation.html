@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CKCSS Foundation Demo</title>
+    <link rel="stylesheet" href="../dist/ckcss.css">
+    <style>
+      .demo-shell { max-inline-size: 72rem; margin-inline: auto; padding: var(--ck-space-6); }
+      .demo-grid { display: grid; gap: var(--ck-space-5); grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
+      .demo-panel { border: 1px solid var(--ck-color-border); border-radius: var(--ck-radius-lg); box-shadow: var(--ck-shadow-sm); padding: var(--ck-space-5); }
+      .demo-panel > * + * { margin-block-start: var(--ck-space-3); }
+    </style>
+  </head>
+  <body>
+    <main class="demo-shell">
+      <header>
+        <p>CKCSS v0.1.0-alpha</p>
+        <h1>Foundation layer</h1>
+        <p>Tokens, semantic base styles, visible keyboard focus and reduced-motion support.</p>
+      </header>
+
+      <section class="demo-grid" aria-label="Theme previews">
+        <article class="demo-panel">
+          <h2>Light theme</h2>
+          <p><a href="#light-focus">Focusable link</a> using the default token theme.</p>
+          <label for="light-focus">Example field</label>
+          <input id="light-focus" type="text" placeholder="Tab here to inspect focus">
+          <button type="button">Native button</button>
+        </article>
+
+        <article class="demo-panel" data-ck-theme="dark">
+          <h2>Dark theme override</h2>
+          <p><a href="#dark-focus">Focusable link</a> inherits locally overridden tokens.</p>
+          <label for="dark-focus">Example field</label>
+          <input id="dark-focus" type="text" placeholder="Tab here to inspect focus">
+          <button type="button">Native button</button>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,269 @@
+/* Hallmark · pre-emit critique: P5 H5 E4 S5 R4 V5 */
+/* Hallmark · macrostructure: Component Playground · tone: practical editorial · anchor hue: coral · contrast: pass (40–41) · responsive: pass (34, 49, 50–57) */
+@font-face { font-display: swap; font-family: "Aleo"; font-style: normal; font-weight: 400; src: url("/assets/fonts/aleo-regular.ttf") format("truetype"); }
+@font-face { font-display: swap; font-family: "Aleo"; font-style: normal; font-weight: 700; src: url("/assets/fonts/aleo-bold.ttf") format("truetype"); }
+
+@layer site {
+  :root {
+    --ckcss-ink: var(--ck-iznik-ink);
+    --ckcss-paper: var(--ck-iznik-glaze);
+    --ckcss-accent: var(--ck-iznik-bole-500);
+    --ckcss-mint: var(--ck-iznik-turquoise-300);
+    --ckcss-rule: color-mix(in srgb, var(--ckcss-ink) 17%, transparent);
+    --ckcss-inverse: var(--ck-iznik-glaze-raised);
+    --ckcss-code-text: var(--ck-iznik-glaze);
+    --ckcss-code-surface: var(--ck-iznik-glaze-muted);
+    --ckcss-space-section: clamp(4rem, 7vw, 6.5rem);
+    --ckcss-space-section-compact: clamp(3rem, 5.5vw, 4.5rem);
+    --ckcss-space-content: clamp(1.25rem, 3vw, 2rem);
+    --ckcss-container: 76rem;
+    --ckcss-container-narrow: 52rem;
+    --ckcss-radius-control: .5rem;
+    --ckcss-radius-panel: .75rem;
+    --ckcss-radius-card: 1rem;
+    --ckcss-radius-pill: 999px;
+    --ckcss-border: 1px solid var(--ckcss-rule);
+    --ckcss-shadow-panel: .75rem .75rem 0 var(--ckcss-mint);
+    --ckcss-shadow-panel-small: .45rem .45rem 0 var(--ckcss-mint);
+    --ckcss-font-display: var(--ck-font-display);
+    --ckcss-font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+
+  html { overflow-x: clip; scroll-behavior: smooth; }
+  body { background: var(--ckcss-paper); color: var(--ckcss-ink); overflow-x: clip; }
+  a { color: inherit; text-underline-offset: .18em; }
+  h1, h2, h3, .ckcss-brand { font-family: var(--ckcss-font-display); letter-spacing: -.035em; }
+  p, li { line-height: var(--ck-line-body); }
+  h1 { font-size: clamp(3rem, 6.3vw, 5.75rem); line-height: var(--ck-line-display); max-inline-size: 11ch; }
+  .ckcss-emphasis { color: var(--ckcss-accent); font-style: normal; font-weight: inherit; }
+  h2 { font-size: clamp(2.3rem, 4vw, 4rem); line-height: var(--ck-line-heading); max-inline-size: 15ch; }
+  h3 { font-size: 1.45rem; line-height: var(--ck-line-subheading); }
+
+  .ckcss-header { border-block-end: 1px solid var(--ckcss-rule); }
+  .ckcss-nav { min-block-size: 4.8rem; justify-content: space-between; align-items: center; }
+  .ckcss-brand { color: var(--ckcss-ink); font-size: 1.7rem; font-weight: 700; text-decoration: none; }
+  .ckcss-brand span { color: var(--ckcss-accent); }
+  .ckcss-nav-links { font-size: .88rem; gap: clamp(.75rem, 3vw, 2rem); justify-content: flex-end; list-style: none; }
+  .ckcss-nav-links a { text-decoration: none; }
+  .ckcss-nav-links a:hover { text-decoration: underline; }
+
+  .ckcss-hero { border-block-end: 1px solid var(--ckcss-rule); padding-block: clamp(4rem, 8vw, 7rem); }
+  .ckcss-hero .ck-sidebar { align-items: center; gap: clamp(3rem, 7vw, 7rem); }
+  .ckcss-hero-copy { --ck-stack-space: var(--ck-space-4); align-content: center; min-inline-size: 0; }
+  .ckcss-eyebrow { color: var(--ckcss-accent); font-family: var(--ckcss-font-mono); font-size: .76rem; font-weight: 700; letter-spacing: .12em; }
+  .ckcss-lede { font-size: clamp(1.05rem, 1.6vw, 1.25rem); line-height: var(--ck-line-body); max-inline-size: 53ch; }
+  .ckcss-button { align-items: center; border: 1px solid var(--ckcss-ink); display: inline-flex; font-weight: 700; justify-content: center; min-block-size: 2.9rem; padding-inline: 1.1rem; text-decoration: none; }
+  .ckcss-button--primary { background: var(--ckcss-ink); color: var(--ckcss-paper); }
+  .ckcss-button--primary:hover { background: var(--ckcss-accent); border-color: var(--ckcss-accent); }
+  .ckcss-button--quiet { border-color: transparent; text-decoration: underline; }
+  .ckcss-button:active { transform: translateY(1px); }
+  .ckcss-code-wrap { align-self: center; background: var(--ckcss-ink); border-radius: var(--ckcss-radius-panel); box-shadow: var(--ckcss-shadow-panel); color: var(--ckcss-code-text); inline-size: min(100%, 34rem); overflow: hidden; }
+  .ckcss-code-toolbar { align-items: center; border-block-end: 1px solid rgb(248 247 241 / .16); color: color-mix(in srgb, var(--ckcss-paper) 68%, transparent); display: flex; font-family: var(--ckcss-font-mono); font-size: .7rem; gap: var(--ck-space-2); justify-content: space-between; letter-spacing: .08em; padding: .8rem 1rem; text-transform: uppercase; }
+  .ckcss-code-toolbar::before { background: var(--ckcss-accent); border-radius: var(--ckcss-radius-pill); box-shadow: 1rem 0 0 var(--ckcss-mint), 2rem 0 0 color-mix(in srgb, var(--ckcss-paper) 75%, transparent); content: ""; display: block; block-size: .45rem; inline-size: .45rem; margin-inline-end: 1.5rem; }
+  .ckcss-code { font-family: var(--ckcss-font-mono); font-size: clamp(.75rem, 1.35vw, .9rem); line-height: 1.75; margin: 0; overflow-x: auto; padding: clamp(1.25rem, 4vw, 2.25rem); }
+  .ckcss-code span { color: var(--ckcss-mint); }
+
+  .ckcss-section { padding-block: var(--ckcss-space-section); }
+  .ckcss-section-heading { --ck-stack-space: var(--ck-space-3); border-block-end: 1px solid var(--ckcss-rule); padding-block-end: var(--ck-space-5); }
+  .ckcss-section-heading h2 { max-inline-size: 18ch; }
+  .ckcss-feature { --ck-stack-space: var(--ck-space-2); border-block-start: 2px solid var(--ckcss-ink); min-block-size: 12rem; padding-block-start: 1.25rem; }
+  .ckcss-feature p, .ckcss-primitive p, .ckcss-steps { line-height: var(--ck-line-body); }
+  .ckcss-index { color: var(--ckcss-accent); font-family: var(--ckcss-font-mono); font-size: .8rem; }
+  .ckcss-section--ink { background: var(--ckcss-ink); color: var(--ckcss-inverse); }
+  .ckcss-section--ink .ckcss-section-heading { border-color: color-mix(in srgb, var(--ckcss-inverse) 20%, transparent); }
+  .ckcss-primitive { border: 1px solid color-mix(in srgb, var(--ckcss-inverse) 26%, transparent); border-radius: var(--ckcss-radius-panel); min-block-size: 13rem; padding: clamp(1.25rem, 3vw, 2rem); }
+  .ckcss-primitive code { color: var(--ckcss-mint); font-family: var(--ckcss-font-mono); font-size: .9em; letter-spacing: -.06em; }
+  .ckcss-start { max-inline-size: 52rem; }
+  .ckcss-steps { padding-inline-start: 1.3rem; }
+  .ckcss-steps li { padding-inline-start: .4rem; }
+  .ckcss-steps code { background: var(--ckcss-code-surface); font-size: .9em; overflow-wrap: anywhere; padding: .15em .3em; }
+  .ckcss-footer { background: var(--ckcss-mint); padding-block: 2rem; }
+  .ckcss-footer-inner { justify-content: space-between; }
+  .ckcss-footer p { font-size: .9rem; }
+
+  .ckcss-doc-intro { border-block-end: 1px solid var(--ckcss-rule); padding-block: clamp(3.5rem, 8vw, 6rem); }
+  .ckcss-doc-intro h1 { max-inline-size: 13ch; }
+  .ckcss-doc-intro p { font-size: clamp(1rem, 1.5vw, 1.18rem); line-height: 1.6; max-inline-size: 58ch; }
+  .ckcss-doc-index { border-block-end: 1px solid var(--ckcss-rule); padding-block: var(--ck-space-5); }
+  .ckcss-doc-index a { font-family: var(--ckcss-font-mono); font-size: .84rem; text-decoration: none; white-space: nowrap; }
+  .ckcss-doc-index a:hover { text-decoration: underline; }
+  .ckcss-playground { border-block-end: 1px solid var(--ckcss-rule); padding-block: var(--ckcss-space-section-compact); }
+  .ckcss-playground-heading { align-items: end; border-block-end: 1px solid var(--ckcss-rule); display: grid; gap: var(--ck-space-4); grid-template-columns: minmax(0, 1fr); padding-block-end: var(--ck-space-5); }
+  .ckcss-playground-heading p { color: color-mix(in srgb, var(--ckcss-ink) 68%, transparent); line-height: 1.55; }
+  .ckcss-example { border-block-end: 1px solid var(--ckcss-rule); display: grid; gap: var(--ck-space-6); grid-template-columns: minmax(0, 1fr); }
+  .ckcss-example:last-child { border-block-end: 0; }
+  .ckcss-example-preview { min-inline-size: 0; padding: clamp(1.5rem, 4vw, 3rem) 0; }
+  .ckcss-example-preview > * + * { margin-block-start: var(--ck-space-4); }
+  .ckcss-example-label { color: var(--ckcss-accent); font-family: var(--ckcss-font-mono); font-size: .76rem; font-weight: 700; letter-spacing: .08em; }
+  .ckcss-example-preview h3 { font-size: clamp(1.3rem, 2vw, 1.7rem); }
+  .ckcss-example-preview p { line-height: 1.55; max-inline-size: 46ch; }
+  .ckcss-preview-surface { background: var(--ck-color-surface-muted); border: 1px solid var(--ck-color-border); border-radius: var(--ck-radius-lg); padding: var(--ck-space-5); }
+  .ckcss-example-code { background: var(--ckcss-ink); border-radius: var(--ckcss-radius-panel); box-shadow: .35rem .35rem 0 color-mix(in srgb, var(--ckcss-mint) 72%, transparent); color: var(--ckcss-paper); min-inline-size: 0; overflow: hidden; }
+  .ckcss-code-block { background: transparent; color: inherit; margin: 0; min-inline-size: 0; overflow-x: auto; padding: clamp(1.25rem, 3vw, 2rem); }
+  .ckcss-code-block::before { color: color-mix(in srgb, var(--ckcss-paper) 48%, transparent); content: "HTML"; display: block; font-family: var(--ckcss-font-mono); font-size: .68rem; font-weight: 700; letter-spacing: .12em; margin-block-end: 1rem; }
+  .ckcss-code-block code { color: inherit; font-family: var(--ckcss-font-mono); font-size: .82rem; line-height: 1.7; }
+  .ckcss-code-block .ckcss-code-tag { color: var(--ckcss-mint); }
+  .ckcss-code-note { color: color-mix(in srgb, var(--ckcss-paper) 70%, transparent); font-size: .78rem; margin-block-start: var(--ck-space-3); }
+  .ckcss-install { background: var(--ckcss-ink); color: var(--ckcss-paper); padding-block: clamp(3.5rem, 7vw, 5rem); }
+  .ckcss-install h2 { color: inherit; }
+  .ckcss-install p { color: color-mix(in srgb, var(--ckcss-paper) 78%, transparent); line-height: 1.55; }
+  .ckcss-install .ckcss-code-block { border: 1px solid color-mix(in srgb, var(--ckcss-paper) 24%, transparent); border-radius: var(--ckcss-radius-panel); }
+  .ckcss-token-note { border-block-end: 1px solid var(--ckcss-rule); padding-block: var(--ckcss-space-section-compact); }
+  .ckcss-token-note h2 { max-inline-size: 16ch; }
+  .ckcss-token-note > .ck-container > p:not(.ckcss-eyebrow) { line-height: 1.55; max-inline-size: 58ch; }
+  .ckcss-token-note .ckcss-code-block { background: var(--ck-color-surface-muted); border: 1px solid var(--ck-color-border); border-radius: var(--ckcss-radius-panel); color: var(--ck-color-text); max-inline-size: 32rem; }
+  .ckcss-token-note .ckcss-code-block::before { color: var(--ckcss-accent); content: "CSS TOKENS"; }
+  .ckcss-token-note .ckcss-code-block .ckcss-code-tag { color: var(--ckcss-accent); }
+  .ckcss-pattern-stage { background: var(--ck-color-surface-muted); padding-block: var(--ckcss-space-section); }
+  .ckcss-pattern-heading { align-items: end; border-block-end: 1px solid var(--ck-color-border); display: flex; gap: var(--ck-space-5); justify-content: space-between; padding-block-end: var(--ck-space-5); }
+  .ckcss-pattern-heading > div { display: grid; gap: var(--ck-space-2); }
+  .ckcss-pattern-heading h2 { line-height: var(--ck-line-heading); max-inline-size: 18ch; }
+  .ckcss-pattern-heading p { line-height: var(--ck-line-body); }
+  .ckcss-pattern-number { font-size: clamp(2rem, 5vw, 3.5rem); letter-spacing: -.04em; line-height: 1; }
+  .ckcss-pattern-columns { align-items: start; }
+  .ckcss-pattern-row { align-items: center; border-block-end: 1px solid var(--ck-color-border); display: flex; gap: var(--ck-space-4); justify-content: space-between; padding-block: var(--ck-space-3); }
+  .ckcss-pattern-row:last-child { border-block-end: 0; }
+  .ckcss-pattern-link { color: inherit; text-decoration: none; transition: transform var(--ck-duration-fast) var(--ck-ease-standard), box-shadow var(--ck-duration-fast) var(--ck-ease-standard); }
+  .ckcss-pattern-link:hover { box-shadow: var(--ck-shadow-md); color: inherit; transform: translateY(-.2rem); }
+
+  .ckcss-app-shell { background: var(--ck-color-surface-muted); min-block-size: 34rem; }
+  .ckcss-app-nav { background: var(--ck-color-surface); border-inline-end: 1px solid var(--ck-color-border); padding: var(--ck-space-5); }
+  .ckcss-app-nav a { border-radius: var(--ck-radius-md); display: block; padding: .65rem .75rem; text-decoration: none; }
+  .ckcss-app-nav a:hover, .ckcss-app-nav a[aria-current="page"] { background: var(--ck-color-surface-muted); color: var(--ck-color-primary); }
+  .ckcss-app-main { min-inline-size: 0; padding-block: var(--ck-space-6); }
+  .ckcss-app-toolbar { align-items: center; border-block-end: 1px solid var(--ck-color-border); display: flex; gap: var(--ck-space-4); justify-content: space-between; padding-block-end: var(--ck-space-5); }
+  .ckcss-app-toolbar h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); }
+  .ckcss-data-toolbar { align-items: end; display: flex; flex-wrap: wrap; gap: var(--ck-space-4); justify-content: space-between; }
+  .ckcss-data-toolbar .ck-field { flex: 1 1 14rem; }
+  .ckcss-table-wrap { overflow-x: auto; }
+  .ckcss-table-wrap .ck-table { min-inline-size: 42rem; }
+  .ckcss-auth { align-items: stretch; background: var(--ck-color-surface-muted); min-block-size: 38rem; }
+  .ckcss-auth-aside { background: var(--ckcss-ink); color: var(--ckcss-inverse); display: flex; flex-direction: column; justify-content: space-between; padding: clamp(1.5rem, 5vw, 4rem); }
+  .ckcss-auth-aside p { color: color-mix(in srgb, var(--ckcss-inverse) 76%, transparent); line-height: 1.55; }
+  .ckcss-auth-form { align-self: center; inline-size: min(100%, 28rem); padding: clamp(1.5rem, 5vw, 4rem); }
+  .ckcss-auth-form .ck-button { inline-size: 100%; }
+  .ckcss-state-card { border: 1px dashed var(--ck-color-border); border-radius: var(--ck-radius-lg); padding: var(--ck-space-6); text-align: center; }
+  .ckcss-state-card[data-ck-state="loading"] { color: var(--ck-color-text-muted); }
+  .ckcss-state-card[data-ck-state="error"] { border-color: var(--ck-color-danger); }
+  .ckcss-state-card[data-ck-state="empty"] { background: var(--ck-color-surface); }
+  .ckcss-pattern-nav { border-block-end: 1px solid var(--ckcss-rule); padding-block: var(--ck-space-4); }
+  .ckcss-prose { max-inline-size: 68ch; }
+  .ckcss-prose > * + * { margin-block-start: var(--ck-space-4); }
+  .ckcss-prose p, .ckcss-prose li { line-height: 1.65; }
+  .ckcss-prose h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); margin-block-start: var(--ck-space-6); }
+  .ckcss-quote { border-inline-start: .25rem solid var(--ckcss-accent); font-family: var(--ckcss-font-display); font-size: clamp(1.4rem, 3vw, 2.2rem); line-height: 1.1; padding-inline-start: var(--ck-space-5); }
+  .ckcss-price-total { border-block-start: 1px solid var(--ck-color-border); font-size: 1.25rem; padding-block-start: var(--ck-space-4); }
+  .ckcss-variant-grid { display: grid; gap: var(--ck-space-6); }
+  .ckcss-variant { background: var(--ck-color-surface); border: 1px solid var(--ck-color-border); border-radius: var(--ck-radius-lg); overflow: hidden; }
+  .ckcss-variant__label { background: var(--ck-color-surface-muted); border-block-end: 1px solid var(--ck-color-border); color: var(--ck-color-text-muted); font-family: var(--ckcss-font-mono); font-size: .75rem; letter-spacing: .08em; padding: var(--ck-space-3) var(--ck-space-4); text-transform: uppercase; }
+  .ckcss-variant__preview { padding: var(--ck-space-6); }
+  .ckcss-menu-dark { background: var(--ckcss-ink); color: var(--ckcss-inverse); }
+  .ckcss-menu-dark a { color: inherit; }
+  .ckcss-menu-dark .ckcss-brand { color: inherit; }
+  .ckcss-footer-dark { background: var(--ckcss-ink); color: var(--ckcss-inverse); }
+  .ckcss-footer-dark a { color: inherit; }
+  .ckcss-hero-centered { background: var(--ck-color-surface-muted); padding: var(--ck-space-8) var(--ck-space-5); text-align: center; }
+  .ckcss-hero-centered h2, .ckcss-hero-centered p { margin-inline: auto; }
+  .ckcss-hero-dark { background: var(--ckcss-ink); color: var(--ckcss-inverse); padding: var(--ck-space-8) var(--ck-space-5); }
+  .ckcss-hero-dark h2 { color: inherit; }
+  .ckcss-cta { align-items: center; background: var(--ck-color-primary); border-radius: var(--ck-radius-lg); color: var(--ck-color-on-primary); display: flex; gap: var(--ck-space-5); justify-content: space-between; padding: var(--ck-space-6); }
+  .ckcss-cta h3 { color: inherit; }
+  .ckcss-cta a { color: inherit; }
+  .ckcss-cta-dark { background: var(--ckcss-ink); }
+  .ckcss-cta-dark .ck-button { background: var(--ckcss-mint); border-color: var(--ckcss-mint); color: var(--ckcss-ink); }
+  .ckcss-source { background: var(--ckcss-ink); color: var(--ckcss-paper); padding-block: var(--ckcss-space-section-compact); }
+  .ckcss-source .ckcss-code-block { border: 1px solid rgb(248 247 241 / .2); border-radius: var(--ckcss-radius-panel); }
+  .ckcss-error { align-items: start; min-block-size: 70vh; padding-block: var(--ckcss-space-section); }
+  .ckcss-error-code { color: var(--ckcss-accent); font-family: var(--ckcss-font-mono); font-size: .8rem; letter-spacing: .12em; }
+  .ckcss-mobile-nav { border: 1px solid var(--ck-color-border); border-radius: var(--ck-radius-lg); padding: var(--ck-space-4); }
+  .ckcss-mobile-nav summary { cursor: pointer; font-weight: 700; }
+  .ckcss-mobile-nav ul { list-style: none; margin: 0; padding-block-start: var(--ck-space-4); padding-inline-start: 0; }
+  .ckcss-enhance-nav { align-items: flex-start; background: var(--ck-color-surface); border: 1px solid var(--ck-color-border); border-radius: var(--ck-radius-lg); display: flex; gap: var(--ck-space-4); justify-content: space-between; padding: var(--ck-space-4); }
+  .ckcss-enhance-nav [data-ck-menu-toggle] { display: none; }
+  .ckcss-enhance-nav [data-ck-menu] ul { display: flex; flex-wrap: wrap; gap: var(--ck-space-4); list-style: none; margin: 0; padding: 0; }
+  .ckcss-motion-demo { animation: ckcss-demo-float 2.4s var(--ck-ease-standard) infinite alternate; background: var(--ckcss-mint); border-radius: var(--ck-radius-lg); padding: var(--ck-space-5); text-align: center; }
+  @keyframes ckcss-demo-float { from { transform: translateY(0); } to { transform: translateY(-.5rem); } }
+  @media (max-width: 42rem) {
+    .ckcss-enhance-nav { flex-direction: column; }
+    .ckcss-enhance-nav [data-ck-menu-toggle] { display: inline-flex; }
+    .ckcss-enhance-nav [data-ck-menu] { inline-size: 100%; }
+    .ckcss-enhance-nav [data-ck-menu] ul { flex-direction: column; }
+  }
+  @media (prefers-reduced-motion: reduce) { .ckcss-motion-demo { animation: none; } }
+  .ckcss-variant nav ul { list-style: none; margin: 0; padding: 0; }
+  .ckcss-dialog-demo { background: var(--ck-color-surface); border: 1px solid var(--ck-color-border); border-radius: var(--ck-radius-lg); box-shadow: var(--ck-shadow-lg); color: var(--ck-color-text); max-inline-size: min(32rem, calc(100vw - 2rem)); padding: var(--ck-space-6); }
+  .ckcss-dialog-demo::backdrop { background: rgb(15 23 42 / .45); }
+  .ckcss-theme-swatch { border: 1px solid var(--ck-color-border); border-radius: var(--ck-radius-lg); padding: var(--ck-space-5); }
+  @media (min-width: 48rem) { .ckcss-variant-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+  @media (max-width: 42rem) {
+    .ckcss-nav { align-items: flex-start; flex-direction: column; padding-block: 1rem; }
+    .ckcss-nav-links { font-size: .78rem; gap: var(--ck-space-2) var(--ck-space-4); justify-content: flex-start; }
+    .ckcss-code-wrap { box-shadow: var(--ckcss-shadow-panel-small); }
+    .ckcss-pattern-heading { align-items: start; flex-direction: column; }
+    .ckcss-app-toolbar { align-items: start; flex-direction: column; }
+  }
+
+  @media (min-width: 42.01rem) and (max-width: 58rem) {
+    .ckcss-nav { align-items: flex-start; flex-wrap: wrap; padding-block: 1rem; }
+    .ckcss-nav-links { flex-basis: 100%; justify-content: flex-start; }
+  }
+
+  @media (min-width: 48rem) {
+    .ckcss-playground-heading { grid-template-columns: minmax(0, 1.2fr) minmax(16rem, .8fr); }
+    .ckcss-example { gap: 0; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+    .ckcss-example-preview { padding-inline-end: clamp(2rem, 5vw, 5rem); }
+    .ckcss-example-code { align-self: stretch; border-inline-start: 1px solid var(--ckcss-rule); display: grid; place-items: center stretch; }
+    .ckcss-app-shell { grid-template-columns: 14rem minmax(0, 1fr); }
+    .ckcss-auth { grid-template-columns: minmax(0, .8fr) minmax(20rem, 1fr); }
+  }
+
+  /* Shared documentation and product-site modules. These remain presentation-only;
+     CKCSS Core keeps its public API under the ck- prefix. */
+  .ckcss-breadcrumb { border-block-end: 1px solid var(--ckcss-rule); padding-block: var(--ck-space-3); }
+  .ckcss-breadcrumb ol { align-items: center; display: flex; flex-wrap: wrap; gap: .5rem; list-style: none; margin: 0; padding: 0; }
+  .ckcss-breadcrumb li + li::before { color: var(--ckcss-accent); content: "/"; margin-inline-end: .5rem; }
+  .ckcss-breadcrumb a { font-size: .88rem; text-decoration: none; }
+  .ckcss-breadcrumb a:hover { text-decoration: underline; }
+  .ckcss-nav-links [aria-current="page"] { color: var(--ckcss-accent); text-decoration: underline; }
+  .ckcss-product-hero { padding-block: clamp(4rem, 9vw, 8rem); }
+  .ckcss-product-hero .ck-sidebar { align-items: center; gap: clamp(2.5rem, 7vw, 7rem); }
+  .ckcss-product-hero h1 { max-inline-size: 10ch; }
+  .ckcss-product-hero .ckcss-lede { max-inline-size: 45ch; }
+  .ckcss-kicker-list { color: color-mix(in srgb, var(--ckcss-ink) 72%, transparent); font-family: var(--ckcss-font-mono); font-size: .78rem; letter-spacing: .06em; }
+  .ckcss-layer-card { border: var(--ckcss-border); border-radius: var(--ckcss-radius-card); display: grid; gap: var(--ck-space-4); min-block-size: 17rem; padding: clamp(1.35rem, 3vw, 2.2rem); text-decoration: none; }
+  .ckcss-layer-card:hover { box-shadow: var(--ckcss-shadow-panel-small); transform: translate(-.12rem, -.12rem); }
+  .ckcss-layer-card h3 { font-size: clamp(1.6rem, 2.5vw, 2.15rem); }
+  .ckcss-layer-card p { max-inline-size: 33ch; }
+  .ckcss-layer-label { color: var(--ckcss-accent); font-family: var(--ckcss-font-mono); font-size: .76rem; font-weight: 700; letter-spacing: .1em; }
+  .ckcss-layer-card--ink { background: var(--ckcss-ink); border-color: var(--ckcss-ink); color: var(--ckcss-inverse); }
+  .ckcss-layer-card--ink .ckcss-layer-label { color: var(--ckcss-mint); }
+  .ckcss-preview-frame { border: var(--ckcss-border); border-radius: var(--ckcss-radius-card); overflow: hidden; }
+  .ckcss-preview-frame__label { align-items: center; background: var(--ck-color-surface-muted); border-block-end: var(--ckcss-border); display: flex; font-family: var(--ckcss-font-mono); font-size: .75rem; justify-content: space-between; letter-spacing: .08em; padding: .8rem 1rem; text-transform: uppercase; }
+  .ckcss-preview-frame__body { padding: clamp(1.25rem, 4vw, 2.5rem); }
+  .ckcss-api-strip { border-block: var(--ckcss-border); display: grid; gap: 0; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); }
+  .ckcss-api-strip > * { border-inline-end: var(--ckcss-border); min-block-size: 7.5rem; padding: var(--ck-space-4); }
+  .ckcss-api-strip > *:last-child { border-inline-end: 0; }
+  .ckcss-api-strip dt { color: var(--ckcss-accent); font-family: var(--ckcss-font-mono); font-size: .7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+  .ckcss-api-strip dd { margin: var(--ck-space-2) 0 0; }
+  .ckcss-doc-shell { display: grid; gap: var(--ck-space-6); padding-block: var(--ckcss-space-section-compact); }
+  .ckcss-doc-nav { align-self: start; border: var(--ckcss-border); border-radius: var(--ckcss-radius-panel); padding: var(--ck-space-4); }
+  .ckcss-doc-nav h2 { font-size: 1rem; letter-spacing: 0; }
+  .ckcss-doc-nav ul { display: grid; gap: .25rem; list-style: none; margin: var(--ck-space-3) 0 0; padding: 0; }
+  .ckcss-doc-nav a { border-radius: var(--ckcss-radius-control); display: block; padding: .55rem .65rem; text-decoration: none; }
+  .ckcss-doc-nav a:hover, .ckcss-doc-nav a[aria-current="page"] { background: var(--ck-color-surface-muted); color: var(--ckcss-accent); }
+  .ckcss-doc-card { border-block-start: 2px solid var(--ckcss-ink); display: grid; gap: var(--ck-space-3); min-block-size: 12rem; padding: var(--ck-space-4) 0; text-decoration: none; }
+  .ckcss-doc-card:hover h3 { color: var(--ckcss-accent); text-decoration: underline; }
+  .ckcss-cta-panel { align-items: center; background: var(--ckcss-ink); color: var(--ckcss-inverse); display: grid; gap: var(--ck-space-5); padding: clamp(1.5rem, 5vw, 3.5rem); }
+  .ckcss-cta-panel h2 { color: inherit; max-inline-size: 15ch; }
+  .ckcss-cta-panel p { color: color-mix(in srgb, var(--ckcss-inverse) 76%, transparent); max-inline-size: 55ch; }
+  .ckcss-cta-panel .ckcss-button { border-color: var(--ckcss-mint); color: var(--ckcss-inverse); }
+  .ckcss-cta-panel .ckcss-button--primary { background: var(--ckcss-mint); color: var(--ckcss-ink); }
+  .ckcss-legacy-links { border-block-start: var(--ckcss-border); padding-block-start: var(--ck-space-5); }
+  .ckcss-legacy-links a { font-family: var(--ckcss-font-mono); font-size: .83rem; }
+  @media (min-width: 58rem) {
+    .ckcss-doc-shell { grid-template-columns: 15rem minmax(0, 1fr); }
+    .ckcss-doc-nav { position: sticky; top: 1rem; }
+    .ckcss-cta-panel { grid-template-columns: minmax(0, 1fr) auto; }
+  }
+}

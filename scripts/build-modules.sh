@@ -1,0 +1,30 @@
+#!/usr/bin/env sh
+
+set -eu
+
+project_dir=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+dist_dir="$project_dir/dist/modules"
+mkdir -p "$dist_dir"
+
+emit() {
+  name=$1
+  shift
+  output="$dist_dir/ckcss-$name.css"
+  : > "$output"
+  printf '%s\n' "/*! CKCSS v0.1.0-beta | $name entry */" >> "$output"
+  printf '%s\n' '@layer ck-reset, ck-tokens, ck-base, ck-layout, ck-components, ck-utilities;' >> "$output"
+  for source in "$@"; do
+    cat "$project_dir/src/$source" >> "$output"
+    printf '\n' >> "$output"
+  done
+  python3 "$project_dir/scripts/minify-css.py" "$output" "$dist_dir/ckcss-$name.min.css"
+}
+
+emit core reset.css tokens.css base.css
+emit layout reset.css tokens.css base.css layout.css
+emit components reset.css tokens.css base.css layout.css components.css utilities.css
+emit forms reset.css tokens.css base.css layout.css components.css utilities.css
+emit navigation reset.css tokens.css base.css layout.css components.css utilities.css
+emit data reset.css tokens.css base.css layout.css components.css utilities.css
+
+printf '%s\n' 'Built modular CKCSS entry points.'

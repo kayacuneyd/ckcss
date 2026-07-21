@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CKCSS başlangıç rehberi: kurulum, layout, component, helper, token ve pattern kullanımı.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://ckcss.digitaltamam.com/guide.html">
+    <title>CKCSS Başlangıç Rehberi — Tek link, sade HTML</title>
+    <link rel="stylesheet" href="/assets/ckcss.min.css">
+    <link rel="stylesheet" href="/assets/site.css">
+  </head>
+  <body>
+    <a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+    <header class="ckcss-header"><div class="ck-container ck-cluster ckcss-nav"><a class="ckcss-brand" href="/" aria-label="CKCSS ana sayfa">CK<span>CSS</span></a><nav aria-label="Ana menü"><ul class="ck-cluster ckcss-nav-links" role="list"><li><a href="/docs.html">Dokümanlar</a></li><li><a href="/components.html">Bileşenler</a></li><li><a href="/patterns.html">Pattern’ler</a></li><li><a href="/tokens.html">Tokenlar</a></li><li><a href="/enhance.html">Enhance</a></li></ul></nav></div></header>
+    <nav class="ckcss-breadcrumb" aria-label="Breadcrumb"><div class="ck-container"><ol><li><a href="/">Ana sayfa</a></li><li><a href="/docs.html">Dokümanlar</a></li><li aria-current="page">Başlangıç</li></ol></div></nav>
+    <main id="main-content">
+      <section class="ckcss-doc-intro"><div class="ck-container ck-stack ck-stack--relaxed"><p class="ckcss-eyebrow">GET STARTED</p><h1>İlk sayfanızı on dakikada kurun.</h1><p class="ck-text-lead">CKCSS’i kullanmak için tek stylesheet bağlantısı ve semantic HTML yeterli.</p><pre class="ckcss-code-block"><code><span class="ckcss-code-tag">&lt;link</span> rel="stylesheet" href="/assets/ckcss.min.css"<span class="ckcss-code-tag">&gt;</span></code></pre></div></section>
+      <section class="ckcss-playground"><div class="ck-container ck-stack ck-stack--relaxed"><div class="ckcss-playground-heading"><div class="ck-stack"><p class="ckcss-eyebrow">01 · CHOOSE YOUR PATH</p><h2>İhtiyacınız olan katmanı seçin.</h2></div><p>Core CSS’i tek linkle kullanın; ardından layout, component veya pattern seviyesinde ilerleyin.</p></div><div class="ck-grid ck-grid--3"><a class="ck-card ckcss-pattern-link" href="/tokens.html"><div class="ck-card__body ck-stack"><span class="ck-text-small ck-text-muted">01</span><h3>Tokenlar</h3><p class="ck-text-muted">Renk, typography, spacing, radius ve motion sözleşmesi.</p></div></a><a class="ck-card ckcss-pattern-link" href="/components.html"><div class="ck-card__body ck-stack"><span class="ck-text-small ck-text-muted">02</span><h3>Component’ler</h3><p class="ck-text-muted">Semantic HTML, states, accessibility ve copyable source.</p></div></a><a class="ck-card ckcss-pattern-link" href="/patterns.html"><div class="ck-card__body ck-stack"><span class="ck-text-small ck-text-muted">03</span><h3>Pattern’ler</h3><p class="ck-text-muted">Tam sayfa ve bölüm örnekleriyle hızlı başlangıç.</p></div></a></div><div class="ckcss-legacy-links ck-cluster"><a href="/docs.html">Architecture ve prensipler →</a><a href="/css-lab.html">Responsive CSS Lab →</a><a href="/enhance.html">Opsiyonel Enhance →</a></div></div></section>
+      <section class="ckcss-playground ckcss-section--ink" data-ck-theme="dark"><div class="ck-container ck-stack ck-stack--relaxed"><div class="ckcss-playground-heading"><div class="ck-stack"><p class="ckcss-eyebrow">02 · COMPOSE</p><h2>Primitive’lerle birleştirin.</h2></div><p>Layout için container, stack, cluster ve grid kullanın. Component’leri semantic HTML içinde birleştirin.</p></div><pre class="ckcss-code-block"><code><span class="ckcss-code-tag">&lt;main</span> class="ck-container ck-stack ck-stack--relaxed"<span class="ckcss-code-tag">&gt;</span>
+  <span class="ckcss-code-tag">&lt;header</span> class="ck-cluster ck-cluster--spread"<span class="ckcss-code-tag">&gt;</span>
+    <span class="ckcss-code-tag">&lt;h1&gt;</span>Proje özeti<span class="ckcss-code-tag">&lt;/h1&gt;</span>
+    <span class="ckcss-code-tag">&lt;button</span> class="ck-button" type="button"<span class="ckcss-code-tag">&gt;</span>Yeni<span class="ckcss-code-tag">&lt;/button&gt;</span>
+  <span class="ckcss-code-tag">&lt;/header&gt;</span>
+  <span class="ckcss-code-tag">&lt;section</span> class="ck-grid ck-grid--3"<span class="ckcss-code-tag">&gt;</span>...<span class="ckcss-code-tag">&lt;/section&gt;</span>
+<span class="ckcss-code-tag">&lt;/main&gt;</span></code></pre></div></section>
+      <section class="ckcss-section"><div class="ck-container ck-sidebar"><div class="ck-stack"><p class="ckcss-eyebrow">03 · QUALITY</p><h2>Sonra kontrol edin.</h2><p class="ck-text-muted">Contract testleri, local browser smoke ve size gate; release öncesinde aynı komutlarla çalışır.</p></div><ol class="ckcss-steps ck-stack"><li>Semantic HTML ve focus davranışını kontrol edin.</li><li>390, 768 ve 1440 viewport’larında sayfayı test edin.</li><li>Minified CSS boyutunu ve generated asset’leri doğrulayın.</li></ol></div></section>
+      <section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed"><div class="ckcss-section-heading ck-stack"><p class="ckcss-eyebrow">COMPATIBILITY PAGES</p><h2>Mevcut referanslar yerinde.</h2><p>Bu sayfalar eski bağlantıları korur; yeni bilgi mimarisinde ilgili rehberin devamı olarak kullanılabilir.</p></div><div class="ckcss-legacy-links ck-cluster"><a href="/states.html">State referansı</a><a href="/variants.html">UI varyantları</a><a href="/interactions.html">Native interactions</a><a href="/sources.html">Copyable sources</a><a href="/themes.html">Tema örnekleri</a><a href="/mobile-navigation.html">Mobile navigation</a><a href="/modular.html">Modüler kullanım</a></div></div></section>
+    </main>
+    <footer class="ckcss-footer"><div class="ck-container ck-cluster ckcss-footer-inner"><p>CKCSS · Sade, modern ve taşınabilir.</p><a href="/">Ana sayfaya dön ↑</a></div></footer>
+  </body>
+</html>

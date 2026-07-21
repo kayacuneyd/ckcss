@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CKCSS ile oluşturulmuş erişilebilir contact form pattern’i.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://ckcss.digitaltamam.com/contact.html">
+    <title>CKCSS Contact Pattern — Hazır HTML/CSS örneği</title>
+    <link rel="stylesheet" href="/assets/ckcss.min.css">
+    <link rel="stylesheet" href="/assets/site.css">
+  </head>
+  <body>
+    <a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+    <header class="ckcss-header"><div class="ck-container ck-cluster ckcss-nav"><a class="ckcss-brand" href="/" aria-label="CKCSS ana sayfa">CK<span>CSS</span></a><nav aria-label="Ana menü"><ul class="ck-cluster ckcss-nav-links" role="list"><li><a href="/patterns.html">Pattern’ler</a></li><li><a href="/components.html">Bileşenler</a></li><li><a href="/tokens.html">Tokenlar</a></li></ul></nav></div></header>
+    <main id="main-content">
+      <section class="ckcss-doc-intro"><div class="ck-container ck-stack ck-stack--relaxed"><p class="ckcss-eyebrow">UI KIT PATTERN · 03</p><h1>İyi bir konuşma iyi bir form ile başlar.</h1><p class="ck-text-lead">Erişilebilir field yapısı, görünür yardım metni ve renk dışı hata iletişimi.</p></div></section>
+      <section class="ckcss-section"><div class="ck-container ck-sidebar"><div class="ck-stack"><p class="ckcss-eyebrow">CONTACT / PROJECT BRIEF</p><h2>Projenizi anlatın.</h2><p class="ck-text-muted">Bu statik pattern gerçek gönderim davranışı içermez; backend’inizin action adresini ekleyerek kullanabilirsiniz.</p><div class="ck-alert ck-alert--success" role="status" aria-live="polite"><p class="ck-alert__title">İpucu</p><p>İyi bir form, her alanı label ve gerekli yardım metniyle açıklar.</p></div></div><form class="ck-stack" action="/contact" method="post"><div class="ck-field"><label class="ck-field__label" for="contact-name">Adınız</label><input class="ck-input" id="contact-name" name="name" autocomplete="name" required><p class="ck-field__help">Size nasıl hitap edelim?</p></div><div class="ck-field"><label class="ck-field__label" for="contact-email">E-posta</label><input class="ck-input" id="contact-email" name="email" type="email" autocomplete="email" required></div><div class="ck-field"><label class="ck-field__label" for="contact-message">Proje özeti</label><textarea class="ck-textarea" id="contact-message" name="message" aria-describedby="contact-message-help" required></textarea><p class="ck-field__help" id="contact-message-help">Hedefinizi ve zamanlamanızı kısaca yazın.</p></div><button class="ck-button" type="submit">Mesaj gönder</button></form></div></section>
+      <section class="ckcss-playground ckcss-section--ink" data-ck-theme="dark"><div class="ck-container ck-stack ck-stack--relaxed"><div class="ckcss-playground-heading"><div class="ck-stack"><p class="ckcss-eyebrow">SOURCE</p><h2>Semantic from the start.</h2></div><p>Field, label, help text ve native form control birlikte kullanılır.</p></div><pre class="ckcss-code-block"><code><span class="ckcss-code-tag">&lt;div</span> class="ck-field"<span class="ckcss-code-tag">&gt;</span>
+  <span class="ckcss-code-tag">&lt;label</span> class="ck-field__label" for="message"<span class="ckcss-code-tag">&gt;</span>
+    Proje özeti
+  <span class="ckcss-code-tag">&lt;/label&gt;</span>
+  <span class="ckcss-code-tag">&lt;textarea</span> class="ck-textarea" id="message"<span class="ckcss-code-tag">&gt;&lt;/textarea&gt;</span>
+<span class="ckcss-code-tag">&lt;/div&gt;</span></code></pre></div></section>
+    </main>
+    <footer class="ckcss-footer"><div class="ck-container ck-cluster ckcss-footer-inner"><p>CKCSS · Sade, modern ve taşınabilir.</p><a href="/patterns.html">Pattern catalog’una dön ↑</a></div></footer>
+  </body>
+</html>

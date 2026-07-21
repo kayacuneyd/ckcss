@@ -1,0 +1,33 @@
+name: Open-source browser engines
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  browser-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - name: Install release-only browser tools
+        run: npm ci
+      - name: Install open-source browser engines
+        run: npx playwright install --with-deps chromium firefox webkit
+      - name: Build static site
+        run: npm run build
+      - name: Serve static site
+        run: python3 -m http.server 8092 --directory site >/tmp/ckcss-browser.log 2>&1 &
+      - name: Run Chromium, Firefox and WebKit smoke matrix
+        run: npm run test:browser
+      - name: Upload visual evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ckcss-browser-smoke
+          path: test-results/browser/
+          if-no-files-found: error

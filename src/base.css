@@ -1,0 +1,89 @@
+@layer ck-base {
+  :where(html) {
+    background: var(--ck-color-surface);
+    color: var(--ck-color-text);
+    font-family: var(--ck-font-sans);
+    font-size: var(--ck-font-size-md);
+    line-height: var(--ck-line-normal);
+  }
+
+  :where(body) {
+    min-block-size: 100vh;
+    background: var(--ck-color-surface);
+    color: var(--ck-color-text);
+  }
+
+  :where(h1, h2, h3, h4, h5, h6) {
+    color: var(--ck-color-text);
+    font-family: var(--ck-font-display);
+    font-weight: 700;
+    line-height: var(--ck-line-tight);
+    margin-block: 0;
+    text-wrap: balance;
+  }
+
+  :where(h1) {
+    font-size: var(--ck-font-size-display);
+  }
+
+  :where(h2) {
+    font-size: var(--ck-font-size-2xl);
+  }
+
+  :where(p, li) {
+    max-inline-size: 72ch;
+  }
+
+  /* Ordinary flow gets semantic rhythm; layout primitives own spacing inside stacks. */
+  :where(:not(.ck-stack) > h1, :not(.ck-stack) > h2, :not(.ck-stack) > h3,
+    :not(.ck-stack) > h4, :not(.ck-stack) > h5, :not(.ck-stack) > h6,
+    :not(.ck-stack) > p) {
+    margin-block-end: var(--ck-space-4);
+  }
+
+  :where(.ck-stack > h1, .ck-stack > h2, .ck-stack > h3, .ck-stack > h4,
+    .ck-stack > h5, .ck-stack > h6, .ck-stack > p) {
+    margin-block: 0;
+  }
+
+  :where(a) {
+    color: var(--ck-color-primary);
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.16em;
+  }
+
+  :where(a:hover) {
+    color: var(--ck-color-primary-strong);
+  }
+
+  :where(button, input, select, textarea) {
+    border-radius: var(--ck-radius-sm);
+  }
+
+  :where(button, [role="button"]) {
+    cursor: pointer;
+  }
+
+  :where(button:disabled, input:disabled, select:disabled, textarea:disabled) {
+    cursor: not-allowed;
+  }
+
+  :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+    outline: var(--ck-focus-ring-width) solid var(--ck-color-focus);
+    outline-offset: var(--ck-focus-ring-offset);
+  }
+
+  ::selection {
+    background: var(--ck-color-selection);
+    color: var(--ck-color-text);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    :where(*, *::before, *::after) {
+      animation-duration: 0.01ms;
+      animation-iteration-count: 1;
+      scroll-behavior: auto;
+      transition-duration: 0.01ms;
+    }
+  }
+}

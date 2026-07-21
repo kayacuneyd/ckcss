@@ -1,0 +1,23 @@
+CLAUDE.local.md
+.env
+.env.*
+!.env.example
+node_modules/
+test-results/
+.hallmark/
+playwright-report/
+blob-report/
+build/
+__pycache__/
+.venv/
+.DS_Store
+
+# Internal development workflow; never part of the public CKCSS repository.
+/.kaya-eos/
+/docs/swarm/
+/docs/project-memory.md
+/AGENTS.md
+/CLAUDE.md
+/kaya-eos.lock
+/.github/workflows/kaya-eos.yml
+/deploy/
