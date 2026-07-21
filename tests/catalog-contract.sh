@@ -46,15 +46,14 @@ grep -q 'https://ckcss.digitaltamam.com/guide.html' "$project_dir/site/sitemap.x
 grep -q 'https://ckcss.digitaltamam.com/docs.html' "$project_dir/site/sitemap.xml"
 grep -q 'https://ckcss.digitaltamam.com/product-patterns.html' "$project_dir/site/sitemap.xml"
 grep -q 'https://ckcss.digitaltamam.com/marketing-patterns.html' "$project_dir/site/sitemap.xml"
-grep -q 'https://ckcss.digitaltamam.com/states.html' "$project_dir/site/sitemap.xml"
-grep -q 'https://ckcss.digitaltamam.com/variants.html' "$project_dir/site/sitemap.xml"
-for page_name in interactions mobile-navigation themes sources; do
-  grep -q "https://ckcss.digitaltamam.com/$page_name.html" "$project_dir/site/sitemap.xml"
-done
-grep -q 'https://ckcss.digitaltamam.com/modular.html' "$project_dir/site/sitemap.xml"
+grep -q 'https://ckcss.digitaltamam.com/themes.html' "$project_dir/site/sitemap.xml"
 grep -q 'https://ckcss.digitaltamam.com/enhance.html' "$project_dir/site/sitemap.xml"
-grep -q 'https://ckcss.digitaltamam.com/navigation-enhance.html' "$project_dir/site/sitemap.xml"
-grep -q 'https://ckcss.digitaltamam.com/css-lab.html' "$project_dir/site/sitemap.xml"
+for page_name in states variants interactions mobile-navigation sources modular navigation-enhance css-lab; do
+  if grep -q "https://ckcss.digitaltamam.com/$page_name.html" "$project_dir/site/sitemap.xml"; then
+    printf '%s\n' "Auxiliary route must not be in sitemap: $page_name.html" >&2
+    exit 1
+  fi
+done
 grep -q 'src="/assets/enhance/source.js"' "$page"
 test -f "$project_dir/enhance/source.js"
 

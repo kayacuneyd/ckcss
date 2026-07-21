@@ -8,7 +8,7 @@ documentation hub, components, tokens, patterns, CSS Lab, and Enhance.
 
 ## Contracts
 
-- Existing public HTML routes remain published and in the sitemap.
+- Existing public HTML routes remain published. The sitemap contains only primary product, documentation, and curated example routes; auxiliary or experimental routes remain directly accessible but are omitted from it.
 - Public Core classes remain `ck-`; product-site-only classes use `ckcss-`.
 - Every main page has a canonical URL, a skip link, responsive navigation, and
   the same Aleo-led visual vocabulary.
