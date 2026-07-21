@@ -1,0 +1,96 @@
+# CKCSS: guide for coding agents
+
+## Product boundary
+
+CKCSS Core is static CSS. It is consumed using a single stylesheet link and does not require npm, a bundler, a framework, or runtime JavaScript. CKCSS UI Kit consists of copyable semantic HTML recipes. CKCSS Enhance contains optional independent JavaScript modules; it must never be required for content, links, or forms to work.
+
+## Install
+
+Use a pinned release URL:
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kayacuneyd/ckcss@v0.1.0-beta.1/dist/ckcss.min.css">
+```
+
+For a self-hosted project, link its copied `ckcss.min.css` instead. Do not use `@latest` in production.
+
+## Required generation rules
+
+1. Use documented public `ck-` classes only. Never invent a class such as `ck-panel--glass`.
+2. Use semantic elements: `button` for in-page actions; `a` with a valid `href` for navigation; `article` for standalone content; `nav` plus a list for navigation groups; `label` for every form field.
+3. Use layout primitives before custom CSS: `ck-container`, `ck-stack`, `ck-cluster`, `ck-grid`, and `ck-sidebar`.
+4. Use component classes only for their documented purpose. Do not use a card as a button or a div as an input.
+5. Express state with native attributes first: `disabled`, `aria-current`, `aria-expanded`, `aria-pressed`, `aria-busy`, `aria-invalid`, and documented `data-ck-state` values.
+6. Keep focus visible and never convey state with color alone. Invalid fields need `aria-invalid`, a visible error message, and `aria-describedby`.
+7. Prefer native `details`, `summary`, `dialog`, and form behavior. Add optional JavaScript only when the requested interaction genuinely needs it.
+8. Override themes through semantic `--ck-color-*`, typography, radius, and spacing tokens after the CKCSS stylesheet. Do not edit CKCSS source files or use primitive palette tokens for component styling.
+9. Do not use arbitrary utility chains, Tailwind syntax, `@apply`, inline style attributes, or a new CSS framework alongside CKCSS unless the user explicitly requests custom application CSS.
+
+## Layout recipe
+
+```html
+<main class="ck-container ck-stack ck-stack--relaxed">
+  <header class="ck-stack">
+    <h1>Page title</h1>
+    <p class="ck-text-lead">One clear description.</p>
+  </header>
+  <section class="ck-grid ck-grid--3" aria-label="Highlights">
+    <!-- semantic cards -->
+  </section>
+</main>
+```
+
+## Component recipes
+
+### Action and navigation
+
+```html
+<button class="ck-button" type="submit">Save changes</button>
+<a class="ck-button ck-button--secondary" href="/account">Cancel</a>
+```
+
+### Card
+
+```html
+<article class="ck-card">
+  <div class="ck-card__body ck-stack">
+    <h2>Project update</h2>
+    <p>Published today.</p>
+  </div>
+</article>
+```
+
+### Form field with error
+
+```html
+<div class="ck-field">
+  <label class="ck-field__label" for="email">Email</label>
+  <input class="ck-input" id="email" type="email" aria-invalid="true" aria-describedby="email-error">
+  <p class="ck-field__error" id="email-error">Enter a valid email address.</p>
+</div>
+```
+
+### Navigation
+
+```html
+<nav class="ck-nav" aria-label="Account navigation">
+  <ul>
+    <li><a href="/account" aria-current="page">Account</a></li>
+    <li><a href="/billing">Billing</a></li>
+  </ul>
+</nav>
+```
+
+## Theme recipe
+
+```css
+:root {
+  --ck-color-surface: #f7f3ea;
+  --ck-color-text: #18263b;
+  --ck-color-primary: #225a9b;
+  --ck-color-primary-hover: #18477d;
+  --ck-color-focus: #159a9c;
+}
+```
+
+For a scoped dark UI, place `data-ck-theme="dark"` on a containing element. See `/ckcss-manifest.json` for the authoritative class, state, and token list.

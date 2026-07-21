@@ -1,0 +1,17 @@
+# CKCSS
+
+CKCSS is a build-free CSS framework and semantic HTML UI kit. Use it with one stylesheet link; Core requires no JavaScript.
+
+Start here:
+- https://ckcss.digitaltamam.com/ai.html — agent usage rules and prompt starter
+- https://ckcss.digitaltamam.com/ckcss-manifest.json — machine-readable public API
+- https://ckcss.digitaltamam.com/components.html — live component examples and source
+- https://ckcss.digitaltamam.com/themes.html — token-based theme recipes
+- https://ckcss.digitaltamam.com/download.html — pinned CDN and release downloads
+
+Rules:
+- Use only documented `ck-` classes and `--ck-` tokens.
+- Prefer semantic HTML: `button` for actions, `a` for navigation, labels for form controls.
+- Do not invent CKCSS classes or rewrite the framework CSS.
+- Do not add JavaScript unless the request explicitly needs behavior; prefer native HTML first.
+- Change themes by overriding semantic tokens after the CKCSS link.

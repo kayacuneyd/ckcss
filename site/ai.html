@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Yapay zekâ ajanlarıyla CKCSS kullanarak erişilebilir, semantic ve responsive arayüzler üretme rehberi.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://ckcss.digitaltamam.com/ai.html">
+    <title>CKCSS ile AI ajanları — UI sözleşmesi</title>
+    <link rel="stylesheet" href="/assets/ckcss.min.css">
+    <link rel="stylesheet" href="/assets/site.css">
+  </head>
+  <body>
+    <a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+    <header class="ckcss-header"><div class="ck-container ck-cluster ckcss-nav"><a class="ckcss-brand" href="/" aria-label="CKCSS ana sayfa">CK<span>CSS</span></a><nav aria-label="Ana menü"><ul class="ck-cluster ckcss-nav-links" role="list"><li><a href="/docs.html">Dokümanlar</a></li><li><a href="/components.html">Bileşenler</a></li><li><a href="/patterns.html">Pattern’ler</a></li><li><a href="/tokens.html">Tokenlar</a></li><li><a href="/ai.html" aria-current="page">AI ile kullan</a></li><li><a href="/download.html">İndir</a></li></ul></nav></div></header>
+    <main id="main-content">
+      <section class="ckcss-doc-intro"><div class="ck-container ck-stack ck-stack--relaxed"><p class="ckcss-eyebrow">AI-READY UI CONTRACT</p><h1>Ajanın tahmin etmesine gerek kalmasın.</h1><p>CKCSS, ajanların güvenilir HTML üretmesi için class API’sini, semantic kuralları, state’leri ve tema sınırlarını tek bir sözleşmede yayınlar. Amaç daha çok CSS değil; daha doğru, taşınabilir ve erişilebilir UI’dır.</p><div class="ck-cluster"><a class="ckcss-button ckcss-button--primary" href="/llms.txt">llms.txt dosyasını aç</a><a class="ckcss-button" href="/ckcss-manifest.json">Makine-okunur manifest</a></div></div></section>
+
+      <section class="ckcss-playground"><div class="ck-container ck-stack ck-stack--relaxed"><div class="ckcss-playground-heading"><div class="ck-stack"><p class="ckcss-eyebrow">01 · PROVIDE CONTEXT</p><h2>Ajana bu üç kaynağı verin.</h2></div><p>Bir coding agent’a linkleri doğrudan verin veya proje deposuna CKCSS skill dosyasını ekleyin. Doküman ve manifest aynı public API’den beslenir.</p></div><div class="ck-grid ck-grid--3"><a class="ckcss-agent-card" href="/llms.txt"><span class="ckcss-layer-label">SHORT MAP</span><h3>llms.txt</h3><p>Hızlı başlangıç, linkler ve değişmez kurallar.</p></a><a class="ckcss-agent-card" href="/llms-full.txt"><span class="ckcss-layer-label">FULL GUIDE</span><h3>llms-full.txt</h3><p>Kurulum, layout, component, form ve tema tarifleri.</p></a><a class="ckcss-agent-card" href="/ckcss-manifest.json"><span class="ckcss-layer-label">STRUCTURED API</span><h3>Manifest</h3><p>Class, state, erişilebilirlik ve token sözleşmesi.</p></a></div></div></section>
+
+      <section class="ckcss-playground ckcss-section--ink" data-ck-theme="dark"><div class="ck-container ck-stack ck-stack--relaxed"><div class="ckcss-playground-heading"><div class="ck-stack"><p class="ckcss-eyebrow">02 · PROMPT STARTER</p><h2>Bu isteği ajana doğrudan verin.</h2></div><p>Ajanın görsel taklit yerine CKCSS’in doğrulanmış yüzeylerini kullanmasını sağlayan kısa bir başlangıç istemi.</p></div><pre class="ckcss-code-block"><code>Build this interface with CKCSS.
+Read https://ckcss.digitaltamam.com/llms-full.txt and
+https://ckcss.digitaltamam.com/ckcss-manifest.json first.
+
+Use only documented ck- classes and --ck- semantic tokens.
+Use semantic HTML, visible labels, native ARIA states, and responsive layout primitives.
+Do not invent CKCSS classes, add inline styles, or require JavaScript unless the interaction explicitly needs it.
+For theming, override semantic tokens after the CKCSS stylesheet.</code></pre></div></section>
+
+      <section class="ckcss-playground"><div class="ck-container ck-stack ck-stack--relaxed"><div class="ckcss-playground-heading"><div class="ck-stack"><p class="ckcss-eyebrow">03 · CONSTRAIN THE OUTPUT</p><h2>Doğru sınırlar daha iyi UI üretir.</h2></div><p>CKCSS ajana sınırsız bir class matrisi değil, anlaşılır bir tasarım dili verir.</p></div><dl class="ckcss-api-strip"><div><dt>Semantic</dt><dd>İşlem için <code>button</code>, yönlendirme için <code>a</code>; her form alanında <code>label</code>.</dd></div><div><dt>State</dt><dd><code>disabled</code>, <code>aria-*</code> ve belgelenmiş <code>data-ck-state</code> değerleri.</dd></div><div><dt>Layout</dt><dd><code>ck-container</code>, <code>ck-stack</code>, <code>ck-grid</code> ve <code>ck-sidebar</code> önce gelir.</dd></div><div><dt>Theme</dt><dd>Component CSS’ini değiştirmek yerine semantic <code>--ck-</code> tokenlarını override edin.</dd></div></dl></div></section>
+
+      <section class="ckcss-cta-panel"><div class="ck-container ck-cluster"><div class="ck-stack"><p class="ckcss-eyebrow">HUMAN + AGENT WORKFLOW</p><h2>Önce sözleşme, sonra ekran.</h2><p>Canlı component örneklerini inceleyin, ajana manifest ve rehberi verin, ardından üretilen HTML’i aynı kaynak görünümünde doğrulayın.</p></div><div class="ck-cluster"><a class="ckcss-button ckcss-button--primary" href="/components.html">Bileşenleri doğrula</a><a class="ckcss-button" href="/themes.html">Tema rehberini aç</a></div></div></section>
+    </main>
+    <footer class="ckcss-footer"><div class="ck-container ck-cluster ckcss-footer-inner"><p>CKCSS · Sade, modern ve taşınabilir.</p><div class="ck-cluster"><a href="/download.html">İndir</a><a href="/docs.html">Dokümanlar</a><a href="#main-content">Başa dön ↑</a></div></div></footer>
+  </body>
+</html>

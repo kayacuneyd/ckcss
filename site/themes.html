@@ -1,1 +1,39 @@
-<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="CKCSS light ve dark theme token örnekleri."><link rel="canonical" href="https://ckcss.digitaltamam.com/themes.html"><title>CKCSS Tema Örnekleri</title><link rel="stylesheet" href="/assets/ckcss.min.css"><link rel="stylesheet" href="/assets/site.css"></head><body><a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a><main id="main-content"><section class="ckcss-doc-intro"><div class="ck-container ck-stack ck-stack--relaxed"><p class="ckcss-eyebrow">THEME TOKENS</p><h1>Aynı component, farklı atmosfer.</h1><p>Temalar component sınıflarını değiştirmeden semantic token’ları değiştirir.</p><div class="ck-grid ck-grid--2"><article class="ckcss-theme-swatch ck-stack"><p class="ckcss-eyebrow">LIGHT</p><h2>Açık yüzey</h2><p class="ck-text-muted">Gündüz ve dokümantasyon için.</p><button class="ck-button">Primary action</button></article><article class="ckcss-theme-swatch ck-stack" data-ck-theme="dark"><p class="ckcss-eyebrow">DARK</p><h2>Koyu yüzey</h2><p class="ck-text-muted">Dashboard ve ürün akışları için.</p><button class="ck-button">Primary action</button></article></div><pre class="ckcss-code-block"><code>&lt;section data-ck-theme="dark"&gt; ... &lt;/section&gt;</code></pre></div></section></main></body></html>
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CKCSS light ve dark tema tokenları, canlı önizleme ve kopyalanabilir CSS kaynakları.">
+    <link rel="canonical" href="https://ckcss.digitaltamam.com/themes.html">
+    <title>CKCSS Temalar — Tokenlarla özelleştirin</title>
+    <link rel="stylesheet" href="/assets/ckcss.min.css">
+    <link rel="stylesheet" href="/assets/site.css">
+  </head>
+  <body>
+    <a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+    <header class="ckcss-header"><div class="ck-container ck-cluster ckcss-nav"><a class="ckcss-brand" href="/" aria-label="CKCSS ana sayfa">CK<span>CSS</span></a><nav aria-label="Ana menü"><ul class="ck-cluster ckcss-nav-links" role="list"><li><a href="/docs.html">Dokümanlar</a></li><li><a href="/components.html">Bileşenler</a></li><li><a href="/patterns.html">Pattern’ler</a></li><li><a href="/tokens.html">Tokenlar</a></li><li><a href="/ai.html">AI ile kullan</a></li><li><a href="/download.html">İndir</a></li></ul></nav></div></header>
+    <main id="main-content">
+      <section class="ckcss-doc-intro"><div class="ck-container ck-stack ck-stack--relaxed"><p class="ckcss-eyebrow">THEME TOKENS</p><h1>Aynı component, farklı atmosfer.</h1><p>CKCSS teması, component class’larını değiştirmez. Kendi token katmanınızı framework bağlantısından sonra ekleyin ve aynı HTML’i koruyun.</p><dl class="ckcss-api-strip"><div><dt>Core</dt><dd>Componentler yalnızca semantic <code>--ck-color-*</code> tokenlarını tüketir.</dd></div><div><dt>Theme</dt><dd>Yüzey, metin, primary ve focus değerlerini değiştirir.</dd></div><div><dt>Fallback</dt><dd><code>data-ck-theme</code> olmadan sistem tercihi kullanılır.</dd></div></dl></div></section>
+
+      <section class="ckcss-playground"><div class="ck-container ck-stack ck-stack--relaxed"><div class="ckcss-playground-heading"><div class="ck-stack"><p class="ckcss-eyebrow">01 · LIGHT</p><h2>Açık çalışma alanı</h2></div><p>Dokümantasyon, içerik ve gündüz odaklı ürün yüzeyleri için varsayılan semantic token eşlemesi.</p></div><article class="ckcss-example"><div class="ckcss-example-preview"><div class="ckcss-theme-demo"><p class="ckcss-example-label">DEFAULT TOKENS</p><h3>Tokenlar componentten önce gelir.</h3><p>Renk kararını her butona veya karta yeniden yazmadan bütün arayüzü tutarlı tutun.</p><div class="ck-cluster"><button class="ck-button" type="button">Çalışmayı kaydet</button><button class="ck-button ck-button--secondary" type="button">Taslağa dön</button></div></div></div><div class="ckcss-example-code"><pre class="ckcss-code-block"><code>:root {
+  --ck-color-surface: #f7f3ea;
+  --ck-color-text: #18263b;
+  --ck-color-primary: #225a9b;
+  --ck-color-primary-hover: #18477d;
+  --ck-color-focus: #159a9c;
+}</code></pre><p class="ckcss-code-note">Bu override’ı CKCSS bağlantısından sonra kendi stylesheet’inize koyun.</p></div></article></div></section>
+
+      <section class="ckcss-playground ckcss-section--ink" data-ck-theme="dark"><div class="ck-container ck-stack ck-stack--relaxed"><div class="ckcss-playground-heading"><div class="ck-stack"><p class="ckcss-eyebrow">02 · DARK</p><h2>Koyu ürün yüzeyi</h2></div><p>Dark mode, aynı class API’sini korur; semantic tokenlar koyu yüzey ve yeterli kontrast için yeniden eşlenir.</p></div><article class="ckcss-example"><div class="ckcss-example-preview"><div class="ckcss-theme-demo" data-ck-theme="dark"><p class="ckcss-example-label">DATA ATTRIBUTE</p><h3>Scope edilmiş koyu tema</h3><p>Yalnızca bu alanın ve içindeki componentlerin tema değerlerini değiştirin.</p><div class="ck-cluster"><button class="ck-button" type="button">Yeni proje</button><button class="ck-button ck-button--secondary" type="button">Ayarlar</button></div></div></div><div class="ckcss-example-code"><pre class="ckcss-code-block"><code>&lt;section data-ck-theme="dark"&gt;
+  &lt;article class="ck-card"&gt;
+    &lt;div class="ck-card__body"&gt;...&lt;/div&gt;
+  &lt;/article&gt;
+&lt;/section&gt;</code></pre><p class="ckcss-code-note">Frameworkün yerleşik dark token setini kullanır; ek JavaScript gerekmez.</p></div></article></div></section>
+
+      <section class="ckcss-install"><div class="ck-container ck-sidebar"><div class="ck-stack"><p class="ckcss-eyebrow">THEME STARTER</p><h2>Kendi temanızı tokenlarla başlatın.</h2><p>Ajanlar ve ekip üyeleri aynı kısa sözleşmeyi kullansın: semantic token override edin; component class’larını veya framework kaynak CSS’ini değiştirmeyin.</p><div class="ck-cluster"><a class="ckcss-button ckcss-button--primary" href="/ai.html">AI tema rehberini aç</a><a class="ckcss-button" href="/tokens.html">Tüm tokenları gör</a></div></div><pre class="ckcss-code-block"><code>&lt;link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/kayacuneyd/ckcss@v0.1.0-beta.1/dist/ckcss.min.css"&gt;
+&lt;link rel="stylesheet" href="/assets/my-theme.css"&gt;</code></pre></div></section>
+    </main>
+    <footer class="ckcss-footer"><div class="ck-container ck-cluster ckcss-footer-inner"><p>CKCSS · Sade, modern ve taşınabilir.</p><div class="ck-cluster"><a href="/ai.html">AI ile kullan</a><a href="/download.html">İndir</a><a href="#main-content">Başa dön ↑</a></div></div></footer>
+    <script type="module" src="/assets/enhance/source.js"></script>
+  </body>
+</html>
