@@ -12,6 +12,10 @@ __pycache__/
 .venv/
 .DS_Store
 
+# Reference-only screenshots (visual inspiration for docs/research/ui-kit-patterns-gap-analysis.md);
+# the manifest and scraper stay tracked so the set is reproducible without the 57MB of images.
+/componens-img/*.png
+
 # Internal development workflow; never part of the public CKCSS repository.
 /.kaya-eos/
 /docs/swarm/
