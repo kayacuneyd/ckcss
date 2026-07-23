@@ -8,4 +8,4 @@
 | Complete | Essential components | Buttons, forms, cards, alerts, tables | High | Large | 2026-07-21 |
 | Complete | Static docs and examples | Copyable component usage and interactive static demo | Medium | Medium | 2026-07-21 |
 | In progress | Browser/accessibility beta release gate | CI contracts, size budget and open-source Playwright engine matrix | Medium | Medium | 2026-07-21 |
-| In progress | UI Kit patterns | All 41 pattern families built across 8 waves (spec: `docs/product/features/005-ui-kit-patterns.md`); final wave pending PR review/merge | High | Large | 2026-07-30 |
+| Complete | UI Kit patterns | All 41 pattern families built and merged across 8 waves (spec: `docs/product/features/005-ui-kit-patterns.md`) | High | Large | 2026-07-23 |
