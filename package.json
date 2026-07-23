@@ -1,7 +1,7 @@
 {
   "name": "ckcss",
   "private": true,
-  "version": "0.1.0-beta.1",
+  "version": "0.1.0-beta.2",
   "description": "Release-only verification tools for CKCSS; consumers use static CSS only.",
   "license": "MIT",
   "scripts": {

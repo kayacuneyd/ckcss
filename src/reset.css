@@ -57,6 +57,17 @@
     resize: vertical;
   }
 
+  fieldset {
+    border: 0;
+    margin: 0;
+    min-inline-size: 0;
+    padding: 0;
+  }
+
+  legend {
+    padding: 0;
+  }
+
   [hidden] {
     display: none;
   }

@@ -46,6 +46,18 @@
     margin-block: 0;
   }
 
+  :where(hr) {
+    border: 0;
+    border-block-start: var(--ck-border-width-thin) solid var(--ck-color-border);
+    margin-block: var(--ck-space-5);
+  }
+
+  :where(legend) {
+    color: var(--ck-color-text);
+    font-weight: var(--ck-font-weight-bold);
+    margin-block-end: var(--ck-space-2);
+  }
+
   :where(a) {
     color: var(--ck-color-primary);
     text-decoration-thickness: 0.08em;

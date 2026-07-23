@@ -7,6 +7,41 @@ semantic versioning where releases are applicable.
 
 ## [Unreleased]
 
+## [0.1.0-beta.2] - 2026-07-23
+
+### Added
+
+- `.ck-button--success`, `.ck-button--warning`, `.ck-button--info` color variants, and
+  `.ck-button--sm`/`--lg`, `.ck-input--sm`/`--lg`, `.ck-select--sm`/`--lg` size variants,
+  backed by new `--ck-control-height-sm|md|lg` tokens.
+- `.ck-container--fluid` for an edge-to-edge container.
+- `.ck-d-sm-block`/`--flex`/`--grid`/`--inline-flex` explicit responsive display
+  utilities, safe to pair with `.ck-hide-mobile`/`.ck-only-*` on elements that also
+  carry a flex/grid layout primitive class.
+- `fieldset`/`legend`/`hr` are now normalized and token-styled in the reset and base
+  layers.
+- `--ck-font-weight-normal|medium|bold` tokens and an expanded `--ck-z-*` scale
+  (`--ck-z-dropdown`, `--ck-z-toast`).
+
+### Fixed
+
+- Dark-theme tokens no longer duplicate every value across `[data-ck-theme="dark"]`
+  and the `prefers-color-scheme` media block; both now resolve from one `light-dark()`
+  declaration per token (ADR 0017), removing two literal hex colors that had drifted
+  outside the documented palette scale.
+- The switch component's focus-visible outline no longer uses a translucent glow
+  token as a solid outline color (was low-contrast); it now uses the same opaque
+  `--ck-color-focus` token as every other interactive element.
+- `.ck-skip-link` now references `--ck-z-sticky` instead of a hardcoded `z-index: 10`.
+
+### Changed
+
+- Breakpoint values are now centralized in `scripts/breakpoints.sh` and expanded at
+  build time instead of being repeated as raw literals in `layout.css`/`utilities.css`
+  (ADR 0018); `dist/` output is unchanged.
+- The core size budget is raised from 24 KB to 26 KB to accommodate the fixes and
+  additions above (ADR 0019).
+
 ## [0.1.0-beta.1] - 2026-07-21
 
 ### Added

@@ -20,7 +20,7 @@
     position: absolute;
     transform: translateY(-200%);
     transition: transform var(--ck-duration-fast) var(--ck-ease-standard);
-    z-index: 10;
+    z-index: var(--ck-z-sticky);
   }
 
   .ck-skip-link:focus-visible { transform: translateY(0); }
@@ -40,19 +40,31 @@
   .ck-overflow-auto { overflow: auto; }
   .ck-truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
-  /* Explicit responsive helpers; component layout remains the preferred API. */
+  /* Explicit responsive helpers; component layout remains the preferred API.
+     ck-hide-*/ck-only-* restore via `revert`, which rolls back to the user-agent
+     default (e.g. block for a div) rather than any other author rule on the same
+     element. Pair with the .ck-d-{bp}-* utilities below instead of bare revert
+     when the element also carries a flex/grid layout primitive class. */
   .ck-hide-mobile { display: none; }
   .ck-only-mobile { display: revert; }
   .ck-only-wide { display: none; }
 
-  @media (min-width: 40rem) {
+  @media (min-width: $ck-bp-sm) {
     .ck-hide-mobile { display: revert; }
     .ck-only-mobile { display: none; }
   }
 
-  @media (min-width: 64rem) {
+  @media (min-width: $ck-bp-lg) {
     .ck-hide-desktop { display: none; }
     .ck-only-wide { display: revert; }
+  }
+
+  /* Explicit responsive display restores, safe to combine with .ck-cluster/.ck-grid/etc. */
+  @media (min-width: $ck-bp-sm) {
+    .ck-d-sm-block { display: block; }
+    .ck-d-sm-flex { display: flex; }
+    .ck-d-sm-grid { display: grid; }
+    .ck-d-sm-inline-flex { display: inline-flex; }
   }
 
   /* Progressive container-query primitives with viewport-safe fallbacks. */
@@ -64,11 +76,11 @@
   }
 
   @supports (container-type: inline-size) {
-    @container ck-layout (min-width: 40rem) {
+    @container ck-layout (min-width: $ck-bp-sm) {
       .ck-query-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
 
-    @container ck-layout (min-width: 64rem) {
+    @container ck-layout (min-width: $ck-bp-lg) {
       .ck-query-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     }
   }
