@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS çekmece (drawer) pattern'i: kenardan açılan panel, ck-drawer kompozisyonuyla.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/application/crud-drawer.html">
+<title>Çekmece (drawer) pattern'i · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · APPLICATION · CRUD DRAWER</p>
+<h1>Kenardan açılan panel.</h1>
+<p class="ck-text-lead ck-max-readable">Yeni bir bileşen yerine, tek bir konumlandırma sınıfı: <code>.ck-drawer</code>. Hem native <code>&lt;dialog&gt;</code> hem de <code>[popover]</code> ile birleşir — hangisini seçtiğiniz, panelin tam modal (odak tuzaklı) mı yoksa hafif/kolay-kapanan mı olacağını belirler. Karar ve <code>dist/ckcss.min.css</code> bütçe ölçümü <a href="https://github.com/kayacuneyd/ckcss/blob/main/docs/decisions/0020-drawer-composition-over-new-component.md">ADR 0020</a>'de.</p>
+
+<button class="ck-button" type="button" data-ck-dialog-open="crud-create-drawer">Yeni proje ekle</button>
+
+<dialog class="ck-dialog ck-drawer" id="crud-create-drawer" aria-labelledby="crud-drawer-h" open>
+<form method="dialog" class="ck-stack" style="block-size:100%;">
+<div class="ck-dialog__header"><h2 id="crud-drawer-h">Yeni proje</h2></div>
+<div class="ck-dialog__body ck-stack" style="flex:1;">
+<div class="ck-field"><label class="ck-field__label" for="drawer-name">Proje adı</label><input class="ck-input" id="drawer-name" name="name" type="text" required></div>
+<div class="ck-field"><label class="ck-field__label" for="drawer-owner">Sahip</label><select class="ck-select" id="drawer-owner"><option>Ada Yılmaz</option><option>Emre Kaya</option></select></div>
+</div>
+<div class="ck-dialog__footer"><button class="ck-button ck-button--secondary" type="submit" value="cancel">Vazgeç</button><button class="ck-button" type="submit" value="save">Oluştur</button></div>
+</form>
+</dialog>
+<p class="ck-text-small ck-text-muted">Bu önizleme <code>&lt;dialog class="ck-dialog ck-drawer" open&gt;</code> ile <strong>tam modal</strong> bir çekmece gösterir — odak içeride tutulur, arkaplan etkileşimsizdir. <code>examples/components.html</code>'deki gibi kasıtlı olarak açık gösteriliyor.</p>
+
+<section aria-labelledby="drawer-alt-h" class="ck-card">
+<div class="ck-card__body ck-stack">
+<h2 id="drawer-alt-h">Alternatif: hafif/kolay-kapanan çekmece</h2>
+<p class="ck-text-muted">Kullanıcının sayfanın geri kalanıyla etkileşime devam edebildiği filtre veya hızlı-bakış panelleri için, aynı <code>.ck-drawer</code> sınıfını <code>&lt;dialog&gt;</code> yerine native <code>[popover]</code> ile birleştirin:</p>
+<pre class="ckcss-code-block"><code>&lt;button popovertarget="filter-drawer"&gt;Filtreler&lt;/button&gt;
+&lt;div popover id="filter-drawer" class="ck-drawer"&gt;
+  &lt;!-- filtre formu --&gt;
+&lt;/div&gt;</code></pre>
+<p class="ck-text-muted">Bu sürüm; Escape veya dışarı tıklamayla kendiliğinden kapanır (native <code>popover</code> davranışı), ama <code>&lt;dialog&gt;</code>'un aksine odağı zorla içeride tutmaz — bu yüzden sayfayı bloklamaması gereken paneller için tercih edilir (örn. facetli arama filtreleri, hızlı sepet önizlemesi).</p>
+</div>
+</section>
+
+<p class="ck-text-muted">Aynı kompozisyon, <a href="/patterns/ecommerce/shopping-cart.html">tam sayfa sepet</a>'in off-canvas/mini-sepet varyantı için de kullanılır: <code>&lt;div popover class="ck-drawer"&gt;</code> içine sepet özetini koyup tetikleyici butona <code>popovertarget</code> eklemek yeterlidir — ayrı bir sayfa veya bileşen gerekmez.</p>
+
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>ck-drawer</code> (yeni, sadece konumlandırma — renk/gölge/yazı tipi tokenı taşımaz, bunlar <code>ck-dialog</code>/<code>[popover]</code>'dan miras alınır). Duyarlı davranış: <code>max-inline-size: min(24rem, 100vw)</code> dar ekranlarda paneli tam genişliğe yaklaştırır.</p>
+</div></section>
+</main>
+</body>
+</html>
