@@ -42,6 +42,14 @@ not a runtime or a second component API.
   table-of-contents/tip sidebar (see `docs/product/patterns/catalog/content.md`).
 - `patterns/marketing/trust-signal.html`: customer-logo strip, testimonial grid,
   and stat badges (see `docs/product/patterns/catalog/trust-signal.md`).
+- `patterns/auth/register.html`: account-creation form sharing `auth.html`'s
+  two-pane layout (see `docs/product/patterns/catalog/register.md`).
+- `patterns/auth/reset-password.html`: password-reset request form and its
+  post-submit confirmation state (see `docs/product/patterns/catalog/reset-password.md`).
+- `patterns/auth/account-recovery.html`: alternative recovery-method chooser for
+  when email access is lost (see `docs/product/patterns/catalog/account-recovery.md`).
+- `patterns/auth/user-onboarding.html`: post-signup setup stepper and checklist
+  (see `docs/product/patterns/catalog/user-onboarding.md`).
 
 The pattern catalog will grow after each pattern has a real semantic contract,
 copyable source, and static contract coverage.
