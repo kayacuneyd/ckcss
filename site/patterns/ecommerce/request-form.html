@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS talep formu pattern'i: iade, garanti, servis ve destek talepleri için ortak yapı.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/ecommerce/request-form.html">
+<title>Talep formu pattern'i · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · E-COMMERCE · REQUEST FORM</p>
+<h1>Bir talebi yapılandırılmış şekilde toplayın.</h1>
+<p class="ck-text-lead ck-max-readable">Sipariş numarası + talep türü + açıklama — Flowbite'ın <code>refund-forms</code>, <code>service-repair-forms</code>, <code>warranties</code>, ve <code>customer-service</code> kategorileri yapısal olarak aynı formu paylaşır, sadece "talep türü" seçenekleri değişir.</p>
+
+<form class="ck-stack ck-stack--relaxed" action="/requests" method="post">
+<div class="ck-field"><label class="ck-field__label" for="req-order">Sipariş numarası</label><input class="ck-input" id="req-order" name="order-number" type="text" placeholder="INV-1042" required></div>
+
+<fieldset class="ck-stack">
+<legend class="ck-field__label">Talep türü</legend>
+<div class="ck-choice"><input class="ck-choice__control" type="radio" name="request-type" id="req-type-refund" value="refund" checked><label class="ck-choice__label" for="req-type-refund">İade</label></div>
+<div class="ck-choice"><input class="ck-choice__control" type="radio" name="request-type" id="req-type-warranty" value="warranty"><label class="ck-choice__label" for="req-type-warranty">Garanti talebi</label></div>
+<div class="ck-choice"><input class="ck-choice__control" type="radio" name="request-type" id="req-type-repair" value="repair"><label class="ck-choice__label" for="req-type-repair">Servis/onarım</label></div>
+<div class="ck-choice"><input class="ck-choice__control" type="radio" name="request-type" id="req-type-other" value="other"><label class="ck-choice__label" for="req-type-other">Diğer destek talebi</label></div>
+</fieldset>
+
+<div class="ck-field"><label class="ck-field__label" for="req-details">Açıklama</label><textarea class="ck-textarea" id="req-details" name="details" required></textarea><p class="ck-field__help">Sorunu ve beklediğiniz çözümü kısaca açıklayın.</p></div>
+
+<button class="ck-button" type="submit">Talebi gönder</button>
+</form>
+
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>ck-choice</code>, <code>ck-textarea</code>, <code>ck-field__help</code>. Talep türü tek bir <code>&lt;fieldset&gt;</code>/<code>&lt;legend&gt;</code> radio grubu — <code>account-recovery.html</code>'deki (wave 3) kurtarma yöntemi seçici ile aynı desen.</p>
+</div></section>
+</main>
+</body>
+</html>
