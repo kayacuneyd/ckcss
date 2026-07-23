@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS SSS pattern'i: native details ile açılıp kapanan soru-cevap listesi.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/marketing/faq.html">
+<title>SSS pattern'i · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · MARKETING · FAQ</p>
+<h1>Sık sorulan soruları yanıtlayın.</h1>
+<p class="ck-text-lead ck-max-readable">Tam sayfa SSS listesi — <a href="/marketing-patterns.html#faq">marketing-patterns.html</a>'deki kısa 2-soruluk demonun daha kapsamlı hali.</p>
+
+<div class="ck-stack">
+<details class="ck-disclosure"><summary>CKCSS bir build adımı gerektiriyor mu?</summary><p class="ck-disclosure__body">Hayır. Tek bir CSS dosyasını <code>&lt;link&gt;</code> ile bağlarsınız; npm, bundler veya derleme adımı gerekmez.</p></details>
+<details class="ck-disclosure"><summary>JavaScript gerekiyor mu?</summary><p class="ck-disclosure__body">Temel bileşenler ve pattern'ler için hayır. Bazı isteğe bağlı davranışlar (mobil menü, dialog açma, tablo filtreleme) için küçük, bağımsız "Enhance" modülleri mevcuttur; sayfa bunlar olmadan da tam kullanılabilir kalır.</p></details>
+<details class="ck-disclosure"><summary>Token'ları özelleştirebilir miyim?</summary><p class="ck-disclosure__body">Evet. Tüm renk, boşluk ve tipografi değerleri <code>--ck-*</code> özel özellikleridir; kendi CSS dosyanızda bunları override ederek markanıza uyarlayabilirsiniz.</p></details>
+<details class="ck-disclosure"><summary>Karanlık mod otomatik mi çalışır?</summary><p class="ck-disclosure__body">Evet. <code>light-dark()</code> fonksiyonu sistem tercihine göre otomatik geçiş yapar; isterseniz <code>data-ck-theme</code> özniteliğiyle açık/koyu temayı zorlayabilirsiniz.</p></details>
+</div>
+
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>ck-disclosure</code>. Native <code>&lt;details&gt;</code>/<code>&lt;summary&gt;</code> kullanılır — her soru bağımsız olarak açılıp kapanır, JavaScript gerekmez.</p>
+</div></section>
+</main>
+</body>
+</html>

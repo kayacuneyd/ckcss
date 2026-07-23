@@ -90,6 +90,28 @@ not a runtime or a second component API.
   `docs/product/patterns/catalog/account-overview.md`).
 - `patterns/ecommerce/discount-promo.html`: campaign banner and coupon-code
   form (see `docs/product/patterns/catalog/discount-promo.md`).
+- `patterns/marketing/team.html`: team-member card grid (see
+  `docs/product/patterns/catalog/team.md`).
+- `patterns/marketing/banner.html`: top-of-page announcement strip (see
+  `docs/product/patterns/catalog/banner.md`).
+- `patterns/marketing/blog.html`: post grid and related-articles list (see
+  `docs/product/patterns/catalog/blog.md`).
+- `patterns/marketing/faq.html`: full-page FAQ list (see
+  `docs/product/patterns/catalog/faq.md`).
+- `patterns/marketing/newsletter.html`: signup with value-proposition list
+  (see `docs/product/patterns/catalog/newsletter.md`).
+- `patterns/marketing/popup.html`: native-dialog marketing popup (see
+  `docs/product/patterns/catalog/popup.md`).
+- `patterns/marketing/portfolio.html`: filterable project/case-study grid
+  (see `docs/product/patterns/catalog/portfolio.md`).
+- `patterns/marketing/event-schedule.html`: conference/event agenda (see
+  `docs/product/patterns/catalog/event-schedule.md`).
+- `patterns/marketing/cookie.html`: cookie-consent bar with a real
+  accept/reject choice (see `docs/product/patterns/catalog/cookie.md`).
+- `patterns/ecommerce/reviews.html`: rating summary and review list (see
+  `docs/product/patterns/catalog/reviews.md`).
+- `patterns/publisher/comments.html`: threaded discussion list and comment
+  form (see `docs/product/patterns/catalog/comments.md`).
 
 The pattern catalog will grow after each pattern has a real semantic contract,
 copyable source, and static contract coverage.

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS popup pattern'i: native dialog ile karşılama/promosyon popup'ı.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/marketing/popup.html">
+<title>Popup pattern'i · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · MARKETING · POPUP</p>
+<h1>Karşılama/promosyon popup'ı.</h1>
+<p class="ck-text-lead ck-max-readable">Native <code>&lt;dialog&gt;</code> tabanlı — <a href="/patterns/application/crud-modal.html">crud-modal.html</a> ile aynı teknik, farklı içerik: bir uygulama işlemi yerine bir pazarlama mesajı.</p>
+
+<button class="ck-button" type="button" data-ck-dialog-open="welcome-popup">Popup önizlemesini göster</button>
+
+<dialog class="ck-dialog" id="welcome-popup" aria-labelledby="popup-h" open>
+<form method="dialog">
+<div class="ck-dialog__body ck-stack ck-text-center">
+<span class="ck-badge ck-badge--success">İlk siparişe özel</span>
+<h2 id="popup-h">Bültene katılın, %10 indirim kazanın.</h2>
+<p class="ck-text-muted">E-posta adresinizi bırakın, kupon kodunuz anında gelsin.</p>
+<div class="ck-field"><label class="ck-visually-hidden" for="popup-email">E-posta adresi</label><input class="ck-input" id="popup-email" name="email" type="email" autocomplete="email" required></div>
+</div>
+<div class="ck-dialog__footer" style="justify-content:center;">
+<button class="ck-button ck-button--secondary" type="submit" value="dismiss">Şimdi değil</button>
+<button class="ck-button" type="submit" value="subscribe">Kodu al</button>
+</div>
+</form>
+</dialog>
+
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>ck-dialog</code>, <code>ck-badge--success</code>. Kalıcı yeniden gösterim/gecikme mantığı (örn. "bir kere göster, 7 gün tekrar gösterme") sunucu/JS tarafı bir karardır ve CKCSS'in kapsamı dışındadır — bu pattern sadece popup'ın görsel/semantik yapısını belgeler.</p>
+</div></section>
+</main>
+</body>
+</html>
