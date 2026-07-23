@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS kayıt (register) pattern'i: erişilebilir hesap oluşturma formu.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/auth/register.html">
+<title>Kayıt ol · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<div class="ck-sidebar ckcss-auth">
+<aside class="ckcss-auth-aside">
+<a class="ckcss-brand" href="/" aria-label="CKCSS ana sayfa">CK<span>CSS</span></a>
+<div class="ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">GET STARTED</p>
+<h1>Ekibiniz için hesap açın.</h1>
+<p>Kayıt ekranı; <a href="/auth.html">giriş sayfasıyla</a> aynı iki bölmeli düzeni ve token setini paylaşır.</p>
+</div>
+<p class="ck-text-small">CKCSS UI Kit · 15</p>
+</aside>
+<section class="ckcss-auth-form ck-stack ck-stack--relaxed">
+<div class="ck-stack">
+<p class="ckcss-eyebrow">YENİ HESAP OLUŞTURUN</p>
+<h2>Hemen başlayın.</h2>
+<p class="ck-text-muted">Zaten hesabınız var mı? <a href="/auth.html">Giriş yapın</a></p>
+</div>
+<form class="ck-stack" action="/register" method="post">
+<div class="ck-field">
+<label class="ck-field__label" for="register-name">Ad Soyad</label>
+<input class="ck-input" id="register-name" name="name" type="text" autocomplete="name" required>
+</div>
+<div class="ck-field">
+<label class="ck-field__label" for="register-email">E-posta</label>
+<input class="ck-input" id="register-email" name="email" type="email" autocomplete="email" required>
+</div>
+<div class="ck-field">
+<label class="ck-field__label" for="register-password">Şifre</label>
+<input class="ck-input" id="register-password" name="password" type="password" autocomplete="new-password" minlength="8" required>
+<p class="ck-field__help">En az 8 karakter.</p>
+</div>
+<label class="ck-cluster ck-text-small">
+<input type="checkbox" name="terms" required>
+<span>Kullanım koşullarını ve gizlilik politikasını kabul ediyorum.</span>
+</label>
+<button class="ck-button" type="submit">Hesap oluştur</button>
+</form>
+</section>
+</div>
+</main>
+</body>
+</html>

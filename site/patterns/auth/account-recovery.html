@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS hesap kurtarma pattern'i: e-posta veya destek yoluyla erişimi geri kazanma seçenekleri.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/auth/account-recovery.html">
+<title>Hesabınızı kurtarın · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<div class="ck-sidebar ckcss-auth">
+<aside class="ckcss-auth-aside">
+<a class="ckcss-brand" href="/" aria-label="CKCSS ana sayfa">CK<span>CSS</span></a>
+<div class="ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">ACCOUNT RECOVERY</p>
+<h1>Normal yönteminize erişemiyor musunuz?</h1>
+<p>Şifre sıfırlamadan farklı olarak bu sayfa, e-postanıza da erişemediğinizde alternatif kurtarma yollarını sunar.</p>
+</div>
+<p class="ck-text-small">CKCSS UI Kit · 17</p>
+</aside>
+<section class="ckcss-auth-form ck-stack ck-stack--relaxed">
+<div class="ck-stack">
+<p class="ckcss-eyebrow">BİR KURTARMA YÖNTEMİ SEÇİN</p>
+<h2>Erişiminizi geri kazanın.</h2>
+<p class="ck-text-muted"><a href="/patterns/auth/reset-password.html">E-postanıza erişiminiz var mı? Şifrenizi sıfırlayın</a></p>
+</div>
+<fieldset class="ck-stack">
+<legend class="ck-field__label">Kurtarma yöntemi seçin</legend>
+<div class="ck-choice">
+<input class="ck-choice__control" type="radio" name="recovery-method" id="recovery-backup-email" value="backup-email" checked>
+<label class="ck-choice__label" for="recovery-backup-email">Yedek e-postama bir kod gönder</label>
+<p class="ck-choice__help">Hesap ayarlarında tanımlıysa kullanılabilir.</p>
+</div>
+<div class="ck-choice">
+<input class="ck-choice__control" type="radio" name="recovery-method" id="recovery-sms" value="sms">
+<label class="ck-choice__label" for="recovery-sms">Kayıtlı telefon numarama bir kod gönder</label>
+</div>
+<div class="ck-choice">
+<input class="ck-choice__control" type="radio" name="recovery-method" id="recovery-support" value="support">
+<label class="ck-choice__label" for="recovery-support">Kimliğimi manuel olarak doğrulamak istiyorum</label>
+</div>
+</fieldset>
+<a class="ck-button" href="/contact.html">Devam et</a>
+</section>
+</div>
+</main>
+</body>
+</html>

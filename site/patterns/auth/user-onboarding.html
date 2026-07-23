@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS ilk kurulum (onboarding) pattern'i: hesap sonrası adım göstergesi ve kontrol listesi.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/auth/user-onboarding.html">
+<title>Hesabınızı kurun · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · AUTH · USER ONBOARDING</p>
+<h1>Hoş geldiniz, birkaç adım kaldı.</h1>
+<p class="ck-text-lead ck-max-readable">Kayıt sonrası ilk kurulum akışı; <code>ck-stepper</code> ile ilerlemeyi, kontrol listesiyle kalan görevleri gösterir.</p>
+
+<ol class="ck-stepper" aria-label="Kurulum adımları">
+<li aria-current="step">Hesap bilgileri</li>
+<li>Ekip davet et</li>
+<li>İlk projeyi oluştur</li>
+</ol>
+
+<div class="ck-card">
+<div class="ck-card__header"><h2>Profilinizi tamamlayın</h2><p class="ck-text-small ck-text-muted">2 / 3 görev tamamlandı</p></div>
+<div class="ck-card__body ck-stack">
+<div class="ck-cluster ck-cluster--spread">
+<span>Ad ve fotoğraf ekleyin</span>
+<span class="ck-badge ck-badge--success">Tamamlandı</span>
+</div>
+<div class="ck-cluster ck-cluster--spread">
+<span>E-posta adresinizi doğrulayın</span>
+<span class="ck-badge ck-badge--success">Tamamlandı</span>
+</div>
+<div class="ck-cluster ck-cluster--spread">
+<span>Ekibinize ilk üyeyi davet edin</span>
+<a class="ck-button ck-button--secondary" href="#">Davet et</a>
+</div>
+</div>
+<div class="ck-card__footer"><div class="ck-progress" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" aria-label="Kurulum ilerlemesi"><span style="--ck-progress-value:66%"></span></div></div>
+</div>
+
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>ck-stepper</code>, <code>ck-progress</code>, <code>ck-badge--success</code>. <code>aria-current="step"</code> aktif adımı ekran okuyuculara bildirir. Bu, kayıt/giriş öncesi olan <code>account-recovery</code>/<code>register</code> sayfalarından farklı olarak, kullanıcı zaten kimlik doğrulamasını geçtikten sonraki akıştır.</p>
+</div></section>
+</main>
+</body>
+</html>
