@@ -26,6 +26,8 @@ not a runtime or a second component API.
 - `marketing-patterns.html`: FAQ, testimonial, comparison, final CTA, and changelog sections.
 - `states.html`: empty, loading, error, and selected state reference.
 - `variants.html`: menu, sidebar, hero, CTA, form, newsletter, and footer variants.
+- `404.html`, `500.html`, `maintenance.html`: minimal not-found, server-error, and
+  maintenance pages (see `docs/product/patterns/catalog/error-page.md`).
 
 The pattern catalog will grow after each pattern has a real semantic contract,
 copyable source, and static contract coverage.
