@@ -26,7 +26,7 @@ grep -q -- '^\.[a-z]' "$project_dir/src/components.css" | grep -v '^\.ck-' && ex
 
 "$project_dir/scripts/build-foundation.sh"
 test -s "$project_dir/dist/ckcss.min.css"
-test "$(wc -c < "$project_dir/dist/ckcss.min.css")" -le 24576
+test "$(wc -c < "$project_dir/dist/ckcss.min.css")" -le 26624
 grep -q -- '.ck-button' "$project_dir/dist/ckcss.css"
 grep -q -- '.ck-table-wrap' "$project_dir/dist/ckcss.min.css"
 

@@ -1,4 +1,4 @@
-/*! CKCSS v0.1.0-beta.1 | data entry */
+/*! CKCSS v0.1.0-beta.2 | data entry */
 @layer ck-reset, ck-tokens, ck-base, ck-layout, ck-components, ck-utilities;
 @layer ck-reset {
   *,
@@ -59,6 +59,17 @@
     resize: vertical;
   }
 
+  fieldset {
+    border: 0;
+    margin: 0;
+    min-inline-size: 0;
+    padding: 0;
+  }
+
+  legend {
+    padding: 0;
+  }
+
   [hidden] {
     display: none;
   }
@@ -66,7 +77,7 @@
 
 @layer ck-tokens {
   :root {
-    color-scheme: light;
+    color-scheme: light dark;
 
     /* İznik-inspired source palette. Components consume semantic tokens below. */
     --ck-iznik-glaze-50: #fdfbf6;
@@ -154,29 +165,34 @@
     --ck-iznik-plum-900: #352535;
     --ck-iznik-plum-950: #241823;
 
-    --ck-color-surface: var(--ck-iznik-glaze);
-    --ck-color-surface-muted: var(--ck-iznik-glaze-muted);
-    --ck-color-surface-raised: var(--ck-iznik-glaze-raised);
-    --ck-color-text: var(--ck-iznik-ink);
-    --ck-color-text-muted: var(--ck-iznik-ink-muted);
-    --ck-color-border: #d6d0c4;
-    --ck-color-border-strong: #7b8694;
-    --ck-color-primary: var(--ck-iznik-cobalt-500);
-    --ck-color-primary-strong: var(--ck-iznik-cobalt-700);
+    /* Semantic tokens resolve both themes from one declaration via light-dark();
+       color-scheme: light dark lets the UA pick automatically, and
+       [data-ck-theme] below only ever needs to pin color-scheme, not repeat values. */
+    --ck-color-surface: light-dark(var(--ck-iznik-glaze), var(--ck-iznik-night));
+    --ck-color-surface-muted: light-dark(var(--ck-iznik-glaze-muted), #1c3247);
+    --ck-color-surface-raised: light-dark(var(--ck-iznik-glaze-raised), var(--ck-iznik-night-raised));
+    --ck-color-text: light-dark(var(--ck-iznik-ink), var(--ck-iznik-glaze));
+    --ck-color-text-muted: light-dark(var(--ck-iznik-ink-muted), #c8d3d7);
+    --ck-color-border: light-dark(#d6d0c4, #415c70);
+    --ck-color-border-strong: light-dark(#7b8694, #7c97a8);
+    --ck-color-primary: light-dark(var(--ck-iznik-cobalt-500), var(--ck-iznik-cobalt-300));
+    --ck-color-primary-strong: light-dark(var(--ck-iznik-cobalt-700), var(--ck-iznik-cobalt-200));
     --ck-color-primary-hover: var(--ck-color-primary-strong);
-    --ck-color-on-primary: var(--ck-iznik-glaze-raised);
-    --ck-color-success: var(--ck-iznik-leaf-500);
-    --ck-color-success-muted: var(--ck-iznik-leaf-100);
-    --ck-color-warning: var(--ck-iznik-ochre-500);
-    --ck-color-warning-muted: var(--ck-iznik-ochre-100);
-    --ck-color-danger: var(--ck-iznik-bole-700);
-    --ck-color-danger-strong: var(--ck-iznik-bole-900);
-    --ck-color-danger-muted: var(--ck-iznik-bole-100);
-    --ck-color-on-danger: var(--ck-iznik-glaze-raised);
-    --ck-color-info: var(--ck-iznik-turquoise-500);
-    --ck-color-info-muted: var(--ck-iznik-turquoise-100);
-    --ck-color-focus: var(--ck-iznik-turquoise-500);
-    --ck-color-selection: var(--ck-iznik-cobalt-100);
+    --ck-color-on-primary: light-dark(var(--ck-iznik-glaze-raised), var(--ck-iznik-night));
+    --ck-color-success: light-dark(var(--ck-iznik-leaf-500), var(--ck-iznik-leaf-300));
+    --ck-color-success-strong: light-dark(var(--ck-iznik-leaf-700), var(--ck-iznik-leaf-300));
+    --ck-color-success-muted: light-dark(var(--ck-iznik-leaf-100), var(--ck-iznik-leaf-900));
+    --ck-color-warning: light-dark(var(--ck-iznik-ochre-500), var(--ck-iznik-ochre-300));
+    --ck-color-warning-muted: light-dark(var(--ck-iznik-ochre-100), var(--ck-iznik-ochre-900));
+    --ck-color-danger: light-dark(var(--ck-iznik-bole-700), var(--ck-iznik-bole-300));
+    --ck-color-danger-strong: light-dark(var(--ck-iznik-bole-900), var(--ck-iznik-bole-200));
+    --ck-color-danger-muted: light-dark(var(--ck-iznik-bole-100), var(--ck-iznik-bole-900));
+    --ck-color-on-danger: light-dark(var(--ck-iznik-glaze-raised), var(--ck-iznik-night));
+    --ck-color-info: light-dark(var(--ck-iznik-turquoise-500), var(--ck-iznik-turquoise-300));
+    --ck-color-info-strong: light-dark(var(--ck-iznik-turquoise-700), var(--ck-iznik-turquoise-300));
+    --ck-color-info-muted: light-dark(var(--ck-iznik-turquoise-100), var(--ck-iznik-turquoise-900));
+    --ck-color-focus: light-dark(var(--ck-iznik-turquoise-500), var(--ck-iznik-turquoise-300));
+    --ck-color-selection: light-dark(var(--ck-iznik-cobalt-100), #205b73);
     --ck-color-primary-ring: color-mix(in srgb, var(--ck-color-primary) 18%, transparent);
     --ck-color-backdrop: color-mix(in srgb, var(--ck-iznik-ink) 38%, transparent);
 
@@ -224,6 +240,9 @@
     --ck-tracking-tight: -0.02em;
     --ck-tracking-normal: 0;
     --ck-tracking-wide: 0.04em;
+    --ck-font-weight-normal: 400;
+    --ck-font-weight-medium: 500;
+    --ck-font-weight-bold: 700;
 
     --ck-space-1: 0.25rem;
     --ck-space-2: 0.5rem;
@@ -235,6 +254,10 @@
     --ck-space-8: 4rem;
     --ck-space-9: 5rem;
     --ck-space-10: 6rem;
+
+    --ck-control-height-sm: 2.25rem;
+    --ck-control-height-md: 2.75rem;
+    --ck-control-height-lg: 3.25rem;
 
     --ck-radius-sm: 0.5rem;
     --ck-radius-md: 0.75rem;
@@ -256,66 +279,23 @@
     --ck-opacity-disabled: 0.6;
     --ck-z-base: 0;
     --ck-z-sticky: 10;
+    --ck-z-dropdown: 15;
+    /* Non-native custom overlays only — native <dialog>/[popover] use the browser top layer. */
     --ck-z-overlay: 20;
+    --ck-z-toast: 30;
 
     /* Localizable generated content (ADR 0015); safe to override per locale. */
     --ck-breadcrumb-separator: "/";
   }
 
+  /* Explicit theme overrides only need to pin color-scheme — light-dark() above
+     resolves every semantic token automatically once color-scheme is set. */
   [data-ck-theme="dark"] {
     color-scheme: dark;
-    --ck-color-surface: var(--ck-iznik-night);
-    --ck-color-surface-muted: #1c3247;
-    --ck-color-surface-raised: var(--ck-iznik-night-raised);
-    --ck-color-text: var(--ck-iznik-glaze);
-    --ck-color-text-muted: #c8d3d7;
-    --ck-color-border: #415c70;
-    --ck-color-border-strong: #7c97a8;
-    --ck-color-primary: var(--ck-iznik-cobalt-300);
-    --ck-color-primary-strong: #9ccef0;
-    --ck-color-primary-hover: var(--ck-color-primary-strong);
-    --ck-color-on-primary: var(--ck-iznik-night);
-    --ck-color-success: var(--ck-iznik-leaf-300);
-    --ck-color-success-muted: var(--ck-iznik-leaf-900);
-    --ck-color-warning: var(--ck-iznik-ochre-300);
-    --ck-color-warning-muted: var(--ck-iznik-ochre-900);
-    --ck-color-danger: var(--ck-iznik-bole-300);
-    --ck-color-danger-strong: #fec4bb;
-    --ck-color-danger-muted: var(--ck-iznik-bole-900);
-    --ck-color-on-danger: var(--ck-iznik-night);
-    --ck-color-info: var(--ck-iznik-turquoise-300);
-    --ck-color-info-muted: var(--ck-iznik-turquoise-900);
-    --ck-color-focus: var(--ck-iznik-turquoise-300);
-    --ck-color-selection: #205b73;
   }
 
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-ck-theme]) {
-      color-scheme: dark;
-      --ck-color-surface: var(--ck-iznik-night);
-      --ck-color-surface-muted: #1c3247;
-      --ck-color-surface-raised: var(--ck-iznik-night-raised);
-      --ck-color-text: var(--ck-iznik-glaze);
-      --ck-color-text-muted: #c8d3d7;
-      --ck-color-border: #415c70;
-      --ck-color-border-strong: #7c97a8;
-      --ck-color-primary: var(--ck-iznik-cobalt-300);
-      --ck-color-primary-strong: #9ccef0;
-      --ck-color-primary-hover: var(--ck-color-primary-strong);
-      --ck-color-on-primary: var(--ck-iznik-night);
-      --ck-color-success: var(--ck-iznik-leaf-300);
-      --ck-color-success-muted: var(--ck-iznik-leaf-900);
-      --ck-color-warning: var(--ck-iznik-ochre-300);
-      --ck-color-warning-muted: var(--ck-iznik-ochre-900);
-      --ck-color-danger: var(--ck-iznik-bole-300);
-      --ck-color-danger-strong: #fec4bb;
-      --ck-color-danger-muted: var(--ck-iznik-bole-900);
-      --ck-color-on-danger: var(--ck-iznik-night);
-      --ck-color-info: var(--ck-iznik-turquoise-300);
-      --ck-color-info-muted: var(--ck-iznik-turquoise-900);
-      --ck-color-focus: var(--ck-iznik-turquoise-300);
-      --ck-color-selection: #205b73;
-    }
+  [data-ck-theme="light"] {
+    color-scheme: light;
   }
 }
 
@@ -365,6 +345,18 @@
   :where(.ck-stack > h1, .ck-stack > h2, .ck-stack > h3, .ck-stack > h4,
     .ck-stack > h5, .ck-stack > h6, .ck-stack > p) {
     margin-block: 0;
+  }
+
+  :where(hr) {
+    border: 0;
+    border-block-start: var(--ck-border-width-thin) solid var(--ck-color-border);
+    margin-block: var(--ck-space-5);
+  }
+
+  :where(legend) {
+    color: var(--ck-color-text);
+    font-weight: var(--ck-font-weight-bold);
+    margin-block-end: var(--ck-space-2);
   }
 
   :where(a) {
@@ -421,6 +413,10 @@
 
   .ck-container--wide {
     --ck-container-max: 88rem;
+  }
+
+  .ck-container--fluid {
+    --ck-container-max: 100vw;
   }
 
   .ck-stack {
@@ -496,11 +492,11 @@
     border-radius: var(--ck-radius-md);
     color: var(--ck-color-on-primary);
     display: inline-flex;
-    font-weight: 700;
+    font-weight: var(--ck-font-weight-bold);
     gap: var(--ck-space-2);
     justify-content: center;
     line-height: 1.2;
-    min-block-size: 2.75rem;
+    min-block-size: var(--ck-control-height-md);
     padding: var(--ck-space-3) var(--ck-space-4);
     text-align: center;
     text-decoration: none;
@@ -517,7 +513,15 @@
   .ck-button--quiet:hover { background: var(--ck-color-surface-muted); color: var(--ck-color-primary-strong); }
   .ck-button--danger { background: var(--ck-color-danger); border-color: var(--ck-color-danger); color: var(--ck-color-on-danger); }
   .ck-button--danger:hover { background: var(--ck-color-danger-strong); border-color: var(--ck-color-danger-strong); color: var(--ck-color-on-danger); }
+  /* on-primary doubles as the accent-contrast text color here: every accent tone in this
+     palette follows the same light-mode-dark/dark-mode-light polarity, so it resolves
+     identically to a dedicated on-success/on-warning/on-info token would. */
+  .ck-button--success, .ck-button--success:hover { background: var(--ck-color-success-strong); border-color: var(--ck-color-success-strong); color: var(--ck-color-on-primary); }
+  .ck-button--warning, .ck-button--warning:hover { background: var(--ck-color-warning); border-color: var(--ck-color-warning); color: var(--ck-color-on-primary); }
+  .ck-button--info, .ck-button--info:hover { background: var(--ck-color-info-strong); border-color: var(--ck-color-info-strong); color: var(--ck-color-on-primary); }
   .ck-button:disabled, .ck-button[aria-disabled="true"] { cursor: not-allowed; opacity: var(--ck-opacity-disabled); pointer-events: none; }
+  .ck-button--sm { min-block-size: var(--ck-control-height-sm); padding-inline: var(--ck-space-3); }
+  .ck-button--lg { min-block-size: var(--ck-control-height-lg); padding-inline: var(--ck-space-5); }
 
   .ck-card { background: var(--ck-color-surface); border: 1px solid var(--ck-color-border); border-radius: var(--ck-radius-lg); box-shadow: var(--ck-shadow-sm); overflow: hidden; }
   .ck-card__header, .ck-card__body, .ck-card__footer { padding: var(--ck-space-5); }
@@ -527,7 +531,7 @@
   .ck-card[data-ck-state="selected"] { border-color: var(--ck-color-primary); box-shadow: 0 0 0 0.125rem var(--ck-color-primary-ring), var(--ck-shadow-sm); }
   .ck-card[data-ck-state="loading"] { opacity: 0.75; pointer-events: none; }
 
-  .ck-badge { align-items: center; background: var(--ck-color-surface-muted); border-radius: var(--ck-radius-pill); color: var(--ck-color-text); display: inline-flex; font-size: var(--ck-font-size-sm); font-weight: 700; gap: var(--ck-space-1); line-height: 1.2; padding: var(--ck-space-1) var(--ck-space-2); }
+  .ck-badge { align-items: center; background: var(--ck-color-surface-muted); border-radius: var(--ck-radius-pill); color: var(--ck-color-text); display: inline-flex; font-size: var(--ck-font-size-sm); font-weight: var(--ck-font-weight-bold); gap: var(--ck-space-1); line-height: 1.2; padding: var(--ck-space-1) var(--ck-space-2); }
   .ck-badge--success { background: var(--ck-color-success-muted); color: var(--ck-color-success); }
   .ck-badge--warning { background: var(--ck-color-warning-muted); color: var(--ck-color-warning); }
   .ck-badge--danger { background: var(--ck-color-danger-muted); color: var(--ck-color-danger); }
@@ -536,7 +540,7 @@
   .ck-alert { background: var(--ck-color-info-muted); border-inline-start: 0.25rem solid var(--ck-color-info); border-radius: var(--ck-radius-md); color: var(--ck-color-text); padding: var(--ck-space-4); }
   .ck-alert > * { margin-block-end: 0; }
   .ck-alert > * + * { margin-block-start: var(--ck-space-2); }
-  .ck-alert__title { font-weight: 700; }
+  .ck-alert__title { font-weight: var(--ck-font-weight-bold); }
   .ck-alert--success { background: var(--ck-color-success-muted); border-color: var(--ck-color-success); }
   .ck-alert--warning { background: var(--ck-color-warning-muted); border-color: var(--ck-color-warning); }
   .ck-alert--danger { background: var(--ck-color-danger-muted); border-color: var(--ck-color-danger); }
@@ -544,10 +548,12 @@
   .ck-alert[data-ck-state="dismissed"] { display: none; }
 
   .ck-field { display: grid; gap: var(--ck-space-2); }
-  .ck-field__label { font-weight: 700; }
+  .ck-field__label { font-weight: var(--ck-font-weight-bold); }
   .ck-field__help { color: var(--ck-color-text-muted); font-size: var(--ck-font-size-sm); }
-  .ck-field__error { color: var(--ck-color-danger); font-size: var(--ck-font-size-sm); font-weight: 700; }
-  .ck-input, .ck-select, .ck-textarea { background: var(--ck-color-surface); border: 1px solid var(--ck-color-border-strong); border-radius: var(--ck-radius-md); color: var(--ck-color-text); inline-size: 100%; line-height: var(--ck-line-normal); min-block-size: 2.75rem; padding: var(--ck-space-3); }
+  .ck-field__error { color: var(--ck-color-danger); font-size: var(--ck-font-size-sm); font-weight: var(--ck-font-weight-bold); }
+  .ck-input, .ck-select, .ck-textarea { background: var(--ck-color-surface); border: 1px solid var(--ck-color-border-strong); border-radius: var(--ck-radius-md); color: var(--ck-color-text); inline-size: 100%; line-height: var(--ck-line-normal); min-block-size: var(--ck-control-height-md); padding: var(--ck-space-3); }
+  .ck-input--sm, .ck-select--sm { min-block-size: var(--ck-control-height-sm); }
+  .ck-input--lg, .ck-select--lg { min-block-size: var(--ck-control-height-lg); }
   .ck-textarea { min-block-size: 8rem; }
   .ck-input::placeholder, .ck-textarea::placeholder { color: var(--ck-color-text-muted); opacity: 1; }
   .ck-input[aria-invalid="true"], .ck-select[aria-invalid="true"], .ck-textarea[aria-invalid="true"] { border-color: var(--ck-color-danger); }
@@ -558,7 +564,7 @@
 
   .ck-choice { display: grid; gap: var(--ck-space-1) var(--ck-space-3); grid-template-columns: 1.125rem 1fr; }
   .ck-choice__control { accent-color: var(--ck-color-primary); }
-  .ck-choice__label { font-weight: 700; }
+  .ck-choice__label { font-weight: var(--ck-font-weight-bold); }
   .ck-choice :is(.ck-choice__help, .ck-choice__error) { font-size: var(--ck-font-size-sm); grid-column: 2; }
   .ck-choice__help { color: var(--ck-color-text-muted); }.ck-choice__error { color: var(--ck-color-danger); }
   .ck-choice__control[aria-invalid="true"] { outline: 2px solid var(--ck-color-danger); }.ck-choice__control:disabled ~ * { opacity: var(--ck-opacity-disabled); }
@@ -567,18 +573,18 @@
   .ck-switch__control { opacity: 0; position: absolute; }.ck-switch__track { background: var(--ck-color-surface-muted); border-radius: var(--ck-radius-pill); block-size: 1.5rem; position: relative; }
   .ck-switch__track::before { background: var(--ck-color-surface); border-radius: inherit; content: ""; inset: .1875rem auto auto .1875rem; block-size: 1.125rem; inline-size: 1.125rem; position: absolute; }
   .ck-switch__control:checked + .ck-switch__track { background: var(--ck-color-primary); }.ck-switch__control:checked + .ck-switch__track::before { transform: translateX(1rem); }
-  .ck-switch__control:focus-visible + .ck-switch__track { outline: 3px solid var(--ck-color-primary-ring); }.ck-switch__control:disabled ~ * { opacity: var(--ck-opacity-disabled); }.ck-switch__label { font-weight: 700; }
+  .ck-switch__control:focus-visible + .ck-switch__track { outline: var(--ck-focus-ring-width) solid var(--ck-color-focus); outline-offset: var(--ck-focus-ring-offset); }.ck-switch__control:disabled ~ * { opacity: var(--ck-opacity-disabled); }.ck-switch__label { font-weight: var(--ck-font-weight-bold); }
 
   .ck-table-wrap { border: 1px solid var(--ck-color-border); border-radius: var(--ck-radius-lg); overflow-x: auto; }
   .ck-table-wrap[data-ck-state="loading"] { opacity: 0.75; }
   .ck-table { border-collapse: collapse; inline-size: 100%; min-inline-size: 40rem; text-align: start; }
   .ck-table :is(th, td) { border-block-end: 1px solid var(--ck-color-border); padding: var(--ck-space-3) var(--ck-space-4); vertical-align: top; }
-  .ck-table th { background: var(--ck-color-surface-muted); font-weight: 700; }
+  .ck-table th { background: var(--ck-color-surface-muted); font-weight: var(--ck-font-weight-bold); }
   .ck-table tr:last-child td { border-block-end: 0; }
 
   .ck-disclosure { border-block: 1px solid var(--ck-color-border); padding-block: var(--ck-space-4); }
   .ck-disclosure + .ck-disclosure { border-block-start: 0; }
-  .ck-disclosure summary { cursor: pointer; font-weight: 700; }
+  .ck-disclosure summary { cursor: pointer; font-weight: var(--ck-font-weight-bold); }
   .ck-disclosure__body { color: var(--ck-color-text-muted); padding-block-start: var(--ck-space-3); }
   [popover] { background: var(--ck-color-surface); border: 1px solid var(--ck-color-border-strong); border-radius: var(--ck-radius-md); box-shadow: var(--ck-shadow-lg); color: var(--ck-color-text); max-inline-size: min(22rem, calc(100vw - 2rem)); padding: var(--ck-space-4); }
   [popover]::backdrop { background: var(--ck-color-backdrop); }
@@ -599,7 +605,7 @@
   .ck-stepper li[aria-current="step"]::before { background: var(--ck-color-primary); border-color: var(--ck-color-primary); color: var(--ck-color-on-primary); }
   .ck-timeline { border-inline-start: 2px solid var(--ck-color-border); display: grid; gap: var(--ck-space-5); list-style: none; margin: 0; padding: 0 0 0 var(--ck-space-5); }
   .ck-avatar-group { display: flex; padding-inline-start: var(--ck-space-2); }
-  .ck-avatar { align-items: center; background: var(--ck-color-primary); border: 2px solid var(--ck-color-surface); border-radius: var(--ck-radius-pill); color: var(--ck-color-on-primary); display: inline-flex; font-size: var(--ck-font-size-xs); font-weight: 700; inline-size: 2.25rem; justify-content: center; min-block-size: 2.25rem; margin-inline-start: -.5rem; }
+  .ck-avatar { align-items: center; background: var(--ck-color-primary); border: 2px solid var(--ck-color-surface); border-radius: var(--ck-radius-pill); color: var(--ck-color-on-primary); display: inline-flex; font-size: var(--ck-font-size-xs); font-weight: var(--ck-font-weight-bold); inline-size: 2.25rem; justify-content: center; min-block-size: 2.25rem; margin-inline-start: -.5rem; }
   .ck-progress { background: var(--ck-color-surface-muted); border-radius: var(--ck-radius-pill); block-size: .625rem; overflow: hidden; }
   .ck-progress > span { background: var(--ck-color-primary); display: block; block-size: 100%; inline-size: var(--ck-progress-value, 50%); }
   .ck-nav ul { display: flex; flex-wrap: wrap; gap: var(--ck-space-2); list-style: none; margin: 0; padding: 0; }.ck-nav a { display: block; padding: var(--ck-space-2) var(--ck-space-3); text-decoration: none; }.ck-nav a:is(:hover, :focus-visible, [aria-current="page"]) { color: var(--ck-color-primary); }.ck-nav--stacked ul { display: grid; }
@@ -628,7 +634,7 @@
     position: absolute;
     transform: translateY(-200%);
     transition: transform var(--ck-duration-fast) var(--ck-ease-standard);
-    z-index: 10;
+    z-index: var(--ck-z-sticky);
   }
 
   .ck-skip-link:focus-visible { transform: translateY(0); }
@@ -648,7 +654,11 @@
   .ck-overflow-auto { overflow: auto; }
   .ck-truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
-  /* Explicit responsive helpers; component layout remains the preferred API. */
+  /* Explicit responsive helpers; component layout remains the preferred API.
+     ck-hide-*/ck-only-* restore via `revert`, which rolls back to the user-agent
+     default (e.g. block for a div) rather than any other author rule on the same
+     element. Pair with the .ck-d-{bp}-* utilities below instead of bare revert
+     when the element also carries a flex/grid layout primitive class. */
   .ck-hide-mobile { display: none; }
   .ck-only-mobile { display: revert; }
   .ck-only-wide { display: none; }
@@ -661,6 +671,14 @@
   @media (min-width: 64rem) {
     .ck-hide-desktop { display: none; }
     .ck-only-wide { display: revert; }
+  }
+
+  /* Explicit responsive display restores, safe to combine with .ck-cluster/.ck-grid/etc. */
+  @media (min-width: 40rem) {
+    .ck-d-sm-block { display: block; }
+    .ck-d-sm-flex { display: flex; }
+    .ck-d-sm-grid { display: grid; }
+    .ck-d-sm-inline-flex { display: inline-flex; }
   }
 
   /* Progressive container-query primitives with viewport-safe fallbacks. */
