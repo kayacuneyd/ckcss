@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS blog pattern ailesi: yazı ızgarası ve öne çıkan/ilgili yazılar şablonu.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/marketing/blog.html">
+<title>Blog pattern'leri · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · MARKETING · BLOG</p>
+<h1>Yazılarınızı düzenli bir ızgarada sunun.</h1>
+<p class="ck-text-lead ck-max-readable">Blog yazı ızgarası ve "ilgili yazılar" şablonu — Flowbite'ın <code>blog</code>, <code>blog-templates</code> ve <code>related-articles</code> (Publisher) kategorilerini tek ailede birleştirir.</p>
+
+<section aria-labelledby="blog-grid-h">
+<h2 id="blog-grid-h" class="ck-visually-hidden">Yazı ızgarası</h2>
+<p class="ckcss-eyebrow">Varyant 1 · Yazı ızgarası</p>
+<div class="ck-grid ck-grid--3">
+<article class="ck-card">
+<div class="ck-card" role="img" aria-label="Yazı görseli" style="min-block-size:8rem;display:flex;align-items:center;justify-content:center;border-block-end:1px solid var(--ck-color-border);border-radius:0;"><span class="ck-text-muted ck-text-small">Görsel</span></div>
+<div class="ck-card__body ck-stack ck-stack--compact"><span class="ck-badge">Tasarım Sistemi</span><h3><a href="#">Token tabanlı tasarımın 5 faydası</a></h3><p class="ck-text-small ck-text-muted">12 Haziran 2026 · 6 dk okuma</p></div>
+</article>
+<article class="ck-card">
+<div class="ck-card" role="img" aria-label="Yazı görseli" style="min-block-size:8rem;display:flex;align-items:center;justify-content:center;border-block-end:1px solid var(--ck-color-border);border-radius:0;"><span class="ck-text-muted ck-text-small">Görsel</span></div>
+<div class="ck-card__body ck-stack ck-stack--compact"><span class="ck-badge">Erişilebilirlik</span><h3><a href="#">Native HTML ile odak yönetimi</a></h3><p class="ck-text-small ck-text-muted">2 Haziran 2026 · 4 dk okuma</p></div>
+</article>
+<article class="ck-card">
+<div class="ck-card" role="img" aria-label="Yazı görseli" style="min-block-size:8rem;display:flex;align-items:center;justify-content:center;border-block-end:1px solid var(--ck-color-border);border-radius:0;"><span class="ck-text-muted ck-text-small">Görsel</span></div>
+<div class="ck-card__body ck-stack ck-stack--compact"><span class="ck-badge">Sürüm notları</span><h3><a href="#">v0.1.0-beta.2'de neler değişti?</a></h3><p class="ck-text-small ck-text-muted">23 Temmuz 2026 · 3 dk okuma</p></div>
+</article>
+</div>
+</section>
+
+<section aria-labelledby="blog-related-h" class="ck-card">
+<div class="ck-card__body ck-stack">
+<h2 id="blog-related-h">İlgili yazılar</h2>
+<nav aria-label="İlgili yazılar" class="ck-stack ck-stack--compact">
+<a href="#">→ CSS cascade layers ile çakışmasız stiller</a>
+<a href="#">→ Karanlık mod: tek satırda light-dark()</a>
+</nav>
+</div>
+</section>
+
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>ck-grid--3</code>, <code>ck-badge</code>. Her yazı görseli yer tutucusu <code>role="img"</code> + <code>aria-label</code> ile işaretlenir (bkz. <code>hero.html</code>/<code>feature.html</code>'deki aynı desen).</p>
+</div></section>
+</main>
+</body>
+</html>

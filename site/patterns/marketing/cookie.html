@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS çerez onayı pattern'i: alt bantta kabul/reddet seçenekleri.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/marketing/cookie.html">
+<title>Çerez onayı pattern'i · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · MARKETING · COOKIE CONSENT</p>
+<h1>Çerez onayını sadeleştirin.</h1>
+<p class="ck-text-lead ck-max-readable">Sayfa altında sabitlenen bir onay bandı — kabul/reddet arasında gerçek bir seçim sunar, sadece "tamam" düğmesi göstermez.</p>
+
+<div class="ck-card" role="region" aria-label="Çerez onayı">
+<div class="ck-card__body ck-cluster ck-cluster--spread">
+<p class="ck-text-muted">Deneyiminizi iyileştirmek için çerezler kullanıyoruz. Detaylar için <a href="/contact.html">gizlilik politikamıza</a> bakın.</p>
+<div class="ck-cluster">
+<button class="ck-button ck-button--secondary" type="button">Sadece gerekli</button>
+<button class="ck-button" type="button">Tümünü kabul et</button>
+</div>
+</div>
+</div>
+
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>ck-card</code>, <code>role="region"</code>. Gerçek kullanımda bant, seçim yapılana kadar <code>position: sticky; inset-block-end: 0;</code> ile sayfa altına sabitlenir; tercih kaydedildikten sonra <code>.ck-alert[data-ck-state="dismissed"]</code> ile aynı desende gizlenir.</p>
+</div></section>
+</main>
+</body>
+</html>

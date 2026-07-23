@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS bilgi bandı pattern'i: sayfa üstü duyuru ve kapatılabilir bant.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/marketing/banner.html">
+<title>Bilgi bandı pattern'i · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<div class="ckcss-section--ink" role="note">
+<div class="ck-container ck-cluster ck-cluster--spread" style="padding-block:var(--ck-space-3);">
+<p>📣 CKCSS v0.1.0-beta.2 yayınlandı — <a href="/patterns.html" style="color:inherit;">yeni pattern'lere göz atın</a>.</p>
+<button class="ck-button ck-button--quiet" type="button" style="color:inherit;" aria-label="Bandı kapat">✕</button>
+</div>
+</div>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · MARKETING · BANNER</p>
+<h1>Sayfa üstü duyuru bandı.</h1>
+<p class="ck-text-lead ck-max-readable">Sayfanın en üstünde, ana içerikten önce yer alan kısa bir duyuru — sürüm notu, kampanya veya tarayıcı uyumluluk uyarısı için.</p>
+<p class="ck-text-muted">Kapatma butonu <code>enhance/</code> tarzı küçük bir script ile (veya <code>data-ck-state="dismissed"</code> + <code>.ck-alert[data-ck-state="dismissed"]{display:none}</code> desenine benzer bir yaklaşımla) bandı gizleyebilir; JS olmadan bant kalıcı olarak görünür kalır, bu da temel görünümü bozmaz.</p>
+</div></section>
+</main>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS yorumlar pattern'i: iç içe yanıtlarla tartışma listesi ve yorum formu.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/publisher/comments.html">
+<title>Yorumlar pattern'i · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · PUBLISHER · COMMENTS</p>
+<h1>Tartışmayı iç içe yanıtlarla gösterin.</h1>
+<p class="ck-text-lead ck-max-readable">Publisher grubundaki tek gerçekten yeni pattern — <code>blog-templates</code> ve <code>related-articles</code> zaten <a href="/patterns/marketing/blog.html">blog.html</a>'e katlandı.</p>
+
+<ol class="ck-stack ck-stack--relaxed" aria-label="Yorumlar" style="list-style:none;padding:0;">
+<li>
+<article class="ck-stack ck-stack--compact">
+<div class="ck-cluster"><span class="ck-avatar" aria-hidden="true">EK</span><strong>Emre Kaya</strong><span class="ck-text-small ck-text-muted">2 saat önce</span></div>
+<p class="ck-max-readable">light-dark() geçişi harika olmuş, dark mode artık tek satırda yönetiliyor.</p>
+<button class="ck-button ck-button--quiet" type="button">Yanıtla</button>
+<ol class="ck-stack ck-stack--compact" aria-label="Emre Kaya'nın yorumuna yanıtlar" style="list-style:none;padding-inline-start:var(--ck-space-6);">
+<li>
+<article class="ck-stack ck-stack--compact">
+<div class="ck-cluster"><span class="ck-avatar" aria-hidden="true">AY</span><strong>Ada Yılmaz</strong><span class="ck-text-small ck-text-muted">1 saat önce</span></div>
+<p class="ck-max-readable">Kesinlikle — ADR 0017'de tüm detayları bulabilirsin.</p>
+<button class="ck-button ck-button--quiet" type="button">Yanıtla</button>
+</article>
+</li>
+</ol>
+</article>
+</li>
+<li>
+<article class="ck-stack ck-stack--compact">
+<div class="ck-cluster"><span class="ck-avatar" aria-hidden="true">SD</span><strong>Selin Demir</strong><span class="ck-text-small ck-text-muted">30 dakika önce</span></div>
+<p class="ck-max-readable">Erişilebilirlik notlarını her pattern'e eklemeniz çok değerli, teşekkürler!</p>
+<button class="ck-button ck-button--quiet" type="button">Yanıtla</button>
+</article>
+</li>
+</ol>
+
+<form class="ck-field" aria-label="Yorum yap">
+<label class="ck-field__label" for="comment-body">Yorumunuz</label>
+<textarea class="ck-textarea" id="comment-body" name="comment" required></textarea>
+<button class="ck-button" type="submit">Gönder</button>
+</form>
+
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>ck-avatar</code>, <code>ck-textarea</code>. İç içe yanıtlar, iç içe <code>&lt;ol&gt;</code> listeleriyle temsil edilir — bu, ekran okuyucularda yanıtların hiyerarşisini ("liste içinde liste") doğru şekilde ilan eder. Gerçek gönderim/kalıcılık sunucu tarafı bir karardır; bu sayfa sadece yapıyı belgeler.</p>
+</div></section>
+</main>
+</body>
+</html>

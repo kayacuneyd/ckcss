@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS ürün yorumları pattern'i: puan dağılımı ve yorum listesi.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/ecommerce/reviews.html">
+<title>Ürün yorumları pattern'i · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · E-COMMERCE · REVIEWS</p>
+<h1>Müşteri yorumlarını yapılandırın.</h1>
+<p class="ck-text-lead ck-max-readable">Puan özeti + yorum geçmişi — <a href="/patterns/ecommerce/product-detail.html">product-detail.html</a>'i tamamlayan, kendi başına da kullanılabilir bir bölüm.</p>
+
+<div class="ck-grid ck-grid--2">
+<div class="ck-card">
+<div class="ck-card__body ck-stack ck-text-center">
+<strong class="ckcss-pattern-number">4.6</strong>
+<span aria-hidden="true">★★★★★</span>
+<p class="ck-text-small ck-text-muted"><span class="ck-visually-hidden">5 üzerinden ortalama puan: </span>128 yorum</p>
+</div>
+</div>
+<ul class="ck-stack ck-stack--compact" role="list" aria-label="Puan dağılımı">
+<li class="ck-cluster ck-cluster--spread"><span>5 yıldız</span><span class="ck-text-small ck-text-muted">92</span></li>
+<li class="ck-cluster ck-cluster--spread"><span>4 yıldız</span><span class="ck-text-small ck-text-muted">24</span></li>
+<li class="ck-cluster ck-cluster--spread"><span>3 yıldız</span><span class="ck-text-small ck-text-muted">8</span></li>
+<li class="ck-cluster ck-cluster--spread"><span>2 yıldız</span><span class="ck-text-small ck-text-muted">3</span></li>
+<li class="ck-cluster ck-cluster--spread"><span>1 yıldız</span><span class="ck-text-small ck-text-muted">1</span></li>
+</ul>
+</div>
+
+<section aria-labelledby="reviews-list-h" class="ck-stack ck-stack--relaxed">
+<h2 id="reviews-list-h" class="ck-visually-hidden">Yorumlar</h2>
+<article class="ck-card">
+<div class="ck-card__body ck-stack ck-stack--compact">
+<div class="ck-cluster ck-cluster--spread"><strong>Selin D.</strong><span aria-label="5 üzerinden 5 yıldız">★★★★★</span></div>
+<p>Deri kalitesi beklediğimden çok daha iyiydi, kesinlikle tavsiye ederim.</p>
+<p class="ck-text-small ck-text-muted">3 Temmuz 2026</p>
+</div>
+</article>
+<article class="ck-card">
+<div class="ck-card__body ck-stack ck-stack--compact">
+<div class="ck-cluster ck-cluster--spread"><strong>Emre K.</strong><span aria-label="5 üzerinden 4 yıldız">★★★★☆</span></div>
+<p>Kargo biraz gecikti ama ürün gayet iyi.</p>
+<p class="ck-text-small ck-text-muted">28 Haziran 2026</p>
+</div>
+</article>
+</section>
+
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>ck-grid--2</code>, <code>ck-card</code>. Yıldız simgeleri <code>aria-hidden="true"</code> ile dekoratif işaretlenir; asıl puan bilgisi metin olarak (<code>aria-label</code> veya görünür sayı) sunulur — ekran okuyucular yıldız karakterlerini tek tek okumaz.</p>
+</div></section>
+</main>
+</body>
+</html>
