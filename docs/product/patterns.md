@@ -72,6 +72,9 @@ not a runtime or a second component API.
 - `patterns/application/crud-read-section.html`: read-only record detail view
   with a quick-edit dialog (see
   `docs/product/patterns/catalog/crud-read-section.md`).
+- `patterns/application/crud-drawer.html`: edge-anchored off-canvas panel
+  (`.ck-drawer` composition, ADR 0020), also the off-canvas variant for
+  `shopping-cart.html` (see `docs/product/patterns/catalog/crud-drawer.md`).
 
 The pattern catalog will grow after each pattern has a real semantic contract,
 copyable source, and static contract coverage.

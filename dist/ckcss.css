@@ -589,6 +589,7 @@
   .ck-disclosure__body { color: var(--ck-color-text-muted); padding-block-start: var(--ck-space-3); }
   [popover] { background: var(--ck-color-surface); border: 1px solid var(--ck-color-border-strong); border-radius: var(--ck-radius-md); box-shadow: var(--ck-shadow-lg); color: var(--ck-color-text); max-inline-size: min(22rem, calc(100vw - 2rem)); padding: var(--ck-space-4); }
   [popover]::backdrop { background: var(--ck-color-backdrop); }
+  .ck-drawer { inset-block: 0; inset-inline: auto 0; margin: 0; max-inline-size: min(24rem, 100vw); min-block-size: 100%; border-radius: 0; overflow-y: auto; }
   .ck-skeleton { animation: ck-skeleton-pulse 1.5s ease-in-out infinite; background: var(--ck-color-surface-muted); border-radius: var(--ck-radius-sm); color: transparent; min-block-size: 1rem; }
   @keyframes ck-skeleton-pulse { 50% { opacity: .45; } }
   @media (prefers-reduced-motion: reduce) { .ck-skeleton { animation: none; } }
