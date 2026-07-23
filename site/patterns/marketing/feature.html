@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS özellik (feature) pattern ailesi: üç sütunlu ızgara ve alternatif metin/görsel sıralı düzen.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/marketing/feature.html">
+<title>Feature pattern'leri · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · MARKETING · FEATURE</p>
+<h1>Ne yapabildiğinizi gösterin.</h1>
+<p class="ck-text-lead ck-max-readable">Üç eş değerli özelliği yan yana sunan bir ızgara ve daha derin anlatım isteyen tekil özellikler için satır satır bir düzen.</p>
+
+<section aria-labelledby="feature-grid-h" class="ck-stack">
+<h2 id="feature-grid-h" class="ck-visually-hidden">Üç sütunlu özellik ızgarası</h2>
+<p class="ckcss-eyebrow">Varyant 1 · Izgara</p>
+<div class="ck-grid ck-grid--3">
+<article class="ck-card"><div class="ck-card__body ck-stack"><span class="ck-badge">Hız</span><h3>Build adımı yok.</h3><p class="ck-text-muted">Tek CSS dosyası, sıfır npm kurulumu.</p></div></article>
+<article class="ck-card"><div class="ck-card__body ck-stack"><span class="ck-badge">Erişilebilirlik</span><h3>Native HTML önce gelir.</h3><p class="ck-text-muted">Odak halkaları, ARIA durumları ve klavye desteği kutudan çıkar.</p></div></article>
+<article class="ck-card"><div class="ck-card__body ck-stack"><span class="ck-badge">Özelleştirme</span><h3>Token'larla tema.</h3><p class="ck-text-muted">Kendi markanız için <code>--ck-color-*</code> değerlerini override edin.</p></div></article>
+</div>
+</section>
+
+<section aria-labelledby="feature-rows-h" class="ck-stack ck-stack--relaxed">
+<h2 id="feature-rows-h" class="ck-visually-hidden">Satır satır özellik anlatımı</h2>
+<p class="ckcss-eyebrow">Varyant 2 · Satır satır</p>
+<div class="ck-card"><div class="ck-card__body"><div class="ck-grid ck-grid--2"><div class="ck-stack"><h3>Karanlık mod dahil.</h3><p class="ck-text-muted">Tüm semantik tokenlar <code>light-dark()</code> ile hem açık hem koyu temayı tek satırda çözer.</p></div><div class="ck-card" role="img" aria-label="Karanlık mod önizleme yer tutucusu" style="min-block-size:8rem;display:flex;align-items:center;justify-content:center;"><span class="ck-text-muted ck-text-small">Önizleme</span></div></div></div></div>
+<div class="ck-card"><div class="ck-card__body"><div class="ck-grid ck-grid--2"><div class="ck-card" role="img" aria-label="Bileşen kataloğu önizleme yer tutucusu" style="min-block-size:8rem;display:flex;align-items:center;justify-content:center;"><span class="ck-text-muted ck-text-small">Önizleme</span></div><div class="ck-stack"><h3>Genişleyen bileşen kataloğu.</h3><p class="ck-text-muted">Buton, kart, form ve tablo bileşenlerinin hepsi aynı token setini paylaşır.</p></div></div></div></div>
+</section>
+
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>ck-badge</code>, <code>ck-card</code>, <code>--ck-space-5</code>. Duyarlı davranış: <code>ck-grid--3</code>/<code>ck-grid--2</code> &lt;40rem altında tek sütuna düşer; satır satır varyantta görsel/metin sırası küçük ekranda görsel önce, metin sonra akar (kaynak sırası korunur).</p>
+</div></section>
+</main>
+</body>
+</html>
