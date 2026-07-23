@@ -75,6 +75,21 @@ not a runtime or a second component API.
 - `patterns/application/crud-drawer.html`: edge-anchored off-canvas panel
   (`.ck-drawer` composition, ADR 0020), also the off-canvas variant for
   `shopping-cart.html` (see `docs/product/patterns/catalog/crud-drawer.md`).
+- `patterns/ecommerce/payment-forms.html`: standalone card + billing-address
+  form (see `docs/product/patterns/catalog/payment-forms.md`).
+- `patterns/ecommerce/status-timeline.html`: shipment-tracking and
+  refund-status timeline variants (see
+  `docs/product/patterns/catalog/status-timeline.md`).
+- `patterns/ecommerce/request-form.html`: refund/warranty/service/support
+  request form (see `docs/product/patterns/catalog/request-form.md`).
+- `patterns/ecommerce/order-confirmation.html`: post-checkout success page
+  (see `docs/product/patterns/catalog/order-confirmation.md`).
+- `patterns/ecommerce/orders-overview.html`: customer-facing order-history
+  table (see `docs/product/patterns/catalog/orders-overview.md`).
+- `patterns/ecommerce/account-overview.html`: customer account hub (see
+  `docs/product/patterns/catalog/account-overview.md`).
+- `patterns/ecommerce/discount-promo.html`: campaign banner and coupon-code
+  form (see `docs/product/patterns/catalog/discount-promo.md`).
 
 The pattern catalog will grow after each pattern has a real semantic contract,
 copyable source, and static contract coverage.

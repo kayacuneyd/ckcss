@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS indirim ve promosyon pattern'i: kupon kodu ve öne çıkan kampanya bandı.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/ecommerce/discount-promo.html">
+<title>İndirim &amp; promosyon pattern'i · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · E-COMMERCE · DISCOUNT &amp; PROMO</p>
+<h1>Kampanyaları görünür kılın.</h1>
+<p class="ck-text-lead ck-max-readable">Kupon kodu girişi ve bir kampanya bandı — Flowbite'ın <code>discount</code> ve <code>promotional-sections</code> kategorileri aynı "fiyat avantajı ilet" amacına hizmet eder.</p>
+
+<section aria-labelledby="promo-banner-h" class="ckcss-section--ink ck-card">
+<div class="ck-card__body ck-cluster ck-cluster--spread">
+<div class="ck-stack ck-stack--compact"><h2 id="promo-banner-h">Yaz kampanyası: tüm planlarda %20 indirim</h2><p>Sadece bu ay geçerli, kod otomatik uygulanır.</p></div>
+<a class="ck-button" href="/pricing.html">Planları gör</a>
+</div>
+</section>
+
+<section aria-labelledby="promo-coupon-h" class="ck-card">
+<div class="ck-card__body ck-stack">
+<h2 id="promo-coupon-h">Kupon kodunuz mu var?</h2>
+<form class="ck-cluster" aria-label="Kupon kodu uygula">
+<label class="ck-visually-hidden" for="promo-code">Kupon kodu</label>
+<input class="ck-input" id="promo-code" name="code" type="text" placeholder="KUPON20" style="max-inline-size:12rem;">
+<button class="ck-button ck-button--secondary" type="submit">Uygula</button>
+</form>
+<div class="ck-alert ck-alert--success" role="status" hidden><p><strong>KUPON20</strong> uygulandı — ₺258 tasarruf ettiniz.</p></div>
+</div>
+</section>
+
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>ckcss-section--ink</code>, <code>ck-alert--success</code> (kupon başarı durumu, <code>hidden</code> ile varsayılan olarak gizli — gerçek kullanımda kod geçerliyse gösterilir). Kupon inputu native form gönderimini kullanır, JS gerekmez.</p>
+</div></section>
+</main>
+</body>
+</html>

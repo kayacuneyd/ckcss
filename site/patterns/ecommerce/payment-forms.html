@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS ödeme formu pattern'i: kart bilgileri ve fatura adresi.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/ecommerce/payment-forms.html">
+<title>Ödeme formu pattern'i · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · E-COMMERCE · PAYMENT FORMS</p>
+<h1>Ödeme bilgilerini güvenle toplayın.</h1>
+<p class="ck-text-lead ck-max-readable">Standalone bir ödeme formu — <a href="/patterns/ecommerce/checkout.html">checkout.html</a>'daki tam akışın kart bölümünü, tek başına yeniden kullanılabilir bir pattern olarak sunar.</p>
+
+<form class="ck-stack ck-stack--relaxed" aria-label="Ödeme bilgileri">
+<fieldset class="ck-stack">
+<legend class="ck-field__label" style="font-size:var(--ck-font-size-lg);">Kart bilgileri</legend>
+<div class="ck-field"><label class="ck-field__label" for="pay-card-name">Kart üzerindeki ad</label><input class="ck-input" id="pay-card-name" name="card-name" type="text" autocomplete="cc-name" required></div>
+<div class="ck-field"><label class="ck-field__label" for="pay-card-number">Kart numarası</label><input class="ck-input" id="pay-card-number" name="card-number" type="text" inputmode="numeric" autocomplete="cc-number" placeholder="0000 0000 0000 0000" required></div>
+<div class="ck-grid ck-grid--2">
+<div class="ck-field"><label class="ck-field__label" for="pay-card-expiry">Son kullanma</label><input class="ck-input" id="pay-card-expiry" name="expiry" type="text" inputmode="numeric" autocomplete="cc-exp" placeholder="AA/YY" required></div>
+<div class="ck-field"><label class="ck-field__label" for="pay-card-cvc">CVC</label><input class="ck-input" id="pay-card-cvc" name="cvc" type="text" inputmode="numeric" autocomplete="cc-csc" maxlength="4" required></div>
+</div>
+</fieldset>
+
+<fieldset class="ck-stack">
+<legend class="ck-field__label" style="font-size:var(--ck-font-size-lg);">Fatura adresi</legend>
+<div class="ck-choice"><input class="ck-choice__control" type="checkbox" id="pay-same-address" name="same-address" checked><label class="ck-choice__label" for="pay-same-address">Teslimat adresiyle aynı</label></div>
+</fieldset>
+
+<div class="ck-alert" role="note"><p>🔒 Kart bilgileriniz uçtan uca şifrelenir; sunucularımızda saklanmaz.</p></div>
+<button class="ck-button" type="submit">Ödemeyi tamamla</button>
+</form>
+
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>ck-field</code>, <code>ck-choice</code>, <code>ck-alert</code>. Her kart alanı doğru <code>autocomplete</code> (<code>cc-name</code>/<code>cc-number</code>/<code>cc-exp</code>/<code>cc-csc</code>) ve <code>inputmode="numeric"</code> ile mobilde sayısal klavye açar.</p>
+</div></section>
+</main>
+</body>
+</html>

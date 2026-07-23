@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS hesap genel bakış pattern'i: profil özeti, siparişler ve adresler.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/ecommerce/account-overview.html">
+<title>Hesabım · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · E-COMMERCE · ACCOUNT OVERVIEW</p>
+<h1>Hesabım.</h1>
+
+<div class="ck-sidebar">
+<nav aria-label="Hesap bölümleri" class="ck-card">
+<ul class="ck-stack ck-stack--compact" role="list" style="padding:var(--ck-space-4);">
+<li><a href="#" aria-current="page">Genel bakış</a></li>
+<li><a href="/patterns/ecommerce/orders-overview.html">Siparişlerim</a></li>
+<li><a href="/patterns/ecommerce/checkout.html">Adreslerim</a></li>
+<li><a href="/patterns/ecommerce/payment-forms.html">Ödeme yöntemlerim</a></li>
+<li><a href="/patterns/auth/user-onboarding.html">Ayarlar</a></li>
+</ul>
+</nav>
+<div class="ck-stack ck-stack--relaxed">
+<section aria-labelledby="account-summary-h" class="ck-card">
+<h2 id="account-summary-h" class="ck-visually-hidden">Profil özeti</h2>
+<div class="ck-card__body ck-cluster ck-cluster--spread">
+<div class="ck-cluster"><span class="ck-avatar" aria-hidden="true">AY</span><div class="ck-stack ck-stack--compact"><strong>Ada Yılmaz</strong><span class="ck-text-small ck-text-muted">ada@ornek.com</span></div></div>
+<a class="ck-button ck-button--secondary" href="/patterns/auth/user-onboarding.html">Profili düzenle</a>
+</div>
+</section>
+<div class="ck-grid ck-grid--3">
+<article class="ck-card"><div class="ck-card__body ck-stack"><span class="ck-text-small ck-text-muted">Toplam sipariş</span><strong class="ckcss-pattern-number">12</strong></div></article>
+<article class="ck-card"><div class="ck-card__body ck-stack"><span class="ck-text-small ck-text-muted">Bekleyen iade</span><strong class="ckcss-pattern-number">1</strong></div></article>
+<article class="ck-card"><div class="ck-card__body ck-stack"><span class="ck-text-small ck-text-muted">Sadakat puanı</span><strong class="ckcss-pattern-number">340</strong></div></article>
+</div>
+</div>
+</div>
+
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>ck-sidebar</code>, <code>ck-avatar</code>, <code>ck-grid--3</code>. Hesap navigasyonu <code>aria-current="page"</code> ile aktif bölümü işaretler.</p>
+</div></section>
+</main>
+</body>
+</html>

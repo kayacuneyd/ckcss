@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS sipariş onayı pattern'i: başarı mesajı ve sipariş özeti.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/ecommerce/order-confirmation.html">
+<title>Sipariş onaylandı · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed ck-text-center">
+<div class="ck-alert ck-alert--success" role="status" aria-live="polite" style="display:inline-block;">
+<p class="ck-alert__title">Siparişiniz alındı.</p>
+<p>Onay e-postası <strong>ada@ornek.com</strong> adresine gönderildi.</p>
+</div>
+<p class="ckcss-eyebrow">UI KIT · E-COMMERCE · ORDER CONFIRMATION</p>
+<h1>Teşekkürler, Ada!</h1>
+<p class="ck-text-lead ck-max-readable" style="margin-inline:auto;">Sipariş numaranız <strong>#INV-1042</strong>. Kargo durumunu <a href="/patterns/ecommerce/status-timeline.html">takip sayfasından</a> izleyebilirsiniz.</p>
+
+<div class="ck-card" style="text-align:start;max-inline-size:32rem;margin-inline:auto;">
+<div class="ck-card__header"><h2>Sipariş özeti</h2></div>
+<div class="ck-card__body ck-stack">
+<div class="ck-cluster ck-cluster--spread"><span>Deri sırt çantası × 1</span><span>₺1.240</span></div>
+<div class="ck-cluster ck-cluster--spread"><span>Kargo</span><span>₺49</span></div>
+</div>
+<div class="ck-card__footer ck-cluster ck-cluster--spread"><strong>Toplam</strong><strong class="ckcss-pattern-number">₺1.289</strong></div>
+</div>
+
+<div class="ck-cluster" style="justify-content:center;">
+<a class="ck-button" href="/patterns/ecommerce/status-timeline.html">Siparişi takip et</a>
+<a class="ck-button ck-button--secondary" href="/patterns/ecommerce/product-card.html">Alışverişe devam et</a>
+</div>
+
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>ck-alert--success</code>, <code>ck-card</code>. Onay mesajı <code>role="status"</code>/<code>aria-live="polite"</code> ile işaretlenir; sayfa yüklendiğinde ekran okuyucu içeriği otomatik duyurur.</p>
+</div></section>
+</main>
+</body>
+</html>

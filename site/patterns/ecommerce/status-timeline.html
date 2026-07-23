@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS durum zaman çizelgesi pattern'i: kargo takibi ve iade durumu için ortak yapı.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/ecommerce/status-timeline.html">
+<title>Durum zaman çizelgesi pattern'i · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · E-COMMERCE · STATUS TIMELINE</p>
+<h1>Bir sürecin adımlarını gösterin.</h1>
+<p class="ck-text-lead ck-max-readable">Aynı zaman çizelgesi yapısı, üç farklı bağlamda yeniden kullanılır: kargo takibi, iade durumu ve genel iade süreci — Flowbite'ın <code>order-tracking</code>, <code>refund-status</code> ve <code>refunds</code> kategorileri aynı temel UI'ı paylaşır.</p>
+
+<section aria-labelledby="timeline-shipping-h">
+<h2 id="timeline-shipping-h" class="ck-visually-hidden">Kargo takibi</h2>
+<p class="ckcss-eyebrow">Varyant 1 · Kargo takibi</p>
+<ol class="ck-timeline">
+<li><strong>Sipariş alındı</strong><p class="ck-text-small ck-text-muted">12 Haziran, 09:14</p></li>
+<li><strong>Kargoya verildi</strong><p class="ck-text-small ck-text-muted">13 Haziran, 14:02</p></li>
+<li aria-current="step"><strong>Dağıtım merkezinde</strong><p class="ck-text-small ck-text-muted">14 Haziran, 08:30</p></li>
+<li class="ck-text-muted"><strong>Teslim edildi</strong><p class="ck-text-small">Bekleniyor</p></li>
+</ol>
+</section>
+
+<section aria-labelledby="timeline-refund-h">
+<h2 id="timeline-refund-h" class="ck-visually-hidden">İade durumu</h2>
+<p class="ckcss-eyebrow">Varyant 2 · İade durumu</p>
+<ol class="ck-timeline">
+<li><strong>İade talebi alındı</strong><p class="ck-text-small ck-text-muted">1 Temmuz</p></li>
+<li aria-current="step"><strong>Ürün inceleniyor</strong><p class="ck-text-small ck-text-muted">3 Temmuz</p></li>
+<li class="ck-text-muted"><strong>İade tamamlandı</strong><p class="ck-text-small"><span class="ck-badge ck-badge--success">3-5 iş günü içinde</span></p></li>
+</ol>
+</section>
+
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>ck-timeline</code>, <code>aria-current="step"</code> (aktif adımı işaretler, <code>ck-stepper</code>'daki gibi), <code>ck-badge--success</code>. Her iki varyant da aynı <code>&lt;ol class="ck-timeline"&gt;</code> yapısını kullanır — sadece içerik değişir.</p>
+</div></section>
+</main>
+</body>
+</html>
