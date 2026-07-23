@@ -58,6 +58,12 @@ not a runtime or a second component API.
   summary sidebar (see `docs/product/patterns/catalog/checkout.md`).
 - `patterns/ecommerce/shopping-cart.html`: full-page cart table with an empty
   state (see `docs/product/patterns/catalog/shopping-cart.md`).
+- `patterns/application/app-navbar.html`: in-app top bar with search,
+  notifications, and a user menu, plus an app-level footer bar — complements
+  `app-shell.html` (see `docs/product/patterns/catalog/app-navbar.md`).
+- `patterns/application/advanced-table.html`: row selection, bulk-action
+  toolbar, and a totals footer row — complements `data-management.html` (see
+  `docs/product/patterns/catalog/advanced-table.md`).
 
 The pattern catalog will grow after each pattern has a real semantic contract,
 copyable source, and static contract coverage.

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS gelişmiş tablo pattern'i: satır seçimi, toplu işlem çubuğu ve toplam satırı.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/application/advanced-table.html">
+<title>Gelişmiş tablo pattern'i · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · APPLICATION · ADVANCED TABLE</p>
+<h1>Satır seçimi, toplu işlem, toplamlar.</h1>
+<p class="ck-text-lead ck-max-readable"><a href="/data-management.html">data-management.html</a>'in arama/filtre/sayfalama tablosunu tamamlar: burada satır bazlı seçim kutuları, seçildiğinde beliren bir toplu işlem çubuğu ve bir toplam satırı (Flowbite'ın ayrı <code>advanced-tables</code> ve <code>table-footers</code> kategorileri) eklenir.</p>
+
+<div class="ck-cluster ck-cluster--spread" role="toolbar" aria-label="Toplu işlemler">
+<span class="ck-text-small ck-text-muted">2 satır seçildi</span>
+<div class="ck-cluster">
+<button class="ck-button ck-button--secondary" type="button">Dışa aktar</button>
+<button class="ck-button ck-button--danger" type="button">Seçilenleri sil</button>
+</div>
+</div>
+
+<div class="ck-table-wrap">
+<table class="ck-table">
+<caption class="ck-visually-hidden">Fatura listesi, satır seçimi ve sıralanabilir sütunlarla</caption>
+<thead>
+<tr>
+<th scope="col"><label class="ck-visually-hidden" for="select-all">Tümünü seç</label><input id="select-all" type="checkbox"></th>
+<th scope="col" aria-sort="ascending">Fatura no</th>
+<th scope="col">Müşteri</th>
+<th scope="col">Tutar</th>
+<th scope="col">Durum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><label class="ck-visually-hidden" for="row-1">INV-1042 satırını seç</label><input id="row-1" type="checkbox" checked></td>
+<th scope="row">INV-1042</th>
+<td>Atlas Ltd.</td>
+<td>₺4.250</td>
+<td><span class="ck-badge ck-badge--success">Ödendi</span></td>
+</tr>
+<tr>
+<td><label class="ck-visually-hidden" for="row-2">INV-1043 satırını seç</label><input id="row-2" type="checkbox" checked></td>
+<th scope="row">INV-1043</th>
+<td>Nova A.Ş.</td>
+<td>₺1.890</td>
+<td><span class="ck-badge ck-badge--warning">Bekliyor</span></td>
+</tr>
+<tr>
+<td><label class="ck-visually-hidden" for="row-3">INV-1044 satırını seç</label><input id="row-3" type="checkbox"></td>
+<th scope="row">INV-1044</th>
+<td>Rota Medya</td>
+<td>₺760</td>
+<td><span class="ck-badge ck-badge--danger">Gecikti</span></td>
+</tr>
+</tbody>
+<tfoot>
+<tr><th scope="row" colspan="3">Toplam</th><td colspan="2"><strong class="ckcss-pattern-number">₺6.900</strong></td></tr>
+</tfoot>
+</table>
+</div>
+
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>ck-table</code>, <code>ck-badge</code>, <code>role="toolbar"</code>. <code>aria-sort="ascending"</code> aktif sıralama sütununu ekran okuyuculara bildirir (gerçek sıralama davranışı sunucu/JS tarafındadır — bu statik referans sayfası sadece doğru işaretlemeyi gösterir). <code>&lt;tfoot&gt;</code> toplam satırı, tablonun asıl gövdesinden ayrı bir semantik bölge olarak okunur.</p>
+</div></section>
+</main>
+</body>
+</html>
