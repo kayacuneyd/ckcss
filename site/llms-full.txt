@@ -9,7 +9,7 @@ CKCSS Core is static CSS. It is consumed using a single stylesheet link and does
 Use a pinned release URL:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kayacuneyd/ckcss@v0.1.0-beta.1/dist/ckcss.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kayacuneyd/ckcss@v0.1.0-beta.2/dist/ckcss.min.css">
 ```
 
 For a self-hosted project, link its copied `ckcss.min.css` instead. Do not use `@latest` in production.
