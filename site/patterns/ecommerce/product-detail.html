@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS ürün detay pattern'i: görsel, varyant seçimi ve teknik özellik tablosu.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/ecommerce/product-detail.html">
+<title>Ürün detay pattern'i · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · E-COMMERCE · PRODUCT DETAIL</p>
+<h1>Ürünü tanıtın, satın alma kararını kolaylaştırın.</h1>
+
+<div class="ck-grid ck-grid--2">
+<div class="ck-card" role="img" aria-label="Deri sırt çantası ürün görseli" style="min-block-size:20rem;display:flex;align-items:center;justify-content:center;"><span class="ck-text-muted">Ürün görseli</span></div>
+
+<form class="ck-stack ck-stack--relaxed" aria-label="Sepete ekle">
+<div class="ck-stack ck-stack--compact">
+<span class="ck-badge">Çanta</span>
+<h2>Deri sırt çantası</h2>
+<strong class="ckcss-pattern-number">₺1.240</strong>
+</div>
+<p class="ck-text-muted ck-max-readable">Tam tahıl deriden, günlük kullanım için tasarlanmış su geçirmez astarlı sırt çantası.</p>
+
+<fieldset class="ck-stack ck-stack--compact">
+<legend class="ck-field__label">Renk</legend>
+<div class="ck-cluster">
+<div class="ck-choice"><input class="ck-choice__control" type="radio" name="color" id="color-black" value="siyah" checked><label class="ck-choice__label" for="color-black">Siyah</label></div>
+<div class="ck-choice"><input class="ck-choice__control" type="radio" name="color" id="color-brown" value="kahve"><label class="ck-choice__label" for="color-brown">Kahve</label></div>
+</div>
+</fieldset>
+
+<div class="ck-field">
+<label class="ck-field__label" for="product-qty">Adet</label>
+<input class="ck-input" id="product-qty" name="quantity" type="number" min="1" value="1" style="max-inline-size:6rem;">
+</div>
+
+<div class="ck-cluster">
+<button class="ck-button" type="submit">Sepete ekle</button>
+<button class="ck-button ck-button--secondary" type="button" aria-pressed="false">♡ Favorilere ekle</button>
+</div>
+
+<div class="ck-alert ck-alert--success" role="status"><p>Stokta — 2-4 iş günü içinde kargoya verilir.</p></div>
+</form>
+</div>
+
+<section aria-labelledby="product-specs-h" class="ck-table-wrap">
+<h2 id="product-specs-h" class="ck-visually-hidden">Teknik özellikler</h2>
+<table class="ck-table">
+<thead><tr><th scope="col">Özellik</th><th scope="col">Değer</th></tr></thead>
+<tbody>
+<tr><th scope="row">Malzeme</th><td>Tam tahıl deri</td></tr>
+<tr><th scope="row">Kapasite</th><td>18 litre</td></tr>
+<tr><th scope="row">Ağırlık</th><td>820g</td></tr>
+</tbody>
+</table>
+</section>
+
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>ck-choice</code> (renk seçimi), <code>ck-table</code>, <code>ck-alert--success</code>. Duyarlı davranış: <code>ck-grid--2</code> &lt;40rem altında tek sütuna düşer, görsel önce metin sonra akar (kaynak sırası).</p>
+</div></section>
+</main>
+</body>
+</html>

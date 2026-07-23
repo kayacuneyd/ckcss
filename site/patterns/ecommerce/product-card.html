@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS ürün kartı pattern'i: kategori filtreli ürün ızgarası.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/ecommerce/product-card.html">
+<title>Ürün kartı pattern'i · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · E-COMMERCE · PRODUCT CARD</p>
+<h1>Ürünleri gözden geçirin.</h1>
+<p class="ck-text-lead ck-max-readable">Kategori filtresi ve ürün ızgarası — Flowbite'ın ayrı <code>product-cards</code> ve <code>product-categories</code> kategorilerini tek pattern'de birleştirir.</p>
+
+<nav aria-label="Ürün kategorileri" class="ck-cluster">
+<a class="ck-badge ck-badge--success" href="#" aria-current="true">Tümü</a>
+<a class="ck-badge" href="#">Çantalar</a>
+<a class="ck-badge" href="#">Ayakkabılar</a>
+<a class="ck-badge" href="#">Aksesuar</a>
+</nav>
+
+<div class="ck-grid ck-grid--3">
+<article class="ck-card">
+<div class="ck-card" role="img" aria-label="Deri sırt çantası görseli" style="min-block-size:10rem;display:flex;align-items:center;justify-content:center;border-block-end:1px solid var(--ck-color-border);border-radius:0;"><span class="ck-text-muted ck-text-small">Görsel</span></div>
+<div class="ck-card__body ck-stack">
+<span class="ck-badge">Çanta</span>
+<h3>Deri sırt çantası</h3>
+<div class="ck-cluster ck-cluster--spread"><strong class="ckcss-pattern-number">₺1.240</strong><button class="ck-button ck-button--secondary" type="button">Sepete ekle</button></div>
+</div>
+</article>
+<article class="ck-card">
+<div class="ck-card" role="img" aria-label="Koşu ayakkabısı görseli" style="min-block-size:10rem;display:flex;align-items:center;justify-content:center;border-block-end:1px solid var(--ck-color-border);border-radius:0;"><span class="ck-text-muted ck-text-small">Görsel</span></div>
+<div class="ck-card__body ck-stack">
+<span class="ck-badge">Ayakkabı</span>
+<h3>Koşu ayakkabısı</h3>
+<div class="ck-cluster ck-cluster--spread"><strong class="ckcss-pattern-number">₺890</strong><button class="ck-button ck-button--secondary" type="button">Sepete ekle</button></div>
+</div>
+</article>
+<article class="ck-card" data-ck-state="loading">
+<div class="ck-skeleton" style="min-block-size:10rem;border-radius:0;"></div>
+<div class="ck-card__body ck-stack">
+<span class="ck-skeleton" style="inline-size:4rem;"></span>
+<span class="ck-skeleton" style="inline-size:80%;"></span>
+<span class="ck-skeleton" style="inline-size:50%;"></span>
+</div>
+</article>
+</div>
+
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>ck-grid--3</code>, <code>ck-badge</code>, <code>ck-skeleton</code> (üçüncü kart, yüklenme durumunu gösterir). Duyarlı davranış: &lt;40rem altında tek sütun. Kategori filtresi native <code>&lt;a&gt;</code> bağlantılarıdır; <code>aria-current="true"</code> aktif filtreyi işaretler.</p>
+</div></section>
+</main>
+</body>
+</html>

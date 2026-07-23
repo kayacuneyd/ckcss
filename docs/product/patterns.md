@@ -50,6 +50,14 @@ not a runtime or a second component API.
   when email access is lost (see `docs/product/patterns/catalog/account-recovery.md`).
 - `patterns/auth/user-onboarding.html`: post-signup setup stepper and checklist
   (see `docs/product/patterns/catalog/user-onboarding.md`).
+- `patterns/ecommerce/product-card.html`: category filter and product grid with
+  a loading-state example (see `docs/product/patterns/catalog/product-card.md`).
+- `patterns/ecommerce/product-detail.html`: product page with variant selection
+  and a specs table (see `docs/product/patterns/catalog/product-detail.md`).
+- `patterns/ecommerce/checkout.html`: shipping/payment form with an order
+  summary sidebar (see `docs/product/patterns/catalog/checkout.md`).
+- `patterns/ecommerce/shopping-cart.html`: full-page cart table with an empty
+  state (see `docs/product/patterns/catalog/shopping-cart.md`).
 
 The pattern catalog will grow after each pattern has a real semantic contract,
 copyable source, and static contract coverage.
