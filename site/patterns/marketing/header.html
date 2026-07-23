@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS header pattern'i: marka, gezinme ve CTA; native details ile JS'siz mobil menü.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/marketing/header.html">
+<title>Header pattern'i · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<header class="ck-container">
+<div class="ck-cluster ck-cluster--spread" style="padding-block:var(--ck-space-4);">
+<a class="ckcss-brand" href="/" aria-label="Ana sayfa">CKCSS</a>
+<nav aria-label="Ana gezinme" class="ck-nav ck-hide-mobile">
+<ul>
+<li><a href="#">Ürün</a></li>
+<li><a href="#" aria-current="page">Fiyatlandırma</a></li>
+<li><a href="#">Dokümanlar</a></li>
+</ul>
+</nav>
+<div class="ck-cluster ck-hide-mobile">
+<a class="ck-button ck-button--quiet" href="#">Giriş yap</a>
+<a class="ck-button" href="#">Ücretsiz deneyin</a>
+</div>
+<details class="ckcss-mobile-nav ck-only-mobile">
+<summary aria-label="Menüyü aç">Menü</summary>
+<nav aria-label="Mobil gezinme">
+<ul class="ck-stack" role="list">
+<li><a href="#">Ürün</a></li>
+<li><a href="#" aria-current="page">Fiyatlandırma</a></li>
+<li><a href="#">Dokümanlar</a></li>
+<li><a class="ck-button ck-button--quiet" href="#">Giriş yap</a></li>
+<li><a class="ck-button" href="#">Ücretsiz deneyin</a></li>
+</ul>
+</nav>
+</details>
+</div>
+</header>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · MARKETING · HEADER</p>
+<h1>Marka, gezinme ve eylem tek satırda.</h1>
+<p class="ck-text-lead ck-max-readable">Üstteki header, ≥40rem'de yatay gezinme + iki butonu gösterir; altında ise <code>&lt;details&gt;</code>/<code>&lt;summary&gt;</code> ile JavaScript gerektirmeyen bir mobil menüye düşer — <a href="/mobile-navigation.html">mobile-navigation.html</a>'deki native yaklaşımın aynısı.</p>
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>--ck-space-4</code>, mevcut <code>ck-nav</code>/<code>ck-button</code> bileşenleri. Duyarlı davranış: <code>ck-hide-mobile</code>/<code>ck-only-mobile</code> çifti 40rem eşiğinde geçiş yapar (bkz. <code>src/utilities.css</code>). Sabit (sticky) bir üstbilgi isteniyorsa <code>position:sticky; inset-block-start:0; z-index:var(--ck-z-sticky);</code> eklenmesi yeterlidir — yeni bir bileşen gerekmez.</p>
+</div></section>
+</main>
+</body>
+</html>

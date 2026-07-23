@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS footer pattern ailesi: çok sütunlu bağlantı grubu ve kısa bülten alt bilgisi.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/marketing/footer.html">
+<title>Footer pattern'leri · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · MARKETING · FOOTER</p>
+<h1>Sayfanın son durağı.</h1>
+<p class="ck-text-lead ck-max-readable">Çok sütunlu tam footer ve tek satırlık minimal bülten footer'ı — ikisi de aynı <code>ck-grid</code>/<code>ck-cluster</code> primitive'leriyle.</p>
+
+<footer aria-labelledby="footer-full-h" class="ck-card">
+<div class="ck-card__body ck-stack ck-stack--relaxed">
+<h2 id="footer-full-h" class="ck-visually-hidden">Çok sütunlu footer</h2>
+<p class="ckcss-eyebrow">Varyant 1 · Çok sütunlu</p>
+<div class="ck-grid ck-grid--3">
+<nav aria-label="Ürün bağlantıları"><h3>Ürün</h3><ul class="ck-stack ck-stack--compact" role="list"><li><a href="#">Özellikler</a></li><li><a href="#">Fiyatlandırma</a></li><li><a href="#">Değişim günlüğü</a></li></ul></nav>
+<nav aria-label="Şirket bağlantıları"><h3>Şirket</h3><ul class="ck-stack ck-stack--compact" role="list"><li><a href="#">Hakkımızda</a></li><li><a href="#">Kariyer</a></li><li><a href="/contact.html">İletişim</a></li></ul></nav>
+<nav aria-label="Yasal bağlantılar"><h3>Yasal</h3><ul class="ck-stack ck-stack--compact" role="list"><li><a href="#">Gizlilik</a></li><li><a href="#">Kullanım şartları</a></li></ul></nav>
+</div>
+<div class="ck-cluster ck-cluster--spread" style="border-block-start:1px solid var(--ck-color-border);padding-block-start:var(--ck-space-4);">
+<small class="ck-text-muted">© 2026 CKCSS. Tüm hakları saklıdır.</small>
+<div class="ck-cluster"><a href="#" aria-label="X (Twitter)">X</a><a href="#" aria-label="GitHub">GitHub</a></div>
+</div>
+</div>
+</footer>
+
+<footer aria-labelledby="footer-mini-h" class="ck-card">
+<div class="ck-card__body">
+<h2 id="footer-mini-h" class="ck-visually-hidden">Minimal bülten footer'ı</h2>
+<p class="ckcss-eyebrow">Varyant 2 · Minimal + bülten</p>
+<div class="ck-cluster ck-cluster--spread">
+<small class="ck-text-muted">© 2026 CKCSS</small>
+<form class="ck-cluster" aria-label="Bülten kaydı">
+<label class="ck-visually-hidden" for="footer-newsletter-email">E-posta adresi</label>
+<input class="ck-input" id="footer-newsletter-email" name="email" type="email" placeholder="E-posta adresiniz" autocomplete="email" required>
+<button class="ck-button" type="submit">Abone ol</button>
+</form>
+</div>
+</div>
+</footer>
+
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>--ck-color-border</code>, <code>--ck-space-4</code>. Duyarlı davranış: <code>ck-grid--3</code> &lt;40rem altında tek sütuna düşer, bağlantı grupları alt alta sıralanır. Form; native <code>required</code>/<code>type="email"</code> doğrulamasını kullanır, JS gerekmez.</p>
+</div></section>
+</main>
+</body>
+</html>

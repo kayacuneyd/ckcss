@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS hero pattern ailesi: ortalanmış ve bölünmüş görselli hero varyantları, sadece ck- primitive'leriyle.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/marketing/hero.html">
+<title>Hero pattern'leri · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · MARKETING · HERO</p>
+<h1>Sayfanızın ilk izlenimi.</h1>
+<p class="ck-text-lead">İki hero varyantı: ortalanmış, tek sütun bir giriş ve görsel alanı olan bölünmüş bir düzen. İkisi de aynı token'ları ve <code>ck-container</code>/<code>ck-cluster</code> primitive'lerini kullanır.</p>
+
+<section aria-labelledby="hero-centered-h" class="ck-card">
+<div class="ck-card__body ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">Varyant 1 · Ortalanmış</p>
+<h2 id="hero-centered-h">Ürününüzü tek cümlede anlatın.</h2>
+<p class="ck-text-muted ck-max-readable">Kısa, net bir alt başlık okuyucuya ne yapacağını ilk saniyede söyler. Buton grubu birincil ve ikincil eylemi ayırır.</p>
+<div class="ck-cluster">
+<a class="ck-button" href="#">Hemen başlayın</a>
+<a class="ck-button ck-button--secondary" href="#">Dokümanlara bakın</a>
+</div>
+</div>
+</section>
+
+<section aria-labelledby="hero-split-h" class="ck-card">
+<div class="ck-card__body">
+<p class="ckcss-eyebrow">Varyant 2 · Bölünmüş (görselli)</p>
+<div class="ck-grid ck-grid--2">
+<div class="ck-stack ck-stack--relaxed">
+<h2 id="hero-split-h">Metin solda, görsel sağda.</h2>
+<p class="ck-text-muted">İçerik ağırlıklı sayfalarda metnin okunabilirliğini korurken bir ürün görseli veya ekran görüntüsüne yer açar.</p>
+<div class="ck-cluster">
+<a class="ck-button" href="#">Demo isteyin</a>
+<a class="ck-button ck-button--quiet" href="#">Fiyatlandırmayı görün</a>
+</div>
+</div>
+<div class="ck-card" role="img" aria-label="Ürün ekran görüntüsü yer tutucusu" style="min-block-size:14rem;display:flex;align-items:center;justify-content:center;">
+<span class="ck-text-muted ck-text-small">Görsel alanı</span>
+</div>
+</div>
+</div>
+</section>
+
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>--ck-font-size-display</code>, <code>--ck-line-display</code>, <code>--ck-space-6</code>. Duyarlı davranış: <code>ck-grid--2</code> &lt;40rem altında tek sütuna düşer. Odak: her buton global <code>:focus-visible</code> halkasını kullanır.</p>
+</div></section>
+</main>
+</body>
+</html>

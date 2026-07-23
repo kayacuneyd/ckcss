@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS CTA (eylem çağrısı) pattern ailesi: ortalanmış banner ve form içeren bölünmüş varyant.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/marketing/cta.html">
+<title>CTA pattern'leri · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · MARKETING · CTA</p>
+<h1>Kararsız ziyaretçiyi harekete geçirin.</h1>
+<p class="ck-text-lead ck-max-readable">Sayfanın sonunda ya da bölümler arasında kullanılan iki CTA biçimi: ortalanmış banner ve e-posta toplayan bölünmüş bir varyant. <a href="/marketing-patterns.html#cta">marketing-patterns.html</a>'deki kısa CTA demosunun daha kapsamlı, tam sayfa halidir.</p>
+
+<section aria-labelledby="cta-banner-h" class="ckcss-section--ink ck-card">
+<div class="ck-card__body ck-stack ck-stack--relaxed ck-text-center">
+<p class="ckcss-eyebrow">Varyant 1 · Ortalanmış banner</p>
+<h2 id="cta-banner-h">Bugün başlayın, yarın ölçeklendirin.</h2>
+<p>Tek bir CSS dosyası, sıfır build adımı. Ekibiniz dakikalar içinde üretebilir.</p>
+<div class="ck-cluster" style="justify-content:center;">
+<a class="ck-button" href="/guide.html">Kılavuzu okuyun</a>
+<a class="ck-button ck-button--secondary" href="/download.html">İndirin</a>
+</div>
+</div>
+</section>
+
+<section aria-labelledby="cta-split-h" class="ck-card">
+<div class="ck-card__body">
+<p class="ckcss-eyebrow">Varyant 2 · Bölünmüş + form</p>
+<div class="ck-grid ck-grid--2">
+<div class="ck-stack">
+<h2 id="cta-split-h">Güncellemelerden haberdar olun.</h2>
+<p class="ck-text-muted">Yeni pattern'ler ve sürümler yayınlandığında haber verelim.</p>
+</div>
+<form class="ck-field" aria-label="Bülten kaydı">
+<label class="ck-field__label" for="cta-email">E-posta adresi</label>
+<input class="ck-input" id="cta-email" name="email" type="email" autocomplete="email" required>
+<button class="ck-button" type="submit">Kaydolun</button>
+</form>
+</div>
+</div>
+</section>
+
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>--ck-color-backdrop</code> yerine burada <code>ckcss-section--ink</code> site-only sarmalayıcısı kullanıldı (koyu vurgu bandı); bileşen katmanına yeni bir sınıf eklenmedi. Duyarlı davranış: <code>ck-grid--2</code> &lt;40rem altında tek sütun. Form native <code>required</code> doğrulaması kullanır.</p>
+</div></section>
+</main>
+</body>
+</html>

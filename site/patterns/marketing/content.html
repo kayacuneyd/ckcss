@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS içerik (content) pattern'i: okunabilir uzun metin düzeni, alıntı ve yardımcı kenar çubuğu.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/marketing/content.html">
+<title>Content pattern'i · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · MARKETING · CONTENT</p>
+<h1>Uzun metni okunur tutun.</h1>
+<p class="ck-text-lead ck-max-readable">Makale gövdesi <code>ck-sidebar</code> ile yan bilgi kutusuna ayrılır; <code>ck-max-readable</code> satır uzunluğunu 72 karaktere sabitler.</p>
+
+<div class="ck-sidebar ck-sidebar--end">
+<article class="ck-stack ck-stack--relaxed">
+<h2>Neden token tabanlı tasarım?</h2>
+<p class="ck-max-readable">Sabit piksel değerleri yerine <code>--ck-space-*</code>, <code>--ck-color-*</code> gibi semantik tokenlar kullanmak, tasarım kararlarını tek bir yerden yönetmenizi sağlar. Bir markanın tüm bileşenleri aynı ölçek ve paletten beslenir.</p>
+<blockquote class="ckcss-quote">"Token'lar bir tasarım sisteminin gerçek kaynak kodu; bileşenler sadece onları uygular."</blockquote>
+<p class="ck-max-readable">Aynı yaklaşım karanlık mod, erişilebilir kontrast ve markaya özel tema değişiklikleri için de geçerlidir — bileşen kodunu değil, token değerlerini değiştirirsiniz.</p>
+<h2>Kaynak sırası okunabilirliktir</h2>
+<p class="ck-max-readable">CKCSS pattern kuralı 4, DOM sırasının her zaman erişilebilir okuma sırasıyla eşleşmesini şart koşar. Bu sayede ekran okuyucu kullanıcıları da görsel kullanıcılarla aynı akışı deneyimler.</p>
+</article>
+<aside class="ck-stack">
+<section class="ck-card"><div class="ck-card__body ck-stack"><h3>Bu sayfada</h3><nav aria-label="Sayfa içi bağlantılar"><ul class="ck-stack ck-stack--compact" role="list"><li><a href="#">Neden token tabanlı tasarım?</a></li><li><a href="#">Kaynak sırası okunabilirliktir</a></li></ul></nav></div></section>
+<div class="ck-alert" role="note"><p class="ck-alert__title">İpucu</p><p>Kenar çubuğu <code>ck-sidebar--end</code> ile sağda; <code>ck-sidebar</code> tek başına solda konumlanır.</p></div>
+</aside>
+</div>
+
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>--ck-line-body</code>, <code>ck-max-readable</code>, <code>ckcss-quote</code>. Duyarlı davranış: <code>ck-sidebar</code> &lt;48rem altında tek sütuna düşer, kenar çubuğu makalenin altına akar.</p>
+</div></section>
+</main>
+</body>
+</html>

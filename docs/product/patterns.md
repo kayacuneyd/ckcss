@@ -28,6 +28,20 @@ not a runtime or a second component API.
 - `variants.html`: menu, sidebar, hero, CTA, form, newsletter, and footer variants.
 - `404.html`, `500.html`, `maintenance.html`: minimal not-found, server-error, and
   maintenance pages (see `docs/product/patterns/catalog/error-page.md`).
+- `patterns/marketing/hero.html`: centered and split-with-media hero variants
+  (see `docs/product/patterns/catalog/hero.md`).
+- `patterns/marketing/header.html`: site header with JS-free `<details>` mobile
+  nav fallback (see `docs/product/patterns/catalog/header.md`).
+- `patterns/marketing/footer.html`: multi-column footer and minimal
+  newsletter-footer variant (see `docs/product/patterns/catalog/footer.md`).
+- `patterns/marketing/cta.html`: centered CTA banner and split CTA with an
+  email-capture form (see `docs/product/patterns/catalog/cta.md`).
+- `patterns/marketing/feature.html`: three-column feature grid and alternating
+  text/media feature rows (see `docs/product/patterns/catalog/feature.md`).
+- `patterns/marketing/content.html`: long-form article layout with a
+  table-of-contents/tip sidebar (see `docs/product/patterns/catalog/content.md`).
+- `patterns/marketing/trust-signal.html`: customer-logo strip, testimonial grid,
+  and stat badges (see `docs/product/patterns/catalog/trust-signal.md`).
 
 The pattern catalog will grow after each pattern has a real semantic contract,
 copyable source, and static contract coverage.
