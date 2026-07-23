@@ -1,0 +1,2750 @@
+[
+  {
+    "file": "hero-01.png",
+    "category": "hero",
+    "category_url": "https://flowbite.com/blocks/marketing/hero/",
+    "example": 1
+  },
+  {
+    "file": "hero-02.png",
+    "category": "hero",
+    "category_url": "https://flowbite.com/blocks/marketing/hero/",
+    "example": 2
+  },
+  {
+    "file": "hero-03.png",
+    "category": "hero",
+    "category_url": "https://flowbite.com/blocks/marketing/hero/",
+    "example": 3
+  },
+  {
+    "file": "hero-04.png",
+    "category": "hero",
+    "category_url": "https://flowbite.com/blocks/marketing/hero/",
+    "example": 4
+  },
+  {
+    "file": "hero-05.png",
+    "category": "hero",
+    "category_url": "https://flowbite.com/blocks/marketing/hero/",
+    "example": 5
+  },
+  {
+    "file": "hero-06.png",
+    "category": "hero",
+    "category_url": "https://flowbite.com/blocks/marketing/hero/",
+    "example": 6
+  },
+  {
+    "file": "hero-07.png",
+    "category": "hero",
+    "category_url": "https://flowbite.com/blocks/marketing/hero/",
+    "example": 7
+  },
+  {
+    "file": "hero-08.png",
+    "category": "hero",
+    "category_url": "https://flowbite.com/blocks/marketing/hero/",
+    "example": 8
+  },
+  {
+    "file": "hero-09.png",
+    "category": "hero",
+    "category_url": "https://flowbite.com/blocks/marketing/hero/",
+    "example": 9
+  },
+  {
+    "file": "hero-10.png",
+    "category": "hero",
+    "category_url": "https://flowbite.com/blocks/marketing/hero/",
+    "example": 10
+  },
+  {
+    "file": "hero-11.png",
+    "category": "hero",
+    "category_url": "https://flowbite.com/blocks/marketing/hero/",
+    "example": 11
+  },
+  {
+    "file": "hero-12.png",
+    "category": "hero",
+    "category_url": "https://flowbite.com/blocks/marketing/hero/",
+    "example": 12
+  },
+  {
+    "file": "hero-13.png",
+    "category": "hero",
+    "category_url": "https://flowbite.com/blocks/marketing/hero/",
+    "example": 13
+  },
+  {
+    "file": "hero-14.png",
+    "category": "hero",
+    "category_url": "https://flowbite.com/blocks/marketing/hero/",
+    "example": 14
+  },
+  {
+    "file": "hero-15.png",
+    "category": "hero",
+    "category_url": "https://flowbite.com/blocks/marketing/hero/",
+    "example": 15
+  },
+  {
+    "file": "hero-16.png",
+    "category": "hero",
+    "category_url": "https://flowbite.com/blocks/marketing/hero/",
+    "example": 16
+  },
+  {
+    "file": "hero-17.png",
+    "category": "hero",
+    "category_url": "https://flowbite.com/blocks/marketing/hero/",
+    "example": 17
+  },
+  {
+    "file": "hero-18.png",
+    "category": "hero",
+    "category_url": "https://flowbite.com/blocks/marketing/hero/",
+    "example": 18
+  },
+  {
+    "file": "table-headers-01.png",
+    "category": "table-headers",
+    "category_url": "https://flowbite.com/blocks/application/table-headers/",
+    "example": 1
+  },
+  {
+    "file": "table-headers-02.png",
+    "category": "table-headers",
+    "category_url": "https://flowbite.com/blocks/application/table-headers/",
+    "example": 2
+  },
+  {
+    "file": "table-headers-03.png",
+    "category": "table-headers",
+    "category_url": "https://flowbite.com/blocks/application/table-headers/",
+    "example": 3
+  },
+  {
+    "file": "table-headers-04.png",
+    "category": "table-headers",
+    "category_url": "https://flowbite.com/blocks/application/table-headers/",
+    "example": 4
+  },
+  {
+    "file": "table-headers-05.png",
+    "category": "table-headers",
+    "category_url": "https://flowbite.com/blocks/application/table-headers/",
+    "example": 5
+  },
+  {
+    "file": "table-headers-06.png",
+    "category": "table-headers",
+    "category_url": "https://flowbite.com/blocks/application/table-headers/",
+    "example": 6
+  },
+  {
+    "file": "table-headers-07.png",
+    "category": "table-headers",
+    "category_url": "https://flowbite.com/blocks/application/table-headers/",
+    "example": 7
+  },
+  {
+    "file": "table-headers-08.png",
+    "category": "table-headers",
+    "category_url": "https://flowbite.com/blocks/application/table-headers/",
+    "example": 8
+  },
+  {
+    "file": "table-headers-09.png",
+    "category": "table-headers",
+    "category_url": "https://flowbite.com/blocks/application/table-headers/",
+    "example": 9
+  },
+  {
+    "file": "table-headers-10.png",
+    "category": "table-headers",
+    "category_url": "https://flowbite.com/blocks/application/table-headers/",
+    "example": 10
+  },
+  {
+    "file": "table-headers-11.png",
+    "category": "table-headers",
+    "category_url": "https://flowbite.com/blocks/application/table-headers/",
+    "example": 11
+  },
+  {
+    "file": "table-headers-12.png",
+    "category": "table-headers",
+    "category_url": "https://flowbite.com/blocks/application/table-headers/",
+    "example": 12
+  },
+  {
+    "file": "table-headers-13.png",
+    "category": "table-headers",
+    "category_url": "https://flowbite.com/blocks/application/table-headers/",
+    "example": 13
+  },
+  {
+    "file": "sidenav-01.png",
+    "category": "sidenav",
+    "category_url": "https://flowbite.com/blocks/application/sidenav/",
+    "example": 1
+  },
+  {
+    "file": "sidenav-02.png",
+    "category": "sidenav",
+    "category_url": "https://flowbite.com/blocks/application/sidenav/",
+    "example": 2
+  },
+  {
+    "file": "sidenav-03.png",
+    "category": "sidenav",
+    "category_url": "https://flowbite.com/blocks/application/sidenav/",
+    "example": 3
+  },
+  {
+    "file": "sidenav-04.png",
+    "category": "sidenav",
+    "category_url": "https://flowbite.com/blocks/application/sidenav/",
+    "example": 4
+  },
+  {
+    "file": "sidenav-05.png",
+    "category": "sidenav",
+    "category_url": "https://flowbite.com/blocks/application/sidenav/",
+    "example": 5
+  },
+  {
+    "file": "sidenav-06.png",
+    "category": "sidenav",
+    "category_url": "https://flowbite.com/blocks/application/sidenav/",
+    "example": 6
+  },
+  {
+    "file": "sidenav-07.png",
+    "category": "sidenav",
+    "category_url": "https://flowbite.com/blocks/application/sidenav/",
+    "example": 7
+  },
+  {
+    "file": "sidenav-08.png",
+    "category": "sidenav",
+    "category_url": "https://flowbite.com/blocks/application/sidenav/",
+    "example": 8
+  },
+  {
+    "file": "sidenav-09.png",
+    "category": "sidenav",
+    "category_url": "https://flowbite.com/blocks/application/sidenav/",
+    "example": 9
+  },
+  {
+    "file": "sidenav-10.png",
+    "category": "sidenav",
+    "category_url": "https://flowbite.com/blocks/application/sidenav/",
+    "example": 10
+  },
+  {
+    "file": "sidenav-11.png",
+    "category": "sidenav",
+    "category_url": "https://flowbite.com/blocks/application/sidenav/",
+    "example": 11
+  },
+  {
+    "file": "sidenav-12.png",
+    "category": "sidenav",
+    "category_url": "https://flowbite.com/blocks/application/sidenav/",
+    "example": 12
+  },
+  {
+    "file": "feature-01.png",
+    "category": "feature",
+    "category_url": "https://flowbite.com/blocks/marketing/feature/",
+    "example": 1
+  },
+  {
+    "file": "feature-02.png",
+    "category": "feature",
+    "category_url": "https://flowbite.com/blocks/marketing/feature/",
+    "example": 2
+  },
+  {
+    "file": "feature-03.png",
+    "category": "feature",
+    "category_url": "https://flowbite.com/blocks/marketing/feature/",
+    "example": 3
+  },
+  {
+    "file": "feature-04.png",
+    "category": "feature",
+    "category_url": "https://flowbite.com/blocks/marketing/feature/",
+    "example": 4
+  },
+  {
+    "file": "feature-05.png",
+    "category": "feature",
+    "category_url": "https://flowbite.com/blocks/marketing/feature/",
+    "example": 5
+  },
+  {
+    "file": "feature-06.png",
+    "category": "feature",
+    "category_url": "https://flowbite.com/blocks/marketing/feature/",
+    "example": 6
+  },
+  {
+    "file": "feature-07.png",
+    "category": "feature",
+    "category_url": "https://flowbite.com/blocks/marketing/feature/",
+    "example": 7
+  },
+  {
+    "file": "feature-08.png",
+    "category": "feature",
+    "category_url": "https://flowbite.com/blocks/marketing/feature/",
+    "example": 8
+  },
+  {
+    "file": "feature-09.png",
+    "category": "feature",
+    "category_url": "https://flowbite.com/blocks/marketing/feature/",
+    "example": 9
+  },
+  {
+    "file": "feature-10.png",
+    "category": "feature",
+    "category_url": "https://flowbite.com/blocks/marketing/feature/",
+    "example": 10
+  },
+  {
+    "file": "cta-01.png",
+    "category": "cta",
+    "category_url": "https://flowbite.com/blocks/marketing/cta/",
+    "example": 1
+  },
+  {
+    "file": "cta-02.png",
+    "category": "cta",
+    "category_url": "https://flowbite.com/blocks/marketing/cta/",
+    "example": 2
+  },
+  {
+    "file": "cta-03.png",
+    "category": "cta",
+    "category_url": "https://flowbite.com/blocks/marketing/cta/",
+    "example": 3
+  },
+  {
+    "file": "cta-04.png",
+    "category": "cta",
+    "category_url": "https://flowbite.com/blocks/marketing/cta/",
+    "example": 4
+  },
+  {
+    "file": "cta-05.png",
+    "category": "cta",
+    "category_url": "https://flowbite.com/blocks/marketing/cta/",
+    "example": 5
+  },
+  {
+    "file": "cta-06.png",
+    "category": "cta",
+    "category_url": "https://flowbite.com/blocks/marketing/cta/",
+    "example": 6
+  },
+  {
+    "file": "cta-07.png",
+    "category": "cta",
+    "category_url": "https://flowbite.com/blocks/marketing/cta/",
+    "example": 7
+  },
+  {
+    "file": "cta-08.png",
+    "category": "cta",
+    "category_url": "https://flowbite.com/blocks/marketing/cta/",
+    "example": 8
+  },
+  {
+    "file": "cta-09.png",
+    "category": "cta",
+    "category_url": "https://flowbite.com/blocks/marketing/cta/",
+    "example": 9
+  },
+  {
+    "file": "cta-10.png",
+    "category": "cta",
+    "category_url": "https://flowbite.com/blocks/marketing/cta/",
+    "example": 10
+  },
+  {
+    "file": "content-01.png",
+    "category": "content",
+    "category_url": "https://flowbite.com/blocks/marketing/content/",
+    "example": 1
+  },
+  {
+    "file": "content-02.png",
+    "category": "content",
+    "category_url": "https://flowbite.com/blocks/marketing/content/",
+    "example": 2
+  },
+  {
+    "file": "content-03.png",
+    "category": "content",
+    "category_url": "https://flowbite.com/blocks/marketing/content/",
+    "example": 3
+  },
+  {
+    "file": "content-04.png",
+    "category": "content",
+    "category_url": "https://flowbite.com/blocks/marketing/content/",
+    "example": 4
+  },
+  {
+    "file": "content-05.png",
+    "category": "content",
+    "category_url": "https://flowbite.com/blocks/marketing/content/",
+    "example": 5
+  },
+  {
+    "file": "content-06.png",
+    "category": "content",
+    "category_url": "https://flowbite.com/blocks/marketing/content/",
+    "example": 6
+  },
+  {
+    "file": "content-07.png",
+    "category": "content",
+    "category_url": "https://flowbite.com/blocks/marketing/content/",
+    "example": 7
+  },
+  {
+    "file": "content-08.png",
+    "category": "content",
+    "category_url": "https://flowbite.com/blocks/marketing/content/",
+    "example": 8
+  },
+  {
+    "file": "content-09.png",
+    "category": "content",
+    "category_url": "https://flowbite.com/blocks/marketing/content/",
+    "example": 9
+  },
+  {
+    "file": "header-01.png",
+    "category": "header",
+    "category_url": "https://flowbite.com/blocks/marketing/header/",
+    "example": 1
+  },
+  {
+    "file": "header-02.png",
+    "category": "header",
+    "category_url": "https://flowbite.com/blocks/marketing/header/",
+    "example": 2
+  },
+  {
+    "file": "header-03.png",
+    "category": "header",
+    "category_url": "https://flowbite.com/blocks/marketing/header/",
+    "example": 3
+  },
+  {
+    "file": "header-04.png",
+    "category": "header",
+    "category_url": "https://flowbite.com/blocks/marketing/header/",
+    "example": 4
+  },
+  {
+    "file": "header-05.png",
+    "category": "header",
+    "category_url": "https://flowbite.com/blocks/marketing/header/",
+    "example": 5
+  },
+  {
+    "file": "header-06.png",
+    "category": "header",
+    "category_url": "https://flowbite.com/blocks/marketing/header/",
+    "example": 6
+  },
+  {
+    "file": "header-07.png",
+    "category": "header",
+    "category_url": "https://flowbite.com/blocks/marketing/header/",
+    "example": 7
+  },
+  {
+    "file": "header-08.png",
+    "category": "header",
+    "category_url": "https://flowbite.com/blocks/marketing/header/",
+    "example": 8
+  },
+  {
+    "file": "team-01.png",
+    "category": "team",
+    "category_url": "https://flowbite.com/blocks/marketing/team/",
+    "example": 1
+  },
+  {
+    "file": "team-02.png",
+    "category": "team",
+    "category_url": "https://flowbite.com/blocks/marketing/team/",
+    "example": 2
+  },
+  {
+    "file": "team-03.png",
+    "category": "team",
+    "category_url": "https://flowbite.com/blocks/marketing/team/",
+    "example": 3
+  },
+  {
+    "file": "team-04.png",
+    "category": "team",
+    "category_url": "https://flowbite.com/blocks/marketing/team/",
+    "example": 4
+  },
+  {
+    "file": "team-05.png",
+    "category": "team",
+    "category_url": "https://flowbite.com/blocks/marketing/team/",
+    "example": 5
+  },
+  {
+    "file": "team-06.png",
+    "category": "team",
+    "category_url": "https://flowbite.com/blocks/marketing/team/",
+    "example": 6
+  },
+  {
+    "file": "team-07.png",
+    "category": "team",
+    "category_url": "https://flowbite.com/blocks/marketing/team/",
+    "example": 7
+  },
+  {
+    "file": "team-08.png",
+    "category": "team",
+    "category_url": "https://flowbite.com/blocks/marketing/team/",
+    "example": 8
+  },
+  {
+    "file": "payment-forms-01.png",
+    "category": "payment-forms",
+    "category_url": "https://flowbite.com/blocks/e-commerce/payment-forms/",
+    "example": 1
+  },
+  {
+    "file": "payment-forms-02.png",
+    "category": "payment-forms",
+    "category_url": "https://flowbite.com/blocks/e-commerce/payment-forms/",
+    "example": 2
+  },
+  {
+    "file": "payment-forms-03.png",
+    "category": "payment-forms",
+    "category_url": "https://flowbite.com/blocks/e-commerce/payment-forms/",
+    "example": 3
+  },
+  {
+    "file": "payment-forms-04.png",
+    "category": "payment-forms",
+    "category_url": "https://flowbite.com/blocks/e-commerce/payment-forms/",
+    "example": 4
+  },
+  {
+    "file": "payment-forms-05.png",
+    "category": "payment-forms",
+    "category_url": "https://flowbite.com/blocks/e-commerce/payment-forms/",
+    "example": 5
+  },
+  {
+    "file": "payment-forms-06.png",
+    "category": "payment-forms",
+    "category_url": "https://flowbite.com/blocks/e-commerce/payment-forms/",
+    "example": 6
+  },
+  {
+    "file": "payment-forms-07.png",
+    "category": "payment-forms",
+    "category_url": "https://flowbite.com/blocks/e-commerce/payment-forms/",
+    "example": 7
+  },
+  {
+    "file": "payment-forms-08.png",
+    "category": "payment-forms",
+    "category_url": "https://flowbite.com/blocks/e-commerce/payment-forms/",
+    "example": 8
+  },
+  {
+    "file": "shells-01.png",
+    "category": "shells",
+    "category_url": "https://flowbite.com/blocks/application/shells/",
+    "example": 1
+  },
+  {
+    "file": "shells-02.png",
+    "category": "shells",
+    "category_url": "https://flowbite.com/blocks/application/shells/",
+    "example": 2
+  },
+  {
+    "file": "shells-03.png",
+    "category": "shells",
+    "category_url": "https://flowbite.com/blocks/application/shells/",
+    "example": 3
+  },
+  {
+    "file": "shells-04.png",
+    "category": "shells",
+    "category_url": "https://flowbite.com/blocks/application/shells/",
+    "example": 4
+  },
+  {
+    "file": "shells-05.png",
+    "category": "shells",
+    "category_url": "https://flowbite.com/blocks/application/shells/",
+    "example": 5
+  },
+  {
+    "file": "shells-06.png",
+    "category": "shells",
+    "category_url": "https://flowbite.com/blocks/application/shells/",
+    "example": 6
+  },
+  {
+    "file": "shells-07.png",
+    "category": "shells",
+    "category_url": "https://flowbite.com/blocks/application/shells/",
+    "example": 7
+  },
+  {
+    "file": "shells-08.png",
+    "category": "shells",
+    "category_url": "https://flowbite.com/blocks/application/shells/",
+    "example": 8
+  },
+  {
+    "file": "filter-01.png",
+    "category": "filter",
+    "category_url": "https://flowbite.com/blocks/application/filter/",
+    "example": 1
+  },
+  {
+    "file": "filter-02.png",
+    "category": "filter",
+    "category_url": "https://flowbite.com/blocks/application/filter/",
+    "example": 2
+  },
+  {
+    "file": "filter-03.png",
+    "category": "filter",
+    "category_url": "https://flowbite.com/blocks/application/filter/",
+    "example": 3
+  },
+  {
+    "file": "filter-04.png",
+    "category": "filter",
+    "category_url": "https://flowbite.com/blocks/application/filter/",
+    "example": 4
+  },
+  {
+    "file": "filter-05.png",
+    "category": "filter",
+    "category_url": "https://flowbite.com/blocks/application/filter/",
+    "example": 5
+  },
+  {
+    "file": "filter-06.png",
+    "category": "filter",
+    "category_url": "https://flowbite.com/blocks/application/filter/",
+    "example": 6
+  },
+  {
+    "file": "filter-07.png",
+    "category": "filter",
+    "category_url": "https://flowbite.com/blocks/application/filter/",
+    "example": 7
+  },
+  {
+    "file": "filter-08.png",
+    "category": "filter",
+    "category_url": "https://flowbite.com/blocks/application/filter/",
+    "example": 8
+  },
+  {
+    "file": "storefront-hero-01.png",
+    "category": "storefront-hero",
+    "category_url": "https://flowbite.com/blocks/e-commerce/storefront-hero/",
+    "example": 1
+  },
+  {
+    "file": "storefront-hero-02.png",
+    "category": "storefront-hero",
+    "category_url": "https://flowbite.com/blocks/e-commerce/storefront-hero/",
+    "example": 2
+  },
+  {
+    "file": "storefront-hero-03.png",
+    "category": "storefront-hero",
+    "category_url": "https://flowbite.com/blocks/e-commerce/storefront-hero/",
+    "example": 3
+  },
+  {
+    "file": "storefront-hero-04.png",
+    "category": "storefront-hero",
+    "category_url": "https://flowbite.com/blocks/e-commerce/storefront-hero/",
+    "example": 4
+  },
+  {
+    "file": "storefront-hero-05.png",
+    "category": "storefront-hero",
+    "category_url": "https://flowbite.com/blocks/e-commerce/storefront-hero/",
+    "example": 5
+  },
+  {
+    "file": "storefront-hero-06.png",
+    "category": "storefront-hero",
+    "category_url": "https://flowbite.com/blocks/e-commerce/storefront-hero/",
+    "example": 6
+  },
+  {
+    "file": "storefront-hero-07.png",
+    "category": "storefront-hero",
+    "category_url": "https://flowbite.com/blocks/e-commerce/storefront-hero/",
+    "example": 7
+  },
+  {
+    "file": "crud-update-modals-01.png",
+    "category": "crud-update-modals",
+    "category_url": "https://flowbite.com/blocks/application/crud-update-modals/",
+    "example": 1
+  },
+  {
+    "file": "crud-update-modals-02.png",
+    "category": "crud-update-modals",
+    "category_url": "https://flowbite.com/blocks/application/crud-update-modals/",
+    "example": 2
+  },
+  {
+    "file": "crud-update-modals-03.png",
+    "category": "crud-update-modals",
+    "category_url": "https://flowbite.com/blocks/application/crud-update-modals/",
+    "example": 3
+  },
+  {
+    "file": "crud-update-modals-04.png",
+    "category": "crud-update-modals",
+    "category_url": "https://flowbite.com/blocks/application/crud-update-modals/",
+    "example": 4
+  },
+  {
+    "file": "crud-update-modals-05.png",
+    "category": "crud-update-modals",
+    "category_url": "https://flowbite.com/blocks/application/crud-update-modals/",
+    "example": 5
+  },
+  {
+    "file": "crud-update-modals-06.png",
+    "category": "crud-update-modals",
+    "category_url": "https://flowbite.com/blocks/application/crud-update-modals/",
+    "example": 6
+  },
+  {
+    "file": "crud-update-modals-07.png",
+    "category": "crud-update-modals",
+    "category_url": "https://flowbite.com/blocks/application/crud-update-modals/",
+    "example": 7
+  },
+  {
+    "file": "pricing-01.png",
+    "category": "pricing",
+    "category_url": "https://flowbite.com/blocks/marketing/pricing/",
+    "example": 1
+  },
+  {
+    "file": "pricing-02.png",
+    "category": "pricing",
+    "category_url": "https://flowbite.com/blocks/marketing/pricing/",
+    "example": 2
+  },
+  {
+    "file": "pricing-03.png",
+    "category": "pricing",
+    "category_url": "https://flowbite.com/blocks/marketing/pricing/",
+    "example": 3
+  },
+  {
+    "file": "pricing-04.png",
+    "category": "pricing",
+    "category_url": "https://flowbite.com/blocks/marketing/pricing/",
+    "example": 4
+  },
+  {
+    "file": "pricing-05.png",
+    "category": "pricing",
+    "category_url": "https://flowbite.com/blocks/marketing/pricing/",
+    "example": 5
+  },
+  {
+    "file": "pricing-06.png",
+    "category": "pricing",
+    "category_url": "https://flowbite.com/blocks/marketing/pricing/",
+    "example": 6
+  },
+  {
+    "file": "pricing-07.png",
+    "category": "pricing",
+    "category_url": "https://flowbite.com/blocks/marketing/pricing/",
+    "example": 7
+  },
+  {
+    "file": "crud-create-modals-01.png",
+    "category": "crud-create-modals",
+    "category_url": "https://flowbite.com/blocks/application/crud-create-modals/",
+    "example": 1
+  },
+  {
+    "file": "crud-create-modals-02.png",
+    "category": "crud-create-modals",
+    "category_url": "https://flowbite.com/blocks/application/crud-create-modals/",
+    "example": 2
+  },
+  {
+    "file": "crud-create-modals-03.png",
+    "category": "crud-create-modals",
+    "category_url": "https://flowbite.com/blocks/application/crud-create-modals/",
+    "example": 3
+  },
+  {
+    "file": "crud-create-modals-04.png",
+    "category": "crud-create-modals",
+    "category_url": "https://flowbite.com/blocks/application/crud-create-modals/",
+    "example": 4
+  },
+  {
+    "file": "crud-create-modals-05.png",
+    "category": "crud-create-modals",
+    "category_url": "https://flowbite.com/blocks/application/crud-create-modals/",
+    "example": 5
+  },
+  {
+    "file": "crud-create-modals-06.png",
+    "category": "crud-create-modals",
+    "category_url": "https://flowbite.com/blocks/application/crud-create-modals/",
+    "example": 6
+  },
+  {
+    "file": "crud-create-modals-07.png",
+    "category": "crud-create-modals",
+    "category_url": "https://flowbite.com/blocks/application/crud-create-modals/",
+    "example": 7
+  },
+  {
+    "file": "dashboard-footer-01.png",
+    "category": "dashboard-footer",
+    "category_url": "https://flowbite.com/blocks/application/dashboard-footer/",
+    "example": 1
+  },
+  {
+    "file": "dashboard-footer-02.png",
+    "category": "dashboard-footer",
+    "category_url": "https://flowbite.com/blocks/application/dashboard-footer/",
+    "example": 2
+  },
+  {
+    "file": "dashboard-footer-03.png",
+    "category": "dashboard-footer",
+    "category_url": "https://flowbite.com/blocks/application/dashboard-footer/",
+    "example": 3
+  },
+  {
+    "file": "dashboard-footer-04.png",
+    "category": "dashboard-footer",
+    "category_url": "https://flowbite.com/blocks/application/dashboard-footer/",
+    "example": 4
+  },
+  {
+    "file": "dashboard-footer-05.png",
+    "category": "dashboard-footer",
+    "category_url": "https://flowbite.com/blocks/application/dashboard-footer/",
+    "example": 5
+  },
+  {
+    "file": "dashboard-footer-06.png",
+    "category": "dashboard-footer",
+    "category_url": "https://flowbite.com/blocks/application/dashboard-footer/",
+    "example": 6
+  },
+  {
+    "file": "dashboard-footer-07.png",
+    "category": "dashboard-footer",
+    "category_url": "https://flowbite.com/blocks/application/dashboard-footer/",
+    "example": 7
+  },
+  {
+    "file": "advanced-tables-01.png",
+    "category": "advanced-tables",
+    "category_url": "https://flowbite.com/blocks/application/advanced-tables/",
+    "example": 1
+  },
+  {
+    "file": "advanced-tables-02.png",
+    "category": "advanced-tables",
+    "category_url": "https://flowbite.com/blocks/application/advanced-tables/",
+    "example": 2
+  },
+  {
+    "file": "advanced-tables-03.png",
+    "category": "advanced-tables",
+    "category_url": "https://flowbite.com/blocks/application/advanced-tables/",
+    "example": 3
+  },
+  {
+    "file": "advanced-tables-04.png",
+    "category": "advanced-tables",
+    "category_url": "https://flowbite.com/blocks/application/advanced-tables/",
+    "example": 4
+  },
+  {
+    "file": "advanced-tables-05.png",
+    "category": "advanced-tables",
+    "category_url": "https://flowbite.com/blocks/application/advanced-tables/",
+    "example": 5
+  },
+  {
+    "file": "advanced-tables-06.png",
+    "category": "advanced-tables",
+    "category_url": "https://flowbite.com/blocks/application/advanced-tables/",
+    "example": 6
+  },
+  {
+    "file": "advanced-tables-07.png",
+    "category": "advanced-tables",
+    "category_url": "https://flowbite.com/blocks/application/advanced-tables/",
+    "example": 7
+  },
+  {
+    "file": "footer-01.png",
+    "category": "footer",
+    "category_url": "https://flowbite.com/blocks/marketing/footer/",
+    "example": 1
+  },
+  {
+    "file": "footer-02.png",
+    "category": "footer",
+    "category_url": "https://flowbite.com/blocks/marketing/footer/",
+    "example": 2
+  },
+  {
+    "file": "footer-03.png",
+    "category": "footer",
+    "category_url": "https://flowbite.com/blocks/marketing/footer/",
+    "example": 3
+  },
+  {
+    "file": "footer-04.png",
+    "category": "footer",
+    "category_url": "https://flowbite.com/blocks/marketing/footer/",
+    "example": 4
+  },
+  {
+    "file": "footer-05.png",
+    "category": "footer",
+    "category_url": "https://flowbite.com/blocks/marketing/footer/",
+    "example": 5
+  },
+  {
+    "file": "footer-06.png",
+    "category": "footer",
+    "category_url": "https://flowbite.com/blocks/marketing/footer/",
+    "example": 6
+  },
+  {
+    "file": "footer-07.png",
+    "category": "footer",
+    "category_url": "https://flowbite.com/blocks/marketing/footer/",
+    "example": 7
+  },
+  {
+    "file": "navbars-01.png",
+    "category": "navbars",
+    "category_url": "https://flowbite.com/blocks/e-commerce/navbars/",
+    "example": 1
+  },
+  {
+    "file": "navbars-02.png",
+    "category": "navbars",
+    "category_url": "https://flowbite.com/blocks/e-commerce/navbars/",
+    "example": 2
+  },
+  {
+    "file": "navbars-03.png",
+    "category": "navbars",
+    "category_url": "https://flowbite.com/blocks/e-commerce/navbars/",
+    "example": 3
+  },
+  {
+    "file": "navbars-04.png",
+    "category": "navbars",
+    "category_url": "https://flowbite.com/blocks/e-commerce/navbars/",
+    "example": 4
+  },
+  {
+    "file": "navbars-05.png",
+    "category": "navbars",
+    "category_url": "https://flowbite.com/blocks/e-commerce/navbars/",
+    "example": 5
+  },
+  {
+    "file": "navbars-06.png",
+    "category": "navbars",
+    "category_url": "https://flowbite.com/blocks/e-commerce/navbars/",
+    "example": 6
+  },
+  {
+    "file": "product-categories-01.png",
+    "category": "product-categories",
+    "category_url": "https://flowbite.com/blocks/e-commerce/product-categories/",
+    "example": 1
+  },
+  {
+    "file": "product-categories-02.png",
+    "category": "product-categories",
+    "category_url": "https://flowbite.com/blocks/e-commerce/product-categories/",
+    "example": 2
+  },
+  {
+    "file": "product-categories-03.png",
+    "category": "product-categories",
+    "category_url": "https://flowbite.com/blocks/e-commerce/product-categories/",
+    "example": 3
+  },
+  {
+    "file": "product-categories-04.png",
+    "category": "product-categories",
+    "category_url": "https://flowbite.com/blocks/e-commerce/product-categories/",
+    "example": 4
+  },
+  {
+    "file": "product-categories-05.png",
+    "category": "product-categories",
+    "category_url": "https://flowbite.com/blocks/e-commerce/product-categories/",
+    "example": 5
+  },
+  {
+    "file": "product-categories-06.png",
+    "category": "product-categories",
+    "category_url": "https://flowbite.com/blocks/e-commerce/product-categories/",
+    "example": 6
+  },
+  {
+    "file": "crud-read-modals-01.png",
+    "category": "crud-read-modals",
+    "category_url": "https://flowbite.com/blocks/application/crud-read-modals/",
+    "example": 1
+  },
+  {
+    "file": "crud-read-modals-02.png",
+    "category": "crud-read-modals",
+    "category_url": "https://flowbite.com/blocks/application/crud-read-modals/",
+    "example": 2
+  },
+  {
+    "file": "crud-read-modals-03.png",
+    "category": "crud-read-modals",
+    "category_url": "https://flowbite.com/blocks/application/crud-read-modals/",
+    "example": 3
+  },
+  {
+    "file": "crud-read-modals-04.png",
+    "category": "crud-read-modals",
+    "category_url": "https://flowbite.com/blocks/application/crud-read-modals/",
+    "example": 4
+  },
+  {
+    "file": "crud-read-modals-05.png",
+    "category": "crud-read-modals",
+    "category_url": "https://flowbite.com/blocks/application/crud-read-modals/",
+    "example": 5
+  },
+  {
+    "file": "crud-read-modals-06.png",
+    "category": "crud-read-modals",
+    "category_url": "https://flowbite.com/blocks/application/crud-read-modals/",
+    "example": 6
+  },
+  {
+    "file": "crud-delete-confirm-01.png",
+    "category": "crud-delete-confirm",
+    "category_url": "https://flowbite.com/blocks/application/crud-delete-confirm/",
+    "example": 1
+  },
+  {
+    "file": "crud-delete-confirm-02.png",
+    "category": "crud-delete-confirm",
+    "category_url": "https://flowbite.com/blocks/application/crud-delete-confirm/",
+    "example": 2
+  },
+  {
+    "file": "crud-delete-confirm-03.png",
+    "category": "crud-delete-confirm",
+    "category_url": "https://flowbite.com/blocks/application/crud-delete-confirm/",
+    "example": 3
+  },
+  {
+    "file": "crud-delete-confirm-04.png",
+    "category": "crud-delete-confirm",
+    "category_url": "https://flowbite.com/blocks/application/crud-delete-confirm/",
+    "example": 4
+  },
+  {
+    "file": "crud-delete-confirm-05.png",
+    "category": "crud-delete-confirm",
+    "category_url": "https://flowbite.com/blocks/application/crud-delete-confirm/",
+    "example": 5
+  },
+  {
+    "file": "crud-delete-confirm-06.png",
+    "category": "crud-delete-confirm",
+    "category_url": "https://flowbite.com/blocks/application/crud-delete-confirm/",
+    "example": 6
+  },
+  {
+    "file": "navbar-01.png",
+    "category": "navbar",
+    "category_url": "https://flowbite.com/blocks/application/navbar/",
+    "example": 1
+  },
+  {
+    "file": "navbar-02.png",
+    "category": "navbar",
+    "category_url": "https://flowbite.com/blocks/application/navbar/",
+    "example": 2
+  },
+  {
+    "file": "navbar-03.png",
+    "category": "navbar",
+    "category_url": "https://flowbite.com/blocks/application/navbar/",
+    "example": 3
+  },
+  {
+    "file": "navbar-04.png",
+    "category": "navbar",
+    "category_url": "https://flowbite.com/blocks/application/navbar/",
+    "example": 4
+  },
+  {
+    "file": "navbar-05.png",
+    "category": "navbar",
+    "category_url": "https://flowbite.com/blocks/application/navbar/",
+    "example": 5
+  },
+  {
+    "file": "navbar-06.png",
+    "category": "navbar",
+    "category_url": "https://flowbite.com/blocks/application/navbar/",
+    "example": 6
+  },
+  {
+    "file": "blog-templates-01.png",
+    "category": "blog-templates",
+    "category_url": "https://flowbite.com/blocks/publisher/blog-templates/",
+    "example": 1
+  },
+  {
+    "file": "blog-templates-02.png",
+    "category": "blog-templates",
+    "category_url": "https://flowbite.com/blocks/publisher/blog-templates/",
+    "example": 2
+  },
+  {
+    "file": "blog-templates-03.png",
+    "category": "blog-templates",
+    "category_url": "https://flowbite.com/blocks/publisher/blog-templates/",
+    "example": 3
+  },
+  {
+    "file": "blog-templates-04.png",
+    "category": "blog-templates",
+    "category_url": "https://flowbite.com/blocks/publisher/blog-templates/",
+    "example": 4
+  },
+  {
+    "file": "blog-templates-05.png",
+    "category": "blog-templates",
+    "category_url": "https://flowbite.com/blocks/publisher/blog-templates/",
+    "example": 5
+  },
+  {
+    "file": "blog-templates-06.png",
+    "category": "blog-templates",
+    "category_url": "https://flowbite.com/blocks/publisher/blog-templates/",
+    "example": 6
+  },
+  {
+    "file": "crud-read-sections-01.png",
+    "category": "crud-read-sections",
+    "category_url": "https://flowbite.com/blocks/application/crud-read-sections/",
+    "example": 1
+  },
+  {
+    "file": "crud-read-sections-02.png",
+    "category": "crud-read-sections",
+    "category_url": "https://flowbite.com/blocks/application/crud-read-sections/",
+    "example": 2
+  },
+  {
+    "file": "crud-read-sections-03.png",
+    "category": "crud-read-sections",
+    "category_url": "https://flowbite.com/blocks/application/crud-read-sections/",
+    "example": 3
+  },
+  {
+    "file": "crud-read-sections-04.png",
+    "category": "crud-read-sections",
+    "category_url": "https://flowbite.com/blocks/application/crud-read-sections/",
+    "example": 4
+  },
+  {
+    "file": "crud-read-sections-05.png",
+    "category": "crud-read-sections",
+    "category_url": "https://flowbite.com/blocks/application/crud-read-sections/",
+    "example": 5
+  },
+  {
+    "file": "crud-read-sections-06.png",
+    "category": "crud-read-sections",
+    "category_url": "https://flowbite.com/blocks/application/crud-read-sections/",
+    "example": 6
+  },
+  {
+    "file": "social-proof-01.png",
+    "category": "social-proof",
+    "category_url": "https://flowbite.com/blocks/marketing/social-proof/",
+    "example": 1
+  },
+  {
+    "file": "social-proof-02.png",
+    "category": "social-proof",
+    "category_url": "https://flowbite.com/blocks/marketing/social-proof/",
+    "example": 2
+  },
+  {
+    "file": "social-proof-03.png",
+    "category": "social-proof",
+    "category_url": "https://flowbite.com/blocks/marketing/social-proof/",
+    "example": 3
+  },
+  {
+    "file": "social-proof-04.png",
+    "category": "social-proof",
+    "category_url": "https://flowbite.com/blocks/marketing/social-proof/",
+    "example": 4
+  },
+  {
+    "file": "social-proof-05.png",
+    "category": "social-proof",
+    "category_url": "https://flowbite.com/blocks/marketing/social-proof/",
+    "example": 5
+  },
+  {
+    "file": "social-proof-06.png",
+    "category": "social-proof",
+    "category_url": "https://flowbite.com/blocks/marketing/social-proof/",
+    "example": 6
+  },
+  {
+    "file": "discount-01.png",
+    "category": "discount",
+    "category_url": "https://flowbite.com/blocks/e-commerce/discount/",
+    "example": 1
+  },
+  {
+    "file": "discount-02.png",
+    "category": "discount",
+    "category_url": "https://flowbite.com/blocks/e-commerce/discount/",
+    "example": 2
+  },
+  {
+    "file": "discount-03.png",
+    "category": "discount",
+    "category_url": "https://flowbite.com/blocks/e-commerce/discount/",
+    "example": 3
+  },
+  {
+    "file": "discount-04.png",
+    "category": "discount",
+    "category_url": "https://flowbite.com/blocks/e-commerce/discount/",
+    "example": 4
+  },
+  {
+    "file": "discount-05.png",
+    "category": "discount",
+    "category_url": "https://flowbite.com/blocks/e-commerce/discount/",
+    "example": 5
+  },
+  {
+    "file": "discount-06.png",
+    "category": "discount",
+    "category_url": "https://flowbite.com/blocks/e-commerce/discount/",
+    "example": 6
+  },
+  {
+    "file": "crud-01.png",
+    "category": "crud",
+    "category_url": "https://flowbite.com/blocks/application/crud/",
+    "example": 1
+  },
+  {
+    "file": "crud-02.png",
+    "category": "crud",
+    "category_url": "https://flowbite.com/blocks/application/crud/",
+    "example": 2
+  },
+  {
+    "file": "crud-03.png",
+    "category": "crud",
+    "category_url": "https://flowbite.com/blocks/application/crud/",
+    "example": 3
+  },
+  {
+    "file": "crud-04.png",
+    "category": "crud",
+    "category_url": "https://flowbite.com/blocks/application/crud/",
+    "example": 4
+  },
+  {
+    "file": "crud-05.png",
+    "category": "crud",
+    "category_url": "https://flowbite.com/blocks/application/crud/",
+    "example": 5
+  },
+  {
+    "file": "table-footers-01.png",
+    "category": "table-footers",
+    "category_url": "https://flowbite.com/blocks/application/table-footers/",
+    "example": 1
+  },
+  {
+    "file": "table-footers-02.png",
+    "category": "table-footers",
+    "category_url": "https://flowbite.com/blocks/application/table-footers/",
+    "example": 2
+  },
+  {
+    "file": "table-footers-03.png",
+    "category": "table-footers",
+    "category_url": "https://flowbite.com/blocks/application/table-footers/",
+    "example": 3
+  },
+  {
+    "file": "table-footers-04.png",
+    "category": "table-footers",
+    "category_url": "https://flowbite.com/blocks/application/table-footers/",
+    "example": 4
+  },
+  {
+    "file": "table-footers-05.png",
+    "category": "table-footers",
+    "category_url": "https://flowbite.com/blocks/application/table-footers/",
+    "example": 5
+  },
+  {
+    "file": "table-footers-06.png",
+    "category": "table-footers",
+    "category_url": "https://flowbite.com/blocks/application/table-footers/",
+    "example": 6
+  },
+  {
+    "file": "contact-01.png",
+    "category": "contact",
+    "category_url": "https://flowbite.com/blocks/marketing/contact/",
+    "example": 1
+  },
+  {
+    "file": "contact-02.png",
+    "category": "contact",
+    "category_url": "https://flowbite.com/blocks/marketing/contact/",
+    "example": 2
+  },
+  {
+    "file": "contact-03.png",
+    "category": "contact",
+    "category_url": "https://flowbite.com/blocks/marketing/contact/",
+    "example": 3
+  },
+  {
+    "file": "contact-04.png",
+    "category": "contact",
+    "category_url": "https://flowbite.com/blocks/marketing/contact/",
+    "example": 4
+  },
+  {
+    "file": "contact-05.png",
+    "category": "contact",
+    "category_url": "https://flowbite.com/blocks/marketing/contact/",
+    "example": 5
+  },
+  {
+    "file": "contact-06.png",
+    "category": "contact",
+    "category_url": "https://flowbite.com/blocks/marketing/contact/",
+    "example": 6
+  },
+  {
+    "file": "crud-read-drawers-01.png",
+    "category": "crud-read-drawers",
+    "category_url": "https://flowbite.com/blocks/application/crud-read-drawers/",
+    "example": 1
+  },
+  {
+    "file": "crud-read-drawers-02.png",
+    "category": "crud-read-drawers",
+    "category_url": "https://flowbite.com/blocks/application/crud-read-drawers/",
+    "example": 2
+  },
+  {
+    "file": "crud-read-drawers-03.png",
+    "category": "crud-read-drawers",
+    "category_url": "https://flowbite.com/blocks/application/crud-read-drawers/",
+    "example": 3
+  },
+  {
+    "file": "crud-read-drawers-04.png",
+    "category": "crud-read-drawers",
+    "category_url": "https://flowbite.com/blocks/application/crud-read-drawers/",
+    "example": 4
+  },
+  {
+    "file": "crud-read-drawers-05.png",
+    "category": "crud-read-drawers",
+    "category_url": "https://flowbite.com/blocks/application/crud-read-drawers/",
+    "example": 5
+  },
+  {
+    "file": "crud-read-drawers-06.png",
+    "category": "crud-read-drawers",
+    "category_url": "https://flowbite.com/blocks/application/crud-read-drawers/",
+    "example": 6
+  },
+  {
+    "file": "order-summary-01.png",
+    "category": "order-summary",
+    "category_url": "https://flowbite.com/blocks/e-commerce/order-summary/",
+    "example": 1
+  },
+  {
+    "file": "order-summary-02.png",
+    "category": "order-summary",
+    "category_url": "https://flowbite.com/blocks/e-commerce/order-summary/",
+    "example": 2
+  },
+  {
+    "file": "order-summary-03.png",
+    "category": "order-summary",
+    "category_url": "https://flowbite.com/blocks/e-commerce/order-summary/",
+    "example": 3
+  },
+  {
+    "file": "order-summary-04.png",
+    "category": "order-summary",
+    "category_url": "https://flowbite.com/blocks/e-commerce/order-summary/",
+    "example": 4
+  },
+  {
+    "file": "order-summary-05.png",
+    "category": "order-summary",
+    "category_url": "https://flowbite.com/blocks/e-commerce/order-summary/",
+    "example": 5
+  },
+  {
+    "file": "crud-create-forms-01.png",
+    "category": "crud-create-forms",
+    "category_url": "https://flowbite.com/blocks/application/crud-create-forms/",
+    "example": 1
+  },
+  {
+    "file": "crud-create-forms-02.png",
+    "category": "crud-create-forms",
+    "category_url": "https://flowbite.com/blocks/application/crud-create-forms/",
+    "example": 2
+  },
+  {
+    "file": "crud-create-forms-03.png",
+    "category": "crud-create-forms",
+    "category_url": "https://flowbite.com/blocks/application/crud-create-forms/",
+    "example": 3
+  },
+  {
+    "file": "crud-create-forms-04.png",
+    "category": "crud-create-forms",
+    "category_url": "https://flowbite.com/blocks/application/crud-create-forms/",
+    "example": 4
+  },
+  {
+    "file": "crud-create-forms-05.png",
+    "category": "crud-create-forms",
+    "category_url": "https://flowbite.com/blocks/application/crud-create-forms/",
+    "example": 5
+  },
+  {
+    "file": "register-01.png",
+    "category": "register",
+    "category_url": "https://flowbite.com/blocks/marketing/register/",
+    "example": 1
+  },
+  {
+    "file": "register-02.png",
+    "category": "register",
+    "category_url": "https://flowbite.com/blocks/marketing/register/",
+    "example": 2
+  },
+  {
+    "file": "register-03.png",
+    "category": "register",
+    "category_url": "https://flowbite.com/blocks/marketing/register/",
+    "example": 3
+  },
+  {
+    "file": "register-04.png",
+    "category": "register",
+    "category_url": "https://flowbite.com/blocks/marketing/register/",
+    "example": 4
+  },
+  {
+    "file": "register-05.png",
+    "category": "register",
+    "category_url": "https://flowbite.com/blocks/marketing/register/",
+    "example": 5
+  },
+  {
+    "file": "refund-forms-01.png",
+    "category": "refund-forms",
+    "category_url": "https://flowbite.com/blocks/e-commerce/refund-forms/",
+    "example": 1
+  },
+  {
+    "file": "refund-forms-02.png",
+    "category": "refund-forms",
+    "category_url": "https://flowbite.com/blocks/e-commerce/refund-forms/",
+    "example": 2
+  },
+  {
+    "file": "refund-forms-03.png",
+    "category": "refund-forms",
+    "category_url": "https://flowbite.com/blocks/e-commerce/refund-forms/",
+    "example": 3
+  },
+  {
+    "file": "refund-forms-04.png",
+    "category": "refund-forms",
+    "category_url": "https://flowbite.com/blocks/e-commerce/refund-forms/",
+    "example": 4
+  },
+  {
+    "file": "refund-forms-05.png",
+    "category": "refund-forms",
+    "category_url": "https://flowbite.com/blocks/e-commerce/refund-forms/",
+    "example": 5
+  },
+  {
+    "file": "faceted-search-modals-01.png",
+    "category": "faceted-search-modals",
+    "category_url": "https://flowbite.com/blocks/application/faceted-search-modals/",
+    "example": 1
+  },
+  {
+    "file": "faceted-search-modals-02.png",
+    "category": "faceted-search-modals",
+    "category_url": "https://flowbite.com/blocks/application/faceted-search-modals/",
+    "example": 2
+  },
+  {
+    "file": "faceted-search-modals-03.png",
+    "category": "faceted-search-modals",
+    "category_url": "https://flowbite.com/blocks/application/faceted-search-modals/",
+    "example": 3
+  },
+  {
+    "file": "faceted-search-modals-04.png",
+    "category": "faceted-search-modals",
+    "category_url": "https://flowbite.com/blocks/application/faceted-search-modals/",
+    "example": 4
+  },
+  {
+    "file": "faceted-search-modals-05.png",
+    "category": "faceted-search-modals",
+    "category_url": "https://flowbite.com/blocks/application/faceted-search-modals/",
+    "example": 5
+  },
+  {
+    "file": "shopping-cart-01.png",
+    "category": "shopping-cart",
+    "category_url": "https://flowbite.com/blocks/e-commerce/shopping-cart/",
+    "example": 1
+  },
+  {
+    "file": "shopping-cart-02.png",
+    "category": "shopping-cart",
+    "category_url": "https://flowbite.com/blocks/e-commerce/shopping-cart/",
+    "example": 2
+  },
+  {
+    "file": "shopping-cart-03.png",
+    "category": "shopping-cart",
+    "category_url": "https://flowbite.com/blocks/e-commerce/shopping-cart/",
+    "example": 3
+  },
+  {
+    "file": "shopping-cart-04.png",
+    "category": "shopping-cart",
+    "category_url": "https://flowbite.com/blocks/e-commerce/shopping-cart/",
+    "example": 4
+  },
+  {
+    "file": "shopping-cart-05.png",
+    "category": "shopping-cart",
+    "category_url": "https://flowbite.com/blocks/e-commerce/shopping-cart/",
+    "example": 5
+  },
+  {
+    "file": "popup-01.png",
+    "category": "popup",
+    "category_url": "https://flowbite.com/blocks/marketing/popup/",
+    "example": 1
+  },
+  {
+    "file": "popup-02.png",
+    "category": "popup",
+    "category_url": "https://flowbite.com/blocks/marketing/popup/",
+    "example": 2
+  },
+  {
+    "file": "popup-03.png",
+    "category": "popup",
+    "category_url": "https://flowbite.com/blocks/marketing/popup/",
+    "example": 3
+  },
+  {
+    "file": "popup-04.png",
+    "category": "popup",
+    "category_url": "https://flowbite.com/blocks/marketing/popup/",
+    "example": 4
+  },
+  {
+    "file": "popup-05.png",
+    "category": "popup",
+    "category_url": "https://flowbite.com/blocks/marketing/popup/",
+    "example": 5
+  },
+  {
+    "file": "crud-update-drawers-01.png",
+    "category": "crud-update-drawers",
+    "category_url": "https://flowbite.com/blocks/application/crud-update-drawers/",
+    "example": 1
+  },
+  {
+    "file": "crud-update-drawers-02.png",
+    "category": "crud-update-drawers",
+    "category_url": "https://flowbite.com/blocks/application/crud-update-drawers/",
+    "example": 2
+  },
+  {
+    "file": "crud-update-drawers-03.png",
+    "category": "crud-update-drawers",
+    "category_url": "https://flowbite.com/blocks/application/crud-update-drawers/",
+    "example": 3
+  },
+  {
+    "file": "crud-update-drawers-04.png",
+    "category": "crud-update-drawers",
+    "category_url": "https://flowbite.com/blocks/application/crud-update-drawers/",
+    "example": 4
+  },
+  {
+    "file": "crud-update-drawers-05.png",
+    "category": "crud-update-drawers",
+    "category_url": "https://flowbite.com/blocks/application/crud-update-drawers/",
+    "example": 5
+  },
+  {
+    "file": "orders-overview-01.png",
+    "category": "orders-overview",
+    "category_url": "https://flowbite.com/blocks/e-commerce/orders-overview/",
+    "example": 1
+  },
+  {
+    "file": "orders-overview-02.png",
+    "category": "orders-overview",
+    "category_url": "https://flowbite.com/blocks/e-commerce/orders-overview/",
+    "example": 2
+  },
+  {
+    "file": "orders-overview-03.png",
+    "category": "orders-overview",
+    "category_url": "https://flowbite.com/blocks/e-commerce/orders-overview/",
+    "example": 3
+  },
+  {
+    "file": "orders-overview-04.png",
+    "category": "orders-overview",
+    "category_url": "https://flowbite.com/blocks/e-commerce/orders-overview/",
+    "example": 4
+  },
+  {
+    "file": "orders-overview-05.png",
+    "category": "orders-overview",
+    "category_url": "https://flowbite.com/blocks/e-commerce/orders-overview/",
+    "example": 5
+  },
+  {
+    "file": "crud-update-forms-01.png",
+    "category": "crud-update-forms",
+    "category_url": "https://flowbite.com/blocks/application/crud-update-forms/",
+    "example": 1
+  },
+  {
+    "file": "crud-update-forms-02.png",
+    "category": "crud-update-forms",
+    "category_url": "https://flowbite.com/blocks/application/crud-update-forms/",
+    "example": 2
+  },
+  {
+    "file": "crud-update-forms-03.png",
+    "category": "crud-update-forms",
+    "category_url": "https://flowbite.com/blocks/application/crud-update-forms/",
+    "example": 3
+  },
+  {
+    "file": "crud-update-forms-04.png",
+    "category": "crud-update-forms",
+    "category_url": "https://flowbite.com/blocks/application/crud-update-forms/",
+    "example": 4
+  },
+  {
+    "file": "crud-update-forms-05.png",
+    "category": "crud-update-forms",
+    "category_url": "https://flowbite.com/blocks/application/crud-update-forms/",
+    "example": 5
+  },
+  {
+    "file": "warranties-01.png",
+    "category": "warranties",
+    "category_url": "https://flowbite.com/blocks/e-commerce/warranties/",
+    "example": 1
+  },
+  {
+    "file": "warranties-02.png",
+    "category": "warranties",
+    "category_url": "https://flowbite.com/blocks/e-commerce/warranties/",
+    "example": 2
+  },
+  {
+    "file": "warranties-03.png",
+    "category": "warranties",
+    "category_url": "https://flowbite.com/blocks/e-commerce/warranties/",
+    "example": 3
+  },
+  {
+    "file": "warranties-04.png",
+    "category": "warranties",
+    "category_url": "https://flowbite.com/blocks/e-commerce/warranties/",
+    "example": 4
+  },
+  {
+    "file": "warranties-05.png",
+    "category": "warranties",
+    "category_url": "https://flowbite.com/blocks/e-commerce/warranties/",
+    "example": 5
+  },
+  {
+    "file": "customer-service-01.png",
+    "category": "customer-service",
+    "category_url": "https://flowbite.com/blocks/e-commerce/customer-service/",
+    "example": 1
+  },
+  {
+    "file": "customer-service-02.png",
+    "category": "customer-service",
+    "category_url": "https://flowbite.com/blocks/e-commerce/customer-service/",
+    "example": 2
+  },
+  {
+    "file": "customer-service-03.png",
+    "category": "customer-service",
+    "category_url": "https://flowbite.com/blocks/e-commerce/customer-service/",
+    "example": 3
+  },
+  {
+    "file": "customer-service-04.png",
+    "category": "customer-service",
+    "category_url": "https://flowbite.com/blocks/e-commerce/customer-service/",
+    "example": 4
+  },
+  {
+    "file": "customer-service-05.png",
+    "category": "customer-service",
+    "category_url": "https://flowbite.com/blocks/e-commerce/customer-service/",
+    "example": 5
+  },
+  {
+    "file": "mega-footers-01.png",
+    "category": "mega-footers",
+    "category_url": "https://flowbite.com/blocks/e-commerce/mega-footers/",
+    "example": 1
+  },
+  {
+    "file": "mega-footers-02.png",
+    "category": "mega-footers",
+    "category_url": "https://flowbite.com/blocks/e-commerce/mega-footers/",
+    "example": 2
+  },
+  {
+    "file": "mega-footers-03.png",
+    "category": "mega-footers",
+    "category_url": "https://flowbite.com/blocks/e-commerce/mega-footers/",
+    "example": 3
+  },
+  {
+    "file": "mega-footers-04.png",
+    "category": "mega-footers",
+    "category_url": "https://flowbite.com/blocks/e-commerce/mega-footers/",
+    "example": 4
+  },
+  {
+    "file": "mega-footers-05.png",
+    "category": "mega-footers",
+    "category_url": "https://flowbite.com/blocks/e-commerce/mega-footers/",
+    "example": 5
+  },
+  {
+    "file": "product-overview-01.png",
+    "category": "product-overview",
+    "category_url": "https://flowbite.com/blocks/e-commerce/product-overview/",
+    "example": 1
+  },
+  {
+    "file": "product-overview-02.png",
+    "category": "product-overview",
+    "category_url": "https://flowbite.com/blocks/e-commerce/product-overview/",
+    "example": 2
+  },
+  {
+    "file": "product-overview-03.png",
+    "category": "product-overview",
+    "category_url": "https://flowbite.com/blocks/e-commerce/product-overview/",
+    "example": 3
+  },
+  {
+    "file": "product-overview-04.png",
+    "category": "product-overview",
+    "category_url": "https://flowbite.com/blocks/e-commerce/product-overview/",
+    "example": 4
+  },
+  {
+    "file": "product-overview-05.png",
+    "category": "product-overview",
+    "category_url": "https://flowbite.com/blocks/e-commerce/product-overview/",
+    "example": 5
+  },
+  {
+    "file": "reset-password-01.png",
+    "category": "reset-password",
+    "category_url": "https://flowbite.com/blocks/marketing/reset-password/",
+    "example": 1
+  },
+  {
+    "file": "reset-password-02.png",
+    "category": "reset-password",
+    "category_url": "https://flowbite.com/blocks/marketing/reset-password/",
+    "example": 2
+  },
+  {
+    "file": "reset-password-03.png",
+    "category": "reset-password",
+    "category_url": "https://flowbite.com/blocks/marketing/reset-password/",
+    "example": 3
+  },
+  {
+    "file": "reset-password-04.png",
+    "category": "reset-password",
+    "category_url": "https://flowbite.com/blocks/marketing/reset-password/",
+    "example": 4
+  },
+  {
+    "file": "reset-password-05.png",
+    "category": "reset-password",
+    "category_url": "https://flowbite.com/blocks/marketing/reset-password/",
+    "example": 5
+  },
+  {
+    "file": "promotional-sections-01.png",
+    "category": "promotional-sections",
+    "category_url": "https://flowbite.com/blocks/e-commerce/promotional-sections/",
+    "example": 1
+  },
+  {
+    "file": "promotional-sections-02.png",
+    "category": "promotional-sections",
+    "category_url": "https://flowbite.com/blocks/e-commerce/promotional-sections/",
+    "example": 2
+  },
+  {
+    "file": "promotional-sections-03.png",
+    "category": "promotional-sections",
+    "category_url": "https://flowbite.com/blocks/e-commerce/promotional-sections/",
+    "example": 3
+  },
+  {
+    "file": "promotional-sections-04.png",
+    "category": "promotional-sections",
+    "category_url": "https://flowbite.com/blocks/e-commerce/promotional-sections/",
+    "example": 4
+  },
+  {
+    "file": "promotional-sections-05.png",
+    "category": "promotional-sections",
+    "category_url": "https://flowbite.com/blocks/e-commerce/promotional-sections/",
+    "example": 5
+  },
+  {
+    "file": "checkout-01.png",
+    "category": "checkout",
+    "category_url": "https://flowbite.com/blocks/e-commerce/checkout/",
+    "example": 1
+  },
+  {
+    "file": "checkout-02.png",
+    "category": "checkout",
+    "category_url": "https://flowbite.com/blocks/e-commerce/checkout/",
+    "example": 2
+  },
+  {
+    "file": "checkout-03.png",
+    "category": "checkout",
+    "category_url": "https://flowbite.com/blocks/e-commerce/checkout/",
+    "example": 3
+  },
+  {
+    "file": "checkout-04.png",
+    "category": "checkout",
+    "category_url": "https://flowbite.com/blocks/e-commerce/checkout/",
+    "example": 4
+  },
+  {
+    "file": "checkout-05.png",
+    "category": "checkout",
+    "category_url": "https://flowbite.com/blocks/e-commerce/checkout/",
+    "example": 5
+  },
+  {
+    "file": "login-01.png",
+    "category": "login",
+    "category_url": "https://flowbite.com/blocks/marketing/login/",
+    "example": 1
+  },
+  {
+    "file": "login-02.png",
+    "category": "login",
+    "category_url": "https://flowbite.com/blocks/marketing/login/",
+    "example": 2
+  },
+  {
+    "file": "login-03.png",
+    "category": "login",
+    "category_url": "https://flowbite.com/blocks/marketing/login/",
+    "example": 3
+  },
+  {
+    "file": "login-04.png",
+    "category": "login",
+    "category_url": "https://flowbite.com/blocks/marketing/login/",
+    "example": 4
+  },
+  {
+    "file": "login-05.png",
+    "category": "login",
+    "category_url": "https://flowbite.com/blocks/marketing/login/",
+    "example": 5
+  },
+  {
+    "file": "related-articles-01.png",
+    "category": "related-articles",
+    "category_url": "https://flowbite.com/blocks/publisher/related-articles/",
+    "example": 1
+  },
+  {
+    "file": "related-articles-02.png",
+    "category": "related-articles",
+    "category_url": "https://flowbite.com/blocks/publisher/related-articles/",
+    "example": 2
+  },
+  {
+    "file": "related-articles-03.png",
+    "category": "related-articles",
+    "category_url": "https://flowbite.com/blocks/publisher/related-articles/",
+    "example": 3
+  },
+  {
+    "file": "related-articles-04.png",
+    "category": "related-articles",
+    "category_url": "https://flowbite.com/blocks/publisher/related-articles/",
+    "example": 4
+  },
+  {
+    "file": "related-articles-05.png",
+    "category": "related-articles",
+    "category_url": "https://flowbite.com/blocks/publisher/related-articles/",
+    "example": 5
+  },
+  {
+    "file": "faq-01.png",
+    "category": "faq",
+    "category_url": "https://flowbite.com/blocks/marketing/faq/",
+    "example": 1
+  },
+  {
+    "file": "faq-02.png",
+    "category": "faq",
+    "category_url": "https://flowbite.com/blocks/marketing/faq/",
+    "example": 2
+  },
+  {
+    "file": "faq-03.png",
+    "category": "faq",
+    "category_url": "https://flowbite.com/blocks/marketing/faq/",
+    "example": 3
+  },
+  {
+    "file": "faq-04.png",
+    "category": "faq",
+    "category_url": "https://flowbite.com/blocks/marketing/faq/",
+    "example": 4
+  },
+  {
+    "file": "faq-05.png",
+    "category": "faq",
+    "category_url": "https://flowbite.com/blocks/marketing/faq/",
+    "example": 5
+  },
+  {
+    "file": "testimonial-01.png",
+    "category": "testimonial",
+    "category_url": "https://flowbite.com/blocks/marketing/testimonial/",
+    "example": 1
+  },
+  {
+    "file": "testimonial-02.png",
+    "category": "testimonial",
+    "category_url": "https://flowbite.com/blocks/marketing/testimonial/",
+    "example": 2
+  },
+  {
+    "file": "testimonial-03.png",
+    "category": "testimonial",
+    "category_url": "https://flowbite.com/blocks/marketing/testimonial/",
+    "example": 3
+  },
+  {
+    "file": "testimonial-04.png",
+    "category": "testimonial",
+    "category_url": "https://flowbite.com/blocks/marketing/testimonial/",
+    "example": 4
+  },
+  {
+    "file": "testimonial-05.png",
+    "category": "testimonial",
+    "category_url": "https://flowbite.com/blocks/marketing/testimonial/",
+    "example": 5
+  },
+  {
+    "file": "refunds-01.png",
+    "category": "refunds",
+    "category_url": "https://flowbite.com/blocks/e-commerce/refunds/",
+    "example": 1
+  },
+  {
+    "file": "refunds-02.png",
+    "category": "refunds",
+    "category_url": "https://flowbite.com/blocks/e-commerce/refunds/",
+    "example": 2
+  },
+  {
+    "file": "refunds-03.png",
+    "category": "refunds",
+    "category_url": "https://flowbite.com/blocks/e-commerce/refunds/",
+    "example": 3
+  },
+  {
+    "file": "refunds-04.png",
+    "category": "refunds",
+    "category_url": "https://flowbite.com/blocks/e-commerce/refunds/",
+    "example": 4
+  },
+  {
+    "file": "refunds-05.png",
+    "category": "refunds",
+    "category_url": "https://flowbite.com/blocks/e-commerce/refunds/",
+    "example": 5
+  },
+  {
+    "file": "crud-create-drawers-01.png",
+    "category": "crud-create-drawers",
+    "category_url": "https://flowbite.com/blocks/application/crud-create-drawers/",
+    "example": 1
+  },
+  {
+    "file": "crud-create-drawers-02.png",
+    "category": "crud-create-drawers",
+    "category_url": "https://flowbite.com/blocks/application/crud-create-drawers/",
+    "example": 2
+  },
+  {
+    "file": "crud-create-drawers-03.png",
+    "category": "crud-create-drawers",
+    "category_url": "https://flowbite.com/blocks/application/crud-create-drawers/",
+    "example": 3
+  },
+  {
+    "file": "crud-create-drawers-04.png",
+    "category": "crud-create-drawers",
+    "category_url": "https://flowbite.com/blocks/application/crud-create-drawers/",
+    "example": 4
+  },
+  {
+    "file": "crud-create-drawers-05.png",
+    "category": "crud-create-drawers",
+    "category_url": "https://flowbite.com/blocks/application/crud-create-drawers/",
+    "example": 5
+  },
+  {
+    "file": "order-tracking-01.png",
+    "category": "order-tracking",
+    "category_url": "https://flowbite.com/blocks/e-commerce/order-tracking/",
+    "example": 1
+  },
+  {
+    "file": "order-tracking-02.png",
+    "category": "order-tracking",
+    "category_url": "https://flowbite.com/blocks/e-commerce/order-tracking/",
+    "example": 2
+  },
+  {
+    "file": "order-tracking-03.png",
+    "category": "order-tracking",
+    "category_url": "https://flowbite.com/blocks/e-commerce/order-tracking/",
+    "example": 3
+  },
+  {
+    "file": "order-tracking-04.png",
+    "category": "order-tracking",
+    "category_url": "https://flowbite.com/blocks/e-commerce/order-tracking/",
+    "example": 4
+  },
+  {
+    "file": "order-tracking-05.png",
+    "category": "order-tracking",
+    "category_url": "https://flowbite.com/blocks/e-commerce/order-tracking/",
+    "example": 5
+  },
+  {
+    "file": "account-overview-01.png",
+    "category": "account-overview",
+    "category_url": "https://flowbite.com/blocks/e-commerce/account-overview/",
+    "example": 1
+  },
+  {
+    "file": "account-overview-02.png",
+    "category": "account-overview",
+    "category_url": "https://flowbite.com/blocks/e-commerce/account-overview/",
+    "example": 2
+  },
+  {
+    "file": "account-overview-03.png",
+    "category": "account-overview",
+    "category_url": "https://flowbite.com/blocks/e-commerce/account-overview/",
+    "example": 3
+  },
+  {
+    "file": "account-overview-04.png",
+    "category": "account-overview",
+    "category_url": "https://flowbite.com/blocks/e-commerce/account-overview/",
+    "example": 4
+  },
+  {
+    "file": "account-overview-05.png",
+    "category": "account-overview",
+    "category_url": "https://flowbite.com/blocks/e-commerce/account-overview/",
+    "example": 5
+  },
+  {
+    "file": "product-cards-01.png",
+    "category": "product-cards",
+    "category_url": "https://flowbite.com/blocks/e-commerce/product-cards/",
+    "example": 1
+  },
+  {
+    "file": "product-cards-02.png",
+    "category": "product-cards",
+    "category_url": "https://flowbite.com/blocks/e-commerce/product-cards/",
+    "example": 2
+  },
+  {
+    "file": "product-cards-03.png",
+    "category": "product-cards",
+    "category_url": "https://flowbite.com/blocks/e-commerce/product-cards/",
+    "example": 3
+  },
+  {
+    "file": "product-cards-04.png",
+    "category": "product-cards",
+    "category_url": "https://flowbite.com/blocks/e-commerce/product-cards/",
+    "example": 4
+  },
+  {
+    "file": "product-cards-05.png",
+    "category": "product-cards",
+    "category_url": "https://flowbite.com/blocks/e-commerce/product-cards/",
+    "example": 5
+  },
+  {
+    "file": "customer-logos-01.png",
+    "category": "customer-logos",
+    "category_url": "https://flowbite.com/blocks/marketing/customer-logos/",
+    "example": 1
+  },
+  {
+    "file": "customer-logos-02.png",
+    "category": "customer-logos",
+    "category_url": "https://flowbite.com/blocks/marketing/customer-logos/",
+    "example": 2
+  },
+  {
+    "file": "customer-logos-03.png",
+    "category": "customer-logos",
+    "category_url": "https://flowbite.com/blocks/marketing/customer-logos/",
+    "example": 3
+  },
+  {
+    "file": "customer-logos-04.png",
+    "category": "customer-logos",
+    "category_url": "https://flowbite.com/blocks/marketing/customer-logos/",
+    "example": 4
+  },
+  {
+    "file": "customer-logos-05.png",
+    "category": "customer-logos",
+    "category_url": "https://flowbite.com/blocks/marketing/customer-logos/",
+    "example": 5
+  },
+  {
+    "file": "newsletter-01.png",
+    "category": "newsletter",
+    "category_url": "https://flowbite.com/blocks/marketing/newsletter/",
+    "example": 1
+  },
+  {
+    "file": "newsletter-02.png",
+    "category": "newsletter",
+    "category_url": "https://flowbite.com/blocks/marketing/newsletter/",
+    "example": 2
+  },
+  {
+    "file": "newsletter-03.png",
+    "category": "newsletter",
+    "category_url": "https://flowbite.com/blocks/marketing/newsletter/",
+    "example": 3
+  },
+  {
+    "file": "newsletter-04.png",
+    "category": "newsletter",
+    "category_url": "https://flowbite.com/blocks/marketing/newsletter/",
+    "example": 4
+  },
+  {
+    "file": "newsletter-05.png",
+    "category": "newsletter",
+    "category_url": "https://flowbite.com/blocks/marketing/newsletter/",
+    "example": 5
+  },
+  {
+    "file": "banner-01.png",
+    "category": "banner",
+    "category_url": "https://flowbite.com/blocks/marketing/banner/",
+    "example": 1
+  },
+  {
+    "file": "banner-02.png",
+    "category": "banner",
+    "category_url": "https://flowbite.com/blocks/marketing/banner/",
+    "example": 2
+  },
+  {
+    "file": "banner-03.png",
+    "category": "banner",
+    "category_url": "https://flowbite.com/blocks/marketing/banner/",
+    "example": 3
+  },
+  {
+    "file": "banner-04.png",
+    "category": "banner",
+    "category_url": "https://flowbite.com/blocks/marketing/banner/",
+    "example": 4
+  },
+  {
+    "file": "banner-05.png",
+    "category": "banner",
+    "category_url": "https://flowbite.com/blocks/marketing/banner/",
+    "example": 5
+  },
+  {
+    "file": "crud-success-message-01.png",
+    "category": "crud-success-message",
+    "category_url": "https://flowbite.com/blocks/application/crud-success-message/",
+    "example": 1
+  },
+  {
+    "file": "crud-success-message-02.png",
+    "category": "crud-success-message",
+    "category_url": "https://flowbite.com/blocks/application/crud-success-message/",
+    "example": 2
+  },
+  {
+    "file": "crud-success-message-03.png",
+    "category": "crud-success-message",
+    "category_url": "https://flowbite.com/blocks/application/crud-success-message/",
+    "example": 3
+  },
+  {
+    "file": "crud-success-message-04.png",
+    "category": "crud-success-message",
+    "category_url": "https://flowbite.com/blocks/application/crud-success-message/",
+    "example": 4
+  },
+  {
+    "file": "crud-success-message-05.png",
+    "category": "crud-success-message",
+    "category_url": "https://flowbite.com/blocks/application/crud-success-message/",
+    "example": 5
+  },
+  {
+    "file": "reviews-history-01.png",
+    "category": "reviews-history",
+    "category_url": "https://flowbite.com/blocks/e-commerce/reviews-history/",
+    "example": 1
+  },
+  {
+    "file": "reviews-history-02.png",
+    "category": "reviews-history",
+    "category_url": "https://flowbite.com/blocks/e-commerce/reviews-history/",
+    "example": 2
+  },
+  {
+    "file": "reviews-history-03.png",
+    "category": "reviews-history",
+    "category_url": "https://flowbite.com/blocks/e-commerce/reviews-history/",
+    "example": 3
+  },
+  {
+    "file": "reviews-history-04.png",
+    "category": "reviews-history",
+    "category_url": "https://flowbite.com/blocks/e-commerce/reviews-history/",
+    "example": 4
+  },
+  {
+    "file": "reviews-history-05.png",
+    "category": "reviews-history",
+    "category_url": "https://flowbite.com/blocks/e-commerce/reviews-history/",
+    "example": 5
+  },
+  {
+    "file": "account-recovery-01.png",
+    "category": "account-recovery",
+    "category_url": "https://flowbite.com/blocks/marketing/account-recovery/",
+    "example": 1
+  },
+  {
+    "file": "account-recovery-02.png",
+    "category": "account-recovery",
+    "category_url": "https://flowbite.com/blocks/marketing/account-recovery/",
+    "example": 2
+  },
+  {
+    "file": "account-recovery-03.png",
+    "category": "account-recovery",
+    "category_url": "https://flowbite.com/blocks/marketing/account-recovery/",
+    "example": 3
+  },
+  {
+    "file": "account-recovery-04.png",
+    "category": "account-recovery",
+    "category_url": "https://flowbite.com/blocks/marketing/account-recovery/",
+    "example": 4
+  },
+  {
+    "file": "account-recovery-05.png",
+    "category": "account-recovery",
+    "category_url": "https://flowbite.com/blocks/marketing/account-recovery/",
+    "example": 5
+  },
+  {
+    "file": "blog-01.png",
+    "category": "blog",
+    "category_url": "https://flowbite.com/blocks/marketing/blog/",
+    "example": 1
+  },
+  {
+    "file": "blog-02.png",
+    "category": "blog",
+    "category_url": "https://flowbite.com/blocks/marketing/blog/",
+    "example": 2
+  },
+  {
+    "file": "blog-03.png",
+    "category": "blog",
+    "category_url": "https://flowbite.com/blocks/marketing/blog/",
+    "example": 3
+  },
+  {
+    "file": "blog-04.png",
+    "category": "blog",
+    "category_url": "https://flowbite.com/blocks/marketing/blog/",
+    "example": 4
+  },
+  {
+    "file": "blog-05.png",
+    "category": "blog",
+    "category_url": "https://flowbite.com/blocks/marketing/blog/",
+    "example": 5
+  },
+  {
+    "file": "portfolio-01.png",
+    "category": "portfolio",
+    "category_url": "https://flowbite.com/blocks/marketing/portfolio/",
+    "example": 1
+  },
+  {
+    "file": "portfolio-02.png",
+    "category": "portfolio",
+    "category_url": "https://flowbite.com/blocks/marketing/portfolio/",
+    "example": 2
+  },
+  {
+    "file": "portfolio-03.png",
+    "category": "portfolio",
+    "category_url": "https://flowbite.com/blocks/marketing/portfolio/",
+    "example": 3
+  },
+  {
+    "file": "portfolio-04.png",
+    "category": "portfolio",
+    "category_url": "https://flowbite.com/blocks/marketing/portfolio/",
+    "example": 4
+  },
+  {
+    "file": "portfolio-05.png",
+    "category": "portfolio",
+    "category_url": "https://flowbite.com/blocks/marketing/portfolio/",
+    "example": 5
+  },
+  {
+    "file": "order-confirmation-01.png",
+    "category": "order-confirmation",
+    "category_url": "https://flowbite.com/blocks/e-commerce/order-confirmation/",
+    "example": 1
+  },
+  {
+    "file": "order-confirmation-02.png",
+    "category": "order-confirmation",
+    "category_url": "https://flowbite.com/blocks/e-commerce/order-confirmation/",
+    "example": 2
+  },
+  {
+    "file": "order-confirmation-03.png",
+    "category": "order-confirmation",
+    "category_url": "https://flowbite.com/blocks/e-commerce/order-confirmation/",
+    "example": 3
+  },
+  {
+    "file": "order-confirmation-04.png",
+    "category": "order-confirmation",
+    "category_url": "https://flowbite.com/blocks/e-commerce/order-confirmation/",
+    "example": 4
+  },
+  {
+    "file": "order-confirmation-05.png",
+    "category": "order-confirmation",
+    "category_url": "https://flowbite.com/blocks/e-commerce/order-confirmation/",
+    "example": 5
+  },
+  {
+    "file": "refund-status-01.png",
+    "category": "refund-status",
+    "category_url": "https://flowbite.com/blocks/e-commerce/refund-status/",
+    "example": 1
+  },
+  {
+    "file": "refund-status-02.png",
+    "category": "refund-status",
+    "category_url": "https://flowbite.com/blocks/e-commerce/refund-status/",
+    "example": 2
+  },
+  {
+    "file": "refund-status-03.png",
+    "category": "refund-status",
+    "category_url": "https://flowbite.com/blocks/e-commerce/refund-status/",
+    "example": 3
+  },
+  {
+    "file": "refund-status-04.png",
+    "category": "refund-status",
+    "category_url": "https://flowbite.com/blocks/e-commerce/refund-status/",
+    "example": 4
+  },
+  {
+    "file": "refund-status-05.png",
+    "category": "refund-status",
+    "category_url": "https://flowbite.com/blocks/e-commerce/refund-status/",
+    "example": 5
+  },
+  {
+    "file": "cookie-01.png",
+    "category": "cookie",
+    "category_url": "https://flowbite.com/blocks/marketing/cookie/",
+    "example": 1
+  },
+  {
+    "file": "cookie-02.png",
+    "category": "cookie",
+    "category_url": "https://flowbite.com/blocks/marketing/cookie/",
+    "example": 2
+  },
+  {
+    "file": "cookie-03.png",
+    "category": "cookie",
+    "category_url": "https://flowbite.com/blocks/marketing/cookie/",
+    "example": 3
+  },
+  {
+    "file": "cookie-04.png",
+    "category": "cookie",
+    "category_url": "https://flowbite.com/blocks/marketing/cookie/",
+    "example": 4
+  },
+  {
+    "file": "faceted-search-drawers-01.png",
+    "category": "faceted-search-drawers",
+    "category_url": "https://flowbite.com/blocks/application/faceted-search-drawers/",
+    "example": 1
+  },
+  {
+    "file": "faceted-search-drawers-02.png",
+    "category": "faceted-search-drawers",
+    "category_url": "https://flowbite.com/blocks/application/faceted-search-drawers/",
+    "example": 2
+  },
+  {
+    "file": "faceted-search-drawers-03.png",
+    "category": "faceted-search-drawers",
+    "category_url": "https://flowbite.com/blocks/application/faceted-search-drawers/",
+    "example": 3
+  },
+  {
+    "file": "faceted-search-drawers-04.png",
+    "category": "faceted-search-drawers",
+    "category_url": "https://flowbite.com/blocks/application/faceted-search-drawers/",
+    "example": 4
+  },
+  {
+    "file": "service-repair-forms-01.png",
+    "category": "service-repair-forms",
+    "category_url": "https://flowbite.com/blocks/e-commerce/service-repair-forms/",
+    "example": 1
+  },
+  {
+    "file": "service-repair-forms-02.png",
+    "category": "service-repair-forms",
+    "category_url": "https://flowbite.com/blocks/e-commerce/service-repair-forms/",
+    "example": 2
+  },
+  {
+    "file": "service-repair-forms-03.png",
+    "category": "service-repair-forms",
+    "category_url": "https://flowbite.com/blocks/e-commerce/service-repair-forms/",
+    "example": 3
+  },
+  {
+    "file": "service-repair-forms-04.png",
+    "category": "service-repair-forms",
+    "category_url": "https://flowbite.com/blocks/e-commerce/service-repair-forms/",
+    "example": 4
+  },
+  {
+    "file": "user-onboarding-01.png",
+    "category": "user-onboarding",
+    "category_url": "https://flowbite.com/blocks/marketing/user-onboarding/",
+    "example": 1
+  },
+  {
+    "file": "user-onboarding-02.png",
+    "category": "user-onboarding",
+    "category_url": "https://flowbite.com/blocks/marketing/user-onboarding/",
+    "example": 2
+  },
+  {
+    "file": "user-onboarding-03.png",
+    "category": "user-onboarding",
+    "category_url": "https://flowbite.com/blocks/marketing/user-onboarding/",
+    "example": 3
+  },
+  {
+    "file": "user-onboarding-04.png",
+    "category": "user-onboarding",
+    "category_url": "https://flowbite.com/blocks/marketing/user-onboarding/",
+    "example": 4
+  },
+  {
+    "file": "comments-01.png",
+    "category": "comments",
+    "category_url": "https://flowbite.com/blocks/publisher/comments/",
+    "example": 1
+  },
+  {
+    "file": "comments-02.png",
+    "category": "comments",
+    "category_url": "https://flowbite.com/blocks/publisher/comments/",
+    "example": 2
+  },
+  {
+    "file": "comments-03.png",
+    "category": "comments",
+    "category_url": "https://flowbite.com/blocks/publisher/comments/",
+    "example": 3
+  },
+  {
+    "file": "comments-04.png",
+    "category": "comments",
+    "category_url": "https://flowbite.com/blocks/publisher/comments/",
+    "example": 4
+  },
+  {
+    "file": "event-schedule-01.png",
+    "category": "event-schedule",
+    "category_url": "https://flowbite.com/blocks/marketing/event-schedule/",
+    "example": 1
+  },
+  {
+    "file": "event-schedule-02.png",
+    "category": "event-schedule",
+    "category_url": "https://flowbite.com/blocks/marketing/event-schedule/",
+    "example": 2
+  },
+  {
+    "file": "event-schedule-03.png",
+    "category": "event-schedule",
+    "category_url": "https://flowbite.com/blocks/marketing/event-schedule/",
+    "example": 3
+  },
+  {
+    "file": "event-schedule-04.png",
+    "category": "event-schedule",
+    "category_url": "https://flowbite.com/blocks/marketing/event-schedule/",
+    "example": 4
+  },
+  {
+    "file": "product-information-01.png",
+    "category": "product-information",
+    "category_url": "https://flowbite.com/blocks/e-commerce/product-information/",
+    "example": 1
+  },
+  {
+    "file": "product-information-02.png",
+    "category": "product-information",
+    "category_url": "https://flowbite.com/blocks/e-commerce/product-information/",
+    "example": 2
+  },
+  {
+    "file": "product-information-03.png",
+    "category": "product-information",
+    "category_url": "https://flowbite.com/blocks/e-commerce/product-information/",
+    "example": 3
+  },
+  {
+    "file": "product-information-04.png",
+    "category": "product-information",
+    "category_url": "https://flowbite.com/blocks/e-commerce/product-information/",
+    "example": 4
+  },
+  {
+    "file": "404-01.png",
+    "category": "404",
+    "category_url": "https://flowbite.com/blocks/marketing/404/",
+    "example": 1
+  },
+  {
+    "file": "404-02.png",
+    "category": "404",
+    "category_url": "https://flowbite.com/blocks/marketing/404/",
+    "example": 2
+  },
+  {
+    "file": "404-03.png",
+    "category": "404",
+    "category_url": "https://flowbite.com/blocks/marketing/404/",
+    "example": 3
+  },
+  {
+    "file": "product-review-01.png",
+    "category": "product-review",
+    "category_url": "https://flowbite.com/blocks/e-commerce/product-review/",
+    "example": 1
+  },
+  {
+    "file": "product-review-02.png",
+    "category": "product-review",
+    "category_url": "https://flowbite.com/blocks/e-commerce/product-review/",
+    "example": 2
+  },
+  {
+    "file": "product-review-03.png",
+    "category": "product-review",
+    "category_url": "https://flowbite.com/blocks/e-commerce/product-review/",
+    "example": 3
+  },
+  {
+    "file": "500-01.png",
+    "category": "500",
+    "category_url": "https://flowbite.com/blocks/marketing/500/",
+    "example": 1
+  },
+  {
+    "file": "500-02.png",
+    "category": "500",
+    "category_url": "https://flowbite.com/blocks/marketing/500/",
+    "example": 2
+  },
+  {
+    "file": "500-03.png",
+    "category": "500",
+    "category_url": "https://flowbite.com/blocks/marketing/500/",
+    "example": 3
+  },
+  {
+    "file": "maintenance-01.png",
+    "category": "maintenance",
+    "category_url": "https://flowbite.com/blocks/marketing/maintenance/",
+    "example": 1
+  },
+  {
+    "file": "maintenance-02.png",
+    "category": "maintenance",
+    "category_url": "https://flowbite.com/blocks/marketing/maintenance/",
+    "example": 2
+  },
+  {
+    "file": "maintenance-03.png",
+    "category": "maintenance",
+    "category_url": "https://flowbite.com/blocks/marketing/maintenance/",
+    "example": 3
+  }
+]
