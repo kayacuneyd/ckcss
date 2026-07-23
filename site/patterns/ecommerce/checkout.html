@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS checkout pattern'i: teslimat formu, ödeme yöntemi ve sipariş özeti.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/ecommerce/checkout.html">
+<title>Checkout pattern'i · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · E-COMMERCE · CHECKOUT</p>
+<h1>Siparişi tamamlayın.</h1>
+
+<div class="ck-sidebar ck-sidebar--end">
+<form class="ck-stack ck-stack--relaxed" aria-label="Teslimat ve ödeme">
+<fieldset class="ck-stack">
+<legend class="ck-field__label" style="font-size:var(--ck-font-size-lg);">Teslimat adresi</legend>
+<div class="ck-field"><label class="ck-field__label" for="checkout-name">Ad Soyad</label><input class="ck-input" id="checkout-name" name="name" type="text" autocomplete="name" required></div>
+<div class="ck-field"><label class="ck-field__label" for="checkout-address">Adres</label><input class="ck-input" id="checkout-address" name="address" type="text" autocomplete="street-address" required></div>
+<div class="ck-grid ck-grid--2">
+<div class="ck-field"><label class="ck-field__label" for="checkout-city">Şehir</label><input class="ck-input" id="checkout-city" name="city" type="text" autocomplete="address-level2" required></div>
+<div class="ck-field"><label class="ck-field__label" for="checkout-zip">Posta kodu</label><input class="ck-input" id="checkout-zip" name="zip" type="text" autocomplete="postal-code" required></div>
+</div>
+</fieldset>
+
+<fieldset class="ck-stack">
+<legend class="ck-field__label" style="font-size:var(--ck-font-size-lg);">Ödeme yöntemi</legend>
+<div class="ck-choice"><input class="ck-choice__control" type="radio" name="payment" id="payment-card" value="card" checked><label class="ck-choice__label" for="payment-card">Kredi/banka kartı</label></div>
+<div class="ck-choice"><input class="ck-choice__control" type="radio" name="payment" id="payment-transfer" value="transfer"><label class="ck-choice__label" for="payment-transfer">Havale/EFT</label></div>
+<div class="ck-field"><label class="ck-field__label" for="checkout-card-number">Kart numarası</label><input class="ck-input" id="checkout-card-number" name="card-number" type="text" inputmode="numeric" autocomplete="cc-number" placeholder="0000 0000 0000 0000"></div>
+</fieldset>
+
+<button class="ck-button" type="submit">Siparişi onayla</button>
+</form>
+
+<aside class="ck-card">
+<div class="ck-card__header"><h2>Sipariş özeti</h2></div>
+<div class="ck-card__body ck-stack">
+<div class="ck-cluster ck-cluster--spread"><span>Deri sırt çantası × 1</span><span>₺1.240</span></div>
+<div class="ck-cluster ck-cluster--spread"><span>Kargo</span><span>₺49</span></div>
+</div>
+<div class="ck-card__footer ck-cluster ck-cluster--spread"><strong>Toplam</strong><strong class="ckcss-pattern-number">₺1.289</strong></div>
+</aside>
+</div>
+
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>ck-sidebar--end</code>, <code>ck-choice</code>, <code>ck-table</code> yerine burada <code>ck-card</code> tabanlı özet kullanıldı. Duyarlı davranış: özet kartı &lt;48rem altında forma sonra akar (kaynak sırasıyla aynı).</p>
+</div></section>
+</main>
+</body>
+</html>

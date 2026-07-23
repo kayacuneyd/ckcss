@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS alışveriş sepeti pattern'i: tam sayfa sepet listesi ve özet.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/ecommerce/shopping-cart.html">
+<title>Sepetiniz · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · E-COMMERCE · SHOPPING CART</p>
+<h1>Sepetiniz.</h1>
+<p class="ck-text-muted">Tam sayfa sepet olarak inşa edildi (bir <code>&lt;dialog&gt;</code> veya kayan panel değil) — sürgülü/off-canvas mini-sepet varyantı, bir bileşen mimarisi kararı bekleyen ayrı bir dalgada ele alınacak (bkz. <code>docs/research/ui-kit-patterns-gap-analysis.md</code>).</p>
+
+<div class="ck-sidebar ck-sidebar--end">
+<div class="ck-table-wrap">
+<table class="ck-table">
+<caption class="ck-visually-hidden">Sepetinizdeki ürünler</caption>
+<thead><tr><th scope="col">Ürün</th><th scope="col">Adet</th><th scope="col">Fiyat</th><th scope="col"><span class="ck-visually-hidden">İşlemler</span></th></tr></thead>
+<tbody>
+<tr>
+<th scope="row">Deri sırt çantası<br><span class="ck-text-small ck-text-muted">Siyah</span></th>
+<td><label class="ck-visually-hidden" for="cart-qty-1">Deri sırt çantası adedi</label><input class="ck-input" id="cart-qty-1" type="number" min="1" value="1" style="max-inline-size:5rem;"></td>
+<td>₺1.240</td>
+<td><button class="ck-button ck-button--quiet" type="button">Kaldır</button></td>
+</tr>
+<tr>
+<th scope="row">Koşu ayakkabısı<br><span class="ck-text-small ck-text-muted">42 numara</span></th>
+<td><label class="ck-visually-hidden" for="cart-qty-2">Koşu ayakkabısı adedi</label><input class="ck-input" id="cart-qty-2" type="number" min="1" value="2" style="max-inline-size:5rem;"></td>
+<td>₺1.780</td>
+<td><button class="ck-button ck-button--quiet" type="button">Kaldır</button></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<aside class="ck-card">
+<div class="ck-card__header"><h2>Özet</h2></div>
+<div class="ck-card__body ck-stack">
+<div class="ck-cluster ck-cluster--spread"><span>Ara toplam</span><span>₺3.020</span></div>
+<div class="ck-cluster ck-cluster--spread"><span>Kargo</span><span>₺49</span></div>
+</div>
+<div class="ck-card__footer ck-stack">
+<div class="ck-cluster ck-cluster--spread"><strong>Toplam</strong><strong class="ckcss-pattern-number">₺3.069</strong></div>
+<a class="ck-button" href="/patterns/ecommerce/checkout.html">Ödemeye geç</a>
+</div>
+</aside>
+</div>
+
+<div class="ck-card" data-ck-state="empty" hidden>
+<div class="ck-card__body ck-stack ck-text-center">
+<h2>Sepetiniz boş.</h2>
+<p class="ck-text-muted">Alışverişe devam etmek için ürünlere göz atın.</p>
+<a class="ck-button" href="/patterns/ecommerce/product-card.html">Ürünlere göz at</a>
+</div>
+</div>
+
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>ck-table</code>, <code>ck-sidebar--end</code>. Boş sepet durumu (<code>data-ck-state="empty"</code>) referans için işaretlenmiş ama <code>hidden</code> ile gizli — gerçek kullanımda sepet boşken bu kart gösterilir, tablo gizlenir.</p>
+</div></section>
+</main>
+</body>
+</html>
