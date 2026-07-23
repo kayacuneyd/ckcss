@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS uygulama üst çubuğu pattern'i: arama, bildirimler ve kullanıcı menüsü.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/application/app-navbar.html">
+<title>Uygulama üst çubuğu pattern'i · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<header class="ck-container">
+<div class="ck-cluster ck-cluster--spread" style="padding-block:var(--ck-space-3);">
+<div class="ck-cluster">
+<a class="ckcss-brand" href="/" aria-label="Ana sayfa">CK<span>CSS</span></a>
+<div class="ck-field" style="min-inline-size:16rem;">
+<label class="ck-visually-hidden" for="app-navbar-search">Uygulamada ara</label>
+<input class="ck-input" id="app-navbar-search" type="search" placeholder="Proje veya kişi ara…">
+</div>
+</div>
+<div class="ck-cluster">
+<details>
+<summary class="ck-button ck-button--secondary" aria-label="Bildirimler, 3 okunmamış">🔔 <span class="ck-badge ck-badge--danger">3</span></summary>
+<div class="ck-card" style="position:absolute;inline-size:min(20rem,90vw);margin-block-start:var(--ck-space-2);z-index:var(--ck-z-dropdown);">
+<div class="ck-card__body ck-stack">
+<p><strong>Ada</strong> sizi <strong>CKCSS UI Kit</strong> projesine davet etti.</p>
+<p class="ck-text-small ck-text-muted">2 saat önce</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="ck-cluster" style="cursor:pointer;list-style:none;" aria-label="Kullanıcı menüsü">
+<span class="ck-avatar" aria-hidden="true">AY</span>
+<span class="ck-text-small">Ada Yılmaz</span>
+</summary>
+<nav aria-label="Hesap menüsü" class="ck-card" style="position:absolute;inset-inline-end:0;margin-block-start:var(--ck-space-2);z-index:var(--ck-z-dropdown);">
+<ul class="ck-stack ck-stack--compact" role="list" style="padding:var(--ck-space-3);">
+<li><a href="/patterns/auth/user-onboarding.html">Profil ayarları</a></li>
+<li><a href="/patterns/ecommerce/checkout.html">Faturalama</a></li>
+<li><a href="/auth.html">Çıkış yap</a></li>
+</ul>
+</nav>
+</details>
+</div>
+</div>
+</header>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · APPLICATION · APP NAVBAR</p>
+<h1>Uygulama içi üst çubuk.</h1>
+<p class="ck-text-lead ck-max-readable">Marka + global arama solda; bildirim ve kullanıcı menüsü sağda. <a href="/app-shell.html">app-shell.html</a>'deki sidebar/toolbar düzenini tamamlayan, ayrı bir üst navbar bileşeni.</p>
+</div></section>
+</main>
+<footer class="ck-container ck-cluster ck-cluster--spread" style="padding-block:var(--ck-space-4);border-block-start:1px solid var(--ck-color-border);">
+<span class="ck-text-small ck-text-muted">CKCSS UI Kit · v0.1.0-beta.2</span>
+<nav aria-label="Uygulama footer bağlantıları" class="ck-cluster">
+<a class="ck-text-small" href="/guide.html">Dokümanlar</a>
+<a class="ck-text-small" href="/contact.html">Destek</a>
+<span class="ck-badge ck-badge--success">Tüm sistemler çalışıyor</span>
+</nav>
+</footer>
+</body>
+</html>
