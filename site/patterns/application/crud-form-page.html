@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS CRUD tam sayfa form pattern'i: yeni kayıt oluşturma/düzenleme.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/application/crud-form-page.html">
+<title>CRUD form sayfası pattern'i · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · APPLICATION · CRUD FORM PAGE</p>
+<h1>Kayıt oluşturmak için tam sayfa form.</h1>
+<p class="ck-text-lead ck-max-readable">Çok alanlı ya da uzun formlar için modal yerine kendi sayfasında bir form — <a href="/patterns/application/crud-modal.html">crud-modal.html</a>'in kısa düzenleme akışını tamamlar.</p>
+
+<form class="ck-stack ck-stack--relaxed" action="/projects" method="post">
+<fieldset class="ck-stack">
+<legend class="ck-field__label" style="font-size:var(--ck-font-size-lg);">Proje bilgileri</legend>
+<div class="ck-field"><label class="ck-field__label" for="crud-form-name">Proje adı</label><input class="ck-input" id="crud-form-name" name="name" type="text" required></div>
+<div class="ck-field"><label class="ck-field__label" for="crud-form-description">Açıklama</label><textarea class="ck-textarea" id="crud-form-description" name="description"></textarea><p class="ck-field__help">Ekip üyelerine gösterilecek kısa bir özet.</p></div>
+<div class="ck-grid ck-grid--2">
+<div class="ck-field"><label class="ck-field__label" for="crud-form-owner">Sahip</label><select class="ck-select" id="crud-form-owner" name="owner"><option>Ada Yılmaz</option><option>Emre Kaya</option><option>Selin Demir</option></select></div>
+<div class="ck-field"><label class="ck-field__label" for="crud-form-status">Durum</label><select class="ck-select" id="crud-form-status" name="status"><option>Taslak</option><option>Aktif</option></select></div>
+</div>
+</fieldset>
+
+<fieldset class="ck-stack">
+<legend class="ck-field__label" style="font-size:var(--ck-font-size-lg);">Erişim</legend>
+<div class="ck-choice"><input class="ck-choice__control" type="checkbox" id="crud-form-public" name="public"><label class="ck-choice__label" for="crud-form-public">Ekip dışına açık</label><p class="ck-choice__help">İşaretlenirse proje bağlantısını bilen herkes görüntüleyebilir.</p></div>
+</fieldset>
+
+<div class="ck-cluster">
+<button class="ck-button" type="submit">Projeyi oluştur</button>
+<a class="ck-button ck-button--secondary" href="/app-shell.html">Vazgeç</a>
+</div>
+</form>
+
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>ck-field</code>, <code>ck-textarea</code>, <code>ck-select</code>, <code>ck-choice</code>. Native <code>required</code> doğrulaması kullanılır; özel bir hata durumu bu sayfada ayrıca gösterilmez (bkz. <code>docs/product/components.md</code>'deki <code>aria-invalid</code> deseni).</p>
+</div></section>
+</main>
+</body>
+</html>

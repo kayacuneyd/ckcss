@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS CRUD modal pattern'i: native dialog ile düzenleme, silme onayı ve başarı durumu.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/application/crud-modal.html">
+<title>CRUD modal pattern'i · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<p class="ckcss-eyebrow">UI KIT · APPLICATION · CRUD MODAL</p>
+<h1>Kaydı modal içinde düzenleyin.</h1>
+<p class="ck-text-lead ck-max-readable">Native <code>&lt;dialog&gt;</code> tabanlı düzenleme modali; silme onayı ve başarı mesajı, aynı modal ailesinin <strong>durumları</strong>dır — Flowbite'ın <code>crud-delete-confirm</code>/<code>crud-success-message</code> kategorileri buradaki gibi tek bir modal ailesinin durum matrisine katlanır, ayrı pattern değildir.</p>
+
+<button class="ck-button" type="button" data-ck-dialog-open="crud-edit-dialog">Kaydı düzenle</button>
+
+<dialog class="ck-dialog" id="crud-edit-dialog" open aria-labelledby="crud-edit-h">
+<form method="dialog">
+<div class="ck-dialog__header"><h2 id="crud-edit-h">Projeyi düzenle</h2></div>
+<div class="ck-dialog__body ck-stack">
+<div class="ck-field"><label class="ck-field__label" for="crud-modal-name">Proje adı</label><input class="ck-input" id="crud-modal-name" name="name" type="text" value="CKCSS UI Kit" required></div>
+<div class="ck-field"><label class="ck-field__label" for="crud-modal-owner">Sahip</label><input class="ck-input" id="crud-modal-owner" name="owner" type="text" value="Ada Yılmaz" required></div>
+</div>
+<div class="ck-dialog__footer">
+<button class="ck-button ck-button--secondary" type="submit" value="cancel">Vazgeç</button>
+<button class="ck-button" type="submit" value="save">Kaydet</button>
+</div>
+</form>
+</dialog>
+<p class="ck-text-small ck-text-muted">Bu önizleme kasıtlı olarak açık gösteriliyor (bkz. <code>examples/components.html</code>) — gerçek kullanımda modal, isteğe bağlı <code>enhance/dialog.js</code>'in <code>data-ck-dialog-open</code> kancasıyla veya kendi JS'inizle açılır; <code>method="dialog"</code> sayesinde kapatma JS gerektirmez.</p>
+
+<div class="ck-card" data-ck-state="confirm">
+<div class="ck-card__header"><h2>Durum: silme onayı</h2></div>
+<div class="ck-card__body ck-stack">
+<p>Bu projeyi silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.</p>
+</div>
+<div class="ck-card__footer ck-cluster">
+<button class="ck-button ck-button--secondary" type="button">Vazgeç</button>
+<button class="ck-button ck-button--danger" type="button">Sil</button>
+</div>
+</div>
+
+<div class="ck-alert ck-alert--success" data-ck-state="success" role="status" aria-live="polite">
+<p class="ck-alert__title">Durum: başarı mesajı</p>
+<p>Proje başarıyla güncellendi.</p>
+</div>
+
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>ck-dialog</code>, <code>ck-alert--success</code>, <code>data-ck-state</code> (durum belgelemesi için). Aynı anda yalnızca bir native <code>&lt;dialog&gt;</code> anlamlı şekilde "açık" olabileceğinden, silme onayı ve başarı durumları burada gerçek ikinci/üçüncü dialog olarak değil, etiketli referans kartları olarak gösterilir.</p>
+</div></section>
+</main>
+</body>
+</html>

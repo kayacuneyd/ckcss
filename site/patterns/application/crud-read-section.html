@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CKCSS CRUD salt-okunur görünüm pattern'i: yapılandırılmış kayıt detayları.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ckcss.digitaltamam.com/patterns/application/crud-read-section.html">
+<title>CRUD detay görünümü pattern'i · CKCSS</title>
+<link rel="stylesheet" href="/assets/ckcss.min.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
+<main id="main-content">
+<section class="ckcss-section"><div class="ck-container ck-stack ck-stack--relaxed">
+<div class="ck-cluster ck-cluster--spread">
+<div class="ck-stack ck-stack--compact">
+<p class="ckcss-eyebrow">UI KIT · APPLICATION · CRUD READ SECTION</p>
+<h1>CKCSS UI Kit</h1>
+</div>
+<div class="ck-cluster">
+<a class="ck-button ck-button--secondary" href="/patterns/application/crud-form-page.html">Düzenle</a>
+<button class="ck-button" type="button" data-ck-dialog-open="crud-read-modal">Hızlı düzenle</button>
+</div>
+</div>
+
+<section aria-labelledby="crud-read-details-h" class="ck-card">
+<h2 id="crud-read-details-h" class="ck-visually-hidden">Proje detayları</h2>
+<dl class="ck-card__body ck-grid ck-grid--2">
+<div><dt class="ck-text-small ck-text-muted">Sahip</dt><dd>Ada Yılmaz</dd></div>
+<div><dt class="ck-text-small ck-text-muted">Durum</dt><dd><span class="ck-badge ck-badge--success">Aktif</span></dd></div>
+<div><dt class="ck-text-small ck-text-muted">Oluşturulma</dt><dd>12 Haziran 2026</dd></div>
+<div><dt class="ck-text-small ck-text-muted">Son güncelleme</dt><dd>Bugün</dd></div>
+<div style="grid-column:1/-1;"><dt class="ck-text-small ck-text-muted">Açıklama</dt><dd class="ck-max-readable">CKCSS'in resmi bileşen ve pattern kataloğu; tasarım tokenlarını tek kaynaktan yönetir.</dd></div>
+</dl>
+</section>
+
+<dialog class="ck-dialog" id="crud-read-modal" aria-labelledby="crud-read-modal-h">
+<form method="dialog">
+<div class="ck-dialog__header"><h2 id="crud-read-modal-h">Durumu güncelle</h2></div>
+<div class="ck-dialog__body"><div class="ck-field"><label class="ck-field__label" for="crud-read-status">Durum</label><select class="ck-select" id="crud-read-status"><option>Aktif</option><option>Taslak</option><option>Arşivlendi</option></select></div></div>
+<div class="ck-dialog__footer"><button class="ck-button ck-button--secondary" type="submit" value="cancel">Vazgeç</button><button class="ck-button" type="submit" value="save">Kaydet</button></div>
+</form>
+</dialog>
+
+<p class="ck-text-small ck-text-muted">Tokenlar: <code>&lt;dl&gt;</code>/<code>&lt;dt&gt;</code>/<code>&lt;dd&gt;</code> (anahtar-değer verisi için doğru semantik), <code>ck-grid--2</code>, <code>ck-dialog</code>. Bu sayfadaki dialog, <code>crud-modal.html</code>'den farklı olarak varsayılan <em>kapalı</em>; sadece "Hızlı düzenle" tetiklendiğinde (Enhance JS ile) açılır — temel görünüm halihazırda tam kayıt verisini gösterdiği için modalın açık olması gerekmez.</p>
+</div></section>
+</main>
+</body>
+</html>

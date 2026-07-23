@@ -64,6 +64,14 @@ not a runtime or a second component API.
 - `patterns/application/advanced-table.html`: row selection, bulk-action
   toolbar, and a totals footer row — complements `data-management.html` (see
   `docs/product/patterns/catalog/advanced-table.md`).
+- `patterns/application/crud-modal.html`: native-dialog edit modal with
+  delete-confirm/success as documented states (see
+  `docs/product/patterns/catalog/crud-modal.md`).
+- `patterns/application/crud-form-page.html`: full-page create/edit form (see
+  `docs/product/patterns/catalog/crud-form-page.md`).
+- `patterns/application/crud-read-section.html`: read-only record detail view
+  with a quick-edit dialog (see
+  `docs/product/patterns/catalog/crud-read-section.md`).
 
 The pattern catalog will grow after each pattern has a real semantic contract,
 copyable source, and static contract coverage.
