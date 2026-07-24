@@ -46,6 +46,15 @@
   .ckcss-nav-links { font-size: .88rem; gap: clamp(.75rem, 3vw, 2rem); justify-content: flex-end; list-style: none; }
   .ckcss-nav-links a { text-decoration: none; }
   .ckcss-nav-links a:hover { text-decoration: underline; }
+  .ckcss-site-menu { display: none; position: relative; }
+  .ckcss-site-menu summary { align-items: center; cursor: pointer; display: inline-flex; font: inherit; font-weight: 700; gap: var(--ck-space-2); list-style: none; min-block-size: 2.75rem; padding-inline: var(--ck-space-3); }
+  .ckcss-site-menu summary::-webkit-details-marker { display: none; }
+  .ckcss-site-menu summary::after { content: "+"; font-size: 1.25rem; font-weight: 400; line-height: 1; }
+  .ckcss-site-menu[open] summary::after { content: "−"; }
+  .ckcss-site-menu__panel { background: var(--ck-color-surface); border: 1px solid var(--ck-color-border); box-shadow: var(--ck-shadow-md); inset-inline-end: 0; min-inline-size: min(19rem, calc(100vw - 2rem)); padding: var(--ck-space-3); position: absolute; z-index: 2; }
+  .ckcss-site-menu__panel ul { list-style: none; margin: 0; padding: 0; }
+  .ckcss-site-menu__panel a { display: block; min-block-size: 2.75rem; padding: var(--ck-space-2) var(--ck-space-3); text-decoration: none; }
+  .ckcss-site-menu__panel a:hover { background: var(--ck-color-surface-muted); text-decoration: underline; }
 
   .ckcss-hero { border-block-end: 1px solid var(--ckcss-rule); padding-block: clamp(4rem, 8vw, 7rem); }
   .ckcss-hero .ck-sidebar { align-items: center; gap: clamp(3rem, 7vw, 7rem); }
@@ -80,6 +89,9 @@
   .ckcss-footer { background: var(--ckcss-mint); padding-block: 2rem; }
   .ckcss-footer-inner { justify-content: space-between; }
   .ckcss-footer p { font-size: .9rem; }
+  .ckcss-footer-links { align-items: center; gap: var(--ck-space-3) var(--ck-space-4); list-style: none; margin: 0; padding: 0; }
+  .ckcss-footer-links a { text-decoration: none; }
+  .ckcss-footer-links a:hover { text-decoration: underline; }
 
   .ckcss-doc-intro { border-block-end: 1px solid var(--ckcss-rule); padding-block: clamp(3.5rem, 8vw, 6rem); }
   .ckcss-doc-intro h1 { max-inline-size: 13ch; }
@@ -208,7 +220,12 @@
 
   @media (max-width: 42rem) {
     .ckcss-nav { align-items: flex-start; flex-direction: column; padding-block: 1rem; }
-    .ckcss-nav-links { font-size: .78rem; gap: var(--ck-space-2) var(--ck-space-4); justify-content: flex-start; }
+    .ckcss-nav > nav { display: none; }
+    .ckcss-site-menu { align-self: stretch; display: block; }
+    .ckcss-site-menu summary { background: var(--ck-color-surface-muted); inline-size: 100%; justify-content: space-between; }
+    .ckcss-site-menu__panel { inset-inline: 0; min-inline-size: auto; }
+    .ckcss-footer-inner { align-items: flex-start; flex-direction: column; }
+    .ckcss-footer-links { align-items: flex-start; flex-direction: column; }
     .ckcss-code-wrap { box-shadow: var(--ckcss-shadow-panel-small); }
     .ckcss-pattern-heading { align-items: start; flex-direction: column; }
     .ckcss-app-toolbar { align-items: start; flex-direction: column; }
@@ -236,6 +253,15 @@
   .ckcss-breadcrumb a { font-size: .88rem; text-decoration: none; }
   .ckcss-breadcrumb a:hover { text-decoration: underline; }
   .ckcss-nav-links [aria-current="page"] { color: var(--ckcss-accent); text-decoration: underline; }
+  .ckcss-catalog-nav { border-block: 1px solid var(--ckcss-rule); padding-block: var(--ck-space-4); }
+  .ckcss-catalog-nav ul { list-style: none; margin: 0; padding: 0; }
+  .ckcss-catalog-nav a { min-block-size: 2.75rem; text-decoration: none; }
+  .ckcss-catalog-nav a:hover { text-decoration: underline; }
+  .ckcss-pattern-journey { border-block-start: 1px solid var(--ckcss-rule); margin-block-start: var(--ck-space-8); padding-block-start: var(--ck-space-6); }
+  .ckcss-pattern-journey h2 { font-size: 1.25rem; max-inline-size: none; }
+  .ckcss-pattern-journey__links { list-style: none; margin: 0; padding: 0; }
+  .ckcss-pattern-journey__links a { display: inline-block; min-block-size: 2.75rem; text-decoration: none; }
+  .ckcss-pattern-journey__links a:hover { text-decoration: underline; }
   .ckcss-product-hero { padding-block: clamp(4rem, 9vw, 8rem); }
   .ckcss-product-hero .ck-sidebar { align-items: center; gap: clamp(2.5rem, 7vw, 7rem); }
   .ckcss-product-hero h1 { max-inline-size: 10ch; }
@@ -275,5 +301,81 @@
     .ckcss-doc-shell { grid-template-columns: 15rem minmax(0, 1fr); }
     .ckcss-doc-nav { position: sticky; top: 1rem; }
     .ckcss-cta-panel { grid-template-columns: minmax(0, 1fr) auto; }
+  }
+
+  /* Hallmark · pre-emit critique: P5 H5 E5 S5 R4 V5
+     Redesign: technical gallery · native motion · mobile-first */
+  .ckcss-header { backdrop-filter: blur(16px); background: color-mix(in srgb, var(--ckcss-paper) 92%, transparent); position: sticky; inset-block-start: 0; z-index: var(--ck-z-sticky); }
+  .ckcss-nav { min-block-size: 4.25rem; }
+  .ckcss-nav-links { font-family: var(--ckcss-font-mono); font-size: .74rem; gap: clamp(.6rem, 1.6vw, 1.25rem); letter-spacing: .04em; text-transform: uppercase; }
+  .ckcss-nav-links a { padding-block: .5rem; }
+  .ckcss-nav-links a[aria-current="page"] { text-decoration-thickness: .13em; }
+  .ckcss-product-hero { background: radial-gradient(circle at 86% 14%, color-mix(in srgb, var(--ckcss-mint) 50%, transparent), transparent 26rem), linear-gradient(120deg, var(--ckcss-paper), var(--ck-color-surface-muted)); min-block-size: min(49rem, calc(100svh - 4.25rem)); display: grid; align-items: center; }
+  .ckcss-product-hero h1 { font-size: clamp(3.6rem, 8vw, 7.4rem); max-inline-size: 9ch; }
+  .ckcss-product-hero .ckcss-code-wrap { box-shadow: 1rem 1rem 0 var(--ckcss-accent); transform: rotate(1.25deg); }
+  .ckcss-footer { background: var(--ckcss-ink); color: var(--ckcss-inverse); padding-block: clamp(2.5rem, 6vw, 4.5rem); }
+  .ckcss-footer .ckcss-brand, .ckcss-footer a { color: inherit; }
+  .ckcss-footer .ckcss-brand span { color: var(--ckcss-mint); }
+  .ckcss-footer-inner { align-items: end; }
+  .ckcss-footer-links { font-family: var(--ckcss-font-mono); font-size: .75rem; letter-spacing: .05em; text-transform: uppercase; }
+  .ckcss-doc-intro { background: linear-gradient(110deg, var(--ckcss-ink) 0 58%, color-mix(in srgb, var(--ckcss-accent) 82%, var(--ckcss-ink)) 58%); color: var(--ckcss-inverse); }
+  .ckcss-doc-intro h1 { color: inherit; }
+  .ckcss-doc-intro p { color: color-mix(in srgb, var(--ckcss-inverse) 78%, transparent); }
+  .ckcss-doc-intro .ckcss-eyebrow { color: var(--ckcss-mint); }
+  .ckcss-catalog-nav { background: var(--ck-color-surface-muted); border-block: 0; padding-block: var(--ck-space-3); }
+  .ckcss-catalog-nav a { border-radius: var(--ck-radius-pill); font-family: var(--ckcss-font-mono); font-size: .74rem; letter-spacing: .04em; padding: .55rem .8rem; text-transform: uppercase; }
+  .ckcss-catalog-nav a:hover { background: var(--ckcss-ink); color: var(--ckcss-inverse); text-decoration: none; }
+  .ckcss-gallery-intro { padding-block: clamp(2.5rem, 6vw, 5rem); }
+  .ckcss-gallery-intro h1 { max-inline-size: 12ch; }
+  .ckcss-gallery-stats { border-block: var(--ckcss-border); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-block-start: var(--ck-space-6); }
+  .ckcss-gallery-stats div { padding: var(--ck-space-4); }
+  .ckcss-gallery-stats div + div { border-inline-start: var(--ckcss-border); }
+  .ckcss-gallery-stats strong { display: block; font-family: var(--ckcss-font-mono); font-size: clamp(1.75rem, 4vw, 3rem); }
+  .ckcss-gallery-stats span { color: var(--ck-color-text-muted); font-size: var(--ck-font-size-sm); }
+  .ckcss-catalog-controls { align-items: center; border-block: var(--ckcss-border); display: flex; flex-wrap: wrap; gap: var(--ck-space-3); justify-content: space-between; margin-block: var(--ck-space-6); padding-block: var(--ck-space-4); }
+  .ckcss-catalog-controls__filters { display: flex; flex-wrap: wrap; gap: var(--ck-space-2); }
+  .ckcss-filter { background: transparent; border: 1px solid var(--ck-color-border-strong); border-radius: var(--ck-radius-pill); cursor: pointer; font-family: var(--ckcss-font-mono); font-size: .72rem; min-block-size: 2.5rem; padding-inline: .8rem; text-transform: uppercase; }
+  .ckcss-filter[aria-pressed="true"], .ckcss-filter:hover { background: var(--ckcss-ink); border-color: var(--ckcss-ink); color: var(--ckcss-inverse); }
+  .ckcss-catalog-search { flex: 1 1 15rem; max-inline-size: 22rem; }
+  .ckcss-catalog-grid { align-items: stretch; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); }
+  .ckcss-pattern-link { background: var(--ck-color-surface); border: var(--ckcss-border); border-radius: 0; display: grid; grid-template-rows: 10rem auto; min-block-size: 20rem; overflow: hidden; position: relative; transform: none; }
+  .ckcss-pattern-link:hover { box-shadow: .55rem .55rem 0 var(--ckcss-accent); transform: translate(-.18rem, -.18rem); }
+  .ckcss-pattern-link[hidden] { display: none; }
+  .ckcss-card-preview { background: var(--ck-color-surface-muted); border-block-end: var(--ckcss-border); overflow: hidden; padding: var(--ck-space-4); position: relative; }
+  .ckcss-card-preview::before, .ckcss-card-preview::after { content: ""; position: absolute; }
+  .ckcss-card-preview::before { background: var(--ckcss-ink); border-radius: .2rem; inset: 1.3rem 1.4rem 2.3rem; opacity: .92; }
+  .ckcss-card-preview::after { background: var(--ckcss-mint); block-size: .65rem; box-shadow: 0 1.1rem 0 color-mix(in srgb, var(--ckcss-paper) 70%, transparent), 0 2.2rem 0 color-mix(in srgb, var(--ckcss-paper) 45%, transparent); inline-size: 48%; inset: 2.25rem auto auto 2.2rem; }
+  .ckcss-pattern-link[data-category="auth"] .ckcss-card-preview::before { background: var(--ckcss-accent); inset-inline: 30% 30%; }
+  .ckcss-pattern-link[data-category="auth"] .ckcss-card-preview::after { background: var(--ckcss-paper); inline-size: 27%; inset-inline-start: 36.5%; }
+  .ckcss-pattern-link[data-category="ecommerce"] .ckcss-card-preview::before { background: var(--ckcss-mint); border-radius: 50%; block-size: 7rem; inline-size: 7rem; inset: 1.5rem auto auto 1.75rem; }
+  .ckcss-pattern-link[data-category="ecommerce"] .ckcss-card-preview::after { background: var(--ckcss-ink); inset: 2rem 1.8rem 1.6rem 10rem; box-shadow: 0 1.2rem 0 color-mix(in srgb, var(--ckcss-ink) 50%, transparent), 0 2.4rem 0 color-mix(in srgb, var(--ckcss-ink) 24%, transparent); }
+  .ckcss-pattern-link[data-category="application"] .ckcss-card-preview::before { background: var(--ckcss-ink); inset: 1.2rem 1.2rem 1.2rem 3.5rem; }
+  .ckcss-pattern-link[data-category="application"] .ckcss-card-preview::after { background: var(--ckcss-accent); inset: 1.2rem auto 1.2rem 1.2rem; inline-size: 1.7rem; box-shadow: none; }
+  .ckcss-pattern-link[data-category="marketing"] .ckcss-card-preview::before { background: var(--ckcss-accent); inset: 1.25rem; }
+  .ckcss-pattern-link[data-category="marketing"] .ckcss-card-preview::after { background: var(--ckcss-paper); inline-size: 54%; inset: 2.2rem auto auto 2.1rem; }
+  .ckcss-pattern-link[data-category="foundation"] .ckcss-card-preview::before { background: linear-gradient(135deg, var(--ckcss-ink) 0 50%, var(--ckcss-mint) 50%); inset: 1.25rem; }
+  .ckcss-pattern-link .ck-card__body { display: grid; gap: var(--ck-space-2); padding: var(--ck-space-4); }
+  .ckcss-pattern-link h3 { font-size: 1.25rem; max-inline-size: 18ch; }
+  .ckcss-pattern-link .ck-text-small { color: var(--ckcss-accent); font-family: var(--ckcss-font-mono); font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; }
+  .ckcss-pattern-journey { background: var(--ck-color-surface-muted); border-block: var(--ckcss-border); margin-block-start: clamp(3rem, 7vw, 6rem); padding-block: clamp(2.5rem, 6vw, 4rem); }
+  .ckcss-pattern-journey h2 { font-size: clamp(1.75rem, 3vw, 2.6rem); }
+  .ckcss-pattern-journey__links a { border-block-end: 1px solid transparent; font-family: var(--ckcss-font-mono); font-size: .77rem; letter-spacing: .02em; }
+  .ckcss-pattern-journey__links a:hover { border-color: currentColor; text-decoration: none; }
+  .ckcss-reveal { opacity: 0; transform: translateY(1rem); }
+  .ckcss-reveal.is-visible { animation: ckcss-reveal .55s var(--ck-ease-emphasis) both; }
+  @keyframes ckcss-reveal { to { opacity: 1; transform: none; } }
+  @media (max-width: 42rem) {
+    .ckcss-header { position: relative; }
+    .ckcss-product-hero { min-block-size: auto; }
+    .ckcss-product-hero .ckcss-code-wrap { transform: none; }
+    .ckcss-gallery-stats { grid-template-columns: 1fr; }
+    .ckcss-gallery-stats div + div { border-inline-start: 0; border-block-start: var(--ckcss-border); }
+    .ckcss-catalog-controls { align-items: stretch; }
+    .ckcss-catalog-search { max-inline-size: none; }
+    .ckcss-pattern-link { grid-template-rows: 9rem auto; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .ckcss-reveal { opacity: 1; transform: none; }
+    .ckcss-pattern-link:hover { transform: none; }
   }
 }

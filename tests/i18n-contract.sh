@@ -11,13 +11,13 @@ if grep -rnE '(margin|padding|border)-(left|right)|text-align:[[:space:]]*(left|
   exit 1
 fi
 
-# 2. Enhance modules never inject user-facing strings. The only permitted
-#    textContent write is the guarded data-ck-label-* swap in forms.js.
+# 2. Enhance modules never carry user-facing strings. Text writes are limited
+#    to labels supplied by the page through data attributes.
 if grep -rnE '(innerHTML|innerText)[[:space:]]*=' "$project_dir/enhance"; then
   printf '%s\n' 'i18n contract failed: string injection in enhance/' >&2
   exit 1
 fi
-if grep -rnE 'textContent[[:space:]]*=' "$project_dir/enhance" | grep -vF 'textContent = visible ? showLabel : hideLabel'; then
+if grep -rnE 'textContent[[:space:]]*=' "$project_dir/enhance" | grep -vE 'textContent = (visible \? showLabel : hideLabel|.*labels\.ckSourceLabel)'; then
   printf '%s\n' 'i18n contract failed: unguarded textContent write in enhance/' >&2
   exit 1
 fi
@@ -28,6 +28,8 @@ grep -q 'data-ck-label-show' "$project_dir/enhance/forms.js"
 grep -q 'data-ck-label-hide' "$project_dir/enhance/forms.js"
 grep -q -- 'document.documentElement.lang' "$project_dir/enhance/table.js"
 grep -q 'data-ck-label-show' "$project_dir/site/enhance.html"
+grep -q 'data-ck-source-label-show' "$project_dir/site/components.html"
+grep -q 'data-ck-source-label-copy' "$project_dir/site/themes.html"
 grep -q -- '--ck-breadcrumb-separator' "$project_dir/src/tokens.css"
 grep -q 'content: var(--ck-breadcrumb-separator)' "$project_dir/src/components.css"
 grep -q -- '--ck-breadcrumb-separator' "$project_dir/site/tokens.html"

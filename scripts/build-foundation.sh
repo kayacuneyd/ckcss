@@ -8,7 +8,7 @@ mkdir -p "$project_dir/dist"
 . "$project_dir/scripts/breakpoints.sh"
 
 {
-  printf '%s\n' '/*! CKCSS v0.1.0-beta.2 | Foundation, layout, essential components and helpers */'
+  printf '%s\n' '/*! CKCSS v0.1.0-beta.3 | Foundation, layout, essential components and helpers */'
   printf '%s\n' '@layer ck-reset, ck-tokens, ck-base, ck-layout, ck-components, ck-utilities;'
   printf '\n'
   cat "$project_dir/src/reset.css"

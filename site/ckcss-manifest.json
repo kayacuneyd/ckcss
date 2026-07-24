@@ -1,10 +1,10 @@
 {
   "$schema": "https://ckcss.digitaltamam.com/ckcss-manifest.json",
   "name": "CKCSS",
-  "version": "0.1.0-beta.2",
+  "version": "0.1.0-beta.3",
   "kind": "static-css-framework",
   "install": {
-    "cdn": "https://cdn.jsdelivr.net/gh/kayacuneyd/ckcss@v0.1.0-beta.2/dist/ckcss.min.css",
+    "cdn": "https://cdn.jsdelivr.net/gh/kayacuneyd/ckcss@v0.1.0-beta.3/dist/ckcss.min.css",
     "selfHostedFile": "dist/ckcss.min.css",
     "requiresRuntimeJavaScript": false
   },

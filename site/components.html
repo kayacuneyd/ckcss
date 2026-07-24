@@ -10,14 +10,15 @@
     <link rel="stylesheet" href="/assets/ckcss.min.css">
     <link rel="stylesheet" href="/assets/site.css">
   </head>
-  <body>
+  <body data-ck-source-label-show="Kaynak kodunu göster" data-ck-source-label-hide="Kaynak kodunu gizle" data-ck-source-label-copy="Kodu kopyala" data-ck-source-label-copied="Kopyalandı." data-ck-source-label-copy-failed="Kopyalanamadı; kodu seçip manuel kopyalayın.">
     <a class="ck-skip-link" href="#main-content">Ana içeriğe geç</a>
-    <header class="ckcss-header">
-      <div class="ck-container ck-cluster ckcss-nav">
-        <a class="ckcss-brand" href="/" aria-label="CKCSS ana sayfa">CK<span>CSS</span></a>
-        <nav aria-label="Ana menü"><ul class="ck-cluster ckcss-nav-links" role="list"><li><a href="/docs.html">Dokümanlar</a></li><li><a href="/components.html" aria-current="page">Bileşenler</a></li><li><a href="/patterns.html">Pattern’ler</a></li><li><a href="/tokens.html">Tokenlar</a></li><li><a href="/ai.html">AI ile kullan</a></li><li><a href="/download.html">İndir</a></li></ul></nav>
-      </div>
-    </header>
+    <header class="ckcss-header" data-ckcss-shell>
+  <div class="ck-container ck-cluster ckcss-nav">
+    <a class="ckcss-brand" href="/" aria-label="CKCSS ana sayfa">CK<span>CSS</span></a>
+    <nav aria-label="Ana menü"><ul class="ck-cluster ckcss-nav-links" role="list"><li><a href="/patterns.html">Pattern galerisi</a></li><li><a href="/components.html" aria-current="page">Bileşenler</a></li><li><a href="/docs.html">Dokümanlar</a></li><li><a href="/enhance.html">Enhance</a></li><li><a href="/download.html">İndir</a></li></ul></nav>
+    <details class="ckcss-site-menu"><summary>Menü</summary><nav class="ckcss-site-menu__panel" aria-label="Mobil menü"><ul><li><a href="/patterns.html">Pattern galerisi</a></li><li><a href="/components.html" aria-current="page">Bileşenler</a></li><li><a href="/docs.html">Dokümanlar</a></li><li><a href="/enhance.html">Enhance</a></li><li><a href="/download.html">İndir</a></li><li><a href="/tokens.html">Tokenlar</a></li><li><a href="/ai.html">AI ile kullan</a></li></ul></nav></details>
+  </div>
+</header>
 
     <nav class="ckcss-breadcrumb" aria-label="Breadcrumb"><div class="ck-container"><ol><li><a href="/">Ana sayfa</a></li><li><a href="/docs.html">Dokümanlar</a></li><li aria-current="page">Bileşenler</li></ol></div></nav>
     <main id="main-content">
@@ -127,7 +128,7 @@
 
       <section id="kurulum" class="ckcss-install">
         <div class="ck-container ck-sidebar"><div class="ck-stack"><p class="ckcss-eyebrow">KURULUM</p><h2>Tek bağlantı. Bitti.</h2><p>Dosyayı kendiniz barındırın veya sürüme sabitlenmiş CDN bağlantısını kullanın. Tam indirme, ZIP ve modül seçenekleri için indirme sayfasına gidin.</p><a class="ckcss-button ckcss-button--primary" href="/download.html">İndirme ve CDN seçenekleri</a></div><div><pre class="ckcss-code-block"><code><span class="ckcss-code-tag">&lt;link</span> rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/kayacuneyd/ckcss@v0.1.0-beta.2/dist/ckcss.min.css"<span class="ckcss-code-tag">&gt;</span></code></pre></div></div>
+  href="https://cdn.jsdelivr.net/gh/kayacuneyd/ckcss@v0.1.0-beta.3/dist/ckcss.min.css"<span class="ckcss-code-tag">&gt;</span></code></pre></div></div>
       </section>
 
       <section class="ckcss-token-note" aria-labelledby="token-title">
@@ -142,7 +143,12 @@
       </section>
     </main>
 
-    <footer class="ckcss-footer"><div class="ck-container ck-cluster ckcss-footer-inner"><p>CKCSS · Sade, modern ve taşınabilir.</p><div class="ck-cluster"><a href="/ai.html">AI ile kullan</a><a href="/download.html">İndir</a><a href="/">Ana sayfaya dön ↑</a></div></div></footer>
     <script type="module" src="/assets/enhance/source.js"></script>
-  </body>
+  <footer class="ckcss-footer" data-ckcss-site-footer>
+  <div class="ck-container ck-cluster ckcss-footer-inner">
+    <div><a class="ckcss-brand" href="/" aria-label="CKCSS ana sayfa">CK<span>CSS</span></a><p>Build gerektirmeyen modern CSS temeli.</p></div>
+    <nav aria-label="Footer"><ul class="ck-cluster ckcss-footer-links" role="list"><li><a href="/docs.html">Dokümanlar</a></li><li><a href="/patterns.html">Pattern’ler</a></li><li><a href="/download.html">İndir</a></li><li><a href="https://github.com/kayacuneyd/ckcss">GitHub</a></li><li><a href="#main-content">Başa dön ↑</a></li></ul></nav>
+  </div>
+</footer>
+</body>
 </html>

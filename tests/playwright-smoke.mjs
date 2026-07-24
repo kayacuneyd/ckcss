@@ -4,8 +4,11 @@ import { mkdir } from 'node:fs/promises';
 const baseUrl = process.env.CKCSS_SMOKE_BASE_URL || 'http://127.0.0.1:8092';
 const routes = ['/', '/download.html', '/guide.html', '/docs.html', '/components.html', '/tokens.html', '/patterns.html'];
 const viewports = [
-  { width: 390, height: 844 },
+  { width: 320, height: 720 },
+  { width: 375, height: 812 },
+  { width: 414, height: 896 },
   { width: 768, height: 1024 },
+  { width: 1280, height: 960 },
   { width: 1440, height: 1200 }
 ];
 // ADR 0015: every engine must render RTL and non-Latin documents without

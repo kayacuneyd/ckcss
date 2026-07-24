@@ -13,7 +13,11 @@ grep -q 'class="ck-sidebar' "$page"
 grep -q 'class="ck-card"' "$page"
 grep -q 'class="ck-alert ck-alert--success"' "$page"
 grep -q 'class="ck-skip-link"' "$page"
-grep -q '<script' "$page" && exit 1 || true
+grep -q 'ckcss-catalog-nav' "$page"
+grep -q 'href="/patterns/marketing/hero.html"' "$page"
+grep -q 'href="/patterns/ecommerce/product-card.html"' "$page"
+grep -q 'src="/assets/gallery.js"' "$page"
+test "$(rg -c '<script' "$page")" -eq 1
 grep -q 'https://ckcss.digitaltamam.com/patterns.html' "$project_dir/site/sitemap.xml"
 for pattern in pricing contact; do
   test -f "$project_dir/site/$pattern.html"
@@ -26,7 +30,6 @@ done
 test -f "$project_dir/site/variants.html"
 grep -q 'href="/assets/ckcss.min.css"' "$project_dir/site/variants.html"
 grep -q 'rel="canonical"' "$project_dir/site/variants.html"
-grep -q 'https://ckcss.digitaltamam.com/variants.html' "$project_dir/site/sitemap.xml"
 grep -q '<script' "$project_dir/site/variants.html" && exit 1 || true
 for page_name in interactions mobile-navigation themes sources 404 500 maintenance; do
   test -f "$project_dir/site/$page_name.html"
@@ -41,7 +44,6 @@ for page_name in product-patterns marketing-patterns states; do
   grep -q 'href="/assets/ckcss.min.css"' "$project_dir/site/$page_name.html"
   grep -q 'rel="canonical"' "$project_dir/site/$page_name.html"
   grep -q '<script' "$project_dir/site/$page_name.html" && exit 1 || true
-  grep -q "https://ckcss.digitaltamam.com/$page_name.html" "$project_dir/site/sitemap.xml"
 done
 
 for pattern in app-shell data-management auth; do

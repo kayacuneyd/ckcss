@@ -1,7 +1,8 @@
 /* CKCSS Enhance · optional source reveal and copy controls for documentation */
 const examples = document.querySelectorAll(".ckcss-example");
+const labels = document.body?.dataset;
 
-if (examples.length) {
+if (examples.length && labels) {
   document.documentElement.classList.add("ckcss-source-ready");
 
   examples.forEach((example, index) => {
@@ -22,12 +23,12 @@ if (examples.length) {
     toggle.type = "button";
     toggle.setAttribute("aria-controls", sourceId);
     toggle.setAttribute("aria-expanded", "false");
-    toggle.textContent = "Kaynak kodunu göster";
+    toggle.textContent = labels.ckSourceLabelShow;
 
     const copy = document.createElement("button");
     copy.className = "ck-button ck-button--quiet";
     copy.type = "button";
-    copy.textContent = "Kodu kopyala";
+    copy.textContent = labels.ckSourceLabelCopy;
 
     const status = document.createElement("span");
     status.className = "ckcss-source-status";
@@ -37,15 +38,15 @@ if (examples.length) {
       const open = example.dataset.ckSourceOpen === "true";
       example.dataset.ckSourceOpen = String(!open);
       toggle.setAttribute("aria-expanded", String(!open));
-      toggle.textContent = open ? "Kaynak kodunu göster" : "Kaynak kodunu gizle";
+      toggle.textContent = open ? labels.ckSourceLabelShow : labels.ckSourceLabelHide;
     });
 
     copy.addEventListener("click", async () => {
       try {
         await navigator.clipboard.writeText(code.textContent.trim());
-        status.textContent = "Kopyalandı.";
+        status.textContent = labels.ckSourceLabelCopied;
       } catch {
-        status.textContent = "Kopyalanamadı; kodu seçip manuel kopyalayın.";
+        status.textContent = labels.ckSourceLabelCopyFailed;
       }
     });
 

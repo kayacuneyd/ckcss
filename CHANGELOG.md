@@ -7,6 +7,8 @@ semantic versioning where releases are applicable.
 
 ## [Unreleased]
 
+## [0.1.0-beta.3] - 2026-07-24
+
 ### Added
 
 - `constitution.md`: adopted the **KayaEOS Engineering & Design Constitution v2.0.0**, CKCSS's
