@@ -45,6 +45,21 @@ grep -q 'rel="canonical"' "$project_dir/site/tokens.html"
 grep -q -- '--ck-iznik-cobalt-500' "$project_dir/site/tokens.html"
 grep -q -- '--ck-font-size-2xl' "$project_dir/site/tokens.html"
 grep -q '<script' "$project_dir/site/tokens.html" && exit 1 || true
-grep -qE '#[0-9a-fA-F]{3,8}|rgb\(' "$project_dir/src/components.css" && exit 1 || true
+
+# Raw color literals belong in tokens.css only (ADR 0011); every other source
+# file must consume semantic --ck-color-* tokens.
+for src_file in "$project_dir"/src/*.css; do
+  case "$src_file" in
+    */tokens.css) continue ;;
+  esac
+  grep -qE '#[0-9a-fA-F]{3,8}|rgb\(' "$src_file" && exit 1 || true
+done
+
+# Breakpoint values are centralized in scripts/breakpoints.sh (ADR 0018); a
+# literal min-width/max-width in an @media or @container condition means a
+# source file bypassed the $ck-bp-sm/$ck-bp-md/$ck-bp-lg placeholder.
+for src_file in "$project_dir"/src/*.css; do
+  grep -qE '@(media|container)[^{]*\((min|max)-width:[[:space:]]*(40rem|48rem|64rem|640px|768px|1024px)\)' "$src_file" && exit 1 || true
+done
 
 printf '%s\n' 'Tokens contract passed.'

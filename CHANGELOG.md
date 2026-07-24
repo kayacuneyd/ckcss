@@ -7,6 +7,30 @@ semantic versioning where releases are applicable.
 
 ## [Unreleased]
 
+### Added
+
+- `constitution.md`: adopted the **KayaEOS Engineering & Design Constitution v2.0.0**, CKCSS's
+  first locally-adopted constitution file, numbered to align with the sibling DevinimJS repo's
+  same-day adoption. Makes existing ADRs (0001–0020) into enforceable clauses across five areas:
+  the build-free/shared-hosting boundary (Core JS-free per ADR-0003, Enhance optional per
+  ADR-0013), the 26624-byte `dist/ckcss.min.css` distribution budget (ADR-0006/0019), token
+  discipline (`ck-`/`--ck-` prefix per ADR-0002, rem-based measurement per ADR-0008, single
+  type scale per ADR-0014, `light-dark()` single-declaration tokens per ADR-0017), the fluid
+  design/responsive contract (centralized breakpoints per ADR-0018, logical-properties-only per
+  ADR-0015), and a new AI & Developer Contract section (composition-before-new-component per the
+  ADR-0020 precedent, no invented tokens/breakpoints, i18n/RTL and Core/Enhance boundary checks
+  before any change is presented as done). No prior rule changed; existing ADRs are the source
+  of truth and this file cites them directly rather than restating divergent numbers.
+- `tests/tokens-contract.sh`, `tests/foundation-contract.sh`: closed three enforcement gaps the
+  new constitution surfaced between what the ADRs require and what the contract tests actually
+  checked. The raw hex/`rgb()` literal ban (ADR-0011) covered only `components.css`; it now
+  covers every `src/*.css` file except `tokens.css` itself. The `!important` ban covered only
+  `components.css` and `layout.css`; it now also covers `reset.css`, `base.css` and
+  `utilities.css`. New: a check that rejects a literal `40rem`/`48rem`/`64rem`/`640px`/`768px`/
+  `1024px` inside an `@media`/`@container` condition anywhere in `src/`, since nothing previously
+  guarded ADR-0018's `$ck-bp-sm`/`$ck-bp-md`/`$ck-bp-lg` placeholder convention from being
+  bypassed. No source file changed — all three checks pass against current `src/` unmodified.
+
 ## [0.1.0-beta.2] - 2026-07-23
 
 ### Added

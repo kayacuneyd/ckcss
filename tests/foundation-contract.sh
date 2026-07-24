@@ -20,6 +20,10 @@ test -f "$project_dir/scripts/build-modules.sh"
 grep -q -- 'ck-font-display' "$project_dir/src/tokens.css"
 grep -q -- 'ck-palette-coral-500' "$project_dir/src/tokens.css"
 
+for src_file in reset.css base.css utilities.css; do
+  grep -q -- '!important' "$project_dir/src/$src_file" && exit 1 || true
+done
+
 "$project_dir/scripts/build-foundation.sh"
 "$project_dir/scripts/build-modules.sh"
 test -s "$project_dir/dist/ckcss.css"
