@@ -4,7 +4,7 @@ set -eu
 
 project_dir=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
 
-for path in src/reset.css src/tokens.css src/base.css src/ckcss.css src/utilities.css examples/foundation.html; do
+for path in src/reset.css src/tokens.css src/base.css src/ckcss.css src/utilities.css src/print.css examples/foundation.html; do
   test -f "$project_dir/$path"
 done
 
@@ -16,6 +16,10 @@ grep -q -- 'Ordinary flow gets semantic rhythm' "$project_dir/src/base.css"
 grep -q -- '@layer ck-reset, ck-tokens, ck-base, ck-layout, ck-components, ck-utilities' "$project_dir/src/ckcss.css"
 grep -q -- 'ck-visually-hidden' "$project_dir/src/utilities.css"
 grep -q -- 'ck-query-container' "$project_dir/src/utilities.css"
+grep -q -- 'ck-m-4' "$project_dir/src/utilities.css"
+grep -q -- 'ck-flex-col' "$project_dir/src/utilities.css"
+grep -q -- 'ck-animate-fade-in' "$project_dir/src/utilities.css"
+grep -q -- '@media print' "$project_dir/src/print.css"
 test -f "$project_dir/scripts/build-modules.sh"
 grep -q -- 'ck-font-display' "$project_dir/src/tokens.css"
 grep -q -- 'ck-palette-coral-500' "$project_dir/src/tokens.css"

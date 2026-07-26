@@ -5,7 +5,39 @@ All notable changes to this project will be documented in this file.
 This project follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and
 semantic versioning where releases are applicable.
 
-## [Unreleased]
+## [0.1.0-rc.1] - 2026-07-26
+
+### Added
+
+- Industry-standard expansion per `EMPOWERMENT.md` / ADR 0021:
+  - **Utilities:** spacing, sizing, display, flex/grid, position/z-index,
+    typography, border/radius, shadows, opacity, overflow, transitions,
+    animation keyframes, print helpers (`ck-no-print`, `ck-print-only`),
+    a11y helpers (`ck-sr-only`, contrast/reduced-motion preferences).
+  - **Print stylesheet:** `src/print.css` (nav/toast hide, link URLs, page margins).
+  - **Forms:** `ck-fieldset`, `ck-form-grid`/`row`/`group`, `ck-choice-grid`,
+    `ck-search`, `ck-file`, `ck-range`, validation (`ck-is-valid`/`invalid`),
+    `ck-form-error-summary`, floating label pattern.
+  - **Components:** `ck-toast`, `ck-banner`, `ck-tooltip`, `ck-popover`,
+    `ck-snackbar`, `ck-accordion`, `ck-empty-state`, `ck-stat`, `ck-list`,
+    `ck-description-list`, `ck-tree`, `ck-icon` (+ `dist/ckcss-icon-sprite.svg`).
+  - **Theme:** `data-theme` alias, `auto` mode; Enhance `theme.js` cycles
+    light → dark → auto with `localStorage` and `prefers-color-scheme`.
+  - **Tokens:** `--ck-space-0`, type sizes 3xl/4xl, semibold, snug line-height,
+    max-size scale, radius none/circle, z-index scale tokens.
+- Size budget raised to 64 KiB minified (ADR 0021).
+- Example: `examples/utilities.html`.
+- **Sprint A quality gate:**
+  - `npm run test:a11y` — axe-core WCAG 2.2 AA on quality fixture + examples (Chromium/Firefox/WebKit)
+  - `npm run test:visual` — pixelmatch baselines for light/dark/RTL × 390/768/1440
+  - `tests/fixtures/quality-kit.html` shared harness
+  - `npm run test:quality` runs contracts + a11y + visual
+- **Icon set:** 189 SVG symbols in `src/icons/ckcss-icon-sprite.svg` (copied to `dist/`), `tests/icons-contract.sh` enforces ≥100.
+
+### Changed
+
+- Backward compatible: existing layout/component classes retain behavior.
+- Fraction width utilities use hyphen form (`ck-w-1-2`), not slash.
 
 ## [0.1.0-beta.3] - 2026-07-24
 

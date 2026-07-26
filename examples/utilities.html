@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>CKCSS utilities</title>
+  <link rel="stylesheet" href="../dist/ckcss.min.css">
+</head>
+<body class="ck-container ck-stack ck-stack--relaxed" style="padding-block: var(--ck-space-6)">
+  <a class="ck-skip-link" href="#main">Skip to content</a>
+  <header class="ck-cluster ck-cluster--spread">
+    <h1 class="ck-text-2xl ck-m-0">Utilities</h1>
+    <button type="button" class="ck-button ck-button--secondary ck-button--sm" data-ck-theme-toggle>Theme</button>
+  </header>
+  <main id="main" class="ck-stack">
+    <section class="ck-card">
+      <div class="ck-card__body ck-stack">
+        <h2 class="ck-text-xl">Spacing &amp; flex</h2>
+        <div class="ck-flex ck-flex-wrap ck-gap-3 ck-items-center">
+          <span class="ck-p-3 ck-bg-surface-muted ck-rounded">p-3</span>
+          <span class="ck-m-2 ck-p-2 ck-border ck-rounded-sm">m-2</span>
+          <span class="ck-px-4 ck-py-2 ck-bg-primary ck-rounded-pill">px-4 py-2</span>
+        </div>
+      </div>
+    </section>
+    <section class="ck-card">
+      <div class="ck-card__body ck-stack">
+        <h2 class="ck-text-xl">Typography</h2>
+        <p class="ck-text-xs ck-mb-1">text-xs</p>
+        <p class="ck-text-sm ck-mb-1">text-sm</p>
+        <p class="ck-text-lg ck-fw-semibold ck-mb-1">text-lg fw-semibold</p>
+        <p class="ck-text-muted ck-mb-0">text-muted</p>
+      </div>
+    </section>
+    <section class="ck-grid ck-grid-cols-2 ck-gap-4">
+      <div class="ck-p-4 ck-border ck-rounded-lg ck-shadow-sm">grid-cols-2</div>
+      <div class="ck-p-4 ck-border ck-rounded-lg ck-shadow-sm ck-text-end">text-end</div>
+    </section>
+    <p class="ck-text-sm ck-text-muted ck-no-print">This line is hidden in print (.ck-no-print).</p>
+    <p class="ck-print-only">Print-only line.</p>
+  </main>
+  <script src="../enhance/theme.js"></script>
+</body>
+</html>

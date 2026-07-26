@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>CKCSS icons</title>
+  <link rel="stylesheet" href="../dist/ckcss.min.css">
+  <style>
+    .icon-grid {
+      display: grid;
+      gap: var(--ck-space-3);
+      grid-template-columns: repeat(auto-fill, minmax(7.5rem, 1fr));
+    }
+    .icon-cell {
+      align-items: center;
+      border: 1px solid var(--ck-color-border);
+      border-radius: var(--ck-radius-md);
+      display: grid;
+      gap: var(--ck-space-2);
+      justify-items: center;
+      padding: var(--ck-space-3);
+      text-align: center;
+    }
+    .icon-cell code { font-size: var(--ck-font-size-xs); word-break: break-all; }
+  </style>
+</head>
+<body class="ck-container ck-stack ck-stack--relaxed" style="padding-block: var(--ck-space-6)">
+  <h1 class="ck-text-2xl">Icons</h1>
+  <p class="ck-text-muted ck-max-readable">
+    Sprite: <code>dist/ckcss-icon-sprite.svg</code>. Usage:
+    <code>&lt;svg class="ck-icon" aria-hidden="true"&gt;&lt;use href="…#ck-icon-NAME"&gt;&lt;/use&gt;&lt;/svg&gt;</code>
+  </p>
+  <div id="grid" class="icon-grid" aria-label="Icon catalog"></div>
+  <script type="module">
+    const res = await fetch("../src/icons/manifest.json");
+    const { icons } = await res.json();
+    const grid = document.getElementById("grid");
+    for (const name of icons) {
+      const cell = document.createElement("div");
+      cell.className = "icon-cell";
+      cell.innerHTML = `
+        <svg class="ck-icon ck-icon--lg" aria-hidden="true" focusable="false">
+          <use href="../dist/ckcss-icon-sprite.svg#ck-icon-${name}"></use>
+        </svg>
+        <code>${name}</code>`;
+      grid.append(cell);
+    }
+  </script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-/*! CKCSS v0.1.0-beta.3 | core entry */
+/*! CKCSS v0.1.0-rc.1 | core entry */
 @layer ck-reset, ck-tokens, ck-base, ck-layout, ck-components, ck-utilities;
 @layer ck-reset {
   *,
@@ -228,8 +228,11 @@
     --ck-font-size-lg: 1.125rem;
     --ck-font-size-xl: 1.25rem;
     --ck-font-size-2xl: clamp(1.5rem, 3vw, 2rem);
+    --ck-font-size-3xl: clamp(1.875rem, 4vw, 2.5rem);
+    --ck-font-size-4xl: clamp(2.25rem, 5vw, 3rem);
     --ck-font-size-display: clamp(2rem, 5vw, 3.25rem);
     --ck-line-tight: 1.15;
+    --ck-line-snug: 1.375;
     --ck-line-normal: 1.5;
     --ck-line-relaxed: 1.7;
     --ck-line-display: 0.96;
@@ -242,8 +245,10 @@
     --ck-tracking-wide: 0.04em;
     --ck-font-weight-normal: 400;
     --ck-font-weight-medium: 500;
+    --ck-font-weight-semibold: 600;
     --ck-font-weight-bold: 700;
 
+    --ck-space-0: 0;
     --ck-space-1: 0.25rem;
     --ck-space-2: 0.5rem;
     --ck-space-3: 0.75rem;
@@ -255,14 +260,23 @@
     --ck-space-9: 5rem;
     --ck-space-10: 6rem;
 
+    --ck-size-max-sm: 24rem;
+    --ck-size-max-md: 28rem;
+    --ck-size-max-lg: 32rem;
+    --ck-size-max-xl: 36rem;
+    --ck-size-max-2xl: 42rem;
+    --ck-size-max-prose: 72ch;
+
     --ck-control-height-sm: 2.25rem;
     --ck-control-height-md: 2.75rem;
     --ck-control-height-lg: 3.25rem;
 
+    --ck-radius-none: 0;
     --ck-radius-sm: 0.5rem;
     --ck-radius-md: 0.75rem;
     --ck-radius-lg: 1rem;
     --ck-radius-pill: 999px;
+    --ck-radius-circle: 50%;
     --ck-shadow-sm: 0 1px 2px rgb(15 23 42 / 0.08);
     --ck-shadow-md: 0 8px 24px rgb(15 23 42 / 0.12);
     --ck-shadow-lg: 0 20px 40px rgb(15 23 42 / 0.16);
@@ -278,6 +292,11 @@
     --ck-ease-emphasis: cubic-bezier(0.16, 1, 0.3, 1);
     --ck-opacity-disabled: 0.6;
     --ck-z-base: 0;
+    --ck-z-10: 10;
+    --ck-z-20: 20;
+    --ck-z-30: 30;
+    --ck-z-40: 40;
+    --ck-z-50: 50;
     --ck-z-sticky: 10;
     --ck-z-dropdown: 15;
     /* Non-native custom overlays only — native <dialog>/[popover] use the browser top layer. */
@@ -289,13 +308,21 @@
   }
 
   /* Explicit theme overrides only need to pin color-scheme — light-dark() above
-     resolves every semantic token automatically once color-scheme is set. */
-  [data-ck-theme="dark"] {
+     resolves every semantic token automatically once color-scheme is set.
+     data-theme is an alias of data-ck-theme (EMPOWERMENT contract). */
+  [data-ck-theme="dark"],
+  [data-theme="dark"] {
     color-scheme: dark;
   }
 
-  [data-ck-theme="light"] {
+  [data-ck-theme="light"],
+  [data-theme="light"] {
     color-scheme: light;
+  }
+
+  [data-ck-theme="auto"],
+  [data-theme="auto"] {
+    color-scheme: light dark;
   }
 }
 
@@ -398,5 +425,20 @@
       scroll-behavior: auto;
       transition-duration: 0.01ms;
     }
+  }
+
+  @media (prefers-reduced-transparency: reduce) {
+    :where(.ck-dialog::backdrop, [popover]::backdrop) {
+      background: var(--ck-color-text);
+      opacity: 0.85;
+    }
+  }
+
+  :where([aria-disabled="true"], [disabled]) {
+    cursor: not-allowed;
+  }
+
+  :where([aria-invalid="true"]) {
+    border-color: var(--ck-color-danger);
   }
 }

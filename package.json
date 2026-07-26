@@ -1,15 +1,23 @@
 {
   "name": "ckcss",
   "private": true,
-  "version": "0.1.0-beta.3",
+  "version": "0.1.0-rc.1",
   "description": "Release-only verification tools for CKCSS; consumers use static CSS only.",
   "license": "MIT",
   "scripts": {
     "build": "./scripts/build-site.sh",
-    "test:contracts": "./tests/foundation-contract.sh && ./tests/layout-contract.sh && ./tests/components-contract.sh && ./tests/tokens-contract.sh && node tests/token-contrast.mjs && ./tests/patterns-contract.sh && ./tests/landing-contract.sh && ./tests/catalog-contract.sh && ./tests/i18n-contract.sh && ./tests/enhance-contract.sh && sh ./tests/site-chrome-contract.sh && sh ./tests/gallery-contract.sh",
-    "test:browser": "node tests/playwright-smoke.mjs"
+    "test:contracts": "./tests/foundation-contract.sh && ./tests/layout-contract.sh && ./tests/components-contract.sh && ./tests/tokens-contract.sh && node tests/token-contrast.mjs && ./tests/patterns-contract.sh && ./tests/landing-contract.sh && ./tests/catalog-contract.sh && ./tests/i18n-contract.sh && ./tests/enhance-contract.sh && sh ./tests/site-chrome-contract.sh && sh ./tests/gallery-contract.sh && sh ./tests/icons-contract.sh",
+    "test:a11y": "node tests/a11y-axe.mjs",
+    "test:visual": "node tests/visual-regression.mjs",
+    "test:visual:update": "UPDATE_VISUAL_BASELINES=1 node tests/visual-regression.mjs",
+    "test:browser": "node tests/playwright-smoke.mjs",
+    "test:quality": "npm run test:contracts && npm run test:a11y && npm run test:visual"
   },
   "devDependencies": {
-    "playwright": "1.61.1"
+    "@axe-core/playwright": "4.10.2",
+    "axe-core": "4.10.3",
+    "pixelmatch": "7.1.0",
+    "playwright": "1.61.1",
+    "pngjs": "7.0.0"
   }
 }
