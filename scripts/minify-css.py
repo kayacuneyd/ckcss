@@ -12,7 +12,11 @@ def minify(source: str) -> str:
     # Keep whitespace around ':' and '(' when it could carry selector meaning,
     # e.g. `.ck-table :is(th, td)`. The result is slightly less compact but
     # remains semantics-preserving without a full CSS parser.
-    punctuation = set('{};,>+~[]')
+    # '[' / ']' are deliberately excluded: a space right after ']' (or right
+    # before '[') can be a real descendant combinator, e.g.
+    # `.ck-pagination [aria-current="page"]` vs the compound selector
+    # `.ck-pagination[aria-current="page"]` — collapsing it changes meaning.
+    punctuation = set('{};,>+~')
     while index < len(source):
         char = source[index]
         following = source[index + 1] if index + 1 < len(source) else ''

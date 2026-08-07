@@ -17,7 +17,7 @@ grep -q 'ckcss-catalog-nav' "$page"
 grep -q 'href="/patterns/marketing/hero.html"' "$page"
 grep -q 'href="/patterns/ecommerce/product-card.html"' "$page"
 grep -q 'src="/assets/gallery.js"' "$page"
-test "$(rg -c '<script' "$page")" -eq 1
+test "$(grep -c '<script' "$page")" -eq 1
 grep -q 'https://ckcss.digitaltamam.com/patterns.html' "$project_dir/site/sitemap.xml"
 for pattern in pricing contact; do
   test -f "$project_dir/site/$pattern.html"

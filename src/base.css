@@ -30,6 +30,22 @@
     font-size: var(--ck-font-size-2xl);
   }
 
+  :where(h3) {
+    font-size: var(--ck-font-size-xl);
+  }
+
+  :where(h4) {
+    font-size: var(--ck-font-size-lg);
+  }
+
+  :where(h5) {
+    font-size: var(--ck-font-size-md);
+  }
+
+  :where(h6) {
+    font-size: var(--ck-font-size-sm);
+  }
+
   :where(p, li) {
     max-inline-size: 72ch;
   }
@@ -97,5 +113,20 @@
       scroll-behavior: auto;
       transition-duration: 0.01ms;
     }
+  }
+
+  @media (prefers-reduced-transparency: reduce) {
+    :where(.ck-dialog::backdrop, [popover]::backdrop) {
+      background: var(--ck-color-text);
+      opacity: 0.85;
+    }
+  }
+
+  :where([aria-disabled="true"], [disabled]) {
+    cursor: not-allowed;
+  }
+
+  :where([aria-invalid="true"]) {
+    border-color: var(--ck-color-danger);
   }
 }

@@ -23,7 +23,7 @@ from [GitHub Releases](https://github.com/kayacuneyd/ckcss/releases), browse the
 specific tag on jsDelivr:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kayacuneyd/ckcss@v0.1.0-beta.1/dist/ckcss.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kayacuneyd/ckcss@v0.1.0-rc.2/dist/ckcss.min.css">
 ```
 
 Never use an unpinned `latest` URL in production. For a smaller distribution,
@@ -33,14 +33,18 @@ alternatives to the complete bundle, not additive files.
 ## Development
 
 ```bash
+npm install
 npm run build
-npm run test:contracts
+npm run test:contracts   # static contracts + icons
+npm run test:a11y        # axe-core WCAG 2.2 AA (Chromium/Firefox/WebKit)
+npm run test:visual      # light/dark/RTL visual baselines
+npm run test:quality     # contracts + a11y + visual
 ```
 
 Build the committed consumer artefacts with `./scripts/build-foundation.sh`.
-The result is `dist/ckcss.css` and `dist/ckcss.min.css`; use the minified file
-in production. See [the component guide](docs/product/components.md) and
-`examples/components.html` for semantic, copyable usage.
+The result is `dist/ckcss.css`, `dist/ckcss.min.css`, and
+`dist/ckcss-icon-sprite.svg`. See [the component guide](docs/product/components.md)
+and `examples/` for semantic, copyable usage. Icon catalog: `examples/icons.html`.
 
 ## License
 

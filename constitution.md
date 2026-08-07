@@ -26,7 +26,7 @@ must not contradict, that constitution. Key bindings for daily work:
 - §8 Security — never trust input; Enhance modules never write untrusted content via
   `innerHTML`/`insertAdjacentHTML` (enforced by `tests/i18n-contract.sh`'s string-injection
   check, which doubles as an XSS-surface guard).
-- §9 Performance — `dist/ckcss.min.css` stays at or under **26624 bytes (26 KiB)**, measured as
+- §9 Performance — `dist/ckcss.min.css` stays at or under **65536 bytes (64 KiB)** (ADR-0021), measured as
   plain minified bytes (`wc -c`, not gzip — see "Performance and distribution budget" below).
 - §10 SemVer + Keep-a-Changelog. Pre-1.0: token/API removal is acceptable only during the beta
   window per ADR-0014; after 1.0 the same class of change requires a deprecation cycle per
@@ -65,22 +65,21 @@ ADR-0006):
 
 ## Performance and distribution budget
 
-1. **Absolute core budget.** `dist/ckcss.min.css` must be `<= 26624` bytes, enforced by
+1. **Absolute core budget.** `dist/ckcss.min.css` must be `<= 65536` bytes (ADR-0021), enforced by
    `tests/components-contract.sh` (`wc -c`). This is plain minified size, not gzip — do not
    conflate it with DevinimJS's `min+gzip` budget, which is a different metric for a different
    artifact type.
-2. **The budget is a small, deliberate margin, not a blank check.** ADR-0019 raised the budget
-   from 24576 to 26624 bytes specifically to fit real defect fixes plus requested component
-   variants, after cutting non-essential additions (a print stylesheet, extra hover transitions,
-   tokens that resolved identically to an existing one) to minimize the impact first. ADR-0020
-   then added `.ck-drawer` for +139 bytes, leaving 808 bytes of margin — the expected pattern:
-   prefer reusing an existing semantic token or composing from existing primitives before
-   spending budget on something new.
-3. **Every PR that changes `dist/ckcss.min.css` states the before/after byte count.** A PR that
-   grows the bundle without stating the delta, or that could have reused an existing token/class
-   instead of adding one, is non-compliant. A PR that grows the bundle enough to threaten the
-   26624-byte ceiling requires its own budget ADR (ADR-0019 is the template), not a silent bump
-   of the number in `components-contract.sh`.
+  2. **The budget is a deliberate margin, not a blank check.** ADR-0019 raised the budget to
+    26624 bytes for defect fixes; ADR-0021 raised it to 65536 bytes to fit industry-standard
+    token-based utilities, print styles, and expanded form/feedback components from
+    `EMPOWERMENT.md`. Prefer reusing an existing semantic token or composing from existing
+    primitives before spending budget on something new. Modular `dist/modules/*` entry points
+    remain available for smaller installs.
+  3. **Every PR that changes `dist/ckcss.min.css` states the before/after byte count.** A PR that
+    grows the bundle without stating the delta, or that could have reused an existing token/class
+    instead of adding one, is non-compliant. A PR that grows the bundle enough to threaten the
+    65536-byte ceiling requires its own budget ADR (ADR-0019/0021 are the template), not a silent
+    bump of the number in `components-contract.sh`.
 4. **No font binaries in the core distribution.** Aleo is the default typeface (ADR-0011), but
    the core CSS never bundles a font file; the site self-hosts its own copies. This keeps the
    distribution boundary honest — a consumer who links `ckcss.min.css` gets CSS, not a hidden

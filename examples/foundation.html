@@ -8,8 +8,22 @@
     <style>
       .demo-shell { max-inline-size: 72rem; margin-inline: auto; padding: var(--ck-space-6); }
       .demo-grid { display: grid; gap: var(--ck-space-5); grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
-      .demo-panel { border: 1px solid var(--ck-color-border); border-radius: var(--ck-radius-lg); box-shadow: var(--ck-shadow-sm); padding: var(--ck-space-5); }
+      .demo-panel {
+        background: var(--ck-color-surface);
+        border: 1px solid var(--ck-color-border);
+        border-radius: var(--ck-radius-lg);
+        box-shadow: var(--ck-shadow-sm);
+        color: var(--ck-color-text);
+        padding: var(--ck-space-5);
+      }
       .demo-panel > * + * { margin-block-start: var(--ck-space-3); }
+      .demo-panel :where(a) { color: var(--ck-color-primary); }
+      .demo-panel :where(button, input) {
+        background: var(--ck-color-surface-raised);
+        border: 1px solid var(--ck-color-border-strong);
+        color: var(--ck-color-text);
+        padding: var(--ck-space-2) var(--ck-space-3);
+      }
     </style>
   </head>
   <body>

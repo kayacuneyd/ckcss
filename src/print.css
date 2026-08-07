@@ -1,0 +1,44 @@
+@layer ck-utilities {
+  @media print {
+    :where(html, body) {
+      background: white;
+      color: black;
+    }
+
+    :where(a) {
+      color: inherit;
+      text-decoration: underline;
+    }
+
+    :where(a[href^="http"])::after {
+      content: " (" attr(href) ")";
+      font-size: 0.85em;
+    }
+
+    :where(nav, .ck-nav, .ck-skip-link, .ck-tabs, .ck-pagination,
+      .ck-drawer, .ck-toast-region, [data-ck-no-print]) {
+      display: none;
+    }
+
+    .ck-no-print {
+      display: none;
+    }
+
+    .ck-print-only {
+      display: block;
+    }
+
+    :where(.ck-button, .ck-card, .ck-alert, .ck-dialog, .ck-table-wrap) {
+      box-shadow: none;
+      break-inside: avoid;
+    }
+
+    :where(.ck-table) {
+      min-inline-size: 0;
+    }
+
+    @page {
+      margin: 1.5cm;
+    }
+  }
+}

@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>CKCSS quality kit</title>
+  <link rel="stylesheet" href="/dist/ckcss.min.css">
+</head>
+<body class="ck-container ck-stack ck-stack--relaxed" style="padding-block: var(--ck-space-6)">
+  <a class="ck-skip-link" href="#main">Skip to content</a>
+  <header class="ck-cluster ck-cluster--spread">
+    <h1 class="ck-text-2xl ck-m-0">Quality kit</h1>
+    <nav class="ck-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#main" aria-current="page">Home</a></li>
+        <li><a href="#forms">Forms</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="ck-stack">
+    <section class="ck-stack" aria-labelledby="actions-h">
+      <h2 id="actions-h" class="ck-text-xl">Actions</h2>
+      <div class="ck-cluster">
+        <button type="button" class="ck-button">Primary</button>
+        <button type="button" class="ck-button ck-button--secondary">Secondary</button>
+        <button type="button" class="ck-button ck-button--danger">Danger</button>
+        <a class="ck-button ck-button--quiet" href="#forms">Quiet link</a>
+      </div>
+      <div class="ck-cluster">
+        <span class="ck-badge">Default</span>
+        <span class="ck-badge ck-badge--success">Success</span>
+        <span class="ck-badge ck-badge--warning">Warning</span>
+        <span class="ck-badge ck-badge--danger">Danger</span>
+      </div>
+    </section>
+
+    <section class="ck-alert ck-alert--success" role="status">
+      <p class="ck-alert__title">Saved</p>
+      <p>Your changes were stored.</p>
+    </section>
+    <section class="ck-alert ck-alert--danger" role="alert">
+      <p class="ck-alert__title">Error</p>
+      <p>Something needs attention.</p>
+    </section>
+
+    <section class="ck-banner" aria-label="Site notice">
+      Maintenance window tonight 22:00–23:00 UTC.
+    </section>
+
+    <section class="ck-card" data-testid="card">
+      <div class="ck-card__header"><h2 class="ck-m-0">Card</h2></div>
+      <div class="ck-card__body">
+        <p class="ck-mb-0">Body copy with <a href="#forms">an in-page link</a>.</p>
+      </div>
+      <div class="ck-card__footer">
+        <button type="button" class="ck-button ck-button--sm">Continue</button>
+      </div>
+    </section>
+
+    <section id="forms" class="ck-stack" aria-labelledby="forms-h">
+      <h2 id="forms-h" class="ck-text-xl">Forms</h2>
+      <div class="ck-form-error-summary" role="alert" tabindex="-1">
+        <p class="ck-fw-bold ck-mb-2">Fix the following:</p>
+        <ul>
+          <li><a href="#email">Email is required</a></li>
+        </ul>
+      </div>
+      <form class="ck-stack" action="#" method="get">
+        <div class="ck-field">
+          <label class="ck-field__label" for="email">Email</label>
+          <input class="ck-input" id="email" name="email" type="email" autocomplete="email" required aria-invalid="true" aria-describedby="email-err">
+          <p class="ck-field__error" id="email-err">Email is required</p>
+        </div>
+        <div class="ck-field">
+          <label class="ck-field__label" for="note">Note</label>
+          <textarea class="ck-textarea" id="note" name="note" rows="3"></textarea>
+          <p class="ck-field__help">Optional context</p>
+        </div>
+        <div class="ck-field">
+          <label class="ck-field__label" for="role">Role</label>
+          <select class="ck-select" id="role" name="role">
+            <option value="">Choose</option>
+            <option>Editor</option>
+            <option>Viewer</option>
+          </select>
+        </div>
+        <div class="ck-choice">
+          <input class="ck-choice__control" id="tos" name="tos" type="checkbox">
+          <label class="ck-choice__label" for="tos">I agree</label>
+        </div>
+        <div class="ck-search">
+          <svg class="ck-search__icon ck-icon" aria-hidden="true" focusable="false"><use href="/dist/ckcss-icon-sprite.svg#ck-icon-search"></use></svg>
+          <label class="ck-visually-hidden" for="q">Search</label>
+          <input class="ck-input" id="q" name="q" type="search" placeholder="Search">
+        </div>
+        <fieldset class="ck-fieldset">
+          <legend class="ck-legend">Plan</legend>
+          <div class="ck-choice-grid">
+            <div class="ck-choice">
+              <input class="ck-choice__control" id="p1" name="plan" type="radio" value="free">
+              <label class="ck-choice__label" for="p1">Free</label>
+            </div>
+            <div class="ck-choice">
+              <input class="ck-choice__control" id="p2" name="plan" type="radio" value="pro">
+              <label class="ck-choice__label" for="p2">Pro</label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="ck-range">
+          <label class="ck-field__label" for="vol">Volume <span class="ck-range__value">50</span></label>
+          <input class="ck-range__control" id="vol" name="vol" type="range" min="0" max="100" value="50">
+        </div>
+        <button type="submit" class="ck-button">Submit</button>
+      </form>
+    </section>
+
+    <section class="ck-stack" aria-labelledby="data-h">
+      <h2 id="data-h" class="ck-text-xl">Data</h2>
+      <div class="ck-table-wrap" role="region" aria-label="Sample table" tabindex="0">
+        <table class="ck-table">
+          <thead>
+            <tr><th scope="col">Name</th><th scope="col">Status</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Alpha</td><td><span class="ck-badge ck-badge--success">Ready</span></td></tr>
+            <tr><td>Beta</td><td><span class="ck-badge">Draft</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="ck-stat">
+        <div class="ck-stat__label">Active users</div>
+        <div class="ck-stat__value">1,284</div>
+        <div class="ck-stat__delta ck-stat__delta--up">+12%</div>
+      </div>
+      <div class="ck-empty-state">
+        <p class="ck-empty-state__title">No results</p>
+        <p class="ck-empty-state__body">Try a different filter.</p>
+        <button type="button" class="ck-button ck-button--secondary">Reset</button>
+      </div>
+    </section>
+
+    <section class="ck-accordion" aria-label="FAQ">
+      <details class="ck-disclosure">
+        <summary>What is CKCSS?</summary>
+        <div class="ck-disclosure__body">A build-free CSS framework.</div>
+      </details>
+      <details class="ck-disclosure">
+        <summary>Is JavaScript required?</summary>
+        <div class="ck-disclosure__body">No. Core is CSS-only.</div>
+      </details>
+    </section>
+
+    <nav class="ck-breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Library</a></li>
+        <li aria-current="page">Quality</li>
+      </ol>
+    </nav>
+
+    <div class="ck-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="40" aria-label="Upload progress">
+      <span style="--ck-progress-value: 40%"></span>
+    </div>
+
+    <p class="ck-cluster">
+      <svg class="ck-icon" aria-hidden="true" focusable="false"><use href="/dist/ckcss-icon-sprite.svg#ck-icon-check"></use></svg>
+      <svg class="ck-icon" aria-hidden="true" focusable="false"><use href="/dist/ckcss-icon-sprite.svg#ck-icon-home"></use></svg>
+      <svg class="ck-icon ck-icon--spin" aria-hidden="true" focusable="false"><use href="/dist/ckcss-icon-sprite.svg#ck-icon-loader"></use></svg>
+      <span class="ck-text-sm ck-text-muted">Icons (decorative)</span>
+    </p>
+  </main>
+</body>
+</html>
