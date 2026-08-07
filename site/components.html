@@ -69,6 +69,12 @@
     Geçerli bir e-posta adresi girin.
   <span class="ckcss-code-tag">&lt;/p&gt;</span>
 <span class="ckcss-code-tag">&lt;/div&gt;</span></code></pre><p class="ckcss-code-note">Hata mesajını yalnızca kırmızı kenarla ikame etmeyin.</p></div></article>
+          <article class="ckcss-example"><div class="ckcss-example-preview"><p class="ckcss-example-label">.ck-field · .ck-select</p><h3>Ülke seçimi</h3><div class="ckcss-preview-surface"><div class="ck-field"><label class="ck-field__label" for="catalog-country">Ülke</label><select class="ck-select" id="catalog-country"><option>Türkiye</option><option>Almanya</option><option>Hollanda</option></select></div></div></div><div class="ckcss-example-code"><pre class="ckcss-code-block"><code><span class="ckcss-code-tag">&lt;div</span> class="ck-field"<span class="ckcss-code-tag">&gt;</span>
+  <span class="ckcss-code-tag">&lt;label</span> class="ck-field__label" for="country"<span class="ckcss-code-tag">&gt;</span>Ülke<span class="ckcss-code-tag">&lt;/label&gt;</span>
+  <span class="ckcss-code-tag">&lt;select</span> class="ck-select" id="country"<span class="ckcss-code-tag">&gt;</span>
+    ...
+  <span class="ckcss-code-tag">&lt;/select&gt;</span>
+<span class="ckcss-code-tag">&lt;/div&gt;</span></code></pre><p class="ckcss-code-note">Ok ikonu token tabanlıdır; <code>multiple</code> seçicilerde native görünüme döner.</p></div></article>
         </div>
       </section>
 
@@ -98,6 +104,17 @@
     <span class="ckcss-code-tag">&lt;tbody&gt;</span>…<span class="ckcss-code-tag">&lt;/tbody&gt;</span>
   <span class="ckcss-code-tag">&lt;/table&gt;</span>
 <span class="ckcss-code-tag">&lt;/div&gt;</span></code></pre><p class="ckcss-code-note">Table başlıklarını <code>scope="col"</code> ile tanımlayın.</p></div></article>
+          <article class="ckcss-example"><div class="ckcss-example-preview"><p class="ckcss-example-label">.ck-table--striped · th[aria-sort]</p><h3>Sıralanabilir, zebra desenli tablo</h3><div class="ck-table-wrap"><table class="ck-table ck-table--striped"><thead><tr><th scope="col" aria-sort="descending"><button type="button">Kullanıcı</button></th><th scope="col" aria-sort="none"><button type="button">Rol</button></th></tr></thead><tbody><tr><td>Aslı Kaya</td><td>Yönetici</td></tr><tr><td>Emre Yıldız</td><td>Editör</td></tr><tr><td>Deniz Aydın</td><td>Editör</td></tr></tbody></table></div></div><div class="ckcss-example-code"><pre class="ckcss-code-block"><code><span class="ckcss-code-tag">&lt;table</span> class="ck-table ck-table--striped"<span class="ckcss-code-tag">&gt;</span>
+  <span class="ckcss-code-tag">&lt;th</span> scope="col" aria-sort="descending"<span class="ckcss-code-tag">&gt;</span>
+    <span class="ckcss-code-tag">&lt;button</span> type="button"<span class="ckcss-code-tag">&gt;</span>Kullanıcı<span class="ckcss-code-tag">&lt;/button&gt;</span>
+  <span class="ckcss-code-tag">&lt;/th&gt;</span>
+  ...
+<span class="ckcss-code-tag">&lt;/table&gt;</span></code></pre><p class="ckcss-code-note">Sıralama yönü <code>aria-sort</code> ile taşınır; ok ikonu ondan türetilir.</p></div></article>
+          <article class="ckcss-example"><div class="ckcss-example-preview"><p class="ckcss-example-label">.ck-media-item · .ck-grid--auto-fit</p><h3>Medya kütüphanesi ızgarası</h3><div class="ck-grid ck-grid--auto-fit" style="--ck-grid-min: 6rem"><div class="ck-media-item" data-ck-state="selected" style="background: var(--ck-color-surface-muted)"></div><div class="ck-media-item" style="background: var(--ck-color-surface-muted)"></div><div class="ck-media-item" style="background: var(--ck-color-surface-muted)"></div></div></div><div class="ckcss-example-code"><pre class="ckcss-code-block"><code><span class="ckcss-code-tag">&lt;div</span> class="ck-grid ck-grid--auto-fit" style="--ck-grid-min: 10rem"<span class="ckcss-code-tag">&gt;</span>
+  <span class="ckcss-code-tag">&lt;div</span> class="ck-media-item" data-ck-state="selected"<span class="ckcss-code-tag">&gt;</span>
+    <span class="ckcss-code-tag">&lt;img</span> src="…" alt="…"<span class="ckcss-code-tag">&gt;</span>
+  <span class="ckcss-code-tag">&lt;/div&gt;</span>
+<span class="ckcss-code-tag">&lt;/div&gt;</span></code></pre><p class="ckcss-code-note">Izgara için ayrı bir sınıf yoktur — mevcut <code>ck-grid--auto-fit</code> kompoze edilir.</p></div></article>
         </div>
       </section>
 
@@ -123,12 +140,15 @@
     ...
   <span class="ckcss-code-tag">&lt;/div&gt;</span>
 <span class="ckcss-code-tag">&lt;/div&gt;</span></code></pre><p class="ckcss-code-note">Container query desteklenmezse tek kolon fallback’i çalışır.</p></div></article>
+          <article class="ckcss-example"><div class="ckcss-example-preview"><p class="ckcss-example-label">.ck-divider-vertical · .ck-line-clamp-2</p><h3>Bölücü ve satır sınırlama</h3><div class="ckcss-preview-surface ck-cluster"><span>Taslak</span><span class="ck-divider-vertical" aria-hidden="true"></span><p class="ck-line-clamp-2 ck-max-w-sm">Uzun açıklama metinleri iki satırdan sonra üç nokta ile kırpılır, düzeni bozmadan önizleme sağlar.</p></div></div><div class="ckcss-example-code"><pre class="ckcss-code-block"><code><span class="ckcss-code-tag">&lt;span</span> class="ck-divider-vertical" aria-hidden="true"<span class="ckcss-code-tag">&gt;&lt;/span&gt;</span>
+
+<span class="ckcss-code-tag">&lt;p</span> class="ck-line-clamp-2"<span class="ckcss-code-tag">&gt;</span>...<span class="ckcss-code-tag">&lt;/p&gt;</span></code></pre><p class="ckcss-code-note">Yatay bölücü için düz <code>hr</code> yeterlidir; bu yalnız dikey durum içindir.</p></div></article>
         </div>
       </section>
 
       <section id="kurulum" class="ckcss-install">
         <div class="ck-container ck-sidebar"><div class="ck-stack"><p class="ckcss-eyebrow">KURULUM</p><h2>Tek bağlantı. Bitti.</h2><p>Dosyayı kendiniz barındırın veya sürüme sabitlenmiş CDN bağlantısını kullanın. Tam indirme, ZIP ve modül seçenekleri için indirme sayfasına gidin.</p><a class="ckcss-button ckcss-button--primary" href="/download.html">İndirme ve CDN seçenekleri</a></div><div><pre class="ckcss-code-block"><code><span class="ckcss-code-tag">&lt;link</span> rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/kayacuneyd/ckcss@v0.1.0-beta.3/dist/ckcss.min.css"<span class="ckcss-code-tag">&gt;</span></code></pre></div></div>
+  href="https://cdn.jsdelivr.net/gh/kayacuneyd/ckcss@v0.1.0-rc.1/dist/ckcss.min.css"<span class="ckcss-code-tag">&gt;</span></code></pre></div></div>
       </section>
 
       <section class="ckcss-token-note" aria-labelledby="token-title">

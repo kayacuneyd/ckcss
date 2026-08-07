@@ -1,4 +1,4 @@
-/*! CKCSS v0.1.0-beta | Foundation, layout and essential components */
+/*! CKCSS v0.1.0-rc | Foundation, layout, components, utilities and print */
 
 @layer ck-reset, ck-tokens, ck-base, ck-layout, ck-components, ck-utilities;
 
@@ -8,3 +8,4 @@
 @import url("./layout.css") layer(ck-layout);
 @import url("./components.css") layer(ck-components);
 @import url("./utilities.css") layer(ck-utilities);
+@import url("./print.css") layer(ck-utilities);
